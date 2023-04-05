@@ -1,0 +1,45 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  stdcell_PEX
+* Top Cell Name: inverter
+* View Name:     schematic
+* Netlisted on:  Mar 19 02:52:05 2022
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL VDD!
++        VSS!
+
+*.PIN VDD!
+*+    VSS!
+
+************************************************************************
+* Library Name: artisan_cells
+* Cell Name:    INVX1TR
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INVX1TR A Y
+*.PININFO A:I Y:O
+MM1 VSS! A Y VSS! nfet m=1 l=120.0n w=460.0n nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+MM0 Y A VDD! VDD! pfet m=1 l=120.0n w=640.0n nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+.ENDS
+
+************************************************************************
+* Library Name: stdcell_PEX
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter A Y
+*.PININFO A:I Y:O
+XI0 A Y / INVX1TR
+.ENDS
+

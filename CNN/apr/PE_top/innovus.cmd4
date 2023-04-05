@@ -1,0 +1,366 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Mar 23 21:40:23 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.14-s109_1 (64bit) 06/29/2022 09:53 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.14-s109_1 NR220628-1629/21_14-UB (database version 18.20.582) {superthreading v2.17}
+#@(#)CDS: AAE 21.14-s031 (64bit) 06/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.14-s031_1 () Jun 22 2022 10:32:17 ( )
+#@(#)CDS: SYNTECH 21.14-s014_1 () May 29 2022 20:47:50 ( )
+#@(#)CDS: CPE v21.14-s062
+#@(#)CDS: IQuantus/TQuantus 21.1.1-w001 (64bit) Wed Jun 1 22:42:35 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+setMultiCpuUsage -acquireLicense 6 -localCpu 6
+set defHierChar /
+get_message -id GLOBAL-100 -suppress
+set locv_inter_clock_use_worst_derate false
+set init_oa_search_lib {}
+set init_verilog /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.v
+set init_design_netlisttype Verilog
+set init_pwr_net VDD
+set init_top_cell PE_top
+set init_gnd_net VSS
+set init_mmmc_file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/apr_view.tcl
+set init_lef_file {/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13_8lm_2thick_tech.lef  /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13rvt_macros.lef  }
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set timing_case_analysis_for_icg_propagation false
+init_design
+loadIoFile -noAdjustDieSize /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/PE_top.io
+floorPlan -noSnapToGrid -s 286 386 7 7 7 7
+saveDesign db/PE_top_floor_planned.enc
+saveDesign db/PE_top_insts_placed.enc
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose -override
+globalNetConnect VSS -type tielo -inst * -verbose
+globalNetConnect VDD -type tiehi -inst * -verbose
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M2 bottom M2 left M3 right M3} -rectangle 1
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M4 bottom M4 left M3 right M3} -rectangle 1
+saveDesign db/PE_top_pad_power_defined.enc
+sroute -allowJogging 0 -connect corePin -nets {VSS VDD} -layerChangeRange {M1 M1} -crossoverViaTopLayer M1
+setAddStripeMode -stacked_via_bottom_layer M1 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction vertical -layer M3 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 278
+setAddStripeMode -stacked_via_bottom_layer M3 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction horizontal -layer M4 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 378
+saveDesign db/PE_top_power_grid.enc
+setDesignMode -process 130
+setOptMode -drcMargin 0.1 -fixDRC true -fixFanoutLoad true -addInst true -addInstancePrefix PLACED -usefulSkew false -restruct false -allEndPoints true -effort high -maxLength 1000 -setupTargetSlack 0.05 -holdTargetSlack 0.05
+setTrialRouteMode -maxRouteLayer 4 -minRouteLayer 2
+setPlaceMode -timingDriven true -maxDensity 0.8
+timeDesign -prePlace
+place_opt_design -out_dir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_placed
+setDrawView place
+checkPlace /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/placement_check.txt
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+saveDesign db/PE_top_placed_prects.enc
+setTrialRouteMode -maxRouteLayer 4 -minRouteLayer 2
+setAnalysisMode -cppr both -analysisType onChipVariation
+setExtractRCMode -engine preRoute -effortLevel medium
+extractRC
+set_ccopt_property target_max_trans -net_type top 0.1
+set_ccopt_property target_max_trans -net_type trunk 0.1
+set_ccopt_property target_skew 0.1
+set_ccopt_property use_inverters true
+set_ccopt_property target_max_trans 0.1
+set_ccopt_property target_skew 0.1
+set_ccopt_property target_insertion_delay 0.1
+set_ccopt_effort -high
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property target_max_trans_sdc -delay_corner worstDelay -early -clock_tree clk 0.100
+set_ccopt_property target_max_trans_sdc -delay_corner worstDelay -late -clock_tree clk 0.100
+set_ccopt_property source_driver -clock_tree clk {INVX2TR/A INVX2TR/Y}
+set_ccopt_property clock_period -pin clk 1.5
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clk/typConstraintMode -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/typConstraintMode true
+set_ccopt_property extracted_from_clock_name -skew_group clk/typConstraintMode clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/typConstraintMode typConstraintMode
+set_ccopt_property extracted_from_delay_corners -skew_group clk/typConstraintMode {worstDelay bestDelay}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts
+report_ccopt_clock_trees -file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/post_ccopt.rpt -histograms -list_special_pins -no_invalidate
+saveDesign db/PE_top_ccopt.enc
+setOptMode -addInst true -addInstancePrefix POSTCTS
+optDesign -postCTS -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts_0
+optDesign -postCTS -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts_0_hold
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+report_ccopt_skew_groups > /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/post_cts_skewgroups.rpt
+saveDesign db/PE_top_placed_cts.enc
+setNanoRouteMode -routeWithTimingDriven true -routeWithSiDriven true -routeSiEffort max -routeWithSiPostRouteFix true
+setNanoRouteMode -drouteFixAntenna true -drouteAutoStop false -routeDeleteAntennaReroute true -routeAntennaCellName ANTENNATR -routeInsertAntennaDiode true
+setNanoRouteMode -droutePostRouteSwapVia false -routeConcurrentMinimizeViaCountEffort medium -routeWithViaInPin true -drouteUseMultiCutViaEffort medium -routeBottomRoutingLayer 2 -routeTopRoutingLayer 4 -drouteOnGridOnly none
+routeDesign -globalDetail
+saveDesign db/PE_top_routed.enc
+setDelayCalMode -engine aae -SIAware true -reportOutBound true
+setAnalysisMode -analysisType onChipVariation -cppr both
+setOptMode -addInst true -addInstancePrefix POSTROUTE
+optDesign -postRoute -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_0
+optDesign -postRoute -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_0_hold
+saveDesign db/PE_top_postroute_0.enc
+optDesign -postRoute -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_1
+optDesign -postRoute -setup -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_1
+saveDesign db/PE_top_postroute_1.enc
+optDesign -postRoute -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_2
+optDesign -postRoute -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_2_hold
+saveDesign db/PE_top_postroute_2.enc
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+saveDesign db/PE_top_place_cts_route.enc
+addFiller -cell {FILL1TR FILL2TR FILL4TR FILL8TR FILL16TR FILL32TR FILL64TR} -prefix FILLCELL
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+fixVia -minCut
+fixVia -minStep
+fixVia -short
+clearDrc
+verifyConnectivity -type regular -error 1000000 -warning 500000
+verifyProcessAntenna -error 1000000
+detailRoute -fix_drc
+saveDesign db/PE_top_final_prefill.enc
+report_timing     
+setMetalFill -layer {1 2 3 4} -minDensity 20 -preferredDensity 25 -maxDensity 80 -maxLength 4 -maxWidth 1 -windowSize 500 500 -windowStep 500 500
+addMetalFill -layer {1 2 3 4} -onCells -timingAware sta -area 0 0 300.0 400.0
+clearDrc
+saveDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread_1.drc
+saveDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread_3.drc
+saveDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread_0.drc
+saveDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread_2.drc
+loadDrc /tmp/innovus_temp_193379_eecs2420p06.engin.umich.edu_guohch_qWJH84/vergQTmpaIVJQp/qthread.drc
+verifyConnectivity -type regular -error 1000000 -warning 500000
+verifyProcessAntenna -error 1000000
+trimMetalFill -deleteViols
+saveDesign db/PE_top_final.enc
+zoomBox -87.79700 -120.48300 373.19400 292.20200
+zoomBox -256.53900 -316.20100 626.57700 474.37600
+zoomBox -136.63000 -63.15700 405.71400 422.35700
+zoomBox -69.76000 89.26500 263.30800 387.43200
+zoomBox -23.87200 188.19200 180.67400 371.30400
+zoomBox -116.43300 -4.84900 344.56200 407.84000
+zoomBox -181.94300 -122.35500 456.11300 448.84100
+zoomBox -122.61700 -38.29300 338.37900 374.39700
+zoomBox -56.19800 75.44500 184.44600 290.87300
+zoomBox -15.67500 144.54400 91.10100 240.13100
+zoomBox -2.45600 165.17100 63.11800 223.87400
+zoomBox 11.72500 182.52700 40.82200 208.57500
+zoomBox 16.81600 189.43600 32.00500 203.03300
+zoomBox 19.47400 193.04100 27.40300 200.13900
+zoomBox 21.08600 195.23100 24.60600 198.38200
+zoomBox 20.63700 194.60500 25.50900 198.96600
+zoomBox 18.50800 191.62500 29.48700 201.45400
+zoomBox 14.92900 186.31700 35.96500 205.14900
+zoomBox 18.46700 191.54700 29.44800 201.37700
+zoomBox 20.31300 194.27600 26.04600 199.40800
+zoomBox 19.52700 193.11900 27.46100 200.22200
+zoomBox 19.82600 193.70200 26.57100 199.74000
+zoomBox 20.49200 194.90800 24.63400 198.61600
+zoomBox 20.65100 195.19600 24.17200 198.34800
+zoomBox 20.90100 195.64900 23.44500 197.92600
+zoomBox 19.97600 194.18800 25.71000 199.32100
+zoomBox 19.68300 193.72400 26.42900 199.76300
+zoomBox 19.33700 193.17900 27.27400 200.28400
+zoomBox 17.88900 190.89400 30.81600 202.46600
+zoomBox 19.71900 193.70700 26.46700 199.74800
+zoomBox 20.48600 194.89300 24.63000 198.60300
+zoomBox 19.79300 194.15700 25.53000 199.29300
+zoomBox 20.02700 194.89000 24.17200 198.60100
+zoomBox 19.19500 193.67100 25.94600 199.71500
+zoomBox 17.95000 192.36600 27.29500 200.73200
+zoomBox 19.21700 194.25000 25.97100 200.29600
+zoomBox 20.00300 195.47700 24.88400 199.84700
+selectWire 21.5000 198.3000 23.3000 198.5000 2 buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/n128
+zoomBox 17.13500 193.18600 28.13900 203.03700
+zoomBox 10.69100 188.01000 35.49300 210.21300
+zoomBox 0.08500 179.48900 47.59800 222.02300
+zoomBox -13.85800 168.28700 63.51000 237.54800
+zoomBox -36.56000 150.04900 89.42000 262.82800
+zoomBox -73.52900 120.35100 131.61000 303.99400
+zoomBox -90.43500 106.76900 150.90500 322.82000
+zoomBox -133.72500 71.99300 200.31000 371.02600
+zoomBox -161.25500 49.87800 231.72800 401.68200
+zoomBox -73.53200 120.34900 131.60900 303.99400
+zoomBox -20.23800 163.16100 70.78500 244.64600
+zoomBox 0.07900 179.48200 47.59500 222.01900
+zoomBox 10.77300 188.47100 35.57800 210.67700
+zoomBox 16.35600 193.16500 29.30500 204.75700
+zoomBox 19.27100 195.61400 26.03100 201.66600
+zoomBox 20.78800 196.88700 24.31800 200.04700
+zoomBox 18.64000 194.62100 26.59700 201.74400
+zoomBox 16.29200 192.17800 29.24900 203.77700
+zoomBox 18.68500 194.00800 26.64300 201.13200
+zoomBox 20.46500 195.42000 24.61900 199.13900
+zoomBox 18.88800 193.54300 28.25200 201.92600
+zoomBox 19.79600 194.45100 26.56100 200.50700
+zoomBox 21.01500 196.28500 25.16900 200.00400
+zoomBox 19.30400 194.04100 27.26200 201.16500
+zoomBox 15.74200 191.01000 33.67900 207.06700
+zoomBox 7.42100 184.17300 47.84600 220.36200
+zoomBox -11.33100 168.76500 79.77600 250.32500
+zoomBox -32.51100 151.36100 115.84200 284.16900
+zoomBox -53.66700 134.55400 151.66700 318.37200
+zoomBox -85.60000 115.06800 198.59800 369.48600
+zoomBox -105.90800 102.67500 228.44300 401.99100
+zoomBox -190.97600 50.76400 353.46100 538.15100
+zoomBox -288.09300 -9.73100 465.45500 664.85500
+zoomBox -124.35600 92.10200 338.41800 506.38400
+zoomBox 6.41900 167.93400 247.99100 384.19300
+zoomBox 76.57900 206.81900 202.68200 319.70800
+zoomBox 113.22900 227.09300 179.05600 286.02200
+zoomBox 132.33400 237.65100 166.69700 268.41300
+zoomBox 141.15100 243.11000 159.09000 259.16900
+zoomBox 146.50800 246.42700 154.46900 253.55400
+zoomBox 148.99300 248.02400 152.52700 251.18800
+zoomBox 150.06600 248.65000 151.91100 250.30200
+zoomBox 150.68000 248.95100 151.64400 249.81400
+zoomBox 150.61300 248.85900 151.74700 249.87400
+zoomBox 150.53400 248.75100 151.86800 249.94500
+zoomBox 150.44100 248.63200 152.01100 250.03700
+zoomBox 150.77200 248.76800 151.73600 249.63100
+zoomBox 150.97500 248.85200 151.56700 249.38200
+zoomBox 150.58500 248.60300 151.92200 249.80000
+zoomBox 149.70800 248.04400 152.72400 250.74400
+zoomBox 148.26400 247.12500 154.04300 252.29800
+zoomBox 143.27400 243.95000 158.60000 257.67000
+zoomBox 133.22800 237.56000 167.77300 268.48500
+zoomBox 110.59000 223.15800 188.44900 292.85800
+zoomBox 59.57000 190.70200 235.04700 347.79100
+zoomBox -55.41200 117.55700 340.06800 471.59600
+zoomBox -314.55400 -47.29200 576.75800 750.62200
+zoomBox -493.47400 -161.11000 740.17600 943.27000
+zoomBox -224.35700 -62.33800 533.25800 615.88900
+zoomBox -164.22400 27.29400 301.04600 443.81000
+zoomBox -279.19600 -125.87500 478.41900 552.35200
+zoomBox -174.81400 71.16300 290.45700 487.68000
+zoomBox -110.71000 192.17000 175.02400 447.96300
+zoomBox -67.77800 273.61400 107.70000 430.70400
+zoomBox -34.14100 332.89400 57.46000 414.89600
+zoomBox -19.96600 357.49400 36.28900 407.85400
+zoomBox -14.29200 368.84300 26.35300 405.22900
+zoomBox -7.22000 382.97200 13.99900 401.96800
+zoomBox -13.95800 370.05200 26.69200 406.44200
+zoomBox -31.62900 336.22600 59.98800 418.24300
+zoomBox -51.58800 298.54300 97.59500 432.09400
+zoomBox -110.26700 236.79300 175.52300 492.63600
+zoomBox -261.38000 75.48200 382.72200 652.09100
+zoomBox -707.75900 -391.53600 1000.06200 1137.32800
+zoomBox -233.34800 -59.69500 524.42200 618.67100
+zoomBox -100.19800 -5.22600 365.17000 411.37800
+zoomBox -138.76400 -29.02400 408.72900 461.09900
+zoomBox -38.46200 128.39800 297.76800 429.39600
+zoomBox 23.74200 226.41800 230.23000 411.26900
+zoomBox 74.04800 304.68700 181.83800 401.18200
+zoomBox 100.30900 345.54400 156.57700 395.91600
+zoomBox 104.53400 351.88800 152.36200 394.70400
+zoomBox 99.75200 347.38900 156.02000 397.76100
+zoomBox 87.39400 336.12100 165.27400 405.84000
+zoomBox 80.19300 328.17300 171.81700 410.19600
+zoomBox 71.72100 318.82300 179.51400 415.32100
+zoomBox 50.02900 294.88200 199.22400 428.44300
+zoomBox -21.55100 215.87900 264.26200 471.74300
+zoomBox -115.64300 112.03000 349.75700 528.66200
+zoomBox -268.85600 -57.07100 488.97100 621.34600
+zoomBox -130.77800 27.28900 334.62400 443.92300
+zoomBox -47.60600 88.39100 238.20900 344.25600
+zoomBox -4.51200 122.25000 201.99000 307.11300
+zoomBox 42.47700 155.83200 150.27400 252.33300
+zoomBox 67.00700 173.36200 123.27700 223.73600
+zoomBox 79.81100 182.51300 109.18500 208.80900
+zoomBox 83.69200 185.28600 104.91500 204.28500
+zoomBox 88.65400 189.40800 98.07300 197.84000
+zoomBox 91.13200 191.50400 94.68600 194.68600
+zoomBox 91.99300 192.21700 93.57000 193.62900
+zoomBox 92.37600 192.53100 93.07800 193.15900
+zoomBox 91.95300 192.09300 93.53500 193.50900
+zoomBox 91.25600 191.37200 94.28800 194.08600
+zoomBox 89.74400 190.01900 95.55300 195.21900
+zoomBox 91.21600 191.30500 94.24900 194.02000
+zoomBox 91.98300 191.97400 93.56800 193.39300
+zoomBox 92.30700 192.36800 93.28000 193.23900
+zoomBox 92.46100 192.52100 93.16400 193.15000
+zoomBox 92.22200 192.24500 93.56900 193.45100
+zoomBox 91.90800 191.88400 94.10100 193.84700
+zoomBox 91.65900 191.54100 94.69500 194.25900
+zoomBox 91.50100 191.32300 95.07300 194.52100
+zoomBox 91.27000 191.04200 95.47300 194.80500
+zoomBox 92.12200 192.08200 93.98900 193.75300
+zoomBox 92.44400 192.43100 93.41900 193.30400
+zoomBox 91.86900 192.18500 94.06700 194.15300
+zoomBox 90.91900 191.78800 95.13100 195.55900
+zoomBox 89.89000 191.08300 96.74900 197.22300
+zoomBox 87.54900 189.35900 100.69000 201.12300
+zoomBox 86.63700 188.64800 102.09700 202.48800
+zoomBox 89.56200 190.48300 97.63300 197.70800
+zoomBox 91.09800 191.50000 95.31300 195.27300
+zoomBox 91.90000 192.03100 94.10200 194.00200
+zoomBox 92.23700 192.25500 93.59000 193.46600
+zoomBox 91.71100 191.73400 94.30300 194.05400
+zoomBox 90.70200 190.73500 95.67000 195.18200
+zoomBox 89.91600 189.72200 96.79300 195.87800
+zoomBox 89.35300 187.36700 102.52800 199.16100
+zoomBox 86.43400 183.15100 111.67500 205.74700
+zoomBox 85.34400 181.61800 115.04000 208.20200
+zoomBox 84.06300 179.84900 118.99900 211.12400
+zoomBox 78.72400 172.49400 135.61200 223.42100
+zoomBox 76.28200 169.13000 143.20900 229.04400
+zoomBox 97.58600 181.38000 132.52300 212.65600
+zoomBox 109.70500 189.62700 125.20600 203.50400
+zoomBox 114.15100 192.51100 122.24400 199.75600
+zoomBox 116.12600 193.96700 120.35100 197.74900
+zoomBox 116.90500 194.76300 119.11100 196.73800
+zoomBox 117.46500 195.18700 118.61700 196.21800
+zoomBox 116.63600 194.59400 119.23300 196.91900
+zoomBox 115.27100 193.61700 120.24900 198.07300
+zoomBox 113.47900 192.33800 121.58400 199.59400
+zoomBox 112.65900 191.75300 122.19500 200.29000
+zoomBox 111.69600 191.05200 122.91600 201.09600
+zoomBox 112.65800 191.75200 122.19500 200.29000
+zoomBox 115.12800 193.56800 120.10800 198.02600
+zoomBox 116.45300 194.54900 119.05500 196.87800
+zoomBox 117.15500 195.06500 118.51400 196.28200
+zoomBox 116.44300 194.41600 119.50900 197.16100
+zoomBox 115.53500 193.84500 120.52800 198.31500
+zoomBox 113.77800 192.46800 123.34400 201.03200
+zoomBox 111.03300 190.39900 126.61000 204.34400
+zoomBox 114.39500 192.89300 122.52600 200.17200
+zoomBox 116.14900 194.19400 120.39400 197.99400
+zoomBox 117.06600 194.87300 119.28200 196.85700
+zoomBox 115.82800 194.08800 120.07400 197.88900
+zoomBox 113.56400 192.35100 121.69900 199.63400
+zoomBox 111.09100 189.93000 124.33800 201.78900
+zoomBox 105.70200 184.79700 127.27500 204.10900
+zoomBox 112.44600 190.75600 122.02000 199.32700
+zoomBox 115.38500 193.46300 119.63500 197.26800
+zoomBox 116.50600 194.49500 118.72600 196.48200
+zoomBox 116.97800 194.93000 118.34200 196.15100
+zoomBox 115.75000 194.08000 118.82600 196.83400
+zoomBox 114.74900 193.32500 119.75900 197.81000
+zoomBox 113.90900 192.51300 120.84500 198.72200
+zoomBox 112.01400 190.89300 123.30900 201.00400
+zoomBox 110.12800 189.28100 125.76200 203.27700
+zoomBox 113.43400 192.23900 121.59600 199.54600
+zoomBox 115.19100 193.85100 119.45400 197.66700
+zoomBox 116.15700 194.70900 118.38300 196.70200
+zoomBox 114.45800 193.29200 120.36200 198.57700
+zoomBox 111.03900 190.46500 124.34600 202.37800
+zoomBox 105.42500 185.83000 130.91900 208.65300
+zoomBox 98.04600 179.73700 139.56000 216.90100
+zoomBox 86.03100 169.81600 153.63100 230.33200
+zoomBox 66.46900 153.66000 176.54400 252.20100
+zoomBox 34.61500 127.35400 213.85500 287.81200

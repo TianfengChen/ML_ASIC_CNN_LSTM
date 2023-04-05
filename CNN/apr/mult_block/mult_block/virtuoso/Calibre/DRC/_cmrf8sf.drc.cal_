@@ -1,0 +1,31 @@
+//
+//  Rule file generated on Mon Mar 21 18:37:16 EDT 2022
+//     by Calibre Interactive - DRC (v2021.3_15.9)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "mult_block.calibre.db"
+LAYOUT PRIMARY "mult_block"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "mult_block.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "mult_block.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+
+INCLUDE "/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC/drc.exclude"
+
+
+INCLUDE "/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/DRC/cmrf8sf.drc.cal"
+

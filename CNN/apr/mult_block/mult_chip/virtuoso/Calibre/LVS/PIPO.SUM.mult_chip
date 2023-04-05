@@ -1,0 +1,1228 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 04/28/2020 23:57 (sjfhw315) $
+          : sub-version  IC6.1.8-64b.500.11 
+Started at: 21-Mar-2022  19:04:45
+User Name : qiruizh
+Host Name : caen-vnc-mi10.engin.umich.edu
+Directory : /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+artisan_pads/ipplscp_dvss/layout                                3        52      60       19     0      0         11     0             0      0     0     0       0       
+SRAM/SIGN_MEMVIAWDG1/layout     0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMMBLBASE/layout     0        0       2        47     0      0         30     0             0      0     0     0       0       
+artisan_pads/bc_grounds_r/layout                                0        4       6        4      0      0         2      0             0      0     0     0       0       
+artisan_cells/OAI31X1TRhww7wwwww15yghuy/layout                  0        0       15       22     0      0         0      0             0      0     0     0       0       
+artisan_pads/vss_oly/layout     0        249     16       94     0      0         29     0             0      0     0     0       0       
+artisan_cells/CLKINVX12TR/layout                                1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_CD_DWSTUB/layout                               0        0       0        3      0      0         2      0             0      0     0     0       0       
+artisan_cells/OR2X2TR/layout    1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEM1008_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM996_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/bc/layout          0        8       9        6      0      0         3      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        27     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v6top/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKAND2X2TR/layout                                1        0       0        24     0      0         5      0             0      0     0     0       0       
+artisan_cells/ADDFX1TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_pads/corner_m9/layout   0        0       0        2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMMWDX/layout        13       0       0        0      0      0         157    0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout                    0        0       9        13     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        17     0      0         0      0             0      0     0     0       0       
+artisan_pads/vddbp_i/layout     0        8       10       10264  0      0         1      0             0      0     0     0       0       
+artisan_cells/NAND3X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_pads/aci_v5top/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX1TR/layout  1        0       0        24     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWX/layout        0        0       0        13     0      0         16     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG0T/layout     0        0       0        56     0      0         21     0             0      0     0     0       0       
+SRAM/SIGN_MEM1023_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/DLY1X1TRhwwawwwwwiq3jy0y/layout                   0        0       15       37     0      0         0      0             0      0     0     0       0       
+artisan_cells/AO21X1TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+SRAM/SIGN_MEMWD2/layout         3        0       0        0      0      0         83     0             0      0     0     0       0       
+SRAM/SIGN_MEMWAFFLE_STRUCT/layout                               948      0       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI2BB1X1TR/layout                                1        0       0        17     0      0         6      0             0      0     0     0       0       
+SRAM/SIGN_MEMHCKA/layout        1        0       0        4      0      0         54     0             0      0     0     0       0       
+SRAM/SIGN_MEMMROW_8_LEFT/layout 425      0       0        0      0      0         935    0             0      0     0     0       0       
+SRAM/SIGN_MEMCOL_STRAPX/layout  6        0       0        0      0      0         1625   0             0      0     0     0       0       
+SRAM/SIGN_MEMVIAIOSG/layout     0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/ptapCont_0_16_0_16_6_2_0_4_0_4_center_center/layout        0        0       0        16     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        9      0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_pdiffc/layout  0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_MUX_2/layout   16       0       0        0      0      0         152    0             0      0     0     0       0       
+artisan_pads/mc2l/layout        0        21      27       14     0      0         6      0             0      0     0     0       0       
+artisan_pads/pct2_tap/layout    0        69      16       21     0      0         26     0             0      0     0     0       0       
+SRAM/SIGN_MEMMUX_CD_ODD/layout  56       0       0        0      0      0         148    0             0      0     0     0       0       
+SRAM/SIGN_MEM957_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout                 0        0       11       20     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMSWW63NIWWR6NWKRY/layout                            4        0       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_m6/layout   0        0       12       2      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX1TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMADDR_CAP/layout    393      0       0        0      0      0         1120   0             0      0     0     0       0       
+artisan_cells/ADDFHX1TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+artisan_pads/ppoly_res_250/layout                               0        2       0        5      0      0         0      0             0      0     0     0       0       
+artisan_pads/mc2_grounds_l/layout                               0        4       1        15     0      0         4      0             0      0     0     0       0       
+artisan_cells/DLY4X1TRhwwawwwww09dbkuy/layout                   0        0       14       32     0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_m11/layout  0        0       0        2      0      0         0      0             0      0     0     0       0       
+artisan_pads/PDVDD/layout       1        0       0        1      0      0         9      0             0      0     0     0       0       
+SRAM/A8FCELLE_D_LP/layout       0        0       13       24     0      0         2      0             0      0     0     0       0       
+artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout                  0        0       14       15     0      0         0      0             0      0     0     0       0       
+SRAM/bf/layout                  0        0       112      1076   0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFQX2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFSX1TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/CLKBUFX6TRhwwlwwwwwoixzety/layout                 0        0       11       26     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_TOP/layout     7        0       0        0      0      0         193    0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout                  0        0       39       95     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        207    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCMWDL/layout      1        0       3        32     0      0         16     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWD/layout          2        0       76       953    0      0         99     0             0      0     0     0       0       
+SRAM/SIGN_MEMCCEG/layout        1        0       0        11     0      0         18     0             0      0     0     0       0       
+artisan_pads/corner_m10/layout  0        0       0        2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWD3/layout         3        0       0        0      0      0         83     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMMCOL_ODD_R16/layout                                9        0       0        0      0      0         1721   0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v2f/layout     0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHBFX/layout        4        0       0        0      0      0         91     0             0      0     0     0       0       
+SRAM/SIGN_MEMFC1TL/layout       0        0       4        15     0      0         9      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_COL/layout     256      0       0        0      0      0         1666   0             0      0     0     0       0       
+SRAM/SIGN_MEM1005_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/fill1bp_i/layout   0        0       0        20     0      0         14     0             0      0     0     0       0       
+artisan_cells/FILL8TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_FILLER2/layout 7        0       0        0      0      0         153    0             0      0     0     0       0       
+artisan_pads/bc_cnrr/layout     0        8       13       6      0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout                   0        0       34       64     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX2TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        7      0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout                   0        0       12       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout                 0        0       7        15     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout                   0        0       36       70     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        51     0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout                  0        0       18       40     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMSA8/layout         0        0       118      447    0      0         39     0             0      0     0     0       0       
+SRAM/SIGN_MEMFCBWLX/layout      1        0       0        0      0      0         66     0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        187    0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout                 0        0       24       62     0      0         0      0             0      0     0     0       0       
+artisan_pads/PVDDowwl0qwwwg0qp4ly/layout                        3        0       0        1      0      0         0      0             0      0     0     0       0       
+artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout                   0        0       15       24     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM1020_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/pct_tap/layout     0        67      13       22     0      0         26     0             0      0     0     0       0       
+SRAM/SIGN_MEMCCEP/layout        1        0       1        10     0      0         18     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG1X/layout     2        0       2        20     0      0         21     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v4/layout   0        317     0        2      0      0         0      0             0      0     0     0       0       
+artisan_cells/AO22X2TRhww0wwwwwirw9lyy/layout                   0        0       15       29     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIANOMX32B/layout  0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_pads/bc_cnrl/layout     0        6       13       6      0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_polyc/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR22X2TR/layout 1        0       0        17     0      0         6      0             0      0     0     0       0       
+mult_chip/mult_chip_VIA50/layout                                0        0       0        172    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPEP/layout      1        0       2        12     0      0         12     0             0      0     0     0       0       
+SRAM/SIGN_MEMHYP38X/layout      1        0       0        0      0      0         104    0             0      0     0     0       0       
+artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout                   0        0       30       52     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout                  0        0       41       82     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout                  0        0       14       20     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCR/layout         0        0       4        49     0      0         19     0             0      0     0     0       0       
+artisan_cells/DLY4X1TR/layout   1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_pads/nc_grounds_capl/layout                             0        2       0        7      0      0         1      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFX1TRhww3wwwwwela690y/layout                   0        0       37       73     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM981_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout                    0        0       3        20     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_COL_STRAP/layout                               256      0       0        0      0      0         1544   0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_FLCXP/layout   0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/A8FCELLO_D_LP/layout       0        0       13       24     0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEM975_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/auto_baseVia2/layout                               0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM969_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v5/layout   0        315     0        2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCCSTRAP/layout   2        0       7        30     0      0         16     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG1T/layout     2        0       2        21     0      0         23     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCIO/layout       0        0       8        194    0      0         66     0             0      0     0     0       0       
+artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout                   0        0       13       21     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_IO_WESTUB/layout                               0        0       0        3      0      0         2      0             0      0     0     0       0       
+artisan_pads/aci_v4top/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMLEFT_CAP/layout    396      0       0        0      0      0         1922   0             0      0     0     0       0       
+artisan_pads/nct_capr/layout    0        27      5        19     0      0         26     0             0      0     0     0       0       
+artisan_cells/OAI31X1TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDMBB/layout     1        0       2        17     0      0         24     0             0      0     0     0       0       
+artisan_pads/MVBIT5_1AS_ARTI/layout                             0        0       7        375    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCIO8/layout       0        0       6        126    0      0         26     0             0      0     0     0       0       
+SRAM/SIGN_MEM963_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHXP38/layout       12       0       21       329    0      0         112    0             0      0     0     0       0       
+artisan_cells/AND3X1TRhww7wwwwwmv0nduy/layout                   0        0       14       22     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        387    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        51     0      0         0      0             0      0     0     0       0       
+artisan_pads/MSVSXBAR_B/layout  302      0       0        37     0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI21X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLIO8STRAPX/layout 2        0       0        0      0      0         27     0             0      0     0     0       0       
+artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout                   0        0       21       44     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDBBB/layout     0        0       0        16     0      0         24     0             0      0     0     0       0       
+SRAM/SIGN_MEMCK/layout          0        0       21       586    0      0         55     0             0      0     0     0       0       
+artisan_pads/pn_dio/layout      0        0       0        3      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM1002_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout                 0        0       7        19     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKBUFX2TR/layout 1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCCDR/layout       0        0       8        364    0      0         73     0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPO_MBLBASE/layout                               1        0       2        14     0      0         14     0             0      0     0     0       0       
+artisan_pads/ipplscp_vdd/layout 0        729     97       14894  0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEM/layout            1        0       0        0      0      0         198    0             0      0     0     0       0       
+SRAM/SIGN_MEMFCSA8/layout       0        0       7        88     0      0         19     0             0      0     0     0       0       
+artisan_cells/FILL2TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCWD/layout       1        0       2        17     0      0         13     0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLMWEG/layout      4        0       3        19     0      0         30     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLPCAP3/layout     0        0       0        9      0      0         9      0             0      0     0     0       0       
+artisan_cells/OAI21X2TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_pads/bc_grounds/layout  0        6       9        4      0      0         3      0             0      0     0     0       0       
+artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout                  0        0       14       29     0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v6/layout   0        316     0        2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLSA/layout        0        0       9        157    0      0         34     0             0      0     0     0       0       
+artisan_pads/auto_baseVia1/layout                               0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout                    0        0       0        8      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        9      0      0         0      0             0      0     0     0       0       
+artisan_pads/nct/layout         0        30      11       22     0      0         29     0             0      0     0     0       0       
+artisan_pads/PVSS/layout        1        0       0        1      0      0         11     0             0      0     0     0       0       
+SRAM/SIGN_MEMFC1T/layout        0        0       4        18     0      0         9      0             0      0     0     0       0       
+SRAM/SIGN_MEMHYP12RX/layout     1        0       0        0      0      0         81     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLPCAP2/layout     0        0       0        17     0      0         12     0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        187    0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout                   0        0       36       72     0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v3/layout      0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLIO/layout        0        0       5        188    0      0         32     0             0      0     0     0       0       
+artisan_cells/CLKINVX4TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLIO8STRAP/layout  0        0       3        39     0      0         29     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG0B/layout     0        0       0        56     0      0         22     0             0      0     0     0       0       
+artisan_pads/PDVDDowwl0qwwwka8m7ly/layout                       3        0       0        1      0      0         0      0             0      0     0     0       0       
+artisan_pads/mc2r/layout        0        21      27       14     0      0         6      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_CD_DRSTUB/layout                               0        0       0        3      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCCMBLST2/layout  1        0       7        29     0      0         13     0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPOP2/layout     2        0       1        18     0      0         14     0             0      0     0     0       0       
+mult_block/mult_block/layout    1272     0       0        2038   3338   0         20     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/fcbf8/layout               0        0       17       234    0      0         0      0             0      0     0     0       0       
+artisan_pads/sc4/layout         17       489     187      236    0      0         47     0             0      0     0     0       0       
+artisan_pads/nc_grounds_l/layout                                0        4       0        8      0      0         4      0             0      0     0     0       0       
+artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout                    0        0       3        7      0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR32X2TR/layout 1        0       0        20     0      0         7      0             0      0     0     0       0       
+mult_chip/mult_chip_VIA11/layout                                0        0       0        187    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHXP38X/layout      1        0       0        0      0      0         112    0             0      0     0     0       0       
+mult_chip/mult_chip_VIA4/layout 0        0       0        27     0      0         0      0             0      0     0     0       0       
+artisan_pads/PFILLQ/layout      1        0       0        1      0      0         8      0             0      0     0     0       0       
+artisan_cells/CLKINVX12TRhwwawwwwwqz61duy/layout                0        0       10       34     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL16TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG1M/layout     1        0       1        18     0      0         22     0             0      0     0     0       0       
+artisan_pads/mc2_capl/layout    0        22      19       16     0      0         13     0             0      0     0     0       0       
+SRAM/SIGN_MEMIOX/layout         4        0       0        0      0      0         40     0             0      0     0     0       0       
+artisan_pads/PICS/layout        1        0       0        2      0      0         15     0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        387    0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v7/layout   0        314     0        2      0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX4TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        30     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        51     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHYP38/layout       7        0       18       904    0      0         104    0             0      0     0     0       0       
+SRAM/ntapCont_0_16_0_16_8_1_0_4_0_4_center_center/layout        0        0       0        12     0      0         0      0             0      0     0     0       0       
+artisan_cells/DLY3X1TR/layout   1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMHXP24/layout       4        0       9        73     0      0         92     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDMMM/layout     0        0       2        14     0      0         18     0             0      0     0     0       0       
+artisan_pads/aci_v8top/layout   0        0       0        1      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHWDB0/layout       3        0       0        0      0      0         93     0             0      0     0     0       0       
+artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout                  0        0       10       17     0      0         0      0             0      0     0     0       0       
+artisan_pads/MVNSX_1AS_SC4_INLINE/layout                        0        3       13       379    0      0         0      0             0      0     0     0       0       
+artisan_pads/MSDOUBLE_4C_PAD_ARTI/layout                        8        0       1        1364   0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCCMBLSTU/layout  1        0       7        30     0      0         13     0             0      0     0     0       0       
+artisan_cells/DFFQX1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_CD_DRSA/layout 0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout                  0        0       31       60     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout                  0        0       13       20     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/wd/layout                  2        0       76       953    0      0         0      0             0      0     0     0       0       
+SRAM/A8FCELL_D_WVR001_010/layout                                0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_pads/pct_capr/layout    0        32      4        21     0      0         40     0             0      0     0     0       0       
+SRAM/SIGN_MEM993_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_64/layout      7        0       0        0      0      0         177    0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/mc2/layout         0        21      27       14     0      0         5      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHWDB/layout        1        0       15       166    0      0         109    0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCCSTRAPR/layout  1        0       7        29     0      0         13     0             0      0     0     0       0       
+artisan_cells/NAND2X2TR/layout  1        0       0        24     0      0         5      0             0      0     0     0       0       
+artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout                  0        0       12       22     0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v8/layout   0        164     0        2      0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI22X1TRhww7wwwww9820cjy/layout                  0        0       14       25     0      0         0      0             0      0     0     0       0       
+artisan_pads/PFILLQoww9mtwwwjqjizay/layout                      0        84      0        1185   0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI32X1TRhwwlwwwwwsrzuuqy/layout                  0        0       15       26     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX2TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAP_ROW16/layout  16       0       0        0      0      0         132    0             0      0     0     0       0       
+SRAM/SIGN_MEMWING_8_RIGHT/layout                                11       0       0        0      0      0         2470   0             0      0     0     0       0       
+artisan_cells/XOR2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_MUX_1/layout   16       0       0        0      0      0         152    0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_pads/PVDD/layout        1        0       0        1      0      0         10     0             0      0     0     0       0       
+artisan_pads/PFILLH/layout      1        0       0        1      0      0         8      0             0      0     0     0       0       
+SRAM/base_pcfill/layout         0        0       1        4      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMHBF8/layout        2        0       0        21     0      0         92     0             0      0     0     0       0       
+artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout                   0        0       3        37     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDGF/layout      1        0       0        29     0      0         16     0             0      0     0     0       0       
+artisan_pads/PDVSS/layout       1        0       0        1      0      0         11     0             0      0     0     0       0       
+artisan_cells/BUFX20TR/layout   1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEM1017_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM960_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFRX1TR/layout   1        0       0        34     0      0         7      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMCD2/layout         0        0       61       717    0      0         100    0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPOG2/layout     2        0       1        18     0      0         14     0             0      0     0     0       0       
+SRAM/SIGN_MEM954_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMCLK_DRVS/layout    5        0       0        0      0      0         74     0             0      0     0     0       0       
+SRAM/SIGN_MEMFINGER_STRUCT/layout                               0        0       0        940    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWORD_ROWS/layout   165      0       0        0      0      0         959    0             0      0     0     0       0       
+SRAM/SIGN_MEMRIGHT_CAP/layout   396      0       0        0      0      0         1922   0             0      0     0     0       0       
+SRAM/SIGN_MEM948_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v3top/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI21X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_IOSTRAP/layout 0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/ptapCont_0_16_0_16_5_2_0_4_0_4_center_center/layout        0        0       0        14     0      0         0      0             0      0     0     0       0       
+SRAM/base_flmo_nvpv/layout      1        0       14       24     0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMMODEL_COL/layout   776      0       0        0      0      0         1323   0             0      0     0     0       0       
+artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout                   0        0       30       45     0      0         0      0             0      0     0     0       0       
+artisan_pads/dvdd_oly/layout    0        63      0        79     0      0         39     0             0      0     0     0       0       
+artisan_pads/fillqbp_i/layout   0        2       0        1106   0      0         2      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_v9/layout   0        0       0        2      0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL1TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPOP/layout      1        0       2        13     0      0         12     0             0      0     0     0       0       
+artisan_cells/DFFQX4TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout                0        0       11       33     0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI32X1TR/layout  1        0       0        23     0      0         8      0             0      0     0     0       0       
+artisan_pads/PFILL1/layout      1        0       0        2      0      0         28     0             0      0     0     0       0       
+artisan_pads/MVBIT5_2AS_ARTI/layout                             0        0       7        380    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMMCOL_EVEN_LX16/layout                              9        0       0        0      0      0         1721   0             0      0     0     0       0       
+artisan_pads/fillhbp_i/layout   2        0       0        2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCXPX/layout      2        0       0        0      0      0         75     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMHYP12R/layout      2        0       3        302    0      0         81     0             0      0     0     0       0       
+artisan_pads/vdd_oly/layout     0        71      8        87     0      0         29     0             0      0     0     0       0       
+artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout                   0        0       36       66     0      0         0      0             0      0     0     0       0       
+artisan_pads/PCORNERoww5cuywwtkb3fqy/layout                     2        594     20       33     0      0         0      0             0      0     0     0       0       
+SRAM/base_rxfill/layout         0        0       0        7      0      0         2      0             0      0     0     0       0       
+artisan_pads/aci_ptapc/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/DLY2X1TR/layout   1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMMWD/layout         0        0       62       1360   0      0         157    0             0      0     0     0       0       
+artisan_pads/MSVSXBAR_A/layout  240      0       0        22     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX4TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCCMBLST/layout   2        0       7        31     0      0         16     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        26     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_FILLER3/layout 7        0       0        0      0      0         153    0             0      0     0     0       0       
+artisan_cells/AND2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIAWD/layout       0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout                 0        0       9        13     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout                    0        0       7        14     0      0         0      0             0      0     0     0       0       
+mult_chip/mult_chip_VIA22/layout                                0        0       0        182    0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI2BB1X1TR/layout                                1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout                  0        0       36       63     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMX_PRE_DECODE/layout                                3        0       0        0      0      0         180    0             0      0     0     0       0       
+SRAM/SIGN_MEMFCMWDX/layout      0        0       3        57     0      0         18     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDMMB/layout     1        0       2        16     0      0         23     0             0      0     0     0       0       
+artisan_pads/ppoly_res_w2_l25/layout                            0        2       0        5      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCDSTRAP/layout   0        0       2        95     0      0         58     0             0      0     0     0       0       
+artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout                  0        0       36       66     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout                   0        0       3        71     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCBWM16/layout     0        0       8        234    0      0         67     0             0      0     0     0       0       
+SRAM/ap/layout                  0        0       76       995    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        9      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        172    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLMWOG/layout      4        0       2        17     0      0         30     0             0      0     0     0       0       
+artisan_cells/DLY2X1TRhwwawwwwwfuoxtdy/layout                   0        0       15       37     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout                  0        0       14       38     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/BUFX3TRhww2wwwww96hs97y/layout                    0        0       12       16     0      0         0      0             0      0     0     0       0       
+artisan_pads/nc_grounds_r/layout                                0        4       0        8      0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEM1014_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout                 0        0       13       15     0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2X1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/ptapCont_0_16_0_16_14_2_0_4_0_4_center_center/layout       0        0       0        32     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout                   0        0       31       48     0      0         0      0             0      0     0     0       0       
+artisan_cells/AO22X2TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+SRAM/SIGN_MEM1052_ARTI_VIA_/layout                              0        0       0        1      0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v7top/layout   0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_pads/bc_grounds_cnrl/layout                             0        4       8        2      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_MWD/layout     0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEM999_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL32TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMCD/layout          0        0       61       717    0      0         100    0             0      0     0     0       0       
+artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout                   0        0       23       35     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout                 0        0       12       30     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM987_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHXLTR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout                   0        0       3        139    0      0         0      0             0      0     0     0       0       
+artisan_cells/AND2X2TRhww2wwwww04e6sry/layout                   0        0       13       22     0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v1/layout      0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKBUFX6TR/layout 1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPEG/layout      1        0       2        12     0      0         12     0             0      0     0     0       0       
+artisan_pads/aci_ntapc/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX20TRhwwzwwwww4j4ja7y/layout                   0        0       13       66     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout                0        0       16       19     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_pads/MSDIODE_3_STRING_PAD_ARTI/layout                   1        0       0        0      0      0         4      0             0      0     0     0       0       
+artisan_pads/dvddbp_i/layout    0        8       9        10626  0      0         1      0             0      0     0     0       0       
+artisan_pads/POC24A/layout      1        0       0        2      0      0         14     0             0      0     0     0       0       
+SRAM/SIGN_MEM972_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_BF_WE/layout   0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_pads/mc2_grounds/layout 0        6       0        19     0      0         3      0             0      0     0     0       0       
+SRAM/SIGN_MEM966_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout                   0        0       10       19     0      0         0      0             0      0     0     0       0       
+artisan_pads/mc2_grounds_r/layout                               0        4       0        16     0      0         2      0             0      0     0     0       0       
+artisan_cells/AOI32X1TRhwwlwwwwwghscy6y/layout                  0        0       17       25     0      0         0      0             0      0     0     0       0       
+artisan_pads/PFILL1owwbdwwwwsjdwamy/layout                      1        0       0        76     0      0         0      0             0      0     0     0       0       
+mult_chip_tapeout/mult_chip/layout                              25196    0       0        920184 3186   0         59     0             0      0     0     0       0       
+SRAM/SIGN_MEMFCBWRO16/layout    0        0       8        234    0      0         66     0             0      0     0     0       0       
+artisan_cells/DLY1X1TR/layout   1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/ckp/layout                 0        0       21       586    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_MUX_3/layout   16       0       0        0      0      0         152    0             0      0     0     0       0       
+artisan_cells/NOR2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCMWD/layout       0        0       1        61     0      0         18     0             0      0     0     0       0       
+SRAM/SIGN_MEMMCOL_ODD_M16/layout                                9        0       0        0      0      0         1722   0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCXP8/layout      0        0       6        166    0      0         75     0             0      0     0     0       0       
+artisan_pads/PICSowwl0qwwwi8auiry/layout                        149      160     18       164    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_oly/layout  14       0       0        2      0      0         24     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLPCAP/layout      0        0       1        14     0      0         10     0             0      0     0     0       0       
+artisan_cells/CLKINVX8TR/layout 1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMRING_STRUCT/layout 0        0       0        8      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_CD_DWSA/layout 0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMY_DECODE/layout    2        0       0        0      0      0         117    0             0      0     0     0       0       
+artisan_cells/CLKINVX20TR/layout                                1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCCDL/layout       0        0       6        360    0      0         73     0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        26     0      0         0      0             0      0     0     0       0       
+artisan_pads/MPVCA/layout       0        0       0        1      0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI32X1TR/layout  1        0       0        23     0      0         8      0             0      0     0     0       0       
+artisan_cells/CLKAND2X3TR/layout                                1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_pads/dvss_oly/layout    0        222     4        106    0      0         41     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX16TR/layout                                1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCCAP2/layout      0        0       3        25     0      0         13     0             0      0     0     0       0       
+artisan_cells/NAND2BX1TR/layout 1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPEP2/layout     2        0       1        17     0      0         14     0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        18     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        30     0      0         0      0             0      0     0     0       0       
+artisan_cells/AO22X1TRhwwlwwwww8bml6ty/layout                   0        0       17       25     0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout                    0        0       12       23     0      0         0      0             0      0     0     0       0       
+artisan_pads/vssbp_i/layout     0        6       1        11051  0      0         1      0             0      0     0     0       0       
+artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout                    0        0       3        11     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFX2TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+SRAM/SIGN_MEM1011_ARTI_VARR_/layout                             0        1       0        0      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout                0        0       11       42     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX1TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX4TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/XOR2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMFCUR/layout        0        0       4        51     0      0         16     0             0      0     0     0       0       
+SRAM/ai/layout                  0        0       15       183    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFC4T/layout        0        0       9        64     0      0         30     0             0      0     0     0       0       
+artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout                    0        0       12       22     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLWDG1B/layout     1        0       1        19     0      0         24     0             0      0     0     0       0       
+artisan_pads/ipplscp_dvdd/layout                                0        755     85       14884  0      0         4      0             0      0     0     0       0       
+artisan_cells/INVX2TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMIO8/layout         0        0       108      481    0      0         50     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_pads/aci_ndiffc/layout  0        0       0        3      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_pads/ipplscp_vss/layout 3        52      60       19     0      0         11     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/PDVSSowwl0qwwwanagt6y/layout                       30       0       0        3      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        62     0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout                  0        0       16       24     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL64TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCIOX/layout      4        0       0        0      0      0         70     0             0      0     0     0       0       
+artisan_pads/corner_m5/layout   0        0       12       2      0      0         0      0             0      0     0     0       0       
+artisan_pads/nct_capl/layout    0        19      5        19     0      0         27     0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        182    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFSX2TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+SRAM/SIGN_MEMMUX_CD_EVEN/layout 56       0       0        0      0      0         148    0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        182    0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        345    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWING_8_LEFT/layout 11       0       0        0      0      0         2470   0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_pads/pct/layout         0        46      14       14     0      0         23     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        18     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM990_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM984_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMBIT_MUX_0/layout   16       0       0        0      0      0         152    0             0      0     0     0       0       
+artisan_pads/bp_i/layout        1        6       5        5353   0      0         3      0             0      0     0     0       0       
+SRAM/SIGN_MEMHXP24X/layout      1        0       0        0      0      0         92     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        9      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM978_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+artisan_pads/mc2_capr/layout    0        15      19       15     0      0         8      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIA_CD_YP/layout   0        0       0        5      0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPEG2/layout     2        0       1        17     0      0         14     0             0      0     0     0       0       
+artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout                  0        0       12       22     0      0         0      0             0      0     0     0       0       
+artisan_cells/AND2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/base_flme_nvpv/layout      1        0       14       24     0      0         2      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIANOMX32A/layout  0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_pads/PFILLHowwlsdwwwhiisnay/layout                      1        164     0        90     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX8TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_pads/pct2/layout        0        48      14       16     0      0         23     0             0      0     0     0       0       
+SRAM/SIGN_MEMFCBWLE16/layout    0        0       9        234    0      0         70     0             0      0     0     0       0       
+cmrf8sf/VM5_M6/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VPC_M1/layout           0        0       0        22     0      0         0      0             0      0     0     0       0       
+artisan_pads/ppoly_res_1k_nosab/layout                          0        2       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout                 0        0       37       65     0      0         0      0             0      0     0     0       0       
+artisan_pads/dvssbp_i/layout    0        6       0        6345   0      0         2      0             0      0     0     0       0       
+artisan_cells/DFFHQX2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout                0        0       12       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout                0        0       13       25     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEM951_ARTI_VARR_/layout                              0        1       0        0      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMCCOG/layout        1        0       1        10     0      0         19     0             0      0     0     0       0       
+artisan_pads/mc2_grounds_capl/layout                            0        11      12       6      0      0         2      0             0      0     0     0       0       
+artisan_pads/nc_grounds/layout  0        6       0        19     0      0         3      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/ndiffCont_0_16_0_16_5_1_0_4_0_4_center_center/layout       0        0       0        8      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWD0/layout         3        0       0        0      0      0         83     0             0      0     0     0       0       
+SRAM/SIGN_MEMMROW_8_RIGHT/layout                                425      0       0        0      0      0         935    0             0      0     0     0       0       
+artisan_pads/ppoly_res_1k/layout                                0        2       0        5      0      0         0      0             0      0     0     0       0       
+artisan_pads/ipplscp_dvss_sub/layout                            0        12      15       25     0      0         0      0             0      0     0     0       0       
+artisan_pads/POC24Aowwl0qwww55cw9qy/layout                      149      160     18       164    0      0         0      0             0      0     0     0       0       
+artisan_cells/AO22X1TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/ADDFHX2TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_8/layout       7        0       0        0      0      0         169    0             0      0     0     0       0       
+artisan_pads/corner_m7/layout   0        0       12       2      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        172    0      0         0      0             0      0     0     0       0       
+artisan_cells/AND3X1TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout                   0        0       24       65     0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAPOG/layout      1        0       2        13     0      0         12     0             0      0     0     0       0       
+artisan_cells/FILL4TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/AOI22X1TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_pads/ipplie/layout      8        36      290      5047   0      0         40     0             0      0     0     0       0       
+SRAM/SIGN_MEMFLSA8STRAP/layout  0        0       0        21     0      0         16     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMFLCWX/layout       0        0       10       16     0      0         13     0             0      0     0     0       0       
+artisan_pads/corner_v10/layout  0        0       0        2      0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout                    0        0       9        18     0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX3TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_pads/corner_m4/layout   0        0       13       2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMMCOL_EVEN_M16/layout                               9        0       0        0      0      0         1722   0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_BOTTOM/layout  13       0       0        0      0      0         175    0             0      0     0     0       0       
+SRAM/SIGN_MEMFCCAP/layout       0        0       2        18     0      0         8      0             0      0     0     0       0       
+artisan_pads/MVNSX_1AS_ARTI/layout                              0        0       20       1254   0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMCCOP/layout        1        0       1        10     0      0         19     0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        317    0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout                   0        0       22       38     0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI2BB1X1TRhww7wwwwwo4tgxly/layout                0        0       14       24     0      0         0      0             0      0     0     0       0       
+artisan_cells/DLY3X1TRhwwawwwwwclj2dwy/layout                   0        0       15       37     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout                  0        0       41       96     0      0         0      0             0      0     0     0       0       
+artisan_pads/pct_capl/layout    0        33      4        22     0      0         43     0             0      0     0     0       0       
+artisan_pads/bc_grounds_l/layout                                0        4       6        4      0      0         2      0             0      0     0     0       0       
+cmrf8sf/VM6_MQ/layout           0        0       0        182    0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX1TR/layout    1        0       0        19     0      0         4      0             0      0     0     0       0       
+SRAM/SIGN_MEMROW_FILLER1/layout 7        0       0        0      0      0         153    0             0      0     0     0       0       
+artisan_pads/ipplscp_vss_sub/layout                             0        12      15       25     0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_cont/layout    0        0       0        1      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_pads/PCORNER/layout     1        0       0        1      0      0         8      0             0      0     0     0       0       
+SRAM/SIGN_MEMPCAP_ROWX16/layout 16       0       0        0      0      0         134    0             0      0     0     0       0       
+mult_chip/mult_chip_VIA42/layout                                0        0       0        207    0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMWD1/layout         3        0       0        0      0      0         83     0             0      0     0     0       0       
+artisan_cells/AO21X1TRhww7wwwww9jevycy/layout                   0        0       13       24     0      0         0      0             0      0     0     0       0       
+artisan_pads/corner_m8/layout   0        0       12       2      0      0         0      0             0      0     0     0       0       
+SRAM/SIGN_MEMVIABF/layout       0        0       0        5      0      0         2      0             0      0     0     0       0       
+artisan_cells/NOR2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+SRAM/SIGN_MEMCORE_STRUCT/layout 14       0       0        0      0      0         3948   0             0      0     0     0       0       
+reset_driver/reset_driver/layout                                0        0       36       92     0      0         4      0             0      0     0     0       0       
+cmrf8sf/VM4_M5/layout           0        0       0        30     0      0         0      0             0      0     0     0       0       
+artisan_pads/aci_v2/layout      0        0       0        3      0      0         0      0             0      0     0     0       0       
+mult_chip/mult_chip_VIA41/layout                                0        0       0        17     0      0         0      0             0      0     0     0       0       
+artisan_pads/PVSSowwl0qwww71r0x6y/layout                        30       0       0        3      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+artisan_pads/ipplscp_dvss/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIAWDG1/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMBLBASE/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_grounds_r/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI31X1TRhww7wwwww15yghuy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/vss_oly/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX12TR/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_CD_DWSTUB/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OR2X2TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1008_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM996_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc/layout          0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v6top/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X2TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m9/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMWDX/layout        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/vddbp_i/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND3X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v5top/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWX/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG0T/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1023_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY1X1TRhwwawwwwwiq3jy0y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO21X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWD2/layout         0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWAFFLE_STRUCT/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI2BB1X1TR/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHCKA/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMROW_8_LEFT/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCOL_STRAPX/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIAIOSG/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/ptapCont_0_16_0_16_6_2_0_4_0_4_center_center/layout        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_pdiffc/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_MUX_2/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2l/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct2_tap/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMUX_CD_ODD/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM957_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout                 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMSWW63NIWWR6NWKRY/layout                            0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m6/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX1TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMADDR_CAP/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ppoly_res_250/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_grounds_l/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY4X1TRhwwawwwww09dbkuy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m11/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PDVDD/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/A8FCELLE_D_LP/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout                  0        0          0          0          0          0     0        0         0         0        
+SRAM/bf/layout                  0        0          0          0          0          0     0        0         4         0        
+artisan_cells/DFFQX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX6TRhwwlwwwwwoixzety/layout                 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_TOP/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout                  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCMWDL/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWD/layout          0        0          0          0          0          0     0        0         5         0        
+SRAM/SIGN_MEMCCEG/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m10/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWD3/layout         0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMCOL_ODD_R16/layout                                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v2f/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHBFX/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFC1TL/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_COL/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1005_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_pads/fill1bp_i/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL8TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_FILLER2/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_cnrr/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX2TR/layout 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout                  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMSA8/layout         0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCBWLX/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PVDDowwl0qwwwg0qp4ly/layout                        0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1020_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct_tap/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCCEP/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG1X/layout     0        0          0          0          0          0     0        0         1         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v4/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO22X2TRhww0wwwwwirw9lyy/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIANOMX32B/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_cnrl/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_polyc/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR22X2TR/layout 0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA50/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPEP/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHYP38X/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout                  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCR/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY4X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nc_grounds_capl/layout                             0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX1TRhww3wwwwwela690y/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM981_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout                    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_COL_STRAP/layout                               0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_FLCXP/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/A8FCELLO_D_LP/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM975_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_pads/auto_baseVia2/layout                               0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM969_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v5/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCCSTRAP/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG1T/layout     0        0          0          0          0          0     0        0         1         0        
+SRAM/SIGN_MEMFLCIO/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_IO_WESTUB/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v4top/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMLEFT_CAP/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nct_capr/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI31X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDMBB/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MVBIT5_1AS_ARTI/layout                             0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCIO8/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM963_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHXP38/layout       0        0          0          0          0          0     0        0         3         0        
+artisan_cells/AND3X1TRhww7wwwwwmv0nduy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MSVSXBAR_B/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI21X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLIO8STRAPX/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDBBB/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCK/layout          0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pn_dio/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1002_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX2TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCCDR/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPO_MBLBASE/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplscp_vdd/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM/layout            0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCSA8/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL2TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCWD/layout       0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLMWEG/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLPCAP3/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_grounds/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v6/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLSA/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/auto_baseVia1/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nct/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PVSS/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFC1T/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHYP12RX/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLPCAP2/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v3/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLIO/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX4TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLIO8STRAP/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG0B/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PDVDDowwl0qwwwka8m7ly/layout                       0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2r/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_CD_DRSTUB/layout                               0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCCMBLST2/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPOP2/layout     0        0          0          0          0          0     0        0         0         0        
+mult_block/mult_block/layout    0        0          0          0          0          0     0        0         3665      0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/fcbf8/layout               0        0          0          0          0          0     0        0         0         0        
+artisan_pads/sc4/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nc_grounds_l/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR32X2TR/layout 0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA11/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHXP38X/layout      0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA4/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILLQ/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX12TRhwwawwwwwqz61duy/layout                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL16TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG1M/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_capl/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMIOX/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PICS/layout        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v7/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX4TR/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHYP38/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/ntapCont_0_16_0_16_8_1_0_4_0_4_center_center/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY3X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHXP24/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDMMM/layout     0        0          0          0          0          0     0        0         2         0        
+artisan_pads/aci_v8top/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHWDB0/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MVNSX_1AS_SC4_INLINE/layout                        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MSDOUBLE_4C_PAD_ARTI/layout                        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCCMBLSTU/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_CD_DRSA/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout                  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/wd/layout                  0        0          0          0          0          0     0        0         5         0        
+SRAM/A8FCELL_D_WVR001_010/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct_capr/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM993_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_64/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2/layout         0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHWDB/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCCSTRAPR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v8/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI22X1TRhww7wwwww9820cjy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILLQoww9mtwwwjqjizay/layout                      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI32X1TRhwwlwwwwwsrzuuqy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAP_ROW16/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWING_8_RIGHT/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_MUX_1/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PVDD/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILLH/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/base_pcfill/layout         0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHBF8/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDGF/layout      0        0          0          0          0          0     0        0         1         0        
+artisan_pads/PDVSS/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX20TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1017_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM960_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFRX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCD2/layout         0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPOG2/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM954_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCLK_DRVS/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFINGER_STRUCT/layout                               0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWORD_ROWS/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMRIGHT_CAP/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM948_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v3top/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_IOSTRAP/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/ptapCont_0_16_0_16_5_2_0_4_0_4_center_center/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/base_flmo_nvpv/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMODEL_COL/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/dvdd_oly/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/fillqbp_i/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v9/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL1TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPOP/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX4TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI32X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILL1/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MVBIT5_2AS_ARTI/layout                             0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMCOL_EVEN_LX16/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_pads/fillhbp_i/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCXPX/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHYP12R/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_pads/vdd_oly/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PCORNERoww5cuywwtkb3fqy/layout                     0        0          0          0          0          0     0        0         0         0        
+SRAM/base_rxfill/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_ptapc/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMWD/layout         0        0          0          0          0          0     0        0         2         0        
+artisan_pads/MSVSXBAR_A/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX4TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCCMBLST/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_FILLER3/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIAWD/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout                 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout                    0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA22/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI2BB1X1TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout                  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMX_PRE_DECODE/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCMWDX/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDMMB/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ppoly_res_w2_l25/layout                            0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCDSTRAP/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCBWM16/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/ap/layout                  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLMWOG/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY2X1TRhwwawwwwwfuoxtdy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX3TRhww2wwwww96hs97y/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nc_grounds_r/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1014_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/ptapCont_0_16_0_16_14_2_0_4_0_4_center_center/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO22X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1052_ARTI_VIA_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v7top/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_grounds_cnrl/layout                             0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_MWD/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM999_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL32TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCD/layout          0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout                 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM987_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHXLTR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X2TRhww2wwwww04e6sry/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v1/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX6TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPEG/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_ntapc/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX20TRhwwzwwwww4j4ja7y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MSDIODE_3_STRING_PAD_ARTI/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/dvddbp_i/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/POC24A/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM972_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_BF_WE/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_grounds/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM966_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_grounds_r/layout                               0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI32X1TRhwwlwwwwwghscy6y/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILL1owwbdwwwwsjdwamy/layout                      0        0          0          0          0          0     0        0         0         0        
+mult_chip_tapeout/mult_chip/layout                              0        0          0          0          0          0     0        0         49296     0        
+SRAM/SIGN_MEMFCBWRO16/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY1X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/ckp/layout                 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_MUX_3/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCMWD/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMCOL_ODD_M16/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCXP8/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PICSowwl0qwwwi8auiry/layout                        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_oly/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLPCAP/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX8TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMRING_STRUCT/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_CD_DWSA/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMY_DECODE/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX20TR/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCCDL/layout       0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MPVCA/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI32X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X3TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_pads/dvss_oly/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX16TR/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCCAP2/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2BX1TR/layout 0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPEP2/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO22X1TRhwwlwwwww8bml6ty/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/vssbp_i/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM1011_ARTI_VARR_/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX4TR/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCUR/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/ai/layout                  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFC4T/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLWDG1B/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplscp_dvdd/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX2TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMIO8/layout         0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_ndiffc/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplscp_vss/layout 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PDVSSowwl0qwwwanagt6y/layout                       0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL64TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCIOX/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m5/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nct_capl/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMUX_CD_EVEN/layout 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWING_8_LEFT/layout 0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct/layout         0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM990_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM984_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMBIT_MUX_0/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bp_i/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMHXP24X/layout      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM978_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_capr/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIA_CD_YP/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPEG2/layout     0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/base_flme_nvpv/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIANOMX32A/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PFILLHowwlsdwwwhiisnay/layout                      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX8TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct2/layout        0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCBWLE16/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM5_M6/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VPC_M1/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ppoly_res_1k_nosab/layout                          0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_pads/dvssbp_i/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEM951_ARTI_VARR_/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCCOG/layout        0        0          0          0          0          0     0        0         0         0        
+artisan_pads/mc2_grounds_capl/layout                            0        0          0          0          0          0     0        0         0         0        
+artisan_pads/nc_grounds/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/ndiffCont_0_16_0_16_5_1_0_4_0_4_center_center/layout       0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWD0/layout         0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMROW_8_RIGHT/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ppoly_res_1k/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplscp_dvss_sub/layout                            0        0          0          0          0          0     0        0         0         0        
+artisan_pads/POC24Aowwl0qwww55cw9qy/layout                      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO22X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_8/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m7/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND3X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout                   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAPOG/layout      0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL4TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI22X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplie/layout      0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLSA8STRAP/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFLCWX/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_v10/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX3TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m4/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMMCOL_EVEN_M16/layout                               0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_BOTTOM/layout  0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMFCCAP/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_pads/MVNSX_1AS_ARTI/layout                              0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCCOP/layout        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI2BB1X1TRhww7wwwwwo4tgxly/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DLY3X1TRhwwawwwwwclj2dwy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_pads/pct_capl/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_pads/bc_grounds_l/layout                                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM6_MQ/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX1TR/layout    0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMROW_FILLER1/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_pads/ipplscp_vss_sub/layout                             0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_cont/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PCORNER/layout     0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMPCAP_ROWX16/layout 0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA42/layout                                0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMWD1/layout         0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO21X1TRhww7wwwww9jevycy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_pads/corner_m8/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMVIABF/layout       0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+SRAM/SIGN_MEMCORE_STRUCT/layout 0        0          0          0          0          0     0        0         0         0        
+reset_driver/reset_driver/layout                                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM4_M5/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_pads/aci_v2/layout      0        0          0          0          0          0     0        0         0         0        
+mult_chip/mult_chip_VIA41/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_pads/PVSSowwl0qwww71r0x6y/layout                        0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+V5              drawing         32      0         0        2815     0        0        0             0    0   0   0     0      0      
+LM              drawing         24      0         14       51190    0        0        0             0    0   0   0     0      0      
+OP              drawing         37      0         0        12       0        0        0             0    0   0   0     0      0      
+ALPHA           ip              63      63        0        0        0        44       0             0    0   0   0     0      0      
+M3              drawing         19      0         299      136008   1951     0        0             0    0   0   0     0      0      
+TV              drawing         26      0         0        5        0        0        0             0    0   0   0     0      0      
+DG              drawing         12      4         4        19       0        0        0             0    0   0   0     0      0      
+RX              sram            2       45        0        20       0        0        0             0    0   0   0     0      0      
+M3              label           19      20        0        0        0        16673    0             0    0   0   0     0      0      
+RX              drawing         2       0         589      765      0        0        0             0    0   0   0     0      0      
+CELLSNR         drawing         63      103       1        21       0        0        0             0    0   0   0     0      0      
+VAR             drawing         12      24        0        2        0        0        0             0    0   0   0     0      0      
+DIODE           drawing         62      4         0        37       0        0        0             0    0   0   0     0      0      
+NV              drawing         12      30        12       43       0        0        0             0    0   0   0     0      0      
+VQ              drawing         33      0         0        781      0        0        0             0    0   0   0     0      0      
+OUTLINE         drawing         62      21        0        349      0        0        0             0    0   0   0     0      0      
+M1              pin             15      32        0        1002     0        0        0             0    0   0   0     0      0      
+ESDUMMY         drawing         63      36        0        7        0        0        0             0    0   0   0     0      0      
+V1              drawing         16      0         0        38996    0        0        0             0    0   0   0     0      0      
+PV              drawing         12      31        14       28       0        0        0             0    0   0   0     0      0      
+M6              label           44      20        0        0        0        49       0             0    0   0   0     0      0      
+BP              drawing         10      0         243      259      0        0        0             0    0   0   0     0      0      
+NW              label           4       20        0        0        0        22       0             0    0   0   0     0      0      
+SBLK            drawing         12      48        0        2        0        0        0             0    0   0   0     0      0      
+VL              drawing         35      0         0        1496     0        0        0             0    0   0   0     0      0      
+V2              drawing         18      0         0        12475    0        0        0             0    0   0   0     0      0      
+RX              label           2       20        0        0        0        4        0             0    0   0   0     0      0      
+ALPHA           audit           62      25        0        0        0        12       0             0    0   0   0     0      0      
+DV              drawing         27      1         0        5        0        0        0             0    0   0   0     0      0      
+MQ              drawing         34      0         14       53345    0        0        0             0    0   0   0     0      0      
+M5              label           31      20        0        0        0        24       0             0    0   0   0     0      0      
+M4              label           21      20        0        0        0        4296     0             0    0   0   0     0      0      
+M6              drawing         44      0         14       54011    32       0        0             0    0   0   0     0      0      
+M1              drawing         15      0         1165     60425    0        0        0             0    0   0   0     0      0      
+GRLOGIC         drawing         6       34        0        177      0        0        0             0    0   0   0     0      0      
+PC              drawing         7       0         890      95       0        0        0             0    0   0   0     0      0      
+TD              label           36      20        0        0        0        8        0             0    0   0   0     0      0      
+M4              drawing         21      0         86       301005   693      0        0             0    0   0   0     0      0      
+V4              drawing         22      0         0        2513     0        0        0             0    0   0   0     0      0      
+NW              drawing         4       0         57       196      0        0        0             0    0   0   0     0      0      
+M1              label           15      20        0        0        0        3230     0             0    0   0   0     0      0      
+PC              sram            7       45        0        20       0        0        0             0    0   0   0     0      0      
+ESDUMMY         dev             63      35        2        6        0        0        0             0    0   0   0     0      0      
+CA              drawing         14      0         0        46378    0        0        0             0    0   0   0     0      0      
+M5              drawing         31      0         14       65382    154      0        0             0    0   0   0     0      0      
+M2              drawing         17      0         351      206235   3694     0        0             0    0   0   0     0      0      
+SXCUT           drawing         61      30        0        3        0        0        0             0    0   0   0     0      0      
+PC              label           7       20        0        0        0        5679     0             0    0   0   0     0      0      
+TD              drawing         36      0         0        5        0        0        0             0    0   0   0     0      0      
+V3              drawing         20      0         0        4370     0        0        0             0    0   0   0     0      0      
+M1              sram            15      45        0        20       0        0        0             0    0   0   0     0      0      
+M2              label           17      20        0        0        0        7987     0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		32439
+	Array Instances:		5955
+	Polygons:			3769
+	Paths:				6524
+	Rectangles:			1040523
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			52985
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				38028
+	TextDisplay:		0
+	Cells:				555
+Design Libraries: 
+
+DEFINE mult_block	/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/mult_block
+DEFINE artisan_pads	/afs/umich.edu/class/eecs627/ibm13/common/ic6/artisan_pads
+DEFINE reset_driver	/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/reset_driver
+DEFINE artisan_cells	/afs/umich.edu/class/eecs627/ibm13/common/ic6/artisan_cells
+DEFINE cmrf8sf	/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf
+DEFINE mult_chip_tapeout	/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/mult_chip_tapeout
+DEFINE SRAM	/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/SRAM
+DEFINE mult_chip	/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/mult_chip

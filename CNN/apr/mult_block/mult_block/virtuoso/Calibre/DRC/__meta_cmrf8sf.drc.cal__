@@ -1,0 +1,6 @@
+DRC ICSTATION YES
+
+
+INCLUDE "/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC/drc.exclude"
+
+INCLUDE "/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/DRC/cmrf8sf.drc.cal"

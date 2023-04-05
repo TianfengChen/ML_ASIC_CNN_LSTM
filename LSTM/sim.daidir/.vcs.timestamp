@@ -1,0 +1,137 @@
+0 
+43
++incdir+
++libext+.v+.vlib+.vh
++multisource_int_delays
++neg_tchk
++overlap
++plusarg_save
++v2k
++vc
++vcs+lic+wait
++warn=noSDFCOM_IANE
++warn=noSDFCOM_IWSBA
++warn=noSDFCOM_PONF
++warn=noSDFCOM_UHICD
++warn=noSDFCOM_UHICD,noSDFCOM_IWSBA,noSDFCOM_IANE,noSDFCOM_PONF
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+-Mout=sim
+-Msaverestoreobj=/usr/caen/vcs-2020.12-SP2-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mxllcflags=
+-full64
+-gen_obj
+-o sim
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/usr/caen/vcs-2020.12-SP2-1/linux64/bin/vcs1
+sim
+../sys_defs.svh
+verilog/sigmoid.v
+verilog/MULT_single.v
+testbench/sigmoid_tb.v
+77
+which_declare=declare -f
+__LMOD_REF_COUNT__LMFILES_=/usr/caen/misc/modules/verdi/2020.12-SP2-1.lua:1;/usr/caen/misc/modules/vcs/2020.12-SP2-1.lua:1
+__LMOD_REF_COUNT_PATH=/usr/caen/vcs-2020.12-SP2-1/bin:1;/usr/caen/verdi-2020.12-SP2-1/bin:1;/usr/local/bin:1;/usr/local/sbin:1;/usr/bin:1;/usr/sbin:1;/usr/um/bin:1;/usr/caen/bin:1
+__LMOD_REF_COUNT_MODULEPATH=/usr/caen/misc/modules:2;/etc/scl/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/afs/umich.edu/class/coe/modules:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1
+__LMOD_REF_COUNT_LOADEDMODULES=verdi/2020.12-SP2-1:1;vcs/2020.12-SP2-1:1
+__LMOD_REF_COUNT_LM_LICENSE_FILE=license.dat:1;/usr/caen/FLEXlm/data/license.dat.synopsys:1
+__GL_SHADER_DISK_CACHE=0
+_ModuleTable_Sz_=3
+_ModuleTable003_=ZXM6L2V0Yy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3IvY2Flbi9taXNjL21vZHVsZXM6L2Fmcy91bWljaC5lZHUvY2xhc3MvY29lL21vZHVsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsfQ==
+_ModuleTable002_=ciJdPTEscHJvcFQ9e30sWyJyZWZfY291bnQiXT0xLFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InZlcmRpLzIwMjAuMTItU1AyLTEiLH0sfSxtcGF0aEE9eyIvdXNyL2NhZW4vbWlzYy9tb2R1bGVzIiwiL2V0Yy9zY2wvbW9kdWxlZmlsZXMiLCIvZXRjL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIsIi9hZnMvdW1pY2guZWR1L2NsYXNzL2NvZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2V0Yy9zY2wvbW9kdWxlZmls
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXt2Y3M9e1siZm4iXT0iL3Vzci9jYWVuL21pc2MvbW9kdWxlcy92Y3MvMjAyMC4xMi1TUDItMS5sdWEiLFsiZnVsbE5hbWUiXT0idmNzLzIwMjAuMTItU1AyLTEiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ2Y3MiLH0sdmVyZGk9e1siZm4iXT0iL3Vzci9jYWVuL21pc2MvbW9kdWxlcy92ZXJkaS8yMDIwLjEyLVNQMi0xLmx1YSIsWyJmdWxsTmFtZSJdPSJ2ZXJkaS8yMDIwLjEyLVNQMi0xIixbImxvYWRPcmRl
+_LMFILES_=/usr/caen/misc/modules/verdi/2020.12-SP2-1.lua:/usr/caen/misc/modules/vcs/2020.12-SP2-1.lua
+XMODIFIERS=@im=ibus
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=7126
+XDG_SESSION_DESKTOP=gnome
+XDG_RUNTIME_DIR=/run/user/114316869
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/isaacxyz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/share:/usr/local/share:/usr/caen/misc/menus
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/gdm/auth-for-isaacxyz-CY3L01/database
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/caen/verdi-2020.12-SP2-1
+VCS_TARGET_ARCH=linux64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/caen/vcs-2020.12-SP2-1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=isaacxyz
+UNAME=/bin/uname
+TOOL_HOME=/usr/caen/vcs-2020.12-SP2-1/linux64
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3821054,unix/unix:/tmp/.ICE-unix/3821054
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+OVA_UUM=0
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+MODULESHOME=/usr/share/lmod/lmod
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULEPATH=/usr/caen/misc/modules:/etc/scl/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/afs/umich.edu/class/coe/modules:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/3
+MAKE_TERMERR=/dev/pts/3
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=verdi/2020.12-SP2-1:vcs/2020.12-SP2-1
+LMOD_sys=Linux
+LMOD_VERSION=8.2.7
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_ROOT=/usr/share/lmod
+LMOD_PKG=/usr/share/lmod/lmod
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+KRB5CCNAME=KEYRING:persistent:114316869
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.408
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/17cdee7c_e76f_435c_8a5c_8fcba9a5d180
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome
+GDK_BACKEND=x11
+DESKTOP_SESSION=gnome
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-1R4m1IfSpX,guid=6a72169d8d758413fc6c756963f7d2e6
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-1R4m1IfSpX,guid=6a72169d8d758413fc6c756963f7d2e6
+COLORTERM=truecolor
+BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)_}
+BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd "$@")_}
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+0
+0
+4
+1677202784 testbench/sigmoid_tb.v
+1677188558 verilog/MULT_single.v
+1677192892 verilog/sigmoid.v
+1677191199 ../sys_defs.svh
+4
+1626665287 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so
+1626664738 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so
+1626664460 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so
+1626664734 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+1677202989 sim.daidir
+-1 partitionlib

@@ -1,0 +1,21 @@
+Streaming-in GDS
+- Use Template:
+	./strmIn.template
+
+- Reference Libraries:
+	./mult_block.reflib
+
+DRC Signing-off
+- DRC Runset:
+	./Calibre/DRC/drc.runset
+
+LVS Signing-off
+- LVS Runset:
+	./Calibre/LVS/lvs.runset
+
+PEX (In case you need this for your custom designs)
+- PEX Runset:
+	./Calibre/xRC/xRC.runset
+
+Final Design Libraries:
+	- mult_block: streamed-in from post-APR GDS file. DRC-and-LVS clean.

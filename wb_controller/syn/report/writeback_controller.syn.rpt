@@ -1,0 +1,1810 @@
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP3
+Date:        Thu Mar 30 17:52:52 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     43
+    Multiply driven inputs (LINT-6)                                18
+    Unloaded inputs (LINT-8)                                        4
+    Unconnected ports (LINT-28)                                     4
+    Feedthrough (LINT-29)                                          17
+
+Cells                                                               4
+    Connected to power or ground (LINT-32)                          4
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'writeback_controller', net 'delay_s3/clock' driven by pin 'delay_s3/clock' has no loads. (LINT-2)
+Warning: In design 'writeback_controller', net 'delay_s2/clock' driven by pin 'delay_s2/clock' has no loads. (LINT-2)
+Warning: In design 'writeback_controller', net 'delay_d1/clock' driven by pin 'delay_d1/clock' has no loads. (LINT-2)
+Warning: In design 'writeback_controller', net 'delay_s1/clock' driven by pin 'delay_s1/clock' has no loads. (LINT-2)
+Warning: In design 'writeback_controller', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'reset' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__7_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__6_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__5_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__4_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__3_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__2_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__1_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_3__data__0_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__7_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__6_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__5_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__4_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__3_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__2_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__1_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'writeback_controller', input port 'pk_out_2__data__0_' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'state_delay_FIFO_1', input port 'clock' is unloaded. (LINT-8)
+Warning: In design 'dff', input port 'clock' is unloaded. (LINT-8)
+Warning: In design 'state_delay_FIFO_2', input port 'clock' is unloaded. (LINT-8)
+Warning: In design 'state_delay_FIFO_3', input port 'clock' is unloaded. (LINT-8)
+Warning: In design 'state_delay_FIFO_1', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'dff', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'state_delay_FIFO_2', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'state_delay_FIFO_3', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'state_delay_FIFO_1', input port 'data_in[2]' is connected directly to output port 'data_out[2]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_1', input port 'data_in[1]' is connected directly to output port 'data_out[1]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_1', input port 'data_in[0]' is connected directly to output port 'data_out[0]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[7]' is connected directly to output port 'data_out[7]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[6]' is connected directly to output port 'data_out[6]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[5]' is connected directly to output port 'data_out[5]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[4]' is connected directly to output port 'data_out[4]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[3]' is connected directly to output port 'data_out[3]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[2]' is connected directly to output port 'data_out[2]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[1]' is connected directly to output port 'data_out[1]'. (LINT-29)
+Warning: In design 'dff', input port 'data_in[0]' is connected directly to output port 'data_out[0]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_2', input port 'data_in[2]' is connected directly to output port 'data_out[2]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_2', input port 'data_in[1]' is connected directly to output port 'data_out[1]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_2', input port 'data_in[0]' is connected directly to output port 'data_out[0]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_3', input port 'data_in[2]' is connected directly to output port 'data_out[2]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_3', input port 'data_in[1]' is connected directly to output port 'data_out[1]'. (LINT-29)
+Warning: In design 'state_delay_FIFO_3', input port 'data_in[0]' is connected directly to output port 'data_out[0]'. (LINT-29)
+Warning: In design 'writeback_controller', a pin on submodule 'delay_s1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset' is connected to logic 0. 
+Warning: In design 'writeback_controller', a pin on submodule 'delay_d1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset' is connected to logic 0. 
+Warning: In design 'writeback_controller', a pin on submodule 'delay_s2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset' is connected to logic 0. 
+Warning: In design 'writeback_controller', a pin on submodule 'delay_s3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset' is connected to logic 0. 
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                           97
+Number of nets:                           156
+Number of cells:                           64
+Number of combinational cells:             40
+Number of sequential cells:                16
+Number of macros/black boxes:               0
+Number of buf/inv:                          5
+Number of references:                      20
+
+Combinational area:                305.280008
+Buf/Inv area:                       21.600001
+Noncombinational area:             423.359997
+Macro/Black Box area:                0.000000
+Net Interconnect area:           10406.718536
+
+Total cell area:                   728.640005
+Total area:                      11135.358541
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+writeback_controller   ibm13_wl10        typical
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+writeback_controller                      0.198    0.231 1.96e+04    0.429 100.0
+  delay_s3 (state_delay_FIFO_3)           0.000    0.000    0.000    0.000   0.0
+  delay_s2 (state_delay_FIFO_2)           0.000    0.000    0.000    0.000   0.0
+  delay_d1 (dff)                          0.000    0.000    0.000    0.000   0.0
+  delay_s1 (state_delay_FIFO_1)           0.000    0.000    0.000    0.000   0.0
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : design
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Local Link Library:
+
+    {typical.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ibm13_wl10
+Location       :   typical
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   66.667
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    66.67
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U10                       AOI22X1TR       typical         8.640000  
+U13                       AOI22X1TR       typical         8.640000  
+U15                       AOI22X1TR       typical         8.640000  
+U16                       AOI22X1TR       typical         8.640000  
+U18                       AOI22X1TR       typical         8.640000  
+U19                       AOI22X1TR       typical         8.640000  
+U21                       AOI22X1TR       typical         8.640000  
+U22                       AOI22X1TR       typical         8.640000  
+U24                       AOI22X1TR       typical         8.640000  
+U25                       AOI22X1TR       typical         8.640000  
+U27                       AOI22X1TR       typical         8.640000  
+U28                       AOI22X1TR       typical         8.640000  
+U30                       AOI22X1TR       typical         8.640000  
+U31                       AOI22X1TR       typical         8.640000  
+U33                       AOI22X1TR       typical         8.640000  
+U34                       AOI22X1TR       typical         8.640000  
+U37                       NOR2X6TR        typical         14.400000 
+U38                       CLKINVX2TR      typical         4.320000  
+U39                       CLKINVX2TR      typical         4.320000  
+U40                       AND2X6TR        typical         14.400000 
+U41                       INVX1TR         typical         4.320000  
+U42                       INVX1TR         typical         4.320000  
+U43                       NOR2BX1TR       typical         7.200000  
+U44                       INVX1TR         typical         4.320000  
+U45                       NAND2X2TR       typical         7.200000  
+U46                       NAND2BX2TR      typical         10.080000 
+U47                       NOR2X2TR        typical         7.200000  
+U48                       NAND2BX1TR      typical         7.200000  
+U49                       NAND2X1TR       typical         5.760000  
+U50                       NAND2X1TR       typical         5.760000  
+U51                       NAND2X1TR       typical         5.760000  
+U52                       NAND2X1TR       typical         5.760000  
+U53                       NAND2X1TR       typical         5.760000  
+U54                       NAND2X1TR       typical         5.760000  
+U55                       NAND2X1TR       typical         5.760000  
+U56                       NAND2X1TR       typical         5.760000  
+U57                       NAND2X1TR       typical         5.760000  
+U58                       NAND3BX1TR      typical         8.640000  
+U59                       NAND3BX1TR      typical         8.640000  
+U60                       NAND3BX1TR      typical         8.640000  
+clk_r_REG0_S1_IP          DFFTRX1TR       typical         30.240000 n
+clk_r_REG1_S2_IP          DFFTRX1TR       typical         30.240000 n
+clk_r_REG2_S3_IP          DFFTRX2TR       typical         30.240000 n
+clk_r_REG3_S1_IP          DFFTRX1TR       typical         30.240000 n
+clk_r_REG4_S2_IP          DFFTRX1TR       typical         30.240000 n
+clk_r_REG5_S1_IP          DFFTRX2TR       typical         30.240000 n
+clk_r_REG6_S1             DFFTRX1TR       typical         30.240000 n
+clk_r_REG7_S1             DFFTRX1TR       typical         30.240000 n
+clk_r_REG8_S1             DFFTRX1TR       typical         30.240000 n
+clk_r_REG9_S1             DFFTRX1TR       typical         30.240000 n
+clk_r_REG10_S1            DFFTRX1TR       typical         30.240000 n
+clk_r_REG11_S1            DFFTRX1TR       typical         30.240000 n
+clk_r_REG12_S1            DFFTRX1TR       typical         30.240000 n
+clk_r_REG13_S1            DFFTRX1TR       typical         30.240000 n
+delay_d1                  dff                             0.000000  h, p
+delay_d2                  delay_FIFO                      0.000000  b, p
+delay_d3                  delay_FIFO                      0.000000  b, p
+delay_s1                  state_delay_FIFO_1              0.000000  h
+delay_s2                  state_delay_FIFO_2              0.000000  h
+delay_s3                  state_delay_FIFO_3              0.000000  h
+--------------------------------------------------------------------------------
+Total 60 cells                                            728.640005
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : port
+        -verbose
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    1.02    0.17   --         d
+pk_out_0__PE_state__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__PE_state__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__PE_state__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_0__data__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__PE_state__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__PE_state__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__PE_state__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_1__data__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__PE_state__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__PE_state__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__PE_state__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_2__data__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__PE_state__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__PE_state__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__PE_state__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pk_out_3__data__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+reset          in      0.0000   0.0000    1.02    0.17   --         
+DRAM_in3_Data[0]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[1]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[2]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[3]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[4]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[5]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[6]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_Data[7]
+               out     0.0100   0.0000   --      --      --         
+DRAM_in3_WEN   out     0.0100   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+pk_out_0__PE_state__0_
+                   1      --              --              --        -- 
+pk_out_0__PE_state__1_
+                   1      --              --              --        -- 
+pk_out_0__PE_state__2_
+                   1      --              --              --        -- 
+pk_out_0__data__0_
+                   1      --              --              --        -- 
+pk_out_0__data__1_
+                   1      --              --              --        -- 
+pk_out_0__data__2_
+                   1      --              --              --        -- 
+pk_out_0__data__3_
+                   1      --              --              --        -- 
+pk_out_0__data__4_
+                   1      --              --              --        -- 
+pk_out_0__data__5_
+                   1      --              --              --        -- 
+pk_out_0__data__6_
+                   1      --              --              --        -- 
+pk_out_0__data__7_
+                   1      --              --              --        -- 
+pk_out_1__PE_state__0_
+                   1      --              --              --        -- 
+pk_out_1__PE_state__1_
+                   1      --              --              --        -- 
+pk_out_1__PE_state__2_
+                   1      --              --              --        -- 
+pk_out_1__data__0_
+                   1      --              --              --        -- 
+pk_out_1__data__1_
+                   1      --              --              --        -- 
+pk_out_1__data__2_
+                   1      --              --              --        -- 
+pk_out_1__data__3_
+                   1      --              --              --        -- 
+pk_out_1__data__4_
+                   1      --              --              --        -- 
+pk_out_1__data__5_
+                   1      --              --              --        -- 
+pk_out_1__data__6_
+                   1      --              --              --        -- 
+pk_out_1__data__7_
+                   1      --              --              --        -- 
+pk_out_2__PE_state__0_
+                   1      --              --              --        -- 
+pk_out_2__PE_state__1_
+                   1      --              --              --        -- 
+pk_out_2__PE_state__2_
+                   1      --              --              --        -- 
+pk_out_2__data__0_
+                   1      --              --              --        -- 
+pk_out_2__data__1_
+                   1      --              --              --        -- 
+pk_out_2__data__2_
+                   1      --              --              --        -- 
+pk_out_2__data__3_
+                   1      --              --              --        -- 
+pk_out_2__data__4_
+                   1      --              --              --        -- 
+pk_out_2__data__5_
+                   1      --              --              --        -- 
+pk_out_2__data__6_
+                   1      --              --              --        -- 
+pk_out_2__data__7_
+                   1      --              --              --        -- 
+pk_out_3__PE_state__0_
+                   1      --              --              --        -- 
+pk_out_3__PE_state__1_
+                   1      --              --              --        -- 
+pk_out_3__PE_state__2_
+                   1      --              --              --        -- 
+pk_out_3__data__0_
+                   1      --              --              --        -- 
+pk_out_3__data__1_
+                   1      --              --              --        -- 
+pk_out_3__data__2_
+                   1      --              --              --        -- 
+pk_out_3__data__3_
+                   1      --              --              --        -- 
+pk_out_3__data__4_
+                   1      --              --              --        -- 
+pk_out_3__data__5_
+                   1      --              --              --        -- 
+pk_out_3__data__6_
+                   1      --              --              --        -- 
+pk_out_3__data__7_
+                   1      --              --              --        -- 
+reset              1      --              --              --        -- 
+DRAM_in3_Data[0]
+                   1      --              --              --        -- 
+DRAM_in3_Data[1]
+                   1      --              --              --        -- 
+DRAM_in3_Data[2]
+                   1      --              --              --        -- 
+DRAM_in3_Data[3]
+                   1      --              --              --        -- 
+DRAM_in3_Data[4]
+                   1      --              --              --        -- 
+DRAM_in3_Data[5]
+                   1      --              --              --        -- 
+DRAM_in3_Data[6]
+                   1      --              --              --        -- 
+DRAM_in3_Data[7]
+                   1      --              --              --        -- 
+DRAM_in3_WEN       1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+pk_out_0__PE_state__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__PE_state__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__PE_state__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_0__data__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__PE_state__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__PE_state__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__PE_state__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_1__data__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__PE_state__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__PE_state__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__PE_state__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_2__data__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__PE_state__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__PE_state__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__PE_state__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pk_out_3__data__7_
+              0.10    0.10    0.10    0.10  clk       --    
+reset         0.10    0.10    0.10    0.10  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          INVX2TR            INVX2TR              -- /  --     
+pk_out_0__PE_state__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__PE_state__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__PE_state__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__3_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__4_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__5_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__6_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_0__data__7_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__PE_state__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__PE_state__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__PE_state__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__3_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__4_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__5_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__6_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_1__data__7_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__PE_state__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__PE_state__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__PE_state__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__3_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__4_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__5_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__6_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_2__data__7_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__PE_state__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__PE_state__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__PE_state__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__0_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__1_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__2_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__3_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__4_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__5_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__6_
+             INVX2TR            INVX2TR              -- /  --     
+pk_out_3__data__7_
+             INVX2TR            INVX2TR              -- /  --     
+reset        INVX2TR            INVX2TR              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+pk_out_0__PE_state__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__PE_state__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__PE_state__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__3_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__4_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__5_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__6_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_0__data__7_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__PE_state__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__PE_state__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__PE_state__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__3_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__4_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__5_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__6_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_1__data__7_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__PE_state__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__PE_state__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__PE_state__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__3_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__4_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__5_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__6_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_2__data__7_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__PE_state__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__PE_state__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__PE_state__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__0_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__1_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__2_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__3_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__4_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__5_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__6_
+              --      --     --      --     --      --     --     --        -- 
+pk_out_3__data__7_
+              --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+pk_out_0__PE_state__0_
+              --      --      --      -- 
+pk_out_0__PE_state__1_
+              --      --      --      -- 
+pk_out_0__PE_state__2_
+              --      --      --      -- 
+pk_out_0__data__0_
+              --      --      --      -- 
+pk_out_0__data__1_
+              --      --      --      -- 
+pk_out_0__data__2_
+              --      --      --      -- 
+pk_out_0__data__3_
+              --      --      --      -- 
+pk_out_0__data__4_
+              --      --      --      -- 
+pk_out_0__data__5_
+              --      --      --      -- 
+pk_out_0__data__6_
+              --      --      --      -- 
+pk_out_0__data__7_
+              --      --      --      -- 
+pk_out_1__PE_state__0_
+              --      --      --      -- 
+pk_out_1__PE_state__1_
+              --      --      --      -- 
+pk_out_1__PE_state__2_
+              --      --      --      -- 
+pk_out_1__data__0_
+              --      --      --      -- 
+pk_out_1__data__1_
+              --      --      --      -- 
+pk_out_1__data__2_
+              --      --      --      -- 
+pk_out_1__data__3_
+              --      --      --      -- 
+pk_out_1__data__4_
+              --      --      --      -- 
+pk_out_1__data__5_
+              --      --      --      -- 
+pk_out_1__data__6_
+              --      --      --      -- 
+pk_out_1__data__7_
+              --      --      --      -- 
+pk_out_2__PE_state__0_
+              --      --      --      -- 
+pk_out_2__PE_state__1_
+              --      --      --      -- 
+pk_out_2__PE_state__2_
+              --      --      --      -- 
+pk_out_2__data__0_
+              --      --      --      -- 
+pk_out_2__data__1_
+              --      --      --      -- 
+pk_out_2__data__2_
+              --      --      --      -- 
+pk_out_2__data__3_
+              --      --      --      -- 
+pk_out_2__data__4_
+              --      --      --      -- 
+pk_out_2__data__5_
+              --      --      --      -- 
+pk_out_2__data__6_
+              --      --      --      -- 
+pk_out_2__data__7_
+              --      --      --      -- 
+pk_out_3__PE_state__0_
+              --      --      --      -- 
+pk_out_3__PE_state__1_
+              --      --      --      -- 
+pk_out_3__PE_state__2_
+              --      --      --      -- 
+pk_out_3__data__0_
+              --      --      --      -- 
+pk_out_3__data__1_
+              --      --      --      -- 
+pk_out_3__data__2_
+              --      --      --      -- 
+pk_out_3__data__3_
+              --      --      --      -- 
+pk_out_3__data__4_
+              --      --      --      -- 
+pk_out_3__data__5_
+              --      --      --      -- 
+pk_out_3__data__6_
+              --      --      --      -- 
+pk_out_3__data__7_
+              --      --      --      -- 
+reset         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+DRAM_in3_Data[0]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[1]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[2]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[3]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[4]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[5]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[6]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_Data[7]
+              0.10    0.10    0.10    0.10  clk       0.00  
+DRAM_in3_WEN
+              0.10    0.10    0.10    0.10  clk       0.00  
+
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : compile_options
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+writeback_controller                     flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+
+state_delay_FIFO_1                       flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+dff                                      flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+state_delay_FIFO_2                       flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+state_delay_FIFO_3                       flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+
+1
+Warning: Design 'writeback_controller' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : writeback_controller
+Version: T-2022.03-SP3
+Date   : Thu Mar 30 17:52:52 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[7]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U13/Y (AOI22X1TR)                        0.26       1.16 r
+  U49/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[7] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U16/Y (AOI22X1TR)                        0.26       1.16 r
+  U53/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[6] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U19/Y (AOI22X1TR)                        0.26       1.16 r
+  U51/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[5] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U22/Y (AOI22X1TR)                        0.26       1.16 r
+  U52/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[4] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U25/Y (AOI22X1TR)                        0.26       1.16 r
+  U54/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[3] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U28/Y (AOI22X1TR)                        0.26       1.16 r
+  U55/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[2] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U31/Y (AOI22X1TR)                        0.26       1.16 r
+  U56/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[1] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__1_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__1_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.44 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U34/Y (AOI22X1TR)                        0.26       1.16 r
+  U50/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[0] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[7]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U13/Y (AOI22X1TR)                        0.26       1.16 r
+  U49/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[7] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U16/Y (AOI22X1TR)                        0.26       1.16 r
+  U53/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[6] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U19/Y (AOI22X1TR)                        0.26       1.16 r
+  U51/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[5] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U22/Y (AOI22X1TR)                        0.26       1.16 r
+  U52/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[4] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U25/Y (AOI22X1TR)                        0.26       1.16 r
+  U54/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[3] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U28/Y (AOI22X1TR)                        0.26       1.16 r
+  U55/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[2] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U31/Y (AOI22X1TR)                        0.26       1.16 r
+  U56/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[1] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: pk_out_0__PE_state__0_
+              (input port clocked by clk)
+  Endpoint: DRAM_in3_Data[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pk_out_0__PE_state__0_ (in)              0.04       0.14 r
+  U45/Y (NAND2X2TR)                        0.06       0.20 f
+  U37/Y (NOR2X6TR)                         0.23       0.43 r
+  U48/Y (NAND2BX1TR)                       0.16       0.60 r
+  U38/Y (CLKINVX2TR)                       0.30       0.90 f
+  U34/Y (AOI22X1TR)                        0.26       1.16 r
+  U50/Y (NAND2X1TR)                        0.13       1.29 f
+  DRAM_in3_Data[0] (out)                   0.00       1.29 f
+  data arrival time                                   1.29
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: clk_r_REG5_S1_IP
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DRAM_in3_Data[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clk_r_REG5_S1_IP/CK (DFFTRX2TR)          0.00       0.00 r
+  clk_r_REG5_S1_IP/QN (DFFTRX2TR)          0.38       0.38 r
+  U46/Y (NAND2BX2TR)                       0.08       0.46 f
+  U47/Y (NOR2X2TR)                         0.48       0.94 r
+  U19/Y (AOI22X1TR)                        0.13       1.07 f
+  U51/Y (NAND2X1TR)                        0.21       1.27 r
+  DRAM_in3_Data[5] (out)                   0.00       1.27 r
+  data arrival time                                   1.27
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: clk_r_REG5_S1_IP
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DRAM_in3_Data[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clk_r_REG5_S1_IP/CK (DFFTRX2TR)          0.00       0.00 r
+  clk_r_REG5_S1_IP/QN (DFFTRX2TR)          0.38       0.38 r
+  U46/Y (NAND2BX2TR)                       0.08       0.46 f
+  U47/Y (NOR2X2TR)                         0.48       0.94 r
+  U22/Y (AOI22X1TR)                        0.13       1.07 f
+  U52/Y (NAND2X1TR)                        0.21       1.27 r
+  DRAM_in3_Data[4] (out)                   0.00       1.27 r
+  data arrival time                                   1.27
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: clk_r_REG5_S1_IP
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DRAM_in3_Data[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clk_r_REG5_S1_IP/CK (DFFTRX2TR)          0.00       0.00 r
+  clk_r_REG5_S1_IP/QN (DFFTRX2TR)          0.38       0.38 r
+  U46/Y (NAND2BX2TR)                       0.08       0.46 f
+  U47/Y (NOR2X2TR)                         0.48       0.94 r
+  U25/Y (AOI22X1TR)                        0.13       1.07 f
+  U54/Y (NAND2X1TR)                        0.21       1.27 r
+  DRAM_in3_Data[3] (out)                   0.00       1.27 r
+  data arrival time                                   1.27
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: clk_r_REG5_S1_IP
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DRAM_in3_Data[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  writeback_controller
+                     ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clk_r_REG5_S1_IP/CK (DFFTRX2TR)          0.00       0.00 r
+  clk_r_REG5_S1_IP/QN (DFFTRX2TR)          0.38       0.38 r
+  U46/Y (NAND2BX2TR)                       0.08       0.46 f
+  U47/Y (NOR2X2TR)                         0.48       0.94 r
+  U28/Y (AOI22X1TR)                        0.13       1.07 f
+  U55/Y (NAND2X1TR)                        0.21       1.27 r
+  DRAM_in3_Data[2] (out)                   0.00       1.27 r
+  data arrival time                                   1.27
+
+  clock clk (rise edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.10       1.40
+  output external delay                   -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -1.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+1

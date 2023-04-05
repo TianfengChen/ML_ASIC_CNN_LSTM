@@ -1,0 +1,63 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 04/28/2020 23:57 (sjfhw315) $
+          : sub-version  IC6.1.8-64b.500.11 
+Started at: 19-Mar-2022  02:52:02
+User Name : qiruizh
+Host Name : caen-vnc-mi07.engin.umich.edu
+Directory : /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/inverter.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'BNCON' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'VIA_CAP' at line number '439' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'DN_NET' at line number '441' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 stdcell_PEX
+strmFile                                /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/inverter.calibre.db
+topCell                                 inverter
+view                                    layout
+runDir                                  /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/
+logFile                                 PIPO.LOG.inverter
+summaryFile                             PIPO.SUM.inverter
+layerMap                                /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating cellView artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout as STRUCTURE INVX1TRhwwiwwwww6pow0dy.
+INFO (XSTRM-223): 2. Translating cellView artisan_cells/INVX1TR/layout as STRUCTURE INVX1TR.
+INFO (XSTRM-223): 3. Translating cellView stdcell_PEX/inverter/layout as STRUCTURE inverter.
+
+Summary of Objects Translated:
+	Scalar Instances:                       2
+	Array Instances:                        0
+	Polygons:                               9
+	Paths:                                  0
+	Rectangles:                             33
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   8
+	TextDisplay:                            0
+	Cells:                                  3
+
+Elapsed Time: 0.6s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 7052KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.

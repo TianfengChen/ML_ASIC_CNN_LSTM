@@ -1,0 +1,12 @@
+catch { setAnalysisMode -analysisType single }
+catch { setExtractRCMode  -engine preRoute }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setDelayCalMode -engine aae }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setAddStripeMode -max_via_size {blockPin 100% 100% 100%} }
+catch { setAddStripeMode -stacked_via_bottom_layer M7 }
+catch { setAddStripeMode -stacked_via_top_layer M8 }
+catch { setFPlanMode -defaultTechSite IBM13SITE }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

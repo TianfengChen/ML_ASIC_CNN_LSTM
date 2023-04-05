@@ -1,0 +1,9 @@
+# Time Unit : 1e-09 seconds (ns)
+# ActualValue: Actual value of slew seen during delay calculation. This is the value that fell out of bound.
+# BoundValue: Bound value of slew. This is the first or last value for which characterization information is present in the library.
+# BoundType: Lower or Upper, corresponding to whether the actual value is respectively smaller or greater than the bound value.
+# Arc: Arc specification from source pin to sink pin (including rise/fall information for both).
+# Instance: Full hierarchical name of the instance.
+ActualValue    BoundValue    OutputValue    BoundType    Arc    Instance
+0.00400   0.02800   0.09681   Lower   A v -> Y ^    Main_controller:clk
+0.00400   0.02800   0.31691   Lower   A v -> Y ^    Main_controller:reset

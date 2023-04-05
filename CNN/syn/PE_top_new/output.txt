@@ -1,0 +1,1154 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP3 for linux64 - Jul 12, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# EECS627 Lab Final
+# 8-bit multiplier with LFSR and signature analyzer
+# TCL script for Design Compiler
+# Load common variables, artisan standard cells
+source -verbose "../common.syn.tcl"
+/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/
+/usr/caen/synopsys-synth-2022.03-SP3
+. /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/ /usr/caen/synopsys-synth-2022.03-SP3/libraries/syn
+* typical.db dw_foundation.sldb
+typical.db
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb'
+1
+1
+# Set top level name
+set top_level "PE_top"
+PE_top
+# Read verilog files
+read_file -f sverilog [list "../../../sys_defs.svh" "../../verilog/PE_top.v" \
+                              "../../verilog/buff_mult_arr.v" "../../verilog/buffer_mult.v" "../MULT_single/MULT_single.syn.v" "../../verilog/buffer.v" \
+                              "../../verilog/adder.v" \
+                              "../../verilog/accumulation.v"]
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/gtech.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog files: '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/sys_defs.svh' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/PE_top.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/MULT_single.syn.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/sys_defs.svh
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/PE_top.v
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:46: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:47: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:48: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v:53: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/MULT_single.syn.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:47: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:48: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:50: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:53: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:55: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v:25: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v:26: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v:29: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v:30: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:36: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:37: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:38: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:41: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:42: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:43: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+
+Inferred memory devices in process
+	in routine buff_mult_arr line 44 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buff_mult_arr.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_out_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|   state_int1_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|   state_int2_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:54: unsigned to signed assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine buffer_mult line 52 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     mult_A_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:39: signed to unsigned conversion occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:41: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:47: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v:50: unsigned to signed assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine buffer line 44 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   valid_list_reg    | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_buf_reg     | Flip-flop |  72   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v:26: unsigned to signed assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine adder line 23 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/adder.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   status_out_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:27: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:28: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:29: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:30: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:36: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v:37: unsigned to signed assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 23 in file
+	'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            24            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine accumulation line 34 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/accumulation.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   status_out_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|       old_reg       | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/PE_top.db:PE_top'
+Loaded 7 designs.
+Current design is 'PE_top'.
+PE_top buff_mult_arr buffer_mult MULT_single buffer adder accumulation
+list_designs
+MULT_single     accumulation    buff_mult_arr   buffer_mult
+PE_top (*)      adder           buffer
+1
+current_design $top_level
+Current design is 'PE_top'.
+{PE_top}
+# Clock period
+set clk_period 1.5
+1.5
+set clk_uncertainty 0.1
+0.1
+set clk_transition 0.1
+0.1
+#Create real clock if clock port is found
+if {[sizeof_collection [get_ports clk]] > 0} {
+  set clk_name "clk"
+  set clk_port "clk"
+  #If no waveform is specified, 50% duty cycle is assumed
+  create_clock -name $clk_name -period $clk_period [get_ports $clk_port] 
+  set_drive 0 [get_clocks $clk_name] 
+}
+1
+set_clock_uncertainty $clk_uncertainty [get_clocks $clk_name]
+1
+#Propagated clock used for gated clocks only
+#set_propagated_clock [get_clocks $clk_name]
+set_clock_transition $clk_transition [get_clocks $clk_name]
+1
+set_operating_conditions "typical" -library "typical" 
+Using operating conditions 'typical' found in library 'typical'.
+1
+set_wire_load_model -name "ibm13_wl10" -library "typical" 
+1
+set_wire_load_mode "segmented" 
+1
+set typical_input_delay 0.100
+0.100
+set typical_output_delay 0.100
+0.100
+set typical_wire_load 0.010 
+0.010
+# Set leakage optimization
+set_leakage_optimization true
+1
+# Set maximum fanout of gates
+set_max_fanout 16 $top_level 
+1
+# Configure the clock network
+set_fix_hold [all_clocks] 
+1
+set_dont_touch_network $clk_port 
+1
+# Set delays: Input, Output
+set_driving_cell -lib_cell INVX2TR [all_inputs]
+Warning: Design rule attributes from the driving cell will be set on the port 'clk'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'reset'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[PE_state][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[PE_state][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[PE_state][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][3][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][2][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][1][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[A][0][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_data][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_addr][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_addr][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_addr][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb_addr][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[wrb][0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[rdb_addr][3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[rdb_addr][2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[rdb_addr][1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'pe_in_pk[rdb_addr][0]'. (UID-401)
+1
+set_input_delay $typical_input_delay [all_inputs] -clock $clk_name 
+1
+remove_input_delay -clock $clk_name [find port $clk_port]
+1
+set_output_delay $typical_output_delay [all_outputs] -clock $clk_name 
+1
+# Set loading of outputs 
+set_load $typical_wire_load [all_outputs] 
+1
+# Link the design
+link
+
+  Linking design 'PE_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (7 designs)               /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/PE_top.db, etc
+  typical (library)           /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db
+  dw_foundation.sldb (library) /usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb
+
+1
+# Verify the design
+check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP3
+Date:        Thu Mar 23 15:44:05 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'buffer', cell 'B_13' does not drive any nets. (LINT-1)
+1
+uniquify
+Information: Uniquified 4 instances of design 'buffer_mult'. (OPT-1056)
+Information: Uniquified 4 instances of design 'MULT_single'. (OPT-1056)
+Information: Uniquified 4 instances of design 'buffer'. (OPT-1056)
+1
+# Synthesize the design with retiming (not necessary for your design if you don't want/need it.)
+set_optimize_registers
+1
+compile_ultra -no_autoungroup -no_boundary_optimization
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.3 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -no_autoungroup -no_boundary_optimization                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2093                                   |
+| Number of User Hierarchies                              | 15                                     |
+| Sequential Cell Count                                   | 627                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 438                                    |
+| Number of Dont Touch Nets                               | 16                                     |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'PE_top'
+
+Loaded alib file './alib-52/typical.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'buffer_0'
+Information: Added key list 'DesignWare' to design 'buffer_0'. (DDB-72)
+  Processing 'MULT_single_0'
+  Processing 'accumulation'
+ Implement Synthetic for 'accumulation'.
+  Processing 'PE_top'
+  Processing 'buff_mult_arr'
+  Processing 'adder'
+ Implement Synthetic for 'adder'.
+  Processing 'buffer_mult_0'
+  Processing 'buffer_mult_3'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TR' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Checking pipeline property of design PE_top. (RTDC-137)
+Information: Pipeline detection aborted. Reason: cell accumulation0/old_reg[7] is on a feedback loop. (RTDC-138)
+Information: Aborted pipeline detection on design PE_top. (RTDC-140)
+  Mapping Optimization (Phase 1)
+Information: Added key list 'DesignWare' to design 'accumulation'. (DDB-72)
+Information: Checkpoint guidance is generated in the .svf file. (INFO-122)
+  Retiming PE_top (top)
+  Preferred flip-flop is DFFRHQX8TR with setup = 0.07
+
+
+  Retiming base-clock clk, rising edge.
+  Beginning minimum period retiming ...
+  ... minimum period retiming done.
+  Beginning minimum area retiming step 1 ...
+  ... minimum area retiming step 1 done.
+  Beginning minimum area retiming step 2 ...
+  5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100% 
+  ... minimum area retiming step 2 done.
+  Beginning minimum area retiming step 3 ...
+  10% 20% 30% 40% 50% 60% ... 100% 
+  ... minimum area retiming step 3 done.
+  Beginning final register move ...
+  ... final register move done.
+  Lower bound estimate = 1.19
+  Critical path length = 1.19
+  Clock correction = 0.31 (clock-to-Q delay = 0.14, setup = 0.07, uncertainty = 0.10)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:07   58265.3      0.00       0.0      61.1                           2487515.2500      0.00  
+    0:00:08   58265.3      0.00       0.0      61.1                           2487515.2500      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+Information: Added key list 'DesignWare' to design 'adder'. (DDB-72)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:08   38409.1      0.32      49.5      59.8                           1338993.8750      0.00  
+    0:00:09   43394.4      0.05       5.0      55.0                           1596297.0000      0.00  
+    0:00:09   43394.4      0.05       5.0      55.0                           1596297.0000      0.00  
+    0:00:09   43947.4      0.05       4.6      55.0                           1625118.2500      0.00  
+    0:00:09   43889.8      0.05       4.3      53.6                           1622887.2500      0.00  
+    0:00:10   43889.8      0.05       4.3      53.6                           1622887.2500      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:10   43328.2      0.05       3.8      53.6                           1588789.0000      0.00  
+    0:00:10   43467.8      0.02       0.5      53.4                           1599046.3750      0.00  
+    0:00:10   43467.8      0.02       0.5      53.4                           1599046.3750      0.00  
+    0:00:10   43480.8      0.02       0.1      43.2                           1598842.3750      0.00  
+    0:00:10   43480.8      0.02       0.1      43.2                           1598842.3750      0.00  
+    0:00:17   44317.4      0.00       0.0      43.2                           1642885.5000      0.00  
+    0:00:17   44317.4      0.00       0.0      43.2                           1642885.5000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:17   44311.7      0.00       0.0      43.2                           1642498.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:18   44589.6      0.00       0.0       0.0                           1660186.5000      0.00  
+    0:00:18   44589.6      0.00       0.0       0.0                           1660186.5000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:18   44589.6      0.00       0.0       0.0                           1660186.5000      0.00  
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+    0:00:19   40669.9      0.00       0.0       0.0                           1443931.6250      0.00  
+    0:00:19   40669.9      0.00       0.0       0.0                           1443931.6250      0.00  
+    0:00:19   40669.9      0.00       0.0       0.0                           1443931.6250      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:19   40430.9      0.00       0.0       0.0                           1428128.0000      0.00  
+    0:00:19   40273.9      0.00       0.0       0.0                           1422850.2500      0.00  
+    0:00:19   40273.9      0.00       0.0       0.0                           1422850.2500      0.00  
+    0:00:19   40273.9      0.00       0.0       0.0                           1422850.2500      0.00  
+    0:00:19   40233.6      0.00       0.0       0.0                           1420394.7500      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   39961.4      0.00       0.0       0.0                           1403921.0000      0.00  
+    0:00:20   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+compile_ultra -incremental
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+| Comand Line  | compile_ultra -incremental                                                        |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2651                                   |
+| Number of User Hierarchies                              | 15                                     |
+| Sequential Cell Count                                   | 716                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 16                                     |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TR' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:01   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+    0:00:01   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:02   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:02   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+    0:00:02   38340.0      0.00       0.0       0.0                           1312260.3750      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38325.6      0.00       0.0       0.0                           1311384.1250      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:02   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03   38321.3      0.00       0.0       0.0                           1311266.2500      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03  382443.0      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03  382443.0      0.00       0.0       0.0                           1311266.2500      0.00  
+    0:00:03  382358.1      0.00       0.0       0.0                           1303419.0000      0.00  
+    0:00:03  382358.1      0.00       0.0       0.0                           1303419.0000      0.00  
+    0:00:03  382358.1      0.00       0.0       0.0                           1303419.0000      0.00  
+    0:00:03  382358.1      0.00       0.0       0.0                           1303419.0000      0.00  
+    0:00:04  382123.9      0.00       0.0       0.0                           1300221.0000      0.00  
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# Rename modules, signals according to the naming rules Used for tool exchange
+source -verbose "../naming_rules.syn.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+PE_top          port    pe_in_pk[PE_state][2]   pe_in_pk_PE_state__2_
+PE_top          port    pe_in_pk[PE_state][1]   pe_in_pk_PE_state__1_
+PE_top          port    pe_in_pk[PE_state][0]   pe_in_pk_PE_state__0_
+PE_top          port    pe_in_pk[A][3][7]       pe_in_pk_A__3__7_
+PE_top          port    pe_in_pk[A][3][6]       pe_in_pk_A__3__6_
+PE_top          port    pe_in_pk[A][3][5]       pe_in_pk_A__3__5_
+PE_top          port    pe_in_pk[A][3][4]       pe_in_pk_A__3__4_
+PE_top          port    pe_in_pk[A][3][3]       pe_in_pk_A__3__3_
+PE_top          port    pe_in_pk[A][3][2]       pe_in_pk_A__3__2_
+PE_top          port    pe_in_pk[A][3][1]       pe_in_pk_A__3__1_
+PE_top          port    pe_in_pk[A][3][0]       pe_in_pk_A__3__0_
+PE_top          port    pe_in_pk[A][2][7]       pe_in_pk_A__2__7_
+PE_top          port    pe_in_pk[A][2][6]       pe_in_pk_A__2__6_
+PE_top          port    pe_in_pk[A][2][5]       pe_in_pk_A__2__5_
+PE_top          port    pe_in_pk[A][2][4]       pe_in_pk_A__2__4_
+PE_top          port    pe_in_pk[A][2][3]       pe_in_pk_A__2__3_
+PE_top          port    pe_in_pk[A][2][2]       pe_in_pk_A__2__2_
+PE_top          port    pe_in_pk[A][2][1]       pe_in_pk_A__2__1_
+PE_top          port    pe_in_pk[A][2][0]       pe_in_pk_A__2__0_
+PE_top          port    pe_in_pk[A][1][7]       pe_in_pk_A__1__7_
+PE_top          port    pe_in_pk[A][1][6]       pe_in_pk_A__1__6_
+PE_top          port    pe_in_pk[A][1][5]       pe_in_pk_A__1__5_
+PE_top          port    pe_in_pk[A][1][4]       pe_in_pk_A__1__4_
+PE_top          port    pe_in_pk[A][1][3]       pe_in_pk_A__1__3_
+PE_top          port    pe_in_pk[A][1][2]       pe_in_pk_A__1__2_
+PE_top          port    pe_in_pk[A][1][1]       pe_in_pk_A__1__1_
+PE_top          port    pe_in_pk[A][1][0]       pe_in_pk_A__1__0_
+PE_top          port    pe_in_pk[A][0][7]       pe_in_pk_A__0__7_
+PE_top          port    pe_in_pk[A][0][6]       pe_in_pk_A__0__6_
+PE_top          port    pe_in_pk[A][0][5]       pe_in_pk_A__0__5_
+PE_top          port    pe_in_pk[A][0][4]       pe_in_pk_A__0__4_
+PE_top          port    pe_in_pk[A][0][3]       pe_in_pk_A__0__3_
+PE_top          port    pe_in_pk[A][0][2]       pe_in_pk_A__0__2_
+PE_top          port    pe_in_pk[A][0][1]       pe_in_pk_A__0__1_
+PE_top          port    pe_in_pk[A][0][0]       pe_in_pk_A__0__0_
+PE_top          port    pe_in_pk[wrb_data][7]   pe_in_pk_wrb_data__7_
+PE_top          port    pe_in_pk[wrb_data][6]   pe_in_pk_wrb_data__6_
+PE_top          port    pe_in_pk[wrb_data][5]   pe_in_pk_wrb_data__5_
+PE_top          port    pe_in_pk[wrb_data][4]   pe_in_pk_wrb_data__4_
+PE_top          port    pe_in_pk[wrb_data][3]   pe_in_pk_wrb_data__3_
+PE_top          port    pe_in_pk[wrb_data][2]   pe_in_pk_wrb_data__2_
+PE_top          port    pe_in_pk[wrb_data][1]   pe_in_pk_wrb_data__1_
+PE_top          port    pe_in_pk[wrb_data][0]   pe_in_pk_wrb_data__0_
+PE_top          port    pe_in_pk[wrb_addr][3]   pe_in_pk_wrb_addr__3_
+PE_top          port    pe_in_pk[wrb_addr][2]   pe_in_pk_wrb_addr__2_
+PE_top          port    pe_in_pk[wrb_addr][1]   pe_in_pk_wrb_addr__1_
+PE_top          port    pe_in_pk[wrb_addr][0]   pe_in_pk_wrb_addr__0_
+PE_top          port    pe_in_pk[wrb][3]        pe_in_pk_wrb__3_
+PE_top          port    pe_in_pk[wrb][2]        pe_in_pk_wrb__2_
+PE_top          port    pe_in_pk[wrb][1]        pe_in_pk_wrb__1_
+PE_top          port    pe_in_pk[wrb][0]        pe_in_pk_wrb__0_
+PE_top          port    pe_in_pk[rdb_addr][3]   pe_in_pk_rdb_addr__3_
+PE_top          port    pe_in_pk[rdb_addr][2]   pe_in_pk_rdb_addr__2_
+PE_top          port    pe_in_pk[rdb_addr][1]   pe_in_pk_rdb_addr__1_
+PE_top          port    pe_in_pk[rdb_addr][0]   pe_in_pk_rdb_addr__0_
+PE_top          port    pe_out_pk[PE_state][2]  pe_out_pk_PE_state__2_
+PE_top          port    pe_out_pk[PE_state][1]  pe_out_pk_PE_state__1_
+PE_top          port    pe_out_pk[PE_state][0]  pe_out_pk_PE_state__0_
+PE_top          port    pe_out_pk[data][7]      pe_out_pk_data__7_
+PE_top          port    pe_out_pk[data][6]      pe_out_pk_data__6_
+PE_top          port    pe_out_pk[data][5]      pe_out_pk_data__5_
+PE_top          port    pe_out_pk[data][4]      pe_out_pk_data__4_
+PE_top          port    pe_out_pk[data][3]      pe_out_pk_data__3_
+PE_top          port    pe_out_pk[data][2]      pe_out_pk_data__2_
+PE_top          port    pe_out_pk[data][1]      pe_out_pk_data__1_
+PE_top          port    pe_out_pk[data][0]      pe_out_pk_data__0_
+PE_top          net     pe_in_pk[PE_state][2]   pe_in_pk_PE_state__2_
+PE_top          net     pe_in_pk[PE_state][1]   pe_in_pk_PE_state__1_
+PE_top          net     pe_in_pk[PE_state][0]   pe_in_pk_PE_state__0_
+PE_top          net     pe_in_pk[A][3][7]       pe_in_pk_A__3__7_
+PE_top          net     pe_in_pk[A][3][6]       pe_in_pk_A__3__6_
+PE_top          net     pe_in_pk[A][3][5]       pe_in_pk_A__3__5_
+PE_top          net     pe_in_pk[A][3][4]       pe_in_pk_A__3__4_
+PE_top          net     pe_in_pk[A][3][3]       pe_in_pk_A__3__3_
+PE_top          net     pe_in_pk[A][3][2]       pe_in_pk_A__3__2_
+PE_top          net     pe_in_pk[A][3][1]       pe_in_pk_A__3__1_
+PE_top          net     pe_in_pk[A][3][0]       pe_in_pk_A__3__0_
+PE_top          net     pe_in_pk[A][2][7]       pe_in_pk_A__2__7_
+PE_top          net     pe_in_pk[A][2][6]       pe_in_pk_A__2__6_
+PE_top          net     pe_in_pk[A][2][5]       pe_in_pk_A__2__5_
+PE_top          net     pe_in_pk[A][2][4]       pe_in_pk_A__2__4_
+PE_top          net     pe_in_pk[A][2][3]       pe_in_pk_A__2__3_
+PE_top          net     pe_in_pk[A][2][2]       pe_in_pk_A__2__2_
+PE_top          net     pe_in_pk[A][2][1]       pe_in_pk_A__2__1_
+PE_top          net     pe_in_pk[A][2][0]       pe_in_pk_A__2__0_
+PE_top          net     pe_in_pk[A][1][7]       pe_in_pk_A__1__7_
+PE_top          net     pe_in_pk[A][1][6]       pe_in_pk_A__1__6_
+PE_top          net     pe_in_pk[A][1][5]       pe_in_pk_A__1__5_
+PE_top          net     pe_in_pk[A][1][4]       pe_in_pk_A__1__4_
+PE_top          net     pe_in_pk[A][1][3]       pe_in_pk_A__1__3_
+PE_top          net     pe_in_pk[A][1][2]       pe_in_pk_A__1__2_
+PE_top          net     pe_in_pk[A][1][1]       pe_in_pk_A__1__1_
+PE_top          net     pe_in_pk[A][1][0]       pe_in_pk_A__1__0_
+PE_top          net     pe_in_pk[A][0][7]       pe_in_pk_A__0__7_
+PE_top          net     pe_in_pk[A][0][6]       pe_in_pk_A__0__6_
+PE_top          net     pe_in_pk[A][0][5]       pe_in_pk_A__0__5_
+PE_top          net     pe_in_pk[A][0][4]       pe_in_pk_A__0__4_
+PE_top          net     pe_in_pk[A][0][3]       pe_in_pk_A__0__3_
+PE_top          net     pe_in_pk[A][0][2]       pe_in_pk_A__0__2_
+PE_top          net     pe_in_pk[A][0][1]       pe_in_pk_A__0__1_
+PE_top          net     pe_in_pk[A][0][0]       pe_in_pk_A__0__0_
+PE_top          net     pe_in_pk[wrb_data][7]   pe_in_pk_wrb_data__7_
+PE_top          net     pe_in_pk[wrb_data][6]   pe_in_pk_wrb_data__6_
+PE_top          net     pe_in_pk[wrb_data][5]   pe_in_pk_wrb_data__5_
+PE_top          net     pe_in_pk[wrb_data][4]   pe_in_pk_wrb_data__4_
+PE_top          net     pe_in_pk[wrb_data][3]   pe_in_pk_wrb_data__3_
+PE_top          net     pe_in_pk[wrb_data][2]   pe_in_pk_wrb_data__2_
+PE_top          net     pe_in_pk[wrb_data][1]   pe_in_pk_wrb_data__1_
+PE_top          net     pe_in_pk[wrb_data][0]   pe_in_pk_wrb_data__0_
+PE_top          net     pe_in_pk[wrb_addr][3]   pe_in_pk_wrb_addr__3_
+PE_top          net     pe_in_pk[wrb_addr][2]   pe_in_pk_wrb_addr__2_
+PE_top          net     pe_in_pk[wrb_addr][1]   pe_in_pk_wrb_addr__1_
+PE_top          net     pe_in_pk[wrb_addr][0]   pe_in_pk_wrb_addr__0_
+PE_top          net     pe_in_pk[wrb][3]        pe_in_pk_wrb__3_
+PE_top          net     pe_in_pk[wrb][2]        pe_in_pk_wrb__2_
+PE_top          net     pe_in_pk[wrb][1]        pe_in_pk_wrb__1_
+PE_top          net     pe_in_pk[wrb][0]        pe_in_pk_wrb__0_
+PE_top          net     pe_in_pk[rdb_addr][3]   pe_in_pk_rdb_addr__3_
+PE_top          net     pe_in_pk[rdb_addr][2]   pe_in_pk_rdb_addr__2_
+PE_top          net     pe_in_pk[rdb_addr][1]   pe_in_pk_rdb_addr__1_
+PE_top          net     pe_in_pk[rdb_addr][0]   pe_in_pk_rdb_addr__0_
+PE_top          net     pe_out_pk[PE_state][2]  pe_out_pk_PE_state__2_
+PE_top          net     pe_out_pk[PE_state][1]  pe_out_pk_PE_state__1_
+PE_top          net     pe_out_pk[PE_state][0]  pe_out_pk_PE_state__0_
+PE_top          net     pe_out_pk[data][7]      pe_out_pk_data__7_
+PE_top          net     pe_out_pk[data][6]      pe_out_pk_data__6_
+PE_top          net     pe_out_pk[data][5]      pe_out_pk_data__5_
+PE_top          net     pe_out_pk[data][4]      pe_out_pk_data__4_
+PE_top          net     pe_out_pk[data][3]      pe_out_pk_data__3_
+PE_top          net     pe_out_pk[data][2]      pe_out_pk_data__2_
+PE_top          net     pe_out_pk[data][1]      pe_out_pk_data__1_
+PE_top          net     pe_out_pk[data][0]      pe_out_pk_data__0_
+buff_mult_arr   port    data_out[3][7]          data_out_3__7_
+buff_mult_arr   port    data_out[3][6]          data_out_3__6_
+buff_mult_arr   port    data_out[3][5]          data_out_3__5_
+buff_mult_arr   port    data_out[3][4]          data_out_3__4_
+buff_mult_arr   port    data_out[3][3]          data_out_3__3_
+buff_mult_arr   port    data_out[3][2]          data_out_3__2_
+buff_mult_arr   port    data_out[3][1]          data_out_3__1_
+buff_mult_arr   port    data_out[3][0]          data_out_3__0_
+buff_mult_arr   port    data_out[2][7]          data_out_2__7_
+buff_mult_arr   port    data_out[2][6]          data_out_2__6_
+buff_mult_arr   port    data_out[2][5]          data_out_2__5_
+buff_mult_arr   port    data_out[2][4]          data_out_2__4_
+buff_mult_arr   port    data_out[2][3]          data_out_2__3_
+buff_mult_arr   port    data_out[2][2]          data_out_2__2_
+buff_mult_arr   port    data_out[2][1]          data_out_2__1_
+buff_mult_arr   port    data_out[2][0]          data_out_2__0_
+buff_mult_arr   port    data_out[1][7]          data_out_1__7_
+buff_mult_arr   port    data_out[1][6]          data_out_1__6_
+buff_mult_arr   port    data_out[1][5]          data_out_1__5_
+buff_mult_arr   port    data_out[1][4]          data_out_1__4_
+buff_mult_arr   port    data_out[1][3]          data_out_1__3_
+buff_mult_arr   port    data_out[1][2]          data_out_1__2_
+buff_mult_arr   port    data_out[1][1]          data_out_1__1_
+buff_mult_arr   port    data_out[1][0]          data_out_1__0_
+buff_mult_arr   port    data_out[0][7]          data_out_0__7_
+buff_mult_arr   port    data_out[0][6]          data_out_0__6_
+buff_mult_arr   port    data_out[0][5]          data_out_0__5_
+buff_mult_arr   port    data_out[0][4]          data_out_0__4_
+buff_mult_arr   port    data_out[0][3]          data_out_0__3_
+buff_mult_arr   port    data_out[0][2]          data_out_0__2_
+buff_mult_arr   port    data_out[0][1]          data_out_0__1_
+buff_mult_arr   port    data_out[0][0]          data_out_0__0_
+buff_mult_arr   port    pe_in_pk[PE_state][2]   pe_in_pk_PE_state__2_
+buff_mult_arr   port    pe_in_pk[PE_state][1]   pe_in_pk_PE_state__1_
+buff_mult_arr   port    pe_in_pk[PE_state][0]   pe_in_pk_PE_state__0_
+buff_mult_arr   port    pe_in_pk[A][3][7]       pe_in_pk_A__3__7_
+buff_mult_arr   port    pe_in_pk[A][3][6]       pe_in_pk_A__3__6_
+buff_mult_arr   port    pe_in_pk[A][3][5]       pe_in_pk_A__3__5_
+buff_mult_arr   port    pe_in_pk[A][3][4]       pe_in_pk_A__3__4_
+buff_mult_arr   port    pe_in_pk[A][3][3]       pe_in_pk_A__3__3_
+buff_mult_arr   port    pe_in_pk[A][3][2]       pe_in_pk_A__3__2_
+buff_mult_arr   port    pe_in_pk[A][3][1]       pe_in_pk_A__3__1_
+buff_mult_arr   port    pe_in_pk[A][3][0]       pe_in_pk_A__3__0_
+buff_mult_arr   port    pe_in_pk[A][2][7]       pe_in_pk_A__2__7_
+buff_mult_arr   port    pe_in_pk[A][2][6]       pe_in_pk_A__2__6_
+buff_mult_arr   port    pe_in_pk[A][2][5]       pe_in_pk_A__2__5_
+buff_mult_arr   port    pe_in_pk[A][2][4]       pe_in_pk_A__2__4_
+buff_mult_arr   port    pe_in_pk[A][2][3]       pe_in_pk_A__2__3_
+buff_mult_arr   port    pe_in_pk[A][2][2]       pe_in_pk_A__2__2_
+buff_mult_arr   port    pe_in_pk[A][2][1]       pe_in_pk_A__2__1_
+buff_mult_arr   port    pe_in_pk[A][2][0]       pe_in_pk_A__2__0_
+buff_mult_arr   port    pe_in_pk[A][1][7]       pe_in_pk_A__1__7_
+buff_mult_arr   port    pe_in_pk[A][1][6]       pe_in_pk_A__1__6_
+buff_mult_arr   port    pe_in_pk[A][1][5]       pe_in_pk_A__1__5_
+buff_mult_arr   port    pe_in_pk[A][1][4]       pe_in_pk_A__1__4_
+buff_mult_arr   port    pe_in_pk[A][1][3]       pe_in_pk_A__1__3_
+buff_mult_arr   port    pe_in_pk[A][1][2]       pe_in_pk_A__1__2_
+buff_mult_arr   port    pe_in_pk[A][1][1]       pe_in_pk_A__1__1_
+buff_mult_arr   port    pe_in_pk[A][1][0]       pe_in_pk_A__1__0_
+buff_mult_arr   port    pe_in_pk[A][0][7]       pe_in_pk_A__0__7_
+buff_mult_arr   port    pe_in_pk[A][0][6]       pe_in_pk_A__0__6_
+buff_mult_arr   port    pe_in_pk[A][0][5]       pe_in_pk_A__0__5_
+buff_mult_arr   port    pe_in_pk[A][0][4]       pe_in_pk_A__0__4_
+buff_mult_arr   port    pe_in_pk[A][0][3]       pe_in_pk_A__0__3_
+buff_mult_arr   port    pe_in_pk[A][0][2]       pe_in_pk_A__0__2_
+buff_mult_arr   port    pe_in_pk[A][0][1]       pe_in_pk_A__0__1_
+buff_mult_arr   port    pe_in_pk[A][0][0]       pe_in_pk_A__0__0_
+buff_mult_arr   port    pe_in_pk[wrb_data][7]   pe_in_pk_wrb_data__7_
+buff_mult_arr   port    pe_in_pk[wrb_data][6]   pe_in_pk_wrb_data__6_
+buff_mult_arr   port    pe_in_pk[wrb_data][5]   pe_in_pk_wrb_data__5_
+buff_mult_arr   port    pe_in_pk[wrb_data][4]   pe_in_pk_wrb_data__4_
+buff_mult_arr   port    pe_in_pk[wrb_data][3]   pe_in_pk_wrb_data__3_
+buff_mult_arr   port    pe_in_pk[wrb_data][2]   pe_in_pk_wrb_data__2_
+buff_mult_arr   port    pe_in_pk[wrb_data][1]   pe_in_pk_wrb_data__1_
+buff_mult_arr   port    pe_in_pk[wrb_data][0]   pe_in_pk_wrb_data__0_
+buff_mult_arr   port    pe_in_pk[wrb_addr][3]   pe_in_pk_wrb_addr__3_
+buff_mult_arr   port    pe_in_pk[wrb_addr][2]   pe_in_pk_wrb_addr__2_
+buff_mult_arr   port    pe_in_pk[wrb_addr][1]   pe_in_pk_wrb_addr__1_
+buff_mult_arr   port    pe_in_pk[wrb_addr][0]   pe_in_pk_wrb_addr__0_
+buff_mult_arr   port    pe_in_pk[wrb][3]        pe_in_pk_wrb__3_
+buff_mult_arr   port    pe_in_pk[wrb][2]        pe_in_pk_wrb__2_
+buff_mult_arr   port    pe_in_pk[wrb][1]        pe_in_pk_wrb__1_
+buff_mult_arr   port    pe_in_pk[wrb][0]        pe_in_pk_wrb__0_
+buff_mult_arr   port    pe_in_pk[rdb_addr][3]   pe_in_pk_rdb_addr__3_
+buff_mult_arr   port    pe_in_pk[rdb_addr][2]   pe_in_pk_rdb_addr__2_
+buff_mult_arr   port    pe_in_pk[rdb_addr][1]   pe_in_pk_rdb_addr__1_
+buff_mult_arr   port    pe_in_pk[rdb_addr][0]   pe_in_pk_rdb_addr__0_
+buff_mult_arr   cell    genblk1[0].buffer_mult0 genblk1_0__buffer_mult0
+buff_mult_arr   cell    genblk1[1].buffer_mult0 genblk1_1__buffer_mult0
+buff_mult_arr   cell    genblk1[2].buffer_mult0 genblk1_2__buffer_mult0
+buff_mult_arr   cell    genblk1[3].buffer_mult0 genblk1_3__buffer_mult0
+buff_mult_arr   net     data_out[31]            data_out_3__7_
+buff_mult_arr   net     data_out[30]            data_out_3__6_
+buff_mult_arr   net     data_out[29]            data_out_3__5_
+buff_mult_arr   net     data_out[28]            data_out_3__4_
+buff_mult_arr   net     data_out[27]            data_out_3__3_
+buff_mult_arr   net     data_out[26]            data_out_3__2_
+buff_mult_arr   net     data_out[25]            data_out_3__1_
+buff_mult_arr   net     data_out[24]            data_out_3__0_
+buff_mult_arr   net     data_out[23]            data_out_2__7_
+buff_mult_arr   net     data_out[22]            data_out_2__6_
+buff_mult_arr   net     data_out[21]            data_out_2__5_
+buff_mult_arr   net     data_out[20]            data_out_2__4_
+buff_mult_arr   net     data_out[19]            data_out_2__3_
+buff_mult_arr   net     data_out[18]            data_out_2__2_
+buff_mult_arr   net     data_out[17]            data_out_2__1_
+buff_mult_arr   net     data_out[16]            data_out_2__0_
+buff_mult_arr   net     data_out[15]            data_out_1__7_
+buff_mult_arr   net     data_out[14]            data_out_1__6_
+buff_mult_arr   net     data_out[13]            data_out_1__5_
+buff_mult_arr   net     data_out[12]            data_out_1__4_
+buff_mult_arr   net     data_out[11]            data_out_1__3_
+buff_mult_arr   net     data_out[10]            data_out_1__2_
+buff_mult_arr   net     data_out[9]             data_out_1__1_
+buff_mult_arr   net     data_out[8]             data_out_1__0_
+buff_mult_arr   net     data_out[7]             data_out_0__7_
+buff_mult_arr   net     data_out[6]             data_out_0__6_
+buff_mult_arr   net     data_out[5]             data_out_0__5_
+buff_mult_arr   net     data_out[4]             data_out_0__4_
+buff_mult_arr   net     data_out[3]             data_out_0__3_
+buff_mult_arr   net     data_out[2]             data_out_0__2_
+buff_mult_arr   net     data_out[1]             data_out_0__1_
+buff_mult_arr   net     data_out[0]             data_out_0__0_
+buff_mult_arr   net     pe_in_pk[PE_state][2]   pe_in_pk_PE_state__2_
+buff_mult_arr   net     pe_in_pk[PE_state][1]   pe_in_pk_PE_state__1_
+buff_mult_arr   net     pe_in_pk[PE_state][0]   pe_in_pk_PE_state__0_
+buff_mult_arr   net     pe_in_pk[A][3][7]       pe_in_pk_A__3__7_
+buff_mult_arr   net     pe_in_pk[A][3][6]       pe_in_pk_A__3__6_
+buff_mult_arr   net     pe_in_pk[A][3][5]       pe_in_pk_A__3__5_
+buff_mult_arr   net     pe_in_pk[A][3][4]       pe_in_pk_A__3__4_
+buff_mult_arr   net     pe_in_pk[A][3][3]       pe_in_pk_A__3__3_
+buff_mult_arr   net     pe_in_pk[A][3][2]       pe_in_pk_A__3__2_
+buff_mult_arr   net     pe_in_pk[A][3][1]       pe_in_pk_A__3__1_
+buff_mult_arr   net     pe_in_pk[A][3][0]       pe_in_pk_A__3__0_
+buff_mult_arr   net     pe_in_pk[A][2][7]       pe_in_pk_A__2__7_
+buff_mult_arr   net     pe_in_pk[A][2][6]       pe_in_pk_A__2__6_
+buff_mult_arr   net     pe_in_pk[A][2][5]       pe_in_pk_A__2__5_
+buff_mult_arr   net     pe_in_pk[A][2][4]       pe_in_pk_A__2__4_
+buff_mult_arr   net     pe_in_pk[A][2][3]       pe_in_pk_A__2__3_
+buff_mult_arr   net     pe_in_pk[A][2][2]       pe_in_pk_A__2__2_
+buff_mult_arr   net     pe_in_pk[A][2][1]       pe_in_pk_A__2__1_
+buff_mult_arr   net     pe_in_pk[A][2][0]       pe_in_pk_A__2__0_
+buff_mult_arr   net     pe_in_pk[A][1][7]       pe_in_pk_A__1__7_
+buff_mult_arr   net     pe_in_pk[A][1][6]       pe_in_pk_A__1__6_
+buff_mult_arr   net     pe_in_pk[A][1][5]       pe_in_pk_A__1__5_
+buff_mult_arr   net     pe_in_pk[A][1][4]       pe_in_pk_A__1__4_
+buff_mult_arr   net     pe_in_pk[A][1][3]       pe_in_pk_A__1__3_
+buff_mult_arr   net     pe_in_pk[A][1][2]       pe_in_pk_A__1__2_
+buff_mult_arr   net     pe_in_pk[A][1][1]       pe_in_pk_A__1__1_
+buff_mult_arr   net     pe_in_pk[A][1][0]       pe_in_pk_A__1__0_
+buff_mult_arr   net     pe_in_pk[A][0][7]       pe_in_pk_A__0__7_
+buff_mult_arr   net     pe_in_pk[A][0][6]       pe_in_pk_A__0__6_
+buff_mult_arr   net     pe_in_pk[A][0][5]       pe_in_pk_A__0__5_
+buff_mult_arr   net     pe_in_pk[A][0][4]       pe_in_pk_A__0__4_
+buff_mult_arr   net     pe_in_pk[A][0][3]       pe_in_pk_A__0__3_
+buff_mult_arr   net     pe_in_pk[A][0][2]       pe_in_pk_A__0__2_
+buff_mult_arr   net     pe_in_pk[A][0][1]       pe_in_pk_A__0__1_
+buff_mult_arr   net     pe_in_pk[A][0][0]       pe_in_pk_A__0__0_
+buff_mult_arr   net     pe_in_pk[wrb_data][7]   pe_in_pk_wrb_data__7_
+buff_mult_arr   net     pe_in_pk[wrb_data][6]   pe_in_pk_wrb_data__6_
+buff_mult_arr   net     pe_in_pk[wrb_data][5]   pe_in_pk_wrb_data__5_
+buff_mult_arr   net     pe_in_pk[wrb_data][4]   pe_in_pk_wrb_data__4_
+buff_mult_arr   net     pe_in_pk[wrb_data][3]   pe_in_pk_wrb_data__3_
+buff_mult_arr   net     pe_in_pk[wrb_data][2]   pe_in_pk_wrb_data__2_
+buff_mult_arr   net     pe_in_pk[wrb_data][1]   pe_in_pk_wrb_data__1_
+buff_mult_arr   net     pe_in_pk[wrb_data][0]   pe_in_pk_wrb_data__0_
+buff_mult_arr   net     pe_in_pk[wrb_addr][3]   pe_in_pk_wrb_addr__3_
+buff_mult_arr   net     pe_in_pk[wrb_addr][2]   pe_in_pk_wrb_addr__2_
+buff_mult_arr   net     pe_in_pk[wrb_addr][1]   pe_in_pk_wrb_addr__1_
+buff_mult_arr   net     pe_in_pk[wrb_addr][0]   pe_in_pk_wrb_addr__0_
+buff_mult_arr   net     pe_in_pk[wrb][3]        pe_in_pk_wrb__3_
+buff_mult_arr   net     pe_in_pk[wrb][2]        pe_in_pk_wrb__2_
+buff_mult_arr   net     pe_in_pk[wrb][1]        pe_in_pk_wrb__1_
+buff_mult_arr   net     pe_in_pk[wrb][0]        pe_in_pk_wrb__0_
+buff_mult_arr   net     pe_in_pk[rdb_addr][3]   pe_in_pk_rdb_addr__3_
+buff_mult_arr   net     pe_in_pk[rdb_addr][2]   pe_in_pk_rdb_addr__2_
+buff_mult_arr   net     pe_in_pk[rdb_addr][1]   pe_in_pk_rdb_addr__1_
+buff_mult_arr   net     pe_in_pk[rdb_addr][0]   pe_in_pk_rdb_addr__0_
+adder           port    data_in[3][7]           data_in_3__7_
+adder           port    data_in[3][6]           data_in_3__6_
+adder           port    data_in[3][5]           data_in_3__5_
+adder           port    data_in[3][4]           data_in_3__4_
+adder           port    data_in[3][3]           data_in_3__3_
+adder           port    data_in[3][2]           data_in_3__2_
+adder           port    data_in[3][1]           data_in_3__1_
+adder           port    data_in[3][0]           data_in_3__0_
+adder           port    data_in[2][7]           data_in_2__7_
+adder           port    data_in[2][6]           data_in_2__6_
+adder           port    data_in[2][5]           data_in_2__5_
+adder           port    data_in[2][4]           data_in_2__4_
+adder           port    data_in[2][3]           data_in_2__3_
+adder           port    data_in[2][2]           data_in_2__2_
+adder           port    data_in[2][1]           data_in_2__1_
+adder           port    data_in[2][0]           data_in_2__0_
+adder           port    data_in[1][7]           data_in_1__7_
+adder           port    data_in[1][6]           data_in_1__6_
+adder           port    data_in[1][5]           data_in_1__5_
+adder           port    data_in[1][4]           data_in_1__4_
+adder           port    data_in[1][3]           data_in_1__3_
+adder           port    data_in[1][2]           data_in_1__2_
+adder           port    data_in[1][1]           data_in_1__1_
+adder           port    data_in[1][0]           data_in_1__0_
+adder           port    data_in[0][7]           data_in_0__7_
+adder           port    data_in[0][6]           data_in_0__6_
+adder           port    data_in[0][5]           data_in_0__5_
+adder           port    data_in[0][4]           data_in_0__4_
+adder           port    data_in[0][3]           data_in_0__3_
+adder           port    data_in[0][2]           data_in_0__2_
+adder           port    data_in[0][1]           data_in_0__1_
+adder           port    data_in[0][0]           data_in_0__0_
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG88_S4 DP_OP_12J1_122_5326_clk_r_REG88_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG93_S4 DP_OP_12J1_122_5326_clk_r_REG93_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG87_S4 DP_OP_12J1_122_5326_clk_r_REG87_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG91_S4 DP_OP_12J1_122_5326_clk_r_REG91_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG89_S4 DP_OP_12J1_122_5326_clk_r_REG89_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG90_S4 DP_OP_12J1_122_5326_clk_r_REG90_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG95_S4 DP_OP_12J1_122_5326_clk_r_REG95_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG264_S4 DP_OP_12J1_122_5326_clk_r_REG264_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG94_S4 DP_OP_12J1_122_5326_clk_r_REG94_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG92_S4 DP_OP_12J1_122_5326_clk_r_REG92_S4
+adder           cell    DP_OP_12J1_122_5326/clk_r_REG96_S4 DP_OP_12J1_122_5326_clk_r_REG96_S4
+adder           net     data_in[31]             data_in_3__7_
+adder           net     data_in[30]             data_in_3__6_
+adder           net     data_in[29]             data_in_3__5_
+adder           net     data_in[28]             data_in_3__4_
+adder           net     data_in[27]             data_in_3__3_
+adder           net     data_in[26]             data_in_3__2_
+adder           net     data_in[25]             data_in_3__1_
+adder           net     data_in[24]             data_in_3__0_
+adder           net     data_in[23]             data_in_2__7_
+adder           net     data_in[22]             data_in_2__6_
+adder           net     data_in[21]             data_in_2__5_
+adder           net     data_in[20]             data_in_2__4_
+adder           net     data_in[19]             data_in_2__3_
+adder           net     data_in[18]             data_in_2__2_
+adder           net     data_in[17]             data_in_2__1_
+adder           net     data_in[16]             data_in_2__0_
+adder           net     data_in[15]             data_in_1__7_
+adder           net     data_in[14]             data_in_1__6_
+adder           net     data_in[13]             data_in_1__5_
+adder           net     data_in[12]             data_in_1__4_
+adder           net     data_in[11]             data_in_1__3_
+adder           net     data_in[10]             data_in_1__2_
+adder           net     data_in[9]              data_in_1__1_
+adder           net     data_in[8]              data_in_1__0_
+adder           net     data_in[7]              data_in_0__7_
+adder           net     data_in[6]              data_in_0__6_
+adder           net     data_in[5]              data_in_0__5_
+adder           net     data_in[4]              data_in_0__4_
+adder           net     data_in[3]              data_in_0__3_
+adder           net     data_in[2]              data_in_0__2_
+adder           net     data_in[1]              data_in_0__1_
+adder           net     data_in[0]              data_in_0__0_
+adder           net     DP_OP_12J1_122_5326/n43 DP_OP_12J1_122_5326_n43
+adder           net     DP_OP_12J1_122_5326/n42 DP_OP_12J1_122_5326_n42
+adder           net     DP_OP_12J1_122_5326/n26 DP_OP_12J1_122_5326_n26
+adder           net     DP_OP_12J1_122_5326/n25 DP_OP_12J1_122_5326_n25
+adder           net     DP_OP_12J1_122_5326/n24 DP_OP_12J1_122_5326_n24
+adder           net     DP_OP_12J1_122_5326/n22 DP_OP_12J1_122_5326_n22
+adder           net     DP_OP_12J1_122_5326/n17 DP_OP_12J1_122_5326_n17
+adder           net     DP_OP_12J1_122_5326/n16 DP_OP_12J1_122_5326_n16
+adder           net     DP_OP_12J1_122_5326/n14 DP_OP_12J1_122_5326_n14
+MULT_single_3   net     n192                    reset
+MULT_single_2   net     n192                    reset
+MULT_single_1   net     n192                    reset
+1
+1
+# Generate structural verilog netlist
+write -hierarchy -format verilog -output "./data/${top_level}.syn.v"
+Writing verilog file '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/PE_top_new/data/PE_top.syn.v'.
+1
+# Generate Standard Delay Format (SDF) file
+write_sdf -context verilog "./data/${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/PE_top_new/data/PE_top.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate timing constraints file
+write_sdc "./data/${top_level}.syn.sdc"
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "./report/${top_level}.syn.rpt"
+./report/PE_top.syn.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+# Exit dc_shell
+quit
+
+Memory usage for this session 206 Mbytes.
+Memory usage for this session including child processes 206 Mbytes.
+CPU usage for this session 28 seconds ( 0.01 hours ).
+Elapsed time for this session 32 seconds ( 0.01 hours ).
+
+Thank you...

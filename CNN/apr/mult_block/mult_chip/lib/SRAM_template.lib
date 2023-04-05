@@ -1,0 +1,2839 @@
+
+library("SRAM_template") {
+
+  technology (cmos) ;
+  delay_model : table_lookup ;
+  library_features ( report_delay_calculation ) ;
+  date : "Thu Apr 14 13:15:01 2022" ;
+  revision : "S-2021.06-SP1" ;
+  nom_process : 1.0000 ;
+  nom_voltage : 1.2000 ;
+  nom_temperature : 25.0000 ;
+  operating_conditions( "typical"  ) {
+      process : 1.0000 ;
+      voltage : 1.2000 ;
+      temperature : 25.0000 ;
+   } /* current design opcond */
+  default_operating_conditions : "typical" ;
+  voltage_unit : "1V" ;
+  time_unit : "1ns" ;
+  capacitive_load_unit (1.000000, pf);
+  slew_derate_from_library : 0.5000 ;
+  slew_lower_threshold_pct_rise : 30.0000 ;
+  slew_lower_threshold_pct_fall : 30.0000 ;
+  slew_upper_threshold_pct_rise : 70.0000 ;
+  slew_upper_threshold_pct_fall : 70.0000 ;
+  input_threshold_pct_rise : 50.0000 ;
+  input_threshold_pct_fall : 50.0000 ;
+  output_threshold_pct_rise : 50.0000 ;
+  output_threshold_pct_fall : 50.0000 ;
+  k_process_cell_rise : 0.000000;
+  k_process_cell_fall : 0.000000;
+  k_volt_cell_rise : 0.000000;
+  k_volt_cell_fall : 0.000000;
+  k_temp_cell_rise : 0.000000;
+  k_temp_cell_fall : 0.000000;
+  k_process_rise_transition : 0.000000;
+  k_process_fall_transition : 0.000000;
+  k_volt_rise_transition : 0.000000;
+  k_volt_fall_transition : 0.000000;
+  k_temp_rise_transition : 0.000000;
+  k_temp_fall_transition : 0.000000;
+  default_fanout_load : 1.0;
+  default_inout_pin_cap : 1.0;
+  default_input_pin_cap : 1.0;
+  default_output_pin_cap : 0.0;
+  current_unit : 1mA;
+  pulling_resistance_unit : "1kohm";
+  comment : "PrimeTime qtm Model." ;
+ 
+  define(min_delay_flag, timing, boolean);
+  define(internal_noise_width_above_low, pin, float);
+  define(internal_noise_height_below_high, pin, float);
+  define(original_pin, pin, string);
+  define(max_noise_immunity_low, pin, float);
+  define(is_unconstrained, pin, boolean);
+  define(internal_noise_width_below_high, pin, float);
+  define(internal_noise_peak_time_below_high, pin, float);
+  define(internal_noise_height_above_low, pin, float);
+  define(max_noise_immunity_high, pin, float);
+  define(internal_noise_peak_time_above_low, pin, float);
+
+
+
+/* SCALAR table template is built-in */
+
+/* 2-D table template f(in_trans, out_cap) */
+lu_table_template( f_itrans_ocap ) {
+	variable_1 : input_net_transition;
+	variable_2 : total_output_net_capacitance;
+	index_1 (" 0.0000, 1.0000 ");
+	index_2 (" 0.0000, 1.0000 ");
+}
+
+/* 2-D table template f(d_trans, c_trans) */
+lu_table_template( f_dtrans_ctrans ) {
+	variable_1 : constrained_pin_transition;
+	variable_2 : related_pin_transition;
+	index_1 (" 0.0000, 1.0000 ");
+	index_2 (" 0.0000, 1.0000 ");
+}
+
+type ( BUS12_type0 ) {
+	base_type : array ;
+	data_type : bit ;
+	bit_width : 12 ;
+	bit_from : 11 ;
+	bit_to : 0 ;
+	downto : true ;
+} /* end of type */
+type ( BUS16_type1 ) {
+	base_type : array ;
+	data_type : bit ;
+	bit_width : 16 ;
+	bit_from : 15 ;
+	bit_to : 0 ;
+	downto : true ;
+} /* end of type */
+
+cell( SRAM_template ) {
+  area : 219342.000000 ;
+  dont_use : true ;
+  dont_touch : true ;
+  interface_timing : true;
+  timing_model_type : "qtm";
+
+pin("CLK") {
+	direction : input ;
+	capacitance : 0.001646 ;
+} /* end of pin CLK */
+
+pin("CEN") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin CEN */
+
+pin("WEN") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin WEN */
+bus ( A ) {
+
+	bus_type  : BUS12_type0 ;
+	direction : input ;
+
+pin("A[11]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[11] */
+
+pin("A[10]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[10] */
+
+pin("A[9]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[9] */
+
+pin("A[8]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[8] */
+
+pin("A[7]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[7] */
+
+pin("A[6]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[6] */
+
+pin("A[5]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[5] */
+
+pin("A[4]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[4] */
+
+pin("A[3]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[3] */
+
+pin("A[2]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[2] */
+
+pin("A[1]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[1] */
+
+pin("A[0]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin A[0] */
+} /* end of bus A */
+bus ( D ) {
+
+	bus_type  : BUS16_type1 ;
+	direction : input ;
+
+pin("D[15]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[15] */
+
+pin("D[14]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[14] */
+
+pin("D[13]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[13] */
+
+pin("D[12]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[12] */
+
+pin("D[11]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[11] */
+
+pin("D[10]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[10] */
+
+pin("D[9]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[9] */
+
+pin("D[8]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[8] */
+
+pin("D[7]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[7] */
+
+pin("D[6]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[6] */
+
+pin("D[5]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[5] */
+
+pin("D[4]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[4] */
+
+pin("D[3]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[3] */
+
+pin("D[2]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[2] */
+
+pin("D[1]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[1] */
+
+pin("D[0]") {
+	direction : input ;
+	capacitance : 0.001019 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : setup_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.664062, 0.632812, 0.636719",\
+				  "0.695312, 0.667969, 0.667969",\
+				  "0.742188, 0.710938, 0.707031");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.644531, 0.609375, 0.597656",\
+				  "0.695312, 0.660156, 0.648438",\
+				  "0.843750, 0.808594, 0.796875");
+		}
+
+	} /* end of arc CLK_to_CEN*/
+
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : hold_rising ;
+		rise_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.433594, 0.437500, 0.421875",\
+				  "0.398438, 0.406250, 0.394531",\
+				  "0.367188, 0.382812, 0.375000");
+		}
+		fall_constraint( f_dtrans_ctrans ){
+			index_1 ( "0.028000, 0.264000, 1.020000");
+			index_2 ( "0.028000, 0.264000, 0.516000");
+			values ( "0.468750, 0.492188, 0.500000",\
+				  "0.417969, 0.445312, 0.453125",\
+				  "0.308594, 0.332031, 0.343750");
+		}
+
+	} /* end of arc CLK_to_CEN_1*/
+
+} /* end of pin D[0] */
+} /* end of bus D */
+bus ( Q ) {
+
+	bus_type  : BUS16_type1 ;
+	direction : output ;
+
+pin("Q[15]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[15]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[15]_drive_arc*/
+
+} /* end of pin Q[15] */
+
+pin("Q[14]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[14]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[14]_drive_arc*/
+
+} /* end of pin Q[14] */
+
+pin("Q[13]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[13]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[13]_drive_arc*/
+
+} /* end of pin Q[13] */
+
+pin("Q[12]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[12]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[12]_drive_arc*/
+
+} /* end of pin Q[12] */
+
+pin("Q[11]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[11]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[11]_drive_arc*/
+
+} /* end of pin Q[11] */
+
+pin("Q[10]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[10]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[10]_drive_arc*/
+
+} /* end of pin Q[10] */
+
+pin("Q[9]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[9]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[9]_drive_arc*/
+
+} /* end of pin Q[9] */
+
+pin("Q[8]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[8]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[8]_drive_arc*/
+
+} /* end of pin Q[8] */
+
+pin("Q[7]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[7]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[7]_drive_arc*/
+
+} /* end of pin Q[7] */
+
+pin("Q[6]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[6]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[6]_drive_arc*/
+
+} /* end of pin Q[6] */
+
+pin("Q[5]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[5]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[5]_drive_arc*/
+
+} /* end of pin Q[5] */
+
+pin("Q[4]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[4]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[4]_drive_arc*/
+
+} /* end of pin Q[4] */
+
+pin("Q[3]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[3]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[3]_drive_arc*/
+
+} /* end of pin Q[3] */
+
+pin("Q[2]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[2]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[2]_drive_arc*/
+
+} /* end of pin Q[2] */
+
+pin("Q[1]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[1]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[1]_drive_arc*/
+
+} /* end of pin Q[1] */
+
+pin("Q[0]") {
+	direction : output ;
+	capacitance : 0.0 ;
+	timing () {
+		related_pin : "Q[0]_drive" ;
+		timing_type : combinational ;
+		timing_sense : positive_unate ;
+		cell_rise( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.048913, 0.056885, 0.072637, 0.103237, 0.163658, 0.282991, 0.523914",\
+				  "0.052690, 0.060572, 0.076276, 0.106859, 0.167310, 0.286676, 0.527625",\
+				  "0.059799, 0.067670, 0.083268, 0.113796, 0.174276, 0.293724, 0.534719",\
+				  "0.069420, 0.077518, 0.093247, 0.123573, 0.183960, 0.303416, 0.544470",\
+				  "0.079467, 0.088274, 0.104226, 0.134502, 0.194797, 0.314094, 0.555132",\
+				  "0.086385, 0.096528, 0.113592, 0.143887, 0.203783, 0.323055, 0.563882",\
+				  "0.081940, 0.093965, 0.113878, 0.145666, 0.205514, 0.324334, 0.565060");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024638, 0.036457, 0.062790, 0.117402, 0.227259, 0.445507, 0.886859",\
+				  "0.024754, 0.036300, 0.062874, 0.117465, 0.227295, 0.445508, 0.886859",\
+				  "0.025492, 0.036791, 0.062822, 0.117420, 0.227274, 0.445500, 0.886855",\
+				  "0.027840, 0.038552, 0.063739, 0.117519, 0.227290, 0.445506, 0.886859",\
+				  "0.032866, 0.042539, 0.065853, 0.118708, 0.227715, 0.445507, 0.886859",\
+				  "0.041064, 0.050573, 0.071074, 0.120553, 0.228813, 0.446319, 0.886860",\
+				  "0.053256, 0.064428, 0.083750, 0.127348, 0.231707, 0.447760, 0.887986");
+		}
+		cell_fall( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.063852, 0.070157, 0.080707, 0.097664, 0.127120, 0.182307, 0.292699",\
+				  "0.068357, 0.074638, 0.085205, 0.102147, 0.131605, 0.186796, 0.297190",\
+				  "0.077871, 0.084137, 0.094701, 0.111643, 0.141106, 0.196306, 0.306705",\
+				  "0.096450, 0.102730, 0.113271, 0.130294, 0.159801, 0.214999, 0.325395",\
+				  "0.126585, 0.133591, 0.145207, 0.163224, 0.193152, 0.248298, 0.358570",\
+				  "0.170299, 0.178144, 0.191432, 0.211427, 0.243077, 0.299096, 0.409261",\
+				  "0.238986, 0.247908, 0.263059, 0.286010, 0.320411, 0.377832, 0.488303");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.028000, 0.044000, 0.076000, 0.138000, 0.264000, 0.516000, 1.020000");
+			index_2 ( "0.001580, 0.004108, 0.009480, 0.020224, 0.041712, 0.084372, 0.170640");
+			values ( "0.024488, 0.030381, 0.041213, 0.062606, 0.106519, 0.198451, 0.388843",\
+				  "0.024497, 0.030392, 0.041219, 0.062613, 0.106530, 0.198456, 0.388846",\
+				  "0.024539, 0.030429, 0.041315, 0.062636, 0.106544, 0.198460, 0.388847",\
+				  "0.025751, 0.031404, 0.042013, 0.062986, 0.106685, 0.198481, 0.388848",\
+				  "0.032632, 0.038054, 0.047906, 0.067157, 0.108392, 0.198761, 0.388857",\
+				  "0.042579, 0.048093, 0.058441, 0.076499, 0.115370, 0.202341, 0.389419",\
+				  "0.055914, 0.061860, 0.072966, 0.091095, 0.126474, 0.208348, 0.392987");
+		}
+
+	} /* end of arc Q[0]_drive_arc*/
+
+} /* end of pin Q[0] */
+} /* end of bus Q */
+
+pin("Q[15]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_9*/
+
+} /* end of pin Q[15]_drive */
+
+pin("Q[14]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_14*/
+
+} /* end of pin Q[14]_drive */
+
+pin("Q[13]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_4*/
+
+} /* end of pin Q[13]_drive */
+
+pin("Q[12]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_10*/
+
+} /* end of pin Q[12]_drive */
+
+pin("Q[11]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_16*/
+
+} /* end of pin Q[11]_drive */
+
+pin("Q[10]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_6*/
+
+} /* end of pin Q[10]_drive */
+
+pin("Q[9]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_12*/
+
+} /* end of pin Q[9]_drive */
+
+pin("Q[8]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]*/
+
+} /* end of pin Q[8]_drive */
+
+pin("Q[7]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_7*/
+
+} /* end of pin Q[7]_drive */
+
+pin("Q[6]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_13*/
+
+} /* end of pin Q[6]_drive */
+
+pin("Q[5]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_3*/
+
+} /* end of pin Q[5]_drive */
+
+pin("Q[4]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_8*/
+
+} /* end of pin Q[4]_drive */
+
+pin("Q[3]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_15*/
+
+} /* end of pin Q[3]_drive */
+
+pin("Q[2]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_5*/
+
+} /* end of pin Q[2]_drive */
+
+pin("Q[1]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_11*/
+
+} /* end of pin Q[1]_drive */
+
+pin("Q[0]_drive") {
+	direction : internal ;
+	capacitance : 0.000000 ;
+	timing () {
+		related_pin : "CLK" ;
+		timing_type : rising_edge ;
+		cell_rise( scalar ){
+			values ( "5.280850");
+		}
+		rise_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+		cell_fall( scalar ){
+			values ( "5.280850");
+		}
+		fall_transition( f_itrans_ocap ){
+			index_1 ( "0.000000, 1.000000");
+			index_2 ( "0.000000, 1.000000");
+			values ( "0.000000, 0.000000",\
+				  "1.000000, 1.000000");
+		}
+
+	} /* end of arc CLK_to_Q[15]_17*/
+
+} /* end of pin Q[0]_drive */
+
+} /* end of cell */
+
+} /* end of library */
+

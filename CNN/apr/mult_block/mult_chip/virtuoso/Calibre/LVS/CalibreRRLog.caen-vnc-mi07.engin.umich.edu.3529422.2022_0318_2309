@@ -1,0 +1,5 @@
+MTFLEX(0) <T 0 C 0 P 0 R 0> : CALIBRE PROCESS: HOSTNAME: caen-vnc-mi07.engin.umich.edu 3529422 PRIMARY
+MTFLEX(0) <T 0 C 0 P 0 R 0> : startup_threads() : system_query thread created
+MTFLEX(0) <T 0 C 0 P 0 R 0> : system_query() : START interval = 15 (monitor_print_interval = 0 proc_stat_interval = 15)
+MTFLEX(0) <T 0 C 0 P 0 R 0> : startup_threads() : dca_monitor thread created
+MTFLEX(0) <T 0 C 0 P 0 R 0> : dca_monitor() : START interval = 120

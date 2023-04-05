@@ -1,0 +1,127 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Mar 23 23:19:57 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.14-s109_1 (64bit) 06/29/2022 09:53 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.14-s109_1 NR220628-1629/21_14-UB (database version 18.20.582) {superthreading v2.17}
+#@(#)CDS: AAE 21.14-s031 (64bit) 06/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.14-s031_1 () Jun 22 2022 10:32:17 ( )
+#@(#)CDS: SYNTECH 21.14-s014_1 () May 29 2022 20:47:50 ( )
+#@(#)CDS: CPE v21.14-s062
+#@(#)CDS: IQuantus/TQuantus 21.1.1-w001 (64bit) Wed Jun 1 22:42:35 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+setMultiCpuUsage -acquireLicense 6 -localCpu 6
+set defHierChar /
+get_message -id GLOBAL-100 -suppress
+set locv_inter_clock_use_worst_derate false
+set init_oa_search_lib {}
+set init_verilog /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.v
+set init_design_netlisttype Verilog
+set init_pwr_net VDD
+set init_top_cell PE_top
+set init_gnd_net VSS
+set init_mmmc_file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/apr_view.tcl
+set init_lef_file {/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13_8lm_2thick_tech.lef  /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13rvt_macros.lef  }
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set timing_case_analysis_for_icg_propagation false
+init_design
+loadIoFile -noAdjustDieSize /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/PE_top.io
+floorPlan -noSnapToGrid -s 336 336 7 7 7 7
+saveDesign db/PE_top_floor_planned.enc
+saveDesign db/PE_top_insts_placed.enc
+zoomBox -55.14700 -85.39000 405.84500 327.29600
+zoomBox -131.05500 -260.68400 752.06300 529.89500
+zoomBox -1346.95000 -815.43000 3693.36600 1817.44000
+zoomBox -718.22500 -377.10100 1912.85200 997.27400
+zoomBox -399.64900 -105.55500 767.77700 504.26400
+loadIoFile scripts/PE_top.io
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.16 -pinDepth 0.76 -fixOverlap 1 -layer 3 -pin clk
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 3 -pin {pe_in_pk_A__0__0_ pe_in_pk_A__0__1_ pe_in_pk_A__0__2_ pe_in_pk_A__0__3_ pe_in_pk_A__0__4_ pe_in_pk_A__0__5_ pe_in_pk_A__0__6_ pe_in_pk_A__0__7_ pe_in_pk_A__1__0_ pe_in_pk_A__1__1_ pe_in_pk_A__1__2_ pe_in_pk_A__1__3_ pe_in_pk_A__1__4_ pe_in_pk_A__1__5_ pe_in_pk_A__1__6_ pe_in_pk_A__1__7_ pe_in_pk_A__2__0_ pe_in_pk_A__2__1_ pe_in_pk_A__2__2_ pe_in_pk_A__2__3_ pe_in_pk_A__2__4_ pe_in_pk_A__2__5_ pe_in_pk_A__2__6_ pe_in_pk_A__2__7_ pe_in_pk_A__3__0_ pe_in_pk_A__3__1_ pe_in_pk_A__3__2_ pe_in_pk_A__3__3_ pe_in_pk_A__3__4_ pe_in_pk_A__3__5_ pe_in_pk_A__3__6_ pe_in_pk_A__3__7_}
+setPinAssignMode -pinEditInBatch false
+zoomBox -215.98500 -51.52200 393.42000 266.80800
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 3 -pin reset
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -layer 2 -pin {pe_out_pk_PE_state__2_ pe_in_pk_PE_state__0_ pe_in_pk_PE_state__1_ pe_in_pk_PE_state__2_ pe_in_pk_rdb_addr__0_ pe_in_pk_rdb_addr__1_ pe_in_pk_rdb_addr__2_ pe_in_pk_rdb_addr__3_ pe_in_pk_wrb__0_ pe_in_pk_wrb__1_ pe_in_pk_wrb__2_ pe_in_pk_wrb__3_ pe_in_pk_wrb_addr__0_ pe_in_pk_wrb_addr__1_ pe_in_pk_wrb_addr__2_ pe_in_pk_wrb_addr__3_ pe_in_pk_wrb_data__0_ pe_in_pk_wrb_data__1_ pe_in_pk_wrb_data__2_ pe_in_pk_wrb_data__3_ pe_in_pk_wrb_data__4_ pe_in_pk_wrb_data__5_ pe_in_pk_wrb_data__6_ pe_in_pk_wrb_data__7_ pe_out_pk_data__0_ pe_out_pk_data__1_ pe_out_pk_data__2_ pe_out_pk_data__3_ pe_out_pk_data__4_ pe_out_pk_data__5_ pe_out_pk_data__6_ pe_out_pk_data__7_ pe_out_pk_PE_state__0_ pe_out_pk_PE_state__1_}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 2 -pin {pe_out_pk_PE_state__2_ pe_in_pk_PE_state__0_ pe_in_pk_PE_state__1_ pe_in_pk_PE_state__2_ pe_in_pk_rdb_addr__0_ pe_in_pk_rdb_addr__1_ pe_in_pk_rdb_addr__2_ pe_in_pk_rdb_addr__3_ pe_in_pk_wrb__0_ pe_in_pk_wrb__1_ pe_in_pk_wrb__2_ pe_in_pk_wrb__3_ pe_in_pk_wrb_addr__0_ pe_in_pk_wrb_addr__1_ pe_in_pk_wrb_addr__2_ pe_in_pk_wrb_addr__3_ pe_in_pk_wrb_data__0_ pe_in_pk_wrb_data__1_ pe_in_pk_wrb_data__2_ pe_in_pk_wrb_data__3_ pe_in_pk_wrb_data__4_ pe_in_pk_wrb_data__5_ pe_in_pk_wrb_data__6_ pe_in_pk_wrb_data__7_ pe_out_pk_data__0_ pe_out_pk_data__1_ pe_out_pk_data__2_ pe_out_pk_data__3_ pe_out_pk_data__4_ pe_out_pk_data__5_ pe_out_pk_data__6_ pe_out_pk_data__7_ pe_out_pk_PE_state__0_ pe_out_pk_PE_state__1_}
+setPinAssignMode -pinEditInBatch false
+zoomBox -397.59500 -86.48500 594.72200 431.86400
+zoomBox -578.14900 -119.25300 795.30100 598.18500
+zoomBox -263.72500 106.51600 453.22600 481.02400
+zoomBox -131.22700 201.65600 309.07300 431.65200
+zoomBox -40.48400 268.82400 189.35700 388.88400
+zoomBox -0.24000 299.05400 140.91100 372.78600
+zoomBox 30.75500 322.49100 104.43700 360.98000
+zoomBox 46.93200 334.72400 85.39700 354.81700
+zoomBox 16.51100 311.38000 118.50500 364.65800
+zoomBox -27.28800 277.88200 168.10100 379.94600
+zoomBox -142.59500 191.18900 297.76800 421.21800
+zoomBox -414.93500 1.31800 577.53700 519.74800
+zoomBox -721.26200 -207.02000 894.81400 637.15700
+zoomBox -503.75100 -104.98300 663.86600 504.93600
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose -override
+globalNetConnect VSS -type tielo -inst * -verbose
+globalNetConnect VDD -type tiehi -inst * -verbose
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M3 bottom M3 left M2 right M2} -rectangle 1
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M3 bottom M3 left M4 right M4} -rectangle 1
+saveDesign db/PE_top_pad_power_defined.enc
+sroute -allowJogging 0 -connect corePin -nets {VSS VDD} -layerChangeRange {M1 M1} -crossoverViaTopLayer M1
+setAddStripeMode -stacked_via_bottom_layer M1 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction vertical -layer M4 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 278
+setAddStripeMode -stacked_via_bottom_layer M3 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction horizontal -layer M3 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 378
+saveDesign db/PE_top_power_grid.enc
+zoomBox -259.47100 99.79500 350.03300 418.17700
+zoomBox -155.40700 191.80900 218.90500 387.33500
+zoomBox -88.55700 249.41300 141.31800 369.49100
+zoomBox -45.34300 286.88800 95.83100 360.63200
+zoomBox -17.09900 314.40100 56.59700 352.89700
+zoomBox -38.37700 284.80000 102.80100 358.54600
+zoomBox 0.22500 312.37300 73.92100 350.86900
+zoomBox 15.65900 324.93000 60.91900 348.57200
+zoomBox 28.31800 336.64900 48.40100 347.14000
+zoomBox 32.21300 340.25600 44.54800 346.69900
+zoomBox 24.42200 334.04300 52.22400 348.56600
+zoomBox 0.89300 315.87900 74.61400 354.38800
+zoomBox -52.52600 276.86800 113.62500 363.65900
+zoomBox -211.11200 161.05700 229.43500 391.18200
+zoomBox -530.32900 -72.06000 462.55200 446.58300
+zoomBox -750.56200 -231.59800 623.66900 486.24800
+zoomBox -467.24100 -107.24200 525.64100 411.40200
+zoomBox -217.44200 66.71500 392.31300 385.22800
+zoomBox 3.48900 224.75300 274.04200 366.08000
+zoomBox 87.54900 284.57500 228.78100 358.34900
+zoomBox 130.90200 314.29800 204.62700 352.80900
+zoomBox 156.65200 331.12500 189.36600 348.21400
+zoomBox 129.43500 315.34400 203.17000 353.86000
+zoomBox 84.80100 289.62300 226.05500 363.40900
+zoomBox 49.13400 269.31600 244.64200 371.44200
+zoomBox 28.91000 256.58200 258.91900 376.73000
+zoomBox 4.02300 241.77700 274.62300 383.12800
+zoomBox -25.25500 224.35900 293.09800 390.65500
+zoomBox -59.70100 203.86800 314.83300 399.51000
+zoomBox -100.22400 179.76100 340.40400 409.92800
+zoomBox -59.32500 242.66300 211.27700 384.01500
+zoomBox -28.21200 290.51400 113.04600 364.30200

@@ -1,0 +1,989 @@
+1
+ 
+****************************************
+Report : area
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                            8
+Number of nets:                            16
+Number of cells:                           11
+Number of combinational cells:              2
+Number of sequential cells:                 9
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       3
+
+Combinational area:                  8.640000
+Buf/Inv area:                        8.640000
+Noncombinational area:             272.159998
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1493.340820
+
+Total cell area:                   280.799998
+Total area:                       1774.140819
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+state_delay_FIFO_3     ibm13_wl10        typical
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+state_delay_FIFO_3                     1.02e-02    0.145 8.69e+03    0.155 100.0
+1
+ 
+****************************************
+Report : design
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Local Link Library:
+
+    {typical.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ibm13_wl10
+Location       :   typical
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   66.667
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    66.67
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        CLKINVX2TR      typical         4.320000  
+U4                        INVX1TR         typical         4.320000  
+dff_chain_0__data_out_reg_0_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_0__data_out_reg_1_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_0__data_out_reg_2_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_1__data_out_reg_0_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_1__data_out_reg_1_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_1__data_out_reg_2_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_2__data_out_reg_0_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_2__data_out_reg_1_
+                          DFFTRX1TR       typical         30.240000 n
+dff_chain_2__data_out_reg_2_
+                          DFFTRX1TR       typical         30.240000 n
+--------------------------------------------------------------------------------
+Total 11 cells                                            280.799998
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clock          in      0.0000   0.0000    1.02    0.17   --         d
+data_in[0]     in      0.0000   0.0000    1.02    0.17   --         
+data_in[1]     in      0.0000   0.0000    1.02    0.17   --         
+data_in[2]     in      0.0000   0.0000    1.02    0.17   --         
+reset          in      0.0000   0.0000    1.02    0.17   --         
+data_out[0]    out     0.0100   0.0000   --      --      --         
+data_out[1]    out     0.0100   0.0000   --      --      --         
+data_out[2]    out     0.0100   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clock              1      --              --              --        -- 
+data_in[0]         1      --              --              --        -- 
+data_in[1]         1      --              --              --        -- 
+data_in[2]         1      --              --              --        -- 
+reset              1      --              --              --        -- 
+data_out[0]        1      --              --              --        -- 
+data_out[1]        1      --              --              --        -- 
+data_out[2]        1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clock         --      --      --      --      --      -- 
+data_in[0]    0.10    0.10    0.10    0.10  clock     --    
+data_in[1]    0.10    0.10    0.10    0.10  clock     --    
+data_in[2]    0.10    0.10    0.10    0.10  clock     --    
+reset         0.10    0.10    0.10    0.10  clock     --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clock        INVX2TR            INVX2TR              -- /  --     
+data_in[0]   INVX2TR            INVX2TR              -- /  --     
+data_in[1]   INVX2TR            INVX2TR              -- /  --     
+data_in[2]   INVX2TR            INVX2TR              -- /  --     
+reset        INVX2TR            INVX2TR              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clock         --      --     --      --     --      --     --     --        -- 
+data_in[0]    --      --     --      --     --      --     --     --        -- 
+data_in[1]    --      --     --      --     --      --     --     --        -- 
+data_in[2]    --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clock         --      --      --      -- 
+data_in[0]    --      --      --      -- 
+data_in[1]    --      --      --      -- 
+data_in[2]    --      --      --      -- 
+reset         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+data_out[0]   0.10    0.10    0.10    0.10  clock     0.00  
+data_out[1]   0.10    0.10    0.10    0.10  clock     0.00  
+data_out[2]   0.10    0.10    0.10    0.10  clock     0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+state_delay_FIFO_3                       flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : state_delay_FIFO_3
+Version: T-2022.03-SP3
+Date   : Mon Mar 27 19:44:47 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_0__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_0__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_1__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_1__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_2__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_2__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_0__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_1__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  reset (in)                                              0.04       0.14 r
+  U3/Y (CLKINVX2TR)                                       0.28       0.41 f
+  dff_chain_2__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.23       1.17
+  data required time                                                 1.17
+  --------------------------------------------------------------------------
+  data required time                                                 1.17
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_0__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_0__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_1__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_1__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_2__data_out_reg_1_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_1_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_2__data_out_reg_2_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_2_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_0__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_0__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_0__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_1__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dff_chain_2__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  reset (in)                                              0.01       0.11 f
+  U3/Y (CLKINVX2TR)                                       0.28       0.40 r
+  dff_chain_2__data_out_reg_0_/RN (DFFTRX1TR)             0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_2__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.18       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: dff_chain_2__data_out_reg_0_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: data_out[0]
+            (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dff_chain_2__data_out_reg_0_/CK (DFFTRX1TR)             0.00       0.00 r
+  dff_chain_2__data_out_reg_0_/QN (DFFTRX1TR)             0.45       0.45 r
+  data_out[0] (out)                                       0.00       0.45 r
+  data arrival time                                                  0.45
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  output external delay                                  -0.10       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.85
+
+
+  Startpoint: dff_chain_0__data_out_reg_0_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dff_chain_1__data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  state_delay_FIFO_3 ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dff_chain_0__data_out_reg_0_/CK (DFFTRX1TR)             0.00       0.00 r
+  dff_chain_0__data_out_reg_0_/Q (DFFTRX1TR)              0.33       0.33 f
+  dff_chain_1__data_out_reg_0_/D (DFFTRX1TR)              0.00       0.33 f
+  data arrival time                                                  0.33
+
+  clock clock (rise edge)                                 1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  dff_chain_1__data_out_reg_0_/CK (DFFTRX1TR)             0.00       1.40 r
+  library setup time                                     -0.14       1.26
+  data required time                                                 1.26
+  --------------------------------------------------------------------------
+  data required time                                                 1.26
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+1

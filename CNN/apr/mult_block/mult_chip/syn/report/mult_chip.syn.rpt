@@ -1,0 +1,1627 @@
+ 
+****************************************
+check_design summary:
+Version:     S-2021.06-SP1
+Date:        Sat Mar 26 17:36:22 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              24
+    Cells do not drive (LINT-1)                                    20
+    Cells do not have output pins (LINT-10)                         4
+--------------------------------------------------------------------------------
+
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NW' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NE' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SW' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SE' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NW' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NE' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SW' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SE' has no output pins. (LINT-10)
+1
+ 
+****************************************
+Report : area
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+    reset_driver_lib (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/reset_driver.db)
+    SIGN_MEM (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db)
+    mult_block (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/mult_block.db)
+    arti_ibm13io_syn_tt (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db)
+
+Number of ports:                           98
+Number of nets:                           285
+Number of cells:                          187
+Number of combinational cells:            148
+Number of sequential cells:                30
+Number of macros/black boxes:               7
+Number of buf/inv:                          9
+Number of references:                       8
+
+Combinational area:             848007.760000
+Buf/Inv area:                   276686.080002
+Noncombinational area:          277103.679985
+Macro/Black Box area:           480284.265625
+Net Interconnect area:           23986.785645
+
+Total cell area:               1605395.705610
+Total area:                    1629382.491255
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+    reset_driver_lib (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/reset_driver.db)
+    SIGN_MEM (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db)
+    mult_block (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/mult_block.db)
+    arti_ibm13io_syn_tt (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db)
+
+Information: The library cell 'mult_block' in the library 'mult_block' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mult_chip              ibm13_wl10        typical
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+mult_chip                                 0.111   12.126 1.35e+07   12.250 100.0
+  u_core (mult_chip_core)              3.13e-02    4.138 5.63e+05    4.170  34.0
+    u_reset_driver (reset_driver)      1.54e-03    0.000    0.000 1.54e-03   0.0
+1
+ 
+****************************************
+Report : design
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+    reset_driver_lib (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/reset_driver.db)
+    SIGN_MEM (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db)
+    mult_block (File: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/lib/mult_block.db)
+    arti_ibm13io_syn_tt (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db)
+
+Local Link Library:
+
+    {typical.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ibm13_wl10
+Location       :   typical
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   66.667
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    66.67
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+u_PAD_CLK                 PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_CORNER_NE           PCORNER         arti_ibm13io_syn_tt
+                                                          61009.000000
+                                                                    b, d
+u_PAD_CORNER_NW           PCORNER         arti_ibm13io_syn_tt
+                                                          61009.000000
+                                                                    b, d
+u_PAD_CORNER_SE           PCORNER         arti_ibm13io_syn_tt
+                                                          61009.000000
+                                                                    b, d
+u_PAD_CORNER_SW           PCORNER         arti_ibm13io_syn_tt
+                                                          61009.000000
+                                                                    b, d
+u_PAD_DVDD_E0             PDVDD           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVDD_N0             PDVDD           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVDD_S0             PDVDD           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVDD_W0             PDVDD           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVSS_E0             PDVSS           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVSS_N0             PDVSS           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVSS_S0             PDVSS           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_DVSS_W0             PDVSS           arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_RESET               PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR0          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR1          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR2          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR3          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR4          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR5          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR6          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR7          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR8          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR9          PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR10         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_ADDR11         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_CEN            PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_EXT            PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA0         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA1         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA2         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA3         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA4         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA5         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA6         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA7         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA8         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA9         POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA10        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA11        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA12        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA13        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA14        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_RDATA15        POC24A          arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA0         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA1         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA2         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA3         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA4         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA5         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA6         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA7         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA8         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA9         PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA10        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA11        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA12        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA13        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA14        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WDATA15        PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_SMEM_WEN            PICS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d
+u_PAD_VDD_E0              PVDD            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VDD_N0              PVDD            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VDD_S0              PVDD            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VDD_W0              PVDD            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VSS_E0              PVSS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VSS_N0              PVSS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VSS_S0              PVSS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_PAD_VSS_W0              PVSS            arti_ibm13io_syn_tt
+                                                          17290.000000
+                                                                    d, n
+u_core                    mult_chip_core                  237509.705610
+                                                                    b, h, n
+--------------------------------------------------------------------------------
+Total 70 cells                                            1605395.705610
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+i_clk          in      0.0000   0.0000   --      --      --         d
+i_reset        in      0.0000   0.0000   --      --      --         
+i_smem_addr[0] in      0.0000   0.0000   --      --      --         
+i_smem_addr[1] in      0.0000   0.0000   --      --      --         
+i_smem_addr[2] in      0.0000   0.0000   --      --      --         
+i_smem_addr[3] in      0.0000   0.0000   --      --      --         
+i_smem_addr[4] in      0.0000   0.0000   --      --      --         
+i_smem_addr[5] in      0.0000   0.0000   --      --      --         
+i_smem_addr[6] in      0.0000   0.0000   --      --      --         
+i_smem_addr[7] in      0.0000   0.0000   --      --      --         
+i_smem_addr[8] in      0.0000   0.0000   --      --      --         
+i_smem_addr[9] in      0.0000   0.0000   --      --      --         
+i_smem_addr[10]
+               in      0.0000   0.0000   --      --      --         
+i_smem_addr[11]
+               in      0.0000   0.0000   --      --      --         
+i_smem_cen     in      0.0000   0.0000   --      --      --         
+i_smem_ext     in      0.0000   0.0000   --      --      --         
+i_smem_wdata[0]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[1]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[2]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[3]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[4]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[5]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[6]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[7]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[8]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[9]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[10]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[11]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[12]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[13]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[14]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wdata[15]
+               in      0.0000   0.0000   --      --      --         
+i_smem_wen     in      0.0000   0.0000   --      --      --         
+o_smem_rdata[0]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[1]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[2]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[3]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[4]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[5]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[6]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[7]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[8]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[9]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[10]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[11]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[12]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[13]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[14]
+               out     0.2000   0.0000   --      --      --         
+o_smem_rdata[15]
+               out     0.2000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+i_clk              1      --              --              --        -- 
+i_reset            1      --              --              --        -- 
+i_smem_addr[0]
+                   1      --              --              --        -- 
+i_smem_addr[1]
+                   1      --              --              --        -- 
+i_smem_addr[2]
+                   1      --              --              --        -- 
+i_smem_addr[3]
+                   1      --              --              --        -- 
+i_smem_addr[4]
+                   1      --              --              --        -- 
+i_smem_addr[5]
+                   1      --              --              --        -- 
+i_smem_addr[6]
+                   1      --              --              --        -- 
+i_smem_addr[7]
+                   1      --              --              --        -- 
+i_smem_addr[8]
+                   1      --              --              --        -- 
+i_smem_addr[9]
+                   1      --              --              --        -- 
+i_smem_addr[10]
+                   1      --              --              --        -- 
+i_smem_addr[11]
+                   1      --              --              --        -- 
+i_smem_cen         1      --              --              --        -- 
+i_smem_ext         1      --              --              --        -- 
+i_smem_wdata[0]
+                   1      --              --              --        -- 
+i_smem_wdata[1]
+                   1      --              --              --        -- 
+i_smem_wdata[2]
+                   1      --              --              --        -- 
+i_smem_wdata[3]
+                   1      --              --              --        -- 
+i_smem_wdata[4]
+                   1      --              --              --        -- 
+i_smem_wdata[5]
+                   1      --              --              --        -- 
+i_smem_wdata[6]
+                   1      --              --              --        -- 
+i_smem_wdata[7]
+                   1      --              --              --        -- 
+i_smem_wdata[8]
+                   1      --              --              --        -- 
+i_smem_wdata[9]
+                   1      --              --              --        -- 
+i_smem_wdata[10]
+                   1      --              --              --        -- 
+i_smem_wdata[11]
+                   1      --              --              --        -- 
+i_smem_wdata[12]
+                   1      --              --              --        -- 
+i_smem_wdata[13]
+                   1      --              --              --        -- 
+i_smem_wdata[14]
+                   1      --              --              --        -- 
+i_smem_wdata[15]
+                   1      --              --              --        -- 
+i_smem_wen         1      --              --              --        -- 
+o_smem_rdata[0]
+                   1      --              --              --        -- 
+o_smem_rdata[1]
+                   1      --              --              --        -- 
+o_smem_rdata[2]
+                   1      --              --              --        -- 
+o_smem_rdata[3]
+                   1      --              --              --        -- 
+o_smem_rdata[4]
+                   1      --              --              --        -- 
+o_smem_rdata[5]
+                   1      --              --              --        -- 
+o_smem_rdata[6]
+                   1      --              --              --        -- 
+o_smem_rdata[7]
+                   1      --              --              --        -- 
+o_smem_rdata[8]
+                   1      --              --              --        -- 
+o_smem_rdata[9]
+                   1      --              --              --        -- 
+o_smem_rdata[10]
+                   1      --              --              --        -- 
+o_smem_rdata[11]
+                   1      --              --              --        -- 
+o_smem_rdata[12]
+                   1      --              --              --        -- 
+o_smem_rdata[13]
+                   1      --              --              --        -- 
+o_smem_rdata[14]
+                   1      --              --              --        -- 
+o_smem_rdata[15]
+                   1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+i_clk         --      --      --      --      --      -- 
+i_reset       1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[0]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[1]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[2]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[3]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[4]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[5]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[6]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[7]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[8]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[9]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[10]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_addr[11]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_cen    1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_ext    1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[0]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[1]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[2]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[3]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[4]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[5]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[6]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[7]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[8]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[9]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[10]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[11]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[12]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[13]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[14]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wdata[15]
+              1.00    1.00    1.00    1.00  i_clk     --    
+i_smem_wen    1.00    1.00    1.00    1.00  i_clk     --    
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+i_clk         --      --     --      --     --      --     --     --        -- 
+i_reset       --      --     --      --     --      --     --     --        -- 
+i_smem_addr[0]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[1]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[2]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[3]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[4]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[5]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[6]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[7]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[8]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[9]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[10]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_addr[11]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_cen    --      --     --      --     --      --     --     --        -- 
+i_smem_ext    --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[0]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[1]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[2]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[3]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[4]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[5]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[6]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[7]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[8]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[9]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[10]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[11]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[12]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[13]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[14]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wdata[15]
+              --      --     --      --     --      --     --     --        -- 
+i_smem_wen    --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+i_clk         --      --      --      -- 
+i_reset       --      --      --      -- 
+i_smem_addr[0]
+              --      --      --      -- 
+i_smem_addr[1]
+              --      --      --      -- 
+i_smem_addr[2]
+              --      --      --      -- 
+i_smem_addr[3]
+              --      --      --      -- 
+i_smem_addr[4]
+              --      --      --      -- 
+i_smem_addr[5]
+              --      --      --      -- 
+i_smem_addr[6]
+              --      --      --      -- 
+i_smem_addr[7]
+              --      --      --      -- 
+i_smem_addr[8]
+              --      --      --      -- 
+i_smem_addr[9]
+              --      --      --      -- 
+i_smem_addr[10]
+              --      --      --      -- 
+i_smem_addr[11]
+              --      --      --      -- 
+i_smem_cen    --      --      --      -- 
+i_smem_ext    --      --      --      -- 
+i_smem_wdata[0]
+              --      --      --      -- 
+i_smem_wdata[1]
+              --      --      --      -- 
+i_smem_wdata[2]
+              --      --      --      -- 
+i_smem_wdata[3]
+              --      --      --      -- 
+i_smem_wdata[4]
+              --      --      --      -- 
+i_smem_wdata[5]
+              --      --      --      -- 
+i_smem_wdata[6]
+              --      --      --      -- 
+i_smem_wdata[7]
+              --      --      --      -- 
+i_smem_wdata[8]
+              --      --      --      -- 
+i_smem_wdata[9]
+              --      --      --      -- 
+i_smem_wdata[10]
+              --      --      --      -- 
+i_smem_wdata[11]
+              --      --      --      -- 
+i_smem_wdata[12]
+              --      --      --      -- 
+i_smem_wdata[13]
+              --      --      --      -- 
+i_smem_wdata[14]
+              --      --      --      -- 
+i_smem_wdata[15]
+              --      --      --      -- 
+i_smem_wen    --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+o_smem_rdata[0]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[1]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[2]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[3]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[4]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[5]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[6]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[7]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[8]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[9]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[10]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[11]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[12]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[13]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[14]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+o_smem_rdata[15]
+              1.00    1.00    1.00    1.00  i_clk     0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+mult_chip                                flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+
+mult_chip_core                           flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : mult_chip
+Version: S-2021.06-SP1
+Date   : Sat Mar 26 17:36:22 2022
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[11]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[11] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U9/Y (AND2X1TR)                                  0.32       4.48 r
+  u_core/o_smem_rdata[11] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA11/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[11] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[10]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[10] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U10/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[10] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA10/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[10] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[9]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[9] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U11/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[9] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA9/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[9] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[8]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[8] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U12/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[8] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA8/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[8] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[7]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[7] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U13/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[7] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA7/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[7] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[6]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[6] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U14/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[6] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA6/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[6] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[5]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[5] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U15/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[5] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA5/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[5] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[4]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[4] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U16/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[4] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA4/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[4] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[3]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[3] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U17/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[3] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA3/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[3] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[2]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[2] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U18/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[2] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA2/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[2] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[1]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[1] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U19/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[1] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA1/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[1] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[0]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[0] (SIGN_MEM)                       4.15       4.15 r
+  u_core/U20/Y (AND2X1TR)                                 0.32       4.48 r
+  u_core/o_smem_rdata[0] (mult_chip_core)                 0.00       4.48 r
+  u_PAD_SMEM_RDATA0/P (POC24A)                            2.17       6.65 r
+  o_smem_rdata[0] (out)                                   0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[15]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[15] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U5/Y (AND2X1TR)                                  0.32       4.48 r
+  u_core/o_smem_rdata[15] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA15/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[15] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[14]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[14] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U6/Y (AND2X1TR)                                  0.32       4.48 r
+  u_core/o_smem_rdata[14] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA14/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[14] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[13]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[13] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U7/Y (AND2X1TR)                                  0.32       4.48 r
+  u_core/o_smem_rdata[13] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA13/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[13] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[12]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[12] (SIGN_MEM)                      4.15       4.15 r
+  u_core/U8/Y (AND2X1TR)                                  0.32       4.48 r
+  u_core/o_smem_rdata[12] (mult_chip_core)                0.00       4.48 r
+  u_PAD_SMEM_RDATA12/P (POC24A)                           2.17       6.65 r
+  o_smem_rdata[12] (out)                                  0.00       6.65 r
+  data arrival time                                                  6.65
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[11]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[11] (SIGN_MEM)                      4.15       4.15 f
+  u_core/U9/Y (AND2X1TR)                                  0.23       4.39 f
+  u_core/o_smem_rdata[11] (mult_chip_core)                0.00       4.39 f
+  u_PAD_SMEM_RDATA11/P (POC24A)                           2.01       6.39 f
+  o_smem_rdata[11] (out)                                  0.00       6.39 f
+  data arrival time                                                  6.39
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.41
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[10]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[10] (SIGN_MEM)                      4.15       4.15 f
+  u_core/U10/Y (AND2X1TR)                                 0.23       4.39 f
+  u_core/o_smem_rdata[10] (mult_chip_core)                0.00       4.39 f
+  u_PAD_SMEM_RDATA10/P (POC24A)                           2.01       6.39 f
+  o_smem_rdata[10] (out)                                  0.00       6.39 f
+  data arrival time                                                  6.39
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.41
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[1]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[1] (SIGN_MEM)                       4.15       4.15 f
+  u_core/U19/Y (AND2X1TR)                                 0.23       4.39 f
+  u_core/o_smem_rdata[1] (mult_chip_core)                 0.00       4.39 f
+  u_PAD_SMEM_RDATA1/P (POC24A)                            2.01       6.39 f
+  o_smem_rdata[1] (out)                                   0.00       6.39 f
+  data arrival time                                                  6.39
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.41
+
+
+  Startpoint: u_core/u_SIGN_MEM
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_smem_rdata[0]
+            (output port clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult_chip          ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/u_SIGN_MEM/CLK (SIGN_MEM)                        0.00       0.00 r
+  u_core/u_SIGN_MEM/Q[0] (SIGN_MEM)                       4.15       4.15 f
+  u_core/U20/Y (AND2X1TR)                                 0.23       4.39 f
+  u_core/o_smem_rdata[0] (mult_chip_core)                 0.00       4.39 f
+  u_PAD_SMEM_RDATA0/P (POC24A)                            2.01       6.39 f
+  o_smem_rdata[0] (out)                                   0.00       6.39 f
+  data arrival time                                                  6.39
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  --------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -6.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.41
+
+
+1

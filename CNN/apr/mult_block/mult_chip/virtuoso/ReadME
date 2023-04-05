@@ -1,0 +1,48 @@
+Streaming-in GDS
+- Use Template:
+	./strmIn.template
+
+- Reference Libraries:
+	./mult_chip.reflib
+
+DRC Signing-off
+- DRC Runset:
+	./Calibre/DRC/drc.runset
+
+- Include "EXCLUDE CELL" in DRC
+	IBM130 PADs and compiler SRAMs have internal DRC violations (mostly intentional for denser layout) 
+	that we cannot fix or will be waived in a real tapeout, so we want to exclude them from DRC.
+	To do that, refer to ./Calibre/DRC/drc.exclude and "DRC Options" -> "Include" in the Calibre DRC 
+	GUI after loading the runset. Specifically in this design, I am excluding all the PADs and SIGN_MEM.
+
+- Violations in this design
+	- GR612c_V3/GR612b_V3:
+		-	After APR, this design ends up having two DRC violations for each of the above rules,
+		which complains too few V3 contacts for two tie-high/tie-low nets, where thin M3 wires tries to 
+		via M4 power stripes (very wide). 
+	  		In your final DRC there might be some DRCs similar to those ones that are caused by either 
+		poorly-designed technology LEF file or poor P&R CAD SW. It is very hard to go back and resort to 
+		APR/innovus for resolving them. But typically, there won't be many and most of them are easy to 
+		understand and fix by hand.
+	  		For signing-off DRC of this template design, a simple fix of adding two more V3 shapes to 
+		each of those connections resolves those DRC violations.
+
+LVS Signing-off
+- LVS Runset:
+	./Calibre/LVS/lvs.runset
+
+- Adding top-level I/O labels
+	Most labels are automatically placed (on M6 of PADs) by APR to the GDS output. But somehow the PAD APR database in this
+	technology does not support DVDD/DVSS as PG pins and their logical connections cannot be made in APR. Thus their labels
+	are the only ones not placed in layout. After streaming-in, you want to place DVDD/DVSS labels on the wire-bonding contact
+	of DVDD/DVSS PADs, which is layer 'TD', a 'hidden' topmost metal layer even above M8. The shapes should become obvious once
+	you turn-on all the layout details and set 'TD' to be the only visible layer.
+
+- Black Boxing in LVS
+	IBM130 PADs and compiler SRAMs have internal LVS violations that we cannot fix or will be waived in a real tapeout, 
+	so we do not want to check their internal LVS. To do that, refer to ./Calibre/LVS/lvs.box and "LVS Options" -> "Include" 
+	in the Calibre LVS GUI after loading the runset. Specifically in this design, I am black boxing all the PADs and SIGN_MEM.
+
+Final Design Libraries:
+	- mult_chip: streamed-in from post-APR GDS file. Not changed and preserves the DRC violations.
+	- mult_chip_tapeout: DRC-and-LVS signed-off design with DRC in mult_chip fixed, DVDD/DVSS labels placed and ready for taping-out.

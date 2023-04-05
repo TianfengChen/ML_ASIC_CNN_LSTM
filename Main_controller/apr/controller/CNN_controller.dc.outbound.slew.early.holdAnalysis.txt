@@ -1,0 +1,24 @@
+# Time Unit : 1e-09 seconds (ns)
+# ActualValue: Actual value of slew seen during delay calculation. This is the value that fell out of bound.
+# BoundValue: Bound value of slew. This is the first or last value for which characterization information is present in the library.
+# BoundType: Lower or Upper, corresponding to whether the actual value is respectively smaller or greater than the bound value.
+# Arc: Arc specification from source pin to sink pin (including rise/fall information for both).
+# Instance: Full hierarchical name of the instance.
+ActualValue    BoundValue    OutputValue    BoundType    Arc    Instance
+0.00400   0.02800   0.07913   Lower   A v -> Y ^    CNN_controller:clk
+0.00400   0.02800   0.07994   Lower   A v -> Y ^    CNN_controller:reset
+0.02650   0.02800   0.08361   Lower   B v -> Y v    U778
+0.02440   0.02800   0.04826   Lower   B v -> Y v    U927
+0.02660   0.02800   0.06164   Lower   A1N v -> Y v    U1164
+0.02310   0.02800   0.08353   Lower   AN v -> Y v    U942
+0.02760   0.02800   0.06077   Lower   B ^ -> Y v    U1308
+0.02720   0.02800   0.05746   Lower   A1 v -> Y v    U1468
+0.02570   0.02800   0.15482   Lower   A v -> Y ^    U1536
+0.02730   0.02800   0.04753   Lower   A v -> Y v    U970
+0.02590   0.02800   0.08623   Lower   B0 v -> Y ^    U1235
+0.02400   0.02800   0.04468   Lower   AN v -> Y v    U1298
+0.02580   0.02800   0.09754   Lower   C v -> Y ^    U641
+0.02620   0.02800   0.04696   Lower   A1 v -> Y v    U1387
+0.02180   0.02800   0.06019   Lower   B0 v -> Y ^    U964
+0.02680   0.02800   0.04610   Lower   B0 v -> Y v    U1392
+0.02390   0.02800   0.05008   Lower   B v -> Y ^    U394

@@ -1,0 +1,116 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "state_delay_FIFO_1")
+(DATE "Mon Mar 27 19:42:33 2023")
+(VENDOR "typical")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "T-2022.03-SP3")
+(DIVIDER /)
+(VOLTAGE 1.20:1.20:1.20)
+(PROCESS "typical")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "state_delay_FIFO_1")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT data_in[0] U4/A (0.000:0.000:0.000))
+    (INTERCONNECT reset U3/A (0.000:0.000:0.000))
+    (INTERCONNECT data_in[2] dff_chain_data_out_reg_2_/D (0.000:0.000:0.000))
+    (INTERCONNECT U3/Y dff_chain_data_out_reg_2_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clock dff_chain_data_out_reg_2_/CK (0.000:0.000:0.000))
+    (INTERCONNECT data_in[1] dff_chain_data_out_reg_1_/D (0.000:0.000:0.000))
+    (INTERCONNECT U3/Y dff_chain_data_out_reg_1_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clock dff_chain_data_out_reg_1_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U4/Y dff_chain_data_out_reg_0_/D (0.000:0.000:0.000))
+    (INTERCONNECT U3/Y dff_chain_data_out_reg_0_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clock dff_chain_data_out_reg_0_/CK (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1TR")
+  (INSTANCE U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.087:0.087:0.087) (0.054:0.054:0.054))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1TR")
+  (INSTANCE U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.212:0.212:0.212) (0.111:0.111:0.111))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX1TR")
+  (INSTANCE dff_chain_data_out_reg_2_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.333:0.333:0.333) (0.355:0.355:0.355))
+    (IOPATH (posedge CK) QN (0.332:0.332:0.332) (0.272:0.272:0.272))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.117:0.117:0.117))
+    (WIDTH (negedge CK) (0.156:0.156:0.156))
+    (SETUP (posedge D) (posedge CK) (0.156:0.156:0.156))
+    (SETUP (negedge D) (posedge CK) (0.126:0.126:0.126))
+    (HOLD (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (HOLD (negedge D) (posedge CK) (-0.026:-0.026:-0.026))
+    (SETUP (posedge RN) (posedge CK) (0.178:0.178:0.178))
+    (SETUP (negedge RN) (posedge CK) (0.168:0.168:0.168))
+    (HOLD (posedge RN) (posedge CK) (-0.097:-0.097:-0.097))
+    (HOLD (negedge RN) (posedge CK) (-0.058:-0.058:-0.058))
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX1TR")
+  (INSTANCE dff_chain_data_out_reg_1_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.333:0.333:0.333) (0.355:0.355:0.355))
+    (IOPATH (posedge CK) QN (0.332:0.332:0.332) (0.272:0.272:0.272))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.117:0.117:0.117))
+    (WIDTH (negedge CK) (0.156:0.156:0.156))
+    (SETUP (posedge D) (posedge CK) (0.156:0.156:0.156))
+    (SETUP (negedge D) (posedge CK) (0.126:0.126:0.126))
+    (HOLD (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (HOLD (negedge D) (posedge CK) (-0.026:-0.026:-0.026))
+    (SETUP (posedge RN) (posedge CK) (0.178:0.178:0.178))
+    (SETUP (negedge RN) (posedge CK) (0.168:0.168:0.168))
+    (HOLD (posedge RN) (posedge CK) (-0.097:-0.097:-0.097))
+    (HOLD (negedge RN) (posedge CK) (-0.058:-0.058:-0.058))
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX1TR")
+  (INSTANCE dff_chain_data_out_reg_0_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.215:0.215:0.215) (0.274:0.274:0.274))
+    (IOPATH (posedge CK) QN (0.447:0.447:0.447) (0.342:0.342:0.342))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.117:0.117:0.117))
+    (WIDTH (negedge CK) (0.156:0.156:0.156))
+    (SETUP (posedge D) (posedge CK) (0.164:0.164:0.164))
+    (SETUP (negedge D) (posedge CK) (0.134:0.134:0.134))
+    (HOLD (posedge D) (posedge CK) (-0.084:-0.084:-0.084))
+    (HOLD (negedge D) (posedge CK) (-0.033:-0.033:-0.033))
+    (SETUP (posedge RN) (posedge CK) (0.178:0.178:0.178))
+    (SETUP (negedge RN) (posedge CK) (0.168:0.168:0.168))
+    (HOLD (posedge RN) (posedge CK) (-0.097:-0.097:-0.097))
+    (HOLD (negedge RN) (posedge CK) (-0.058:-0.058:-0.058))
+  )
+)
+)

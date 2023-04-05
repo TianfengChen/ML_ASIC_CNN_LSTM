@@ -1,0 +1,48 @@
+2022/03/19 02:52:46 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2022/03/19 02:52:46 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+INFO: cds.lib has been converted to lib.defs /var/tmp/3595465_result_lib.defs
+RUNNING PEX back-annotation...
+//  Calibre FDI  v2021.3_15.9 Tue Jul 6 13:30:59 PDT 2021
+//
+//                  Copyright Mentor Graphics Corporation 2008-2021
+//                             All Rights Reserved.
+//         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//               OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//  64 bit virtual addressing enabled
+//
+//         This software is in pre-production form and is considered to be
+//         beta code that is subject to the terms of the current Mentor
+//         Graphics End-User License Agreement or your signed agreement
+//         with Mentor Graphics that contains beta terms, whichever applies.
+//
+//  Running on Linux caen-vnc-mi07.engin.umich.edu 4.18.0-348.7.1.el8_5.x86_64 #1 SMP Wed Dec 8 21:51:17 EST 2021 x86_64
+//  OS: Red Hat Enterprise Linux release 8.5 (Ootpa)[4.18.0-348.7.1.el8_5.x86_64]
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       22403004 kB
+//  MemFree:         3979588 kB
+//  Cached:         14432856 kB
+//  SwapCached:         5288 kB
+//  Dirty:              4180 kB
+//  Writeback:             0 kB
+//
+//  Processor : Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
+//  CPU Info: Cores = 1
+//  Process ID: 3595465
+//  Starting time: Sat Mar 19 02:52:47 2022
+INFO: Parsing command line arguments...
+INFO: License checked out successfully for calibreqdb.
+INFO: Parsing cellmap file...
+INFO: Executing back annotation...
+INFO: Creating new view: calibre in library: stdcell_PEX cell: inverter.
+INFO: Marking net VSS! as a global net.
+WARNING: [FDI3021] Creating an inputOutput terminal VSS! in (inverter calibre) since matching terminal was not found on schematic.
+INFO: Marking net VDD! as a global net.
+WARNING: [FDI3021] Creating an inputOutput terminal VDD! in (inverter calibre) since matching terminal was not found on schematic.
+INFO: Back annotation is completed.
+Calibre View generation completed with 2 WARNINGs and 0 ERRORs.
+Please consult the CIW transcript for messages.

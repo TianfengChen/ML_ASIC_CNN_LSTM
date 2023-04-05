@@ -1,0 +1,354 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "adder_pipe")
+(DATE "Sat Mar 18 17:26:43 2023")
+(VENDOR "typical")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "T-2022.03-SP3")
+(DIVIDER /)
+(VOLTAGE 1.20:1.20:1.20)
+(PROCESS "typical")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "adder_pipe")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT adder_arr0/data_out[7] U34/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U34/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[6] U33/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U33/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[5] U32/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U32/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[4] U31/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U31/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[3] U30/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U30/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[2] U29/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U29/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[1] U28/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U28/B (0.000:0.000:0.000))
+    (INTERCONNECT adder_arr0/data_out[0] U27/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y U27/B (0.000:0.000:0.000))
+    (INTERCONNECT reset U26/A (0.000:0.000:0.000))
+    (INTERCONNECT status_in[0] status_out_reg_0_/D (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y status_out_reg_0_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clk status_out_reg_0_/CK (0.000:0.000:0.000))
+    (INTERCONNECT status_in[1] status_out_reg_1_/D (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y status_out_reg_1_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clk status_out_reg_1_/CK (0.000:0.000:0.000))
+    (INTERCONNECT status_in[2] status_out_reg_2_/D (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y status_out_reg_2_/RN (0.000:0.000:0.000))
+    (INTERCONNECT clk status_out_reg_2_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U27/Y data_out_reg_0_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_0_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U28/Y data_out_reg_1_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_1_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U29/Y data_out_reg_2_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_2_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U30/Y data_out_reg_3_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_3_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U31/Y data_out_reg_4_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_4_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U32/Y data_out_reg_5_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_5_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U33/Y data_out_reg_6_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_6_/CK (0.000:0.000:0.000))
+    (INTERCONNECT U34/Y data_out_reg_7_/D (0.000:0.000:0.000))
+    (INTERCONNECT clk data_out_reg_7_/CK (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U34)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U33)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U32)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U31)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U30)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U29)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U28)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKAND2X6TR")
+  (INSTANCE U27)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.089:0.089:0.089) (0.063:0.063:0.063))
+    (IOPATH B Y (0.130:0.130:0.130) (0.118:0.118:0.118))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "CLKINVX6TR")
+  (INSTANCE U26)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.146:0.146:0.146) (0.150:0.150:0.150))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX4TR")
+  (INSTANCE status_out_reg_0_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.262:0.262:0.262) (0.285:0.285:0.285))
+    (IOPATH (posedge CK) QN (0.331:0.331:0.331) (0.296:0.296:0.296))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.132:0.132:0.132))
+    (WIDTH (negedge CK) (0.151:0.151:0.151))
+    (SETUP (posedge D) (posedge CK) (0.154:0.154:0.154))
+    (SETUP (negedge D) (posedge CK) (0.130:0.130:0.130))
+    (HOLD (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (HOLD (negedge D) (posedge CK) (-0.022:-0.022:-0.022))
+    (SETUP (posedge RN) (posedge CK) (0.171:0.171:0.171))
+    (SETUP (negedge RN) (posedge CK) (0.183:0.183:0.183))
+    (HOLD (posedge RN) (posedge CK) (-0.093:-0.093:-0.093))
+    (HOLD (negedge RN) (posedge CK) (-0.065:-0.065:-0.065))
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX4TR")
+  (INSTANCE status_out_reg_1_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.262:0.262:0.262) (0.285:0.285:0.285))
+    (IOPATH (posedge CK) QN (0.331:0.331:0.331) (0.296:0.296:0.296))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.132:0.132:0.132))
+    (WIDTH (negedge CK) (0.151:0.151:0.151))
+    (SETUP (posedge D) (posedge CK) (0.154:0.154:0.154))
+    (SETUP (negedge D) (posedge CK) (0.130:0.130:0.130))
+    (HOLD (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (HOLD (negedge D) (posedge CK) (-0.022:-0.022:-0.022))
+    (SETUP (posedge RN) (posedge CK) (0.171:0.171:0.171))
+    (SETUP (negedge RN) (posedge CK) (0.183:0.183:0.183))
+    (HOLD (posedge RN) (posedge CK) (-0.093:-0.093:-0.093))
+    (HOLD (negedge RN) (posedge CK) (-0.065:-0.065:-0.065))
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX4TR")
+  (INSTANCE status_out_reg_2_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.262:0.262:0.262) (0.285:0.285:0.285))
+    (IOPATH (posedge CK) QN (0.331:0.331:0.331) (0.296:0.296:0.296))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.132:0.132:0.132))
+    (WIDTH (negedge CK) (0.151:0.151:0.151))
+    (SETUP (posedge D) (posedge CK) (0.154:0.154:0.154))
+    (SETUP (negedge D) (posedge CK) (0.130:0.130:0.130))
+    (HOLD (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (HOLD (negedge D) (posedge CK) (-0.022:-0.022:-0.022))
+    (SETUP (posedge RN) (posedge CK) (0.171:0.171:0.171))
+    (SETUP (negedge RN) (posedge CK) (0.183:0.183:0.183))
+    (HOLD (posedge RN) (posedge CK) (-0.093:-0.093:-0.093))
+    (HOLD (negedge RN) (posedge CK) (-0.065:-0.065:-0.065))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_0_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_1_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_2_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_3_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_4_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_5_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_6_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX4TR")
+  (INSTANCE data_out_reg_7_)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (0.278:0.278:0.278) (0.297:0.297:0.297))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CK) (0.137:0.137:0.137))
+    (WIDTH (negedge CK) (0.146:0.146:0.146))
+    (SETUP (posedge D) (posedge CK) (0.097:0.098:0.098))
+    (SETUP (negedge D) (posedge CK) (0.084:0.085:0.085))
+    (HOLD (posedge D) (posedge CK) (-0.025:-0.025:-0.025))
+    (HOLD (negedge D) (posedge CK) (-0.005:-0.006:-0.006))
+  )
+)
+)

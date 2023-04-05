@@ -1,0 +1,13 @@
+ECO REQUIRED:
+1. Copy *.apr.physical.v here, add power supplys to the top-level I/Os definition and modify them to be inout ports instead of wires.
+   Also, for a design with PAD ring, you need to connect all PADs to their designated VDD/VSS and DVDD/DVSS. That is because VDD/VSS and DVDD/DVSS
+   pins of some PAD cells are not present as PG pins in the provided technology files and are thus not recognizable for APR. Then logical connections
+   of those pins are not properly made. Specifically in this design, I will copy the PAD ring in mult_chip_padring.v (make one and re-use) over to 
+   replace the one in mult_chip.apr.physical.v whenever a new APR database has been generated.
+
+2. Make sure the netlists (cdl/spice) of lower-level blocks all use triangle brackets (<>) for bus I/Os instead of square ones ([]).
+   E.g., SRAM compiler gives you netlists of '[]' bus I/Os and you want to make copies and modify them to use '<>'.
+   Then use the copies for v2lvs. Specifically in design, I am using SIGN_MEM_tri.cdl (modified) instead of SIGN_MEM.cdl (from compiler).
+
+Running v2lvs:
+	$ ./v2lvs.sh mult_chip

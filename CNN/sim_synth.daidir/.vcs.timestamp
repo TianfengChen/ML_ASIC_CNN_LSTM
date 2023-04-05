@@ -1,0 +1,190 @@
+1        
+0 /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/PE_top_new/data/PE_top.syn.sdf_c
+43
++incdir+
++libext+.v+.vlib+.vh
++multisource_int_delays
++neg_tchk
++overlap
++plusarg_save
++v2k
++vc
++vcs+lic+wait
++warn=noSDFCOM_IANE
++warn=noSDFCOM_IWSBA
++warn=noSDFCOM_PONF
++warn=noSDFCOM_UHICD
++warn=noSDFCOM_UHICD,noSDFCOM_IWSBA,noSDFCOM_IANE,noSDFCOM_PONF
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+-Mout=sim_synth
+-Msaverestoreobj=/usr/caen/vcs-2020.12-SP2-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mxllcflags=
+-full64
+-gen_obj
+-o sim_synth
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/usr/caen/vcs-2020.12-SP2-1/linux64/bin/vcs1
+sim_synth
+../sys_defs.svh
+/afs/umich.edu/class/eecs627/ibm13/artisan/2005q3v1/aci/sc-x/verilog/ibm13_neg.v
+syn/PE_top_new/data/PE_top.syn.v
+testbench/PE_postsyn_testbench.sv
+128
+which_declare=declare -f
+mraarch=linux_64
+installdir=/usr/caen/hspice-2022.06/hspice
+__LMOD_REF_COUNT_PATH=/usr/um/vscode-1.70.2/code/bin:1;/usr/caen/verdi-2022.06/bin:1;/usr/caen/xa-2022.06/bin:1;/usr/caen/primetime-2022.03-SP3/bin:1;/usr/caen/vcs-2020.12-SP2-1/bin:1;/usr/caen/hspice-2022.06/hspice/bin:1;/usr/caen/hspice-2022.06/hspice/GNU/linux64/gcc/bin:1;/usr/caen/hspice-2022.06/hspice/linux64:1;/usr/bin:2;/usr/ucb/bin:1;/usr/caen/innovus-21.14.000/tools/bin:1;/usr/caen/synopsys-lib-compiler-2022.03-SP3/bin:1;/usr/caen/synopsys-synth-2022.03-SP3/bin:1;/usr/caen/calibre-2021.3_15.9/aok/bin:1;/usr/caen/spectre-21.10.415/tools/bin:1;/usr/caen/ic-6.1.8.500.2600/tools/bin:1;/usr/caen/ic-6.1.8.500.2600/tools/dfII/bin:1;/usr/caen/ic-6.1.8.500.2600/tools/leapfrog/bin:1;/usr/local/bin:1;/usr/local/sbin:1;/usr/sbin:1;/usr/um/bin:1;/usr/caen/bin:1
+__LMOD_REF_COUNT_MODULEPATH=/usr/caen/misc/modules:2;/etc/scl/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/afs/umich.edu/class/coe/modules:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1
+__LMOD_REF_COUNT_LM_LICENSE_FILE=license.dat:1;/usr/caen/FLEXlm/data/license.dat.synopsys:1
+__GL_SHADER_DISK_CACHE=0
+_ModuleTable_Sz_=10
+_ModuleTable010_=LCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCAiL3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvZXRjL3NjbC9tb2R1bGVmaWxlczovZXRjL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXM6L3Vzci9jYWVuL21pc2MvbW9kdWxlczovYWZzL3VtaWNoLmVkdS9jbGFzcy9jb2UvbW9kdWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+_ModuleTable009_=MDAwMDAwMDcwLjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKeGEgPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMveGEvMjAyMi4wNi5sdWEiLApmdWxsTmFtZSA9ICJ4YS8yMDIyLjA2IiwKbG9hZE9yZGVyID0gMTAsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAieGEvMjAyMi4wNiIsCndWID0gIl4wMDAwMjAyMi4wMDAwMDAwMDYuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3IvY2Flbi9taXNjL21vZHVsZXMiLCAiL2V0Yy9zY2wvbW9kdWxlZmlsZXMiLCAiL2V0Yy9tb2R1bGVmaWxlcyIKLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIsICIvYWZzL3VtaWNoLmVkdS9jbGFzcy9jb2UvbW9kdWxlcyIK
+_ModuleTable008_=Y2Flbi9taXNjL21vZHVsZXMvdmVyZGkvMjAyMi4wNi5sdWEiLApmdWxsTmFtZSA9ICJ2ZXJkaS8yMDIyLjA2IiwKbG9hZE9yZGVyID0gMTEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAidmVyZGkvMjAyMi4wNiIsCndWID0gIjAwMDAwMjAyMi4wMDAwMDAwMDYuKnpmaW5hbCIsCn0sCnZzY29kZSA9IHsKZm4gPSAiL3Vzci9jYWVuL21pc2MvbW9kdWxlcy92c2NvZGUvMS43MC4yLmx1YSIsCmZ1bGxOYW1lID0gInZzY29kZS8xLjcwLjIiLApsb2FkT3JkZXIgPSAxMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJ2c2NvZGUiLAp3ViA9ICJeMDAwMDAwMDEu
+_ModuleTable007_=ImFjdGl2ZSIsCnVzZXJOYW1lID0gInN5bm9wc3lzLXN5bnRoLzIwMjIuMDMtU1AzIiwKd1YgPSAiXjAwMDAyMDIyLjAwMDAwMDAwMy4qc3AuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAp2Y3MgPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMvdmNzLzIwMjAuMTItU1AyLTEubHVhIiwKZnVsbE5hbWUgPSAidmNzLzIwMjAuMTItU1AyLTEiLApsb2FkT3JkZXIgPSA4LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInZjcy8yMDIwLjEyLVNQMi0xIiwKd1YgPSAiXjAwMDAyMDIwLjAwMDAwMDAxMi4qc3AuMDAwMDAwMDAyLip6ZmluYWwtLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKdmVyZGkgPSB7CmZuID0gIi91c3Iv
+_ModuleTable006_=YW1lID0gInN5bm9wc3lzLWxpYi1jb21waWxlci8yMDIyLjAzLVNQMyIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3lub3BzeXMtbGliLWNvbXBpbGVyLzIwMjIuMDMtU1AzIiwKd1YgPSAiXjAwMDAyMDIyLjAwMDAwMDAwMy4qc3AuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApbInN5bm9wc3lzLXN5bnRoIl0gPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMvc3lub3BzeXMtc3ludGgvMjAyMi4wMy1TUDMubHVhIiwKZnVsbE5hbWUgPSAic3lub3BzeXMtc3ludGgvMjAyMi4wMy1TUDMiLApsb2FkT3JkZXIgPSA0LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0g
+_ModuleTable005_=MjIuMDAwMDAwMDAzLipzcC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCnNwZWN0cmUgPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMvc3BlY3RyZS8yMS4xMC40MTUubHVhIiwKZnVsbE5hbWUgPSAic3BlY3RyZS8yMS4xMC40MTUiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInNwZWN0cmUvMjEuMTAuNDE1IiwKd1YgPSAiXjAwMDAwMDIxLjAwMDAwMDAxMC4wMDAwMDA0MTUuKnpmaW5hbCIsCn0sClsic3lub3BzeXMtbGliLWNvbXBpbGVyIl0gPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMvc3lub3BzeXMtbGliLWNvbXBpbGVyLzIwMjIuMDMtU1AzLmx1YSIsCmZ1bGxO
+_ModuleTable004_=CmZ1bGxOYW1lID0gImlubm92dXMvMjEuMTQuMDAwIiwKbG9hZE9yZGVyID0gNiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJpbm5vdnVzLzIxLjE0LjAwMCIsCndWID0gIl4wMDAwMDAyMS4wMDAwMDAwMTQuKnpmaW5hbCIsCn0sCnByaW1ldGltZSA9IHsKZm4gPSAiL3Vzci9jYWVuL21pc2MvbW9kdWxlcy9wcmltZXRpbWUvMjAyMi4wMy1TUDMubHVhIiwKZnVsbE5hbWUgPSAicHJpbWV0aW1lLzIwMjIuMDMtU1AzIiwKbG9hZE9yZGVyID0gOSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJwcmltZXRpbWUvMjAyMi4wMy1TUDMiLAp3ViA9ICJeMDAwMDIw
+_ModuleTable003_=ID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZWVjczYyNy93MjMiLAp3ViA9ICIqdy4wMDAwMDAwMjMuKnpmaW5hbCIsCn0sCmhzcGljZSA9IHsKZm4gPSAiL3Vzci9jYWVuL21pc2MvbW9kdWxlcy9oc3BpY2UvMjAyMi4wNi5sdWEiLApmdWxsTmFtZSA9ICJoc3BpY2UvMjAyMi4wNiIsCmxvYWRPcmRlciA9IDcsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiaHNwaWNlLzIwMjIuMDYiLAp3ViA9ICJeMDAwMDIwMjIuMDAwMDAwMDA2Lip6ZmluYWwiLAp9LAppbm5vdnVzID0gewpmbiA9ICIvdXNyL2NhZW4vbWlzYy9tb2R1bGVzL2lubm92dXMvMjEuMTQuMDAwLmx1YSIs
+_ModuleTable002_=NjAwLip6ZmluYWwiLAp9LApjYWxpYnJlID0gewpmbiA9ICIvdXNyL2NhZW4vbWlzYy9tb2R1bGVzL2NhbGlicmUvMjAyMS4zXzE1LjkiLApmdWxsTmFtZSA9ICJjYWxpYnJlLzIwMjEuM18xNS45IiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjYWxpYnJlLzIwMjEuM18xNS45IiwKd1YgPSAiXjAwMDAyMDIxLjAwMDAwMDAwMy4qXy4wMDAwMDAwMTUuMDAwMDAwMDA5Lip6ZmluYWwiLAp9LAplZWNzNjI3ID0gewpmbiA9ICIvYWZzL3VtaWNoLmVkdS9jbGFzcy9jb2UvbW9kdWxlcy9lZWNzNjI3L3cyMyIsCmZ1bGxOYW1lID0gImVlY3M2MjcvdzIzIiwKbG9hZE9yZGVyID0gMTIsCnByb3BU
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpbImNhZGVuY2UtaWMiXSA9IHsKZm4gPSAiL3Vzci9jYWVuL21pc2MvbW9kdWxlcy9jYWRlbmNlLWljLzYuMS44LjUwMC4yNjAwLmx1YSIsCmZ1bGxOYW1lID0gImNhZGVuY2UtaWMvNi4xLjguNTAwLjI2MDAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImNhZGVuY2UtaWMvNi4xLjguNTAwLjI2MDAiLAp3ViA9ICJeMDAwMDAwMDYuMDAwMDAwMDAxLjAwMDAwMDAwOC4wMDAwMDA1MDAuMDAwMDAy
+_LMFILES_=/usr/caen/misc/modules/cadence-ic/6.1.8.500.2600.lua:/usr/caen/misc/modules/spectre/21.10.415.lua:/usr/caen/misc/modules/calibre/2021.3_15.9:/usr/caen/misc/modules/synopsys-synth/2022.03-SP3.lua:/usr/caen/misc/modules/synopsys-lib-compiler/2022.03-SP3.lua:/usr/caen/misc/modules/innovus/21.14.000.lua:/usr/caen/misc/modules/hspice/2022.06.lua:/usr/caen/misc/modules/vcs/2020.12-SP2-1.lua:/usr/caen/misc/modules/primetime/2022.03-SP3.lua:/usr/caen/misc/modules/xa/2022.06.lua:/usr/caen/misc/modules/verdi/2022.06.lua:/afs/umich.edu/class/coe/modules/eecs627/w23:/usr/caen/misc/modules/vscode/1.70.2.lua
+XLIB_SKIP_ARGB_VISUALS=1
+XDG_VTNR=2
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=2
+XDG_SESSION_DESKTOP=gnome
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/114277361
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/guohch/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/usr/caen/misc/menus
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/user/114277361/gdm/Xauthority
+XARCH=linux64
+WINDOWPATH=2
+VTE_VERSION=5204
+VSCODE_GIT_IPC_HANDLE=/run/user/114277361/vscode-git-bd55ec68db.sock
+VSCODE_GIT_ASKPASS_NODE=/opt/caen/remote/vscode-1.70.2/code/code
+VSCODE_GIT_ASKPASS_MAIN=/opt/caen/remote/vscode-1.70.2/code/resources/app/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=--ms-enable-electron-run-as-node
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/caen/verdi-2022.06
+VCS_TARGET_ARCH=linux64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/caen/vcs-2020.12-SP2-1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=guohch
+UNAME=/bin/uname
+TOOL_HOME=/usr/caen/vcs-2020.12-SP2-1/linux64
+TMIARCH=RH_64
+TERM_PROGRAM_VERSION=1.70.2
+TERM_PROGRAM=vscode
+S_COLORS=auto
+SYNOPSYS_LC_ROOT=/usr/caen/synopsys-lib-compiler-2022.03-SP3
+SYNOPSYS=/usr/caen/synopsys-synth-2022.03-SP3
+SPAPI_AHDL_INCLUDE=/usr/caen/hspice-2022.06/hspice/include
+SNPS_PLATFORM=linux64
+SNPS_64=1
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/5863,unix/unix:/tmp/.ICE-unix/5863
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+OVA_UUM=0
+ORIGINAL_XDG_CURRENT_DESKTOP=GNOME
+NO_AT_BRIDGE=1
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+MODULESHOME=/usr/share/lmod/lmod
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULEPATH=/usr/caen/misc/modules:/etc/scl/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/afs/umich.edu/class/coe/modules:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+MGLS_LICENSE_FILE=/usr/caen/FLEXlm/data/license.dat.mentor
+MGC_HOME=/usr/caen/calibre-2021.3_15.9/aok
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=cadence-ic/6.1.8.500.2600:spectre/21.10.415:calibre/2021.3_15.9:synopsys-synth/2022.03-SP3:synopsys-lib-compiler/2022.03-SP3:innovus/21.14.000:hspice/2022.06:vcs/2020.12-SP2-1:primetime/2022.03-SP3:xa/2022.06:verdi/2022.06:eecs627/w23:vscode/1.70.2
+LMOD_sys=Linux
+LMOD_VERSION=8.7.19
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_ROOT=/usr/share/lmod
+LMOD_PKG=/usr/share/lmod/lmod
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+KRB5CCNAME=KEYRING:persistent:114277361
+HSP_SIGMA_AMP=/usr/caen/hspice-2022.06/hspice/linux64/python/AVA/ava
+HSP_HOME=/usr/caen/hspice-2022.06/hspice
+HSP_GCC_VERSION=9.2.0
+HSP_GCC=/usr/caen/hspice-2022.06/hspice/GNU/linux64/gcc/bin/gcc -m64
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.73
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/c42b3143_45d7_4273_aab3_3d0b6a5ede2f
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GIT_ASKPASS=/opt/caen/remote/vscode-1.70.2/code/resources/app/extensions/git/dist/askpass.sh
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome
+GDK_BACKEND=x11
+DESKTOP_SESSION=gnome
+DD_DONT_DO_OS_LOCKS=SET
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-vXY4AaqY4g,guid=9f2051f7a24f5f2d74258e5c641ca13a
+COLORTERM=truecolor
+CMIARCH=RH_64
+CLS_CDSD_COMPATIBILITY_LOCKING=NO
+CHROME_DESKTOP=code-url-handler.desktop
+CDS_VERSION=IC6
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=/usr/caen/FLEXlm/data/license.dat.cadence
+CDS_INSTALL_DIR=/usr/caen/ic-6.1.8.500.2600/tools/dfII
+CDS_AUTO_64BIT=ALL
+CDSHOME=/usr/caen/ic-6.1.8.500.2600
+CDS=/usr/caen/ic-6.1.8.500.2600
+CDPL_HOME=/usr/caen/hspice-2022.06/hspice/cdpl
+CALIBRE_HOME=/usr/caen/calibre-2021.3_15.9/aok
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then_ case "$-" in _ *v*x*)_ __lmod_sh_dbg='vx'_ ;;_ *v*)_ __lmod_sh_dbg='v'_ ;;_ *x*)_ __lmod_sh_dbg='x'_ ;;_ esac;_ fi;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ set +$__lmod_sh_dbg;_ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;_ fi;_ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";_ __lmod_my_status=$?;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ echo "Shell debugging restarted" 1>&2;_ set -$__lmod_sh_dbg;_ fi;_ unset __lmod_sh_dbg;_ return $__lmod_my_status_}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"_}
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+ARCH=linux64
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+0
+0
+5
+1679600671 /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/PE_top_new/data/PE_top.syn.sdf
+1679603691 testbench/PE_postsyn_testbench.sv
+1679600671 syn/PE_top_new/data/PE_top.syn.v
+1121399997 /afs/umich.edu/class/eecs627/ibm13/artisan/2005q3v1/aci/sc-x/verilog/ibm13_neg.v
+1679601664 ../sys_defs.svh
+4
+1626665287 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so
+1626664738 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so
+1626664460 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so
+1626664734 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+1679603709 sim_synth.daidir
+-1 partitionlib

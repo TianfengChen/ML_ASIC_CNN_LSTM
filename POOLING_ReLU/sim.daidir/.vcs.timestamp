@@ -1,0 +1,171 @@
+0 
+51
++incdir+
++libext+.v+.vlib+.vh
++multisource_int_delays
++neg_tchk
++overlap
++plusarg_save
++v2k
++vc
++vcs+lic+wait
++warn=noSDFCOM_IANE
++warn=noSDFCOM_IWSBA
++warn=noSDFCOM_PONF
++warn=noSDFCOM_UHICD
++warn=noSDFCOM_UHICD,noSDFCOM_IWSBA,noSDFCOM_IANE,noSDFCOM_PONF
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+-Mout=sim
+-Msaverestoreobj=/usr/caen/vcs-2020.12-SP2-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/caen/vcs-2020.12-SP2-1/include
+-Mxllcflags=
+-full64
+-gen_obj
+-o sim
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/usr/caen/vcs-2020.12-SP2-1/linux64/bin/vcs1
+sim
+../sys_defs.svh
+../POOL_BIAS_ACT/POOL_BIAS_ACT.v
+verilog/POOLING_top.v
+verilog/pool_max.v
+verilog/CMP.v
+verilog/pool_avg.v
+verilog/divider_pipe.v
+../CNN/verilog/adder_tree.v
+../CNN/verilog/adder_1bit.v
+../POOL_BIAS_ACT/ReLU.v
+../sys_defs.svh
+testbench/POOL_BIAS_ACT_testbench.sv
+95
+which_declare=declare -f
+__LMOD_REF_COUNT_PATH=/usr/caen/vcs-2020.12-SP2-1/bin:1;/usr/caen/verdi-2020.12-SP2-1/bin:1;/usr/um/vscode-1.70.2/code/bin:1;/usr/local/bin:1;/usr/local/sbin:1;/usr/bin:1;/usr/sbin:1;/usr/um/bin:1;/usr/caen/bin:1
+__LMOD_REF_COUNT_MODULEPATH=/usr/caen/misc/modules:3;/etc/scl/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/afs/umich.edu/class/coe/modules:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1
+__LMOD_REF_COUNT_LM_LICENSE_FILE=license.dat:1;/usr/caen/FLEXlm/data/license.dat.synopsys:1
+__GL_SHADER_DISK_CACHE=0
+_ModuleTable_Sz_=4
+_ModuleTable004_=dGMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL2NhZW4vbWlzYy9tb2R1bGVzOi9hZnMvdW1pY2guZWR1L2NsYXNzL2NvZS9tb2R1bGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+_ModuleTable003_=c3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInZzY29kZSIsCndWID0gIl4wMDAwMDAwMS4wMDAwMDAwNzAuMDAwMDAwMDAyLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvdXNyL2NhZW4vbWlzYy9tb2R1bGVzIiwgIi9ldGMvc2NsL21vZHVsZWZpbGVzIiwgIi9ldGMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIsICIvYWZzL3VtaWNoLmVkdS9jbGFzcy9jb2UvbW9kdWxlcyIsICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4IiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsICIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9ldGMvc2NsL21vZHVsZWZpbGVzOi9l
+_ModuleTable002_=Yy9tb2R1bGVzL3ZlcmRpLzIwMjAuMTItU1AyLTEubHVhIiwKZnVsbE5hbWUgPSAidmVyZGkvMjAyMC4xMi1TUDItMSIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnJlZl9jb3VudCA9IDEsCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAidmVyZGkvMjAyMC4xMi1TUDItMSIsCndWID0gIl4wMDAwMjAyMC4wMDAwMDAwMTIuKnNwLjAwMDAwMDAwMi4qemZpbmFsLS4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnZzY29kZSA9IHsKZm4gPSAiL3Vzci9jYWVuL21pc2MvbW9kdWxlcy92c2NvZGUvMS43MC4yLmx1YSIsCmZ1bGxOYW1lID0gInZzY29kZS8xLjcwLjIiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwK
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewp2Y3MgPSB7CmZuID0gIi91c3IvY2Flbi9taXNjL21vZHVsZXMvdmNzLzIwMjAuMTItU1AyLTEubHVhIiwKZnVsbE5hbWUgPSAidmNzLzIwMjAuMTItU1AyLTEiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gInZjcyIsCndWID0gIl4wMDAwMjAyMC4wMDAwMDAwMTIuKnNwLjAwMDAwMDAwMi4qemZpbmFsLS4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCnZlcmRpID0gewpmbiA9ICIvdXNyL2NhZW4vbWlz
+_LMFILES_=/usr/caen/misc/modules/vscode/1.70.2.lua:/usr/caen/misc/modules/verdi/2020.12-SP2-1.lua:/usr/caen/misc/modules/vcs/2020.12-SP2-1.lua
+XMODIFIERS=@im=ibus
+XDG_VTNR=2
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=2
+XDG_SESSION_DESKTOP=gnome
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/114277361
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/guohch/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/usr/caen/misc/menus
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/user/114277361/gdm/Xauthority
+WINDOWPATH=2
+VTE_VERSION=5204
+VSCODE_GIT_IPC_HANDLE=/run/user/114277361/vscode-git-bd55ec68db.sock
+VSCODE_GIT_ASKPASS_NODE=/opt/caen/remote/vscode-1.70.2/code/code
+VSCODE_GIT_ASKPASS_MAIN=/opt/caen/remote/vscode-1.70.2/code/resources/app/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=--ms-enable-electron-run-as-node
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/caen/verdi-2020.12-SP2-1
+VCS_TARGET_ARCH=linux64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/caen/vcs-2020.12-SP2-1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=guohch
+UNAME=/bin/uname
+TOOL_HOME=/usr/caen/vcs-2020.12-SP2-1/linux64
+TERM_PROGRAM_VERSION=1.70.2
+TERM_PROGRAM=vscode
+S_COLORS=auto
+SSH_AUTH_SOCK=/run/user/114277361/keyring/ssh
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/5656,unix/unix:/tmp/.ICE-unix/5656
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+OVA_UUM=0
+ORIGINAL_XDG_CURRENT_DESKTOP=GNOME
+NO_AT_BRIDGE=1
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+MODULESHOME=/usr/share/lmod/lmod
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULEPATH=/usr/caen/misc/modules:/etc/scl/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/afs/umich.edu/class/coe/modules:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=vscode/1.70.2:verdi/2020.12-SP2-1:vcs/2020.12-SP2-1
+LMOD_sys=Linux
+LMOD_VERSION=8.7.7
+LMOD_SHELL_PRGM=bash
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_ROOT=/usr/share/lmod
+LMOD_PKG=/usr/share/lmod/lmod
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+KRB5CCNAME=KEYRING:persistent:114277361
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.69
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/be5cb525_eb65_49d9_a79f_0d193d138ca2
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GIT_ASKPASS=/opt/caen/remote/vscode-1.70.2/code/resources/app/extensions/git/dist/askpass.sh
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome
+GDK_BACKEND=x11
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7M476vDbUU,guid=f291ac1b537b17ad60e12f5e63f70a7d
+COLORTERM=truecolor
+CHROME_DESKTOP=code-url-handler.desktop
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then_ case "$-" in _ *v*x*)_ __lmod_sh_dbg='vx'_ ;;_ *v*)_ __lmod_sh_dbg='v'_ ;;_ *x*)_ __lmod_sh_dbg='x'_ ;;_ esac;_ fi;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ set +$__lmod_sh_dbg;_ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;_ fi;_ eval "$($LMOD_CMD $LMOD_SHELL_PRGM "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";_ __lmod_my_status=$?;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ echo "Shell debugging restarted" 1>&2;_ set -$__lmod_sh_dbg;_ fi;_ unset __lmod_sh_dbg;_ return $__lmod_my_status_}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"_}
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+0
+0
+12
+1677147708 testbench/POOL_BIAS_ACT_testbench.sv
+1677116100 ../sys_defs.svh
+1677146088 ../POOL_BIAS_ACT/ReLU.v
+1676071196 ../CNN/verilog/adder_1bit.v
+1677147094 ../CNN/verilog/adder_tree.v
+1677145738 verilog/divider_pipe.v
+1677137030 verilog/pool_avg.v
+1676749827 verilog/CMP.v
+1677140580 verilog/pool_max.v
+1677142537 verilog/POOLING_top.v
+1677147226 ../POOL_BIAS_ACT/POOL_BIAS_ACT.v
+1677116100 ../sys_defs.svh
+4
+1626665287 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so
+1626664738 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so
+1626664460 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so
+1626664734 /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so
+1677147744 sim.daidir
+-1 partitionlib

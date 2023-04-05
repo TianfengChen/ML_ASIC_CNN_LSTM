@@ -1,0 +1,1632 @@
+
+LVS Netlist Compiler - Errors and Warnings for "/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/v2lvs/mult_chip.cdl"
+----------------------------------------------------------------------------------------------------------------------------
+
+Warning: Duplicate subckt definition "FILL1TR" at line 7 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 7 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL2TR" at line 11 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 11 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL4TR" at line 15 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 15 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL8TR" at line 19 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 19 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL16TR" at line 23 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 23 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL32TR" at line 27 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 27 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "FILL64TR" at line 31 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 31 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSHCINX2TR" at line 37 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 37 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSHCINX4TR" at line 71 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 71 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSHCONX2TR" at line 105 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 105 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSHCONX4TR" at line 137 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 137 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSIHCONX2TR" at line 169 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 169 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACCSIHCONX4TR" at line 181 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 181 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACHCINX2TR" at line 197 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 197 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACHCINX4TR" at line 223 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 223 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACHCONX2TR" at line 249 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 249 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ACHCONX4TR" at line 275 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 275 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFHX1TR" at line 301 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 301 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFHX2TR" at line 337 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 337 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFHX4TR" at line 373 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 373 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFHXLTR" at line 409 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 409 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFX1TR" at line 445 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 445 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFX2TR" at line 477 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 477 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFX4TR" at line 509 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 509 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDFXLTR" at line 541 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 541 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDHX1TR" at line 573 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 573 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDHX2TR" at line 593 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 593 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDHX4TR" at line 613 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 613 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ADDHXLTR" at line 633 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 633 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSHCINX2TR" at line 653 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 653 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSHCINX4TR" at line 715 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 715 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSHCONX2TR" at line 777 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 777 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSHCONX4TR" at line 837 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 837 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSIHCONX2TR" at line 897 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 897 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFCSIHCONX4TR" at line 929 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 929 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFHCINX2TR" at line 965 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 965 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFHCINX4TR" at line 1001 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1001 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFHCONX2TR" at line 1037 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1037 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AFHCONX4TR" at line 1073 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1073 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHCSHCINX2TR" at line 1109 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1109 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHCSHCINX4TR" at line 1135 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1135 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHCSHCONX2TR" at line 1163 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1163 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHCSHCONX4TR" at line 1189 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1189 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHHCINX2TR" at line 1217 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1217 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHHCINX4TR" at line 1239 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1239 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHHCONX2TR" at line 1263 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1263 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AHHCONX4TR" at line 1283 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1283 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2X1TR" at line 1307 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1307 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2X2TR" at line 1317 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1317 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2X4TR" at line 1327 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1327 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2X6TR" at line 1337 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1337 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2X8TR" at line 1349 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1349 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND2XLTR" at line 1361 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1361 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3X1TR" at line 1371 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1371 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3X2TR" at line 1383 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1383 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3X4TR" at line 1395 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1395 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3X6TR" at line 1407 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1407 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3X8TR" at line 1422 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1422 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND3XLTR" at line 1437 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1437 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4X1TR" at line 1449 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1449 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4X2TR" at line 1463 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1463 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4X4TR" at line 1477 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1477 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4X6TR" at line 1495 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1495 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4X8TR" at line 1513 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1513 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AND4XLTR" at line 1535 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1535 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "ANTENNATR" at line 1549 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1549 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO21X1TR" at line 1554 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1554 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO21X2TR" at line 1566 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1566 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO21X4TR" at line 1578 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1578 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO21XLTR" at line 1590 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1590 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO22X1TR" at line 1602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO22X2TR" at line 1616 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1616 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO22X4TR" at line 1630 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1630 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AO22XLTR" at line 1644 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1644 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI211X1TR" at line 1658 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1658 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI211X2TR" at line 1670 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1670 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI211X4TR" at line 1686 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1686 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI211XLTR" at line 1702 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1702 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI21X1TR" at line 1714 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1714 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI21X2TR" at line 1724 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1724 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI21X4TR" at line 1736 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1736 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI21XLTR" at line 1750 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1750 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI221X1TR" at line 1760 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1760 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI221X2TR" at line 1774 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1774 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI221X4TR" at line 1792 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1792 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI221XLTR" at line 1810 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1810 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI222X1TR" at line 1824 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1824 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI222X2TR" at line 1840 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1840 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI222X4TR" at line 1862 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1862 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI222XLTR" at line 1882 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1882 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI22X1TR" at line 1898 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1898 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI22X2TR" at line 1910 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1910 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI22X4TR" at line 1926 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1926 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI22XLTR" at line 1946 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1946 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB1X1TR" at line 1958 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1958 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB1X2TR" at line 1970 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1970 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB1X4TR" at line 1984 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 1984 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB1XLTR" at line 2002 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2002 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB2X1TR" at line 2014 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2014 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB2X2TR" at line 2028 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2028 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB2X4TR" at line 2044 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2044 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI2BB2XLTR" at line 2064 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2064 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI31X1TR" at line 2078 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2078 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI31X2TR" at line 2090 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2090 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI31X4TR" at line 2105 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2105 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI31XLTR" at line 2121 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2121 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI32X1TR" at line 2133 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2133 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI32X2TR" at line 2147 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2147 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI32X4TR" at line 2166 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2166 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI32XLTR" at line 2184 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2184 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI33X1TR" at line 2198 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2198 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI33X2TR" at line 2214 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2214 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI33X4TR" at line 2236 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2236 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "AOI33XLTR" at line 2256 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2256 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BENCX1TR" at line 2272 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2272 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BENCX2TR" at line 2312 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2312 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BENCX4TR" at line 2352 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2352 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BMXIX2TR" at line 2396 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2396 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BMXIX4TR" at line 2424 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2424 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BMXX2TR" at line 2452 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2452 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BMXX4TR" at line 2484 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2484 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX12TR" at line 2516 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2516 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX16TR" at line 2524 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2524 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX20TR" at line 2532 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2532 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX2TR" at line 2540 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2540 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX3TR" at line 2548 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2548 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX4TR" at line 2556 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2556 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX6TR" at line 2564 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2564 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "BUFX8TR" at line 2572 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2572 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X12TR" at line 2580 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2580 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X2TR" at line 2592 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2592 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X3TR" at line 2602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X4TR" at line 2612 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2612 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X6TR" at line 2622 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2622 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKAND2X8TR" at line 2632 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2632 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX12TR" at line 2642 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2642 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX16TR" at line 2650 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2650 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX20TR" at line 2658 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2658 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX2TR" at line 2666 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2666 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX3TR" at line 2674 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2674 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX4TR" at line 2682 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2682 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX6TR" at line 2690 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2690 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKBUFX8TR" at line 2698 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2698 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX12TR" at line 2706 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2706 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX16TR" at line 2712 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2712 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX1TR" at line 2718 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2718 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX20TR" at line 2724 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2724 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX2TR" at line 2730 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2730 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX3TR" at line 2736 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2736 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX4TR" at line 2742 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2742 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX6TR" at line 2748 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2748 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKINVX8TR" at line 2754 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2754 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X12TR" at line 2760 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2760 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X2TR" at line 2780 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2780 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X3TR" at line 2796 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2796 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X4TR" at line 2812 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2812 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X6TR" at line 2828 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2828 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKMX2X8TR" at line 2844 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2844 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKXOR2X1TR" at line 2864 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2864 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKXOR2X2TR" at line 2880 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2880 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKXOR2X4TR" at line 2896 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2896 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CLKXOR2X8TR" at line 2912 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2912 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR22X2TR" at line 2928 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2928 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR22X4TR" at line 2948 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2948 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR32X2TR" at line 2968 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 2968 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR32X4TR" at line 3000 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3000 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR42X1TR" at line 3032 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3032 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR42X2TR" at line 3092 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3092 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "CMPR42X4TR" at line 3152 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3152 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFHQX1TR" at line 3220 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3220 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFHQX2TR" at line 3253 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3253 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFHQX4TR" at line 3286 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3286 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFHQX8TR" at line 3323 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3323 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFNSRX1TR" at line 3360 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3360 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFNSRX2TR" at line 3400 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3400 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFNSRX4TR" at line 3440 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3440 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFNSRXLTR" at line 3480 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3480 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFQX1TR" at line 3520 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3520 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFQX2TR" at line 3548 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3548 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFQX4TR" at line 3576 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3576 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFQXLTR" at line 3604 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3604 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRHQX1TR" at line 3632 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3632 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRHQX2TR" at line 3669 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3669 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRHQX4TR" at line 3706 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3706 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRHQX8TR" at line 3749 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3749 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRX1TR" at line 3792 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3792 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRX2TR" at line 3829 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3829 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRX4TR" at line 3866 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3866 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFRXLTR" at line 3903 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3903 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSHQX1TR" at line 3940 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3940 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSHQX2TR" at line 3979 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 3979 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSHQX4TR" at line 4018 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4018 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSHQX8TR" at line 4062 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4062 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRHQX1TR" at line 4106 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4106 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRHQX2TR" at line 4152 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4152 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRHQX4TR" at line 4198 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4198 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRHQX8TR" at line 4250 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4250 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRX1TR" at line 4302 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4302 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRX2TR" at line 4342 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4342 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRX4TR" at line 4382 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4382 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSRXLTR" at line 4422 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4422 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSX1TR" at line 4462 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4462 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSX2TR" at line 4497 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4497 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSX4TR" at line 4532 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4532 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFSXLTR" at line 4567 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4567 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFTRX1TR" at line 4602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4602 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFTRX2TR" at line 4636 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4636 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFTRX4TR" at line 4670 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4670 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFTRXLTR" at line 4704 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4704 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFX1TR" at line 4738 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4738 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFX2TR" at line 4770 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4770 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFX4TR" at line 4806 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4806 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DFFXLTR" at line 4846 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4846 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY1X1TR" at line 4878 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4878 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY1X4TR" at line 4890 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4890 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY2X1TR" at line 4902 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4902 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY2X4TR" at line 4914 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4914 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY3X1TR" at line 4926 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4926 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY3X4TR" at line 4938 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4938 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY4X1TR" at line 4950 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4950 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "DLY4X4TR" at line 4962 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4962 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFHQX1TR" at line 4974 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 4974 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFHQX2TR" at line 5015 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5015 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFHQX4TR" at line 5056 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5056 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFHQX8TR" at line 5103 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5103 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFTRX1TR" at line 5150 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5150 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFTRX2TR" at line 5194 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5194 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFTRX4TR" at line 5238 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5238 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFTRXLTR" at line 5282 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5282 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFX1TR" at line 5326 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5326 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFX2TR" at line 5366 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5366 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFX4TR" at line 5406 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5406 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "EDFFXLTR" at line 5450 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5450 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "HOLDX1TR" at line 5490 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5490 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX12TR" at line 5499 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5499 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX16TR" at line 5505 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5505 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX1TR" at line 5511 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5511 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX20TR" at line 5517 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5517 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX2TR" at line 5523 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5523 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX3TR" at line 5529 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5529 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX4TR" at line 5535 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5535 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX6TR" at line 5541 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5541 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVX8TR" at line 5547 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5547 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "INVXLTR" at line 5553 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5553 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MDFFHQX1TR" at line 5559 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5559 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MDFFHQX2TR" at line 5600 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5600 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MDFFHQX4TR" at line 5641 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5641 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MDFFHQX8TR" at line 5688 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5688 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2X1TR" at line 5735 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5735 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2X2TR" at line 5751 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5751 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2X4TR" at line 5767 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5767 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2X6TR" at line 5783 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5783 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2X8TR" at line 5799 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5799 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX2XLTR" at line 5815 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5815 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX3X1TR" at line 5831 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5831 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+Warning: Duplicate subckt definition "MX3X2TR" at line 5855 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+         previously defined at line 5855 in file "/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lvs_netlist/ibm13_with_vdd_vss.cdl"
+
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         mult_chip.lvs.report
+LAYOUT NAME:              /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/mult_chip.sp ('mult_chip')
+SOURCE NAME:              /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/v2lvs/mult_chip.cdl ('mult_chip')
+RULE FILE:                /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/_cmrf8sf.lvs.cal_
+CREATION TIME:            Mon Mar 21 19:07:49 2022
+CURRENT DIRECTORY:        /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS
+USER NAME:                qiruizh
+CALIBRE VERSION:          v2021.3_15.9    Tue Jul 6 13:44:37 PDT 2021
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        mult_chip                     mult_chip
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD" "DVDD"
+   LVS GROUND NAME                        "VSS" "DVSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            NO
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                YES
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               RB RC RD RE RF RG YB
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  R(opndres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(nwres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(opppcres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(silres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(l1res)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(kxres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(lvsres)  SERIES POS NEG
+   LVS REDUCE  efuse  SERIES IN OUT
+   LVS REDUCE  MN(nfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lpnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(zvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(hvtnfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtnfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MD(dgnfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(zvtdgnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MN(nfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lpnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MP(pfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lppfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MD(dgpfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MP(pfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lppfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  hvtnfet33tw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  hvtnfet33tw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  dgnfettw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  nfettw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  nfet33tw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  lvtnfettw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  dgnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  nfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  nfet33tw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  lvtnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  lpnfettw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  lpnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  R(opndres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(nwres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(opppcres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(silres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(l1res)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(kxres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(lvsres)  PARALLEL
+   LVS REDUCE  ncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  dgncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  C(vncap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  D(havar)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffhavar  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffncap  PARALLEL [ TOLERANCE w 0 l 0 mSwitch 0 ]
+   LVS REDUCE  D(sbd)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  D(dipdnw)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  Q(divpnp)  PARALLEL
+   LVS REDUCE  Q(esdvpnp)  PARALLEL [ TOLERANCE nf 0 areae 0 areab 0 ]
+   LVS REDUCE  D(esdndsx)  PARALLEL [ TOLERANCE bp 0 ]
+   LVS REDUCE  D(tdpdnw)  PARALLEL
+   LVS REDUCE  D(tdndsx)  PARALLEL
+   LVS REDUCE  subc  PARALLEL
+   LVS REDUCE  efuse  PARALLEL
+   LVS REDUCE  C(mim)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(mimnit)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(mimcap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(dualmimcap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(dualmimnit)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nfet)  w w 0.5
+   TRACE PROPERTY  mn(nfet)  l l 0.5
+   TRACE PROPERTY  mn(nfet)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet)  par par 0
+   TRACE PROPERTY  mn(nfet)  psp psp 0
+   TRACE PROPERTY  mn(nfet33)  w w 0.5
+   TRACE PROPERTY  mn(nfet33)  l l 0.5
+   TRACE PROPERTY  mn(nfet33)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet33)  par par 0
+   TRACE PROPERTY  m(lpnfet)  w w 2.64
+   TRACE PROPERTY  m(lpnfet)  l l 0.5
+   TRACE PROPERTY  m(lpnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lpnfet)  par par 0
+   TRACE PROPERTY  m(zvtnfet)  w w 2.64
+   TRACE PROPERTY  m(zvtnfet)  l l 0.5
+   TRACE PROPERTY  m(zvtnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(zvtnfet)  par par 0
+   TRACE PROPERTY  m(hvtnfet33)  w w 0.5
+   TRACE PROPERTY  m(hvtnfet33)  l l 0.5
+   TRACE PROPERTY  m(hvtnfet33)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtnfet33)  par par 0
+   TRACE PROPERTY  m(hvtnfet33)  psp psp 0
+   TRACE PROPERTY  md(dgnfet)  w w 0.5
+   TRACE PROPERTY  md(dgnfet)  l l 0.5
+   TRACE PROPERTY  md(dgnfet)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgnfet)  par par 0
+   TRACE PROPERTY  md(dgnfet)  psp psp 0
+   TRACE PROPERTY  m(zvtdgnfet)  w w 2.64
+   TRACE PROPERTY  m(zvtdgnfet)  l l 0.5
+   TRACE PROPERTY  m(zvtdgnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(zvtdgnfet)  par par 0
+   TRACE PROPERTY  m(lvtnfet)  w w 2.64
+   TRACE PROPERTY  m(lvtnfet)  l l 0.5
+   TRACE PROPERTY  m(lvtnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtnfet)  par par 0
+   TRACE PROPERTY  nfettw  w w 0.5
+   TRACE PROPERTY  nfettw  l l 0.5
+   TRACE PROPERTY  nfettw  ngcon ngcon 0
+   TRACE PROPERTY  nfettw  t3well t3well 0
+   TRACE PROPERTY  nfettw  par par 0
+   TRACE PROPERTY  nfettw  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw  w w 0.5
+   TRACE PROPERTY  hvtnfet33tw  l l 0.5
+   TRACE PROPERTY  hvtnfet33tw  ngcon ngcon 0
+   TRACE PROPERTY  hvtnfet33tw  t3well t3well 0
+   TRACE PROPERTY  hvtnfet33tw  par par 0
+   TRACE PROPERTY  hvtnfet33tw  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw_rf  w w 0.5
+   TRACE PROPERTY  hvtnfet33tw_rf  l l 0.5
+   TRACE PROPERTY  hvtnfet33tw_rf  ngcon ngcon 0
+   TRACE PROPERTY  hvtnfet33tw_rf  t3well t3well 0
+   TRACE PROPERTY  hvtnfet33tw_rf  par par 0
+   TRACE PROPERTY  hvtnfet33tw_rf  ring ring 0
+   TRACE PROPERTY  hvtnfet33tw_rf  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw_rf  gtab gtab 0
+   TRACE PROPERTY  dgnfettw  w w 0.5
+   TRACE PROPERTY  dgnfettw  l l 0.5
+   TRACE PROPERTY  dgnfettw  ngcon ngcon 0
+   TRACE PROPERTY  dgnfettw  t3well t3well 0
+   TRACE PROPERTY  dgnfettw  par par 0
+   TRACE PROPERTY  dgnfettw  psp psp 0
+   TRACE PROPERTY  nfettw_rf  w w 0.5
+   TRACE PROPERTY  nfettw_rf  l l 0.5
+   TRACE PROPERTY  nfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  nfettw_rf  t3well t3well 0
+   TRACE PROPERTY  nfettw_rf  par par 0
+   TRACE PROPERTY  nfettw_rf  ring ring 0
+   TRACE PROPERTY  nfettw_rf  psp psp 0
+   TRACE PROPERTY  nfettw_rf  gtab gtab 0
+   TRACE PROPERTY  dgnfettw_rf  w w 0.5
+   TRACE PROPERTY  dgnfettw_rf  l l 0.5
+   TRACE PROPERTY  dgnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  dgnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  dgnfettw_rf  par par 0
+   TRACE PROPERTY  dgnfettw_rf  ring ring 0
+   TRACE PROPERTY  dgnfettw_rf  psp psp 0
+   TRACE PROPERTY  dgnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  nfet33tw  w w 0.5
+   TRACE PROPERTY  nfet33tw  l l 0.5
+   TRACE PROPERTY  nfet33tw  ngcon ngcon 0
+   TRACE PROPERTY  nfet33tw  t3well t3well 0
+   TRACE PROPERTY  nfet33tw  par par 0
+   TRACE PROPERTY  lvtnfettw  w w 0.5
+   TRACE PROPERTY  lvtnfettw  l l 0.5
+   TRACE PROPERTY  lvtnfettw  ngcon ngcon 0
+   TRACE PROPERTY  lvtnfettw  t3well t3well 0
+   TRACE PROPERTY  lvtnfettw  par par 0
+   TRACE PROPERTY  nfet33tw_rf  w w 0.5
+   TRACE PROPERTY  nfet33tw_rf  l l 0.5
+   TRACE PROPERTY  nfet33tw_rf  ngcon ngcon 0
+   TRACE PROPERTY  nfet33tw_rf  t3well t3well 0
+   TRACE PROPERTY  nfet33tw_rf  par par 0
+   TRACE PROPERTY  nfet33tw_rf  ring ring 0
+   TRACE PROPERTY  nfet33tw_rf  gtab gtab 0
+   TRACE PROPERTY  lvtnfettw_rf  w w 0.5
+   TRACE PROPERTY  lvtnfettw_rf  l l 0.5
+   TRACE PROPERTY  lvtnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  lvtnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  lvtnfettw_rf  par par 0
+   TRACE PROPERTY  lvtnfettw_rf  ring ring 0
+   TRACE PROPERTY  lvtnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  lpnfettw  w w 0.5
+   TRACE PROPERTY  lpnfettw  l l 0.5
+   TRACE PROPERTY  lpnfettw  ngcon ngcon 0
+   TRACE PROPERTY  lpnfettw  t3well t3well 0
+   TRACE PROPERTY  lpnfettw  par par 0
+   TRACE PROPERTY  lpnfettw_rf  w w 0.5
+   TRACE PROPERTY  lpnfettw_rf  l l 0.5
+   TRACE PROPERTY  lpnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  lpnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  lpnfettw_rf  par par 0
+   TRACE PROPERTY  lpnfettw_rf  ring ring 0
+   TRACE PROPERTY  lpnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  w w 0.5
+   TRACE PROPERTY  m(hvtnfet33_rf)  l l 0.5
+   TRACE PROPERTY  m(hvtnfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  par par 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  ring ring 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  psp psp 0
+   TRACE PROPERTY  m(hvtpfet33)  w w 0.5
+   TRACE PROPERTY  m(hvtpfet33)  l l 0.5
+   TRACE PROPERTY  m(hvtpfet33)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtpfet33)  par par 0
+   TRACE PROPERTY  m(hvtpfet33)  psp psp 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  w w 0.5
+   TRACE PROPERTY  m(hvtpfet33_rf)  l l 0.5
+   TRACE PROPERTY  m(hvtpfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  par par 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  ring ring 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  psp psp 0
+   TRACE PROPERTY  mn(nfet_rf)  w w 0.5
+   TRACE PROPERTY  mn(nfet_rf)  l l 0.5
+   TRACE PROPERTY  mn(nfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet_rf)  par par 0
+   TRACE PROPERTY  mn(nfet_rf)  ring ring 0
+   TRACE PROPERTY  mn(nfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mn(nfet_rf)  psp psp 0
+   TRACE PROPERTY  mn(nfet33_rf)  w w 0.5
+   TRACE PROPERTY  mn(nfet33_rf)  l l 0.5
+   TRACE PROPERTY  mn(nfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet33_rf)  par par 0
+   TRACE PROPERTY  mn(nfet33_rf)  ring ring 0
+   TRACE PROPERTY  mn(nfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(lpnfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lpnfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lpnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lpnfet_rf)  par par 0
+   TRACE PROPERTY  m(lpnfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lpnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgnfet_rf)  w w 0.5
+   TRACE PROPERTY  md(dgnfet_rf)  l l 0.5
+   TRACE PROPERTY  md(dgnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgnfet_rf)  par par 0
+   TRACE PROPERTY  md(dgnfet_rf)  ring ring 0
+   TRACE PROPERTY  md(dgnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgnfet_rf)  psp psp 0
+   TRACE PROPERTY  m(lvtnfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lvtnfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lvtnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtnfet_rf)  par par 0
+   TRACE PROPERTY  m(lvtnfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lvtnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mp(pfet)  w w 0.5
+   TRACE PROPERTY  mp(pfet)  l l 0.5
+   TRACE PROPERTY  mp(pfet)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet)  par par 0
+   TRACE PROPERTY  mp(pfet)  psp psp 0
+   TRACE PROPERTY  mp(pfet33)  w w 0.5
+   TRACE PROPERTY  mp(pfet33)  l l 0.5
+   TRACE PROPERTY  mp(pfet33)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet33)  par par 0
+   TRACE PROPERTY  m(lppfet)  w w 0.5
+   TRACE PROPERTY  m(lppfet)  l l 0.5
+   TRACE PROPERTY  m(lppfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lppfet)  par par 0
+   TRACE PROPERTY  md(dgpfet)  w w 0.5
+   TRACE PROPERTY  md(dgpfet)  l l 0.5
+   TRACE PROPERTY  md(dgpfet)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgpfet)  par par 0
+   TRACE PROPERTY  md(dgpfet)  psp psp 0
+   TRACE PROPERTY  m(lvtpfet)  w w 0.5
+   TRACE PROPERTY  m(lvtpfet)  l l 0.5
+   TRACE PROPERTY  m(lvtpfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtpfet)  par par 0
+   TRACE PROPERTY  mp(pfet_rf)  w w 0.5
+   TRACE PROPERTY  mp(pfet_rf)  l l 0.5
+   TRACE PROPERTY  mp(pfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet_rf)  par par 0
+   TRACE PROPERTY  mp(pfet_rf)  ring ring 0
+   TRACE PROPERTY  mp(pfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mp(pfet_rf)  psp psp 0
+   TRACE PROPERTY  mp(pfet33_rf)  w w 0.5
+   TRACE PROPERTY  mp(pfet33_rf)  l l 0.5
+   TRACE PROPERTY  mp(pfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet33_rf)  par par 0
+   TRACE PROPERTY  mp(pfet33_rf)  ring ring 0
+   TRACE PROPERTY  mp(pfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(lppfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lppfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lppfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lppfet_rf)  par par 0
+   TRACE PROPERTY  m(lppfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lppfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgpfet_rf)  w w 0.5
+   TRACE PROPERTY  md(dgpfet_rf)  l l 0.5
+   TRACE PROPERTY  md(dgpfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgpfet_rf)  par par 0
+   TRACE PROPERTY  md(dgpfet_rf)  ring ring 0
+   TRACE PROPERTY  md(dgpfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgpfet_rf)  psp psp 0
+   TRACE PROPERTY  m(lvtpfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lvtpfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lvtpfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtpfet_rf)  par par 0
+   TRACE PROPERTY  m(lvtpfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lvtpfet_rf)  gtab gtab 0
+   TRACE PROPERTY  c(mim)  c c 0.1
+   TRACE PROPERTY  c(mim)  w w 0.1
+   TRACE PROPERTY  c(mim)  l l 0.1
+   TRACE PROPERTY  c(mim)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mim)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mim)  m m 0
+   TRACE PROPERTY  c(mim)  par par 0
+   TRACE PROPERTY  c(mim)  bp bp 0
+   TRACE PROPERTY  c(mim)  botviasides botviasides 0
+   TRACE PROPERTY  c(mimnit)  c c 0.1
+   TRACE PROPERTY  c(mimnit)  w w 0.1
+   TRACE PROPERTY  c(mimnit)  l l 0.1
+   TRACE PROPERTY  c(mimnit)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mimnit)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mimnit)  m m 0
+   TRACE PROPERTY  c(mimnit)  par par 0
+   TRACE PROPERTY  c(mimnit)  bp bp 0
+   TRACE PROPERTY  c(mimnit)  botviasides botviasides 0
+   TRACE PROPERTY  c(mimcap)  c c 0.1
+   TRACE PROPERTY  c(mimcap)  w w 0.1
+   TRACE PROPERTY  c(mimcap)  l l 0.1
+   TRACE PROPERTY  c(mimcap)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mimcap)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mimcap)  m m 0
+   TRACE PROPERTY  c(mimcap)  par par 0
+   TRACE PROPERTY  c(mimcap)  bp bp 0
+   TRACE PROPERTY  c(dualmimcap)  c c 0.1
+   TRACE PROPERTY  c(dualmimcap)  w w 0.1
+   TRACE PROPERTY  c(dualmimcap)  l l 0.1
+   TRACE PROPERTY  c(dualmimcap)  tlev1 tlev1 0
+   TRACE PROPERTY  c(dualmimcap)  tlev2 tlev2 0
+   TRACE PROPERTY  c(dualmimcap)  m m 0
+   TRACE PROPERTY  c(dualmimcap)  par par 0
+   TRACE PROPERTY  c(dualmimcap)  bp bp 0
+   TRACE PROPERTY  c(dualmimnit)  c c 0.1
+   TRACE PROPERTY  c(dualmimnit)  w w 0.1
+   TRACE PROPERTY  c(dualmimnit)  l l 0.1
+   TRACE PROPERTY  c(dualmimnit)  tlev1 tlev1 0
+   TRACE PROPERTY  c(dualmimnit)  tlev2 tlev2 0
+   TRACE PROPERTY  c(dualmimnit)  m m 0
+   TRACE PROPERTY  c(dualmimnit)  par par 0
+   TRACE PROPERTY  c(dualmimnit)  bp bp 0
+   TRACE PROPERTY  d(havar)  w w 0.1
+   TRACE PROPERTY  d(havar)  l l 0.1
+   TRACE PROPERTY  d(havar)  c c 0.1
+   TRACE PROPERTY  d(havar)  nf nf 0
+   TRACE PROPERTY  d(havar)  m m 0
+   TRACE PROPERTY  diffhavar  w w 0.1
+   TRACE PROPERTY  diffhavar  l l 0.1
+   TRACE PROPERTY  diffhavar  c c 0.1
+   TRACE PROPERTY  diffhavar  nf nf 0
+   TRACE PROPERTY  diffhavar  m m 0
+   TRACE PROPERTY  diffncap  w w 0.1
+   TRACE PROPERTY  diffncap  l l 0.1
+   TRACE PROPERTY  diffncap  nf nf 0
+   TRACE PROPERTY  diffncap  m m 0
+   TRACE PROPERTY  diffncap  mswitch mswitch 0
+   TRACE PROPERTY  ncap  l l 0.1
+   TRACE PROPERTY  ncap  w w 0.1
+   TRACE PROPERTY  dgncap  l l 0.1
+   TRACE PROPERTY  dgncap  w w 0.1
+   TRACE PROPERTY  c(vncap)  l l 0.1
+   TRACE PROPERTY  c(vncap)  w w 0.1
+   TRACE PROPERTY  c(vncap)  botlev botlev 0
+   TRACE PROPERTY  c(vncap)  toplev toplev 0
+   TRACE PROPERTY  c(vncap)  bp bp 0
+   TRACE PROPERTY  c(vncap)  m m 0
+   TRACE PROPERTY  c(vncap)  par par 0
+   TRACE PROPERTY  bondpad  w w 0.1
+   TRACE PROPERTY  bondpad  l l 0.1
+   TRACE PROPERTY  bondpad  wbc4 wbc4 0
+   TRACE PROPERTY  bondpad  bp bp 0
+   TRACE PROPERTY  bondpad  rect rect 0
+   TRACE PROPERTY  bondpad  tlev1 tlev1 0
+   TRACE PROPERTY  bondpad  tlev2 tlev2 0
+   TRACE PROPERTY  bondpad  tvw tvw 0.1
+   TRACE PROPERTY  indp  n n 0
+   TRACE PROPERTY  indp  x x 0.1
+   TRACE PROPERTY  indp  w w 0.1
+   TRACE PROPERTY  indp  s s 0.1
+   TRACE PROPERTY  indp  bp bp 0
+   TRACE PROPERTY  indp  tlev1 tlev1 0
+   TRACE PROPERTY  indp  tlev2 tlev2 0
+   TRACE PROPERTY  inds  n n 0
+   TRACE PROPERTY  inds  x x 0.1
+   TRACE PROPERTY  inds  w w 0.1
+   TRACE PROPERTY  inds  s s 0.1
+   TRACE PROPERTY  inds  bp bp 0
+   TRACE PROPERTY  inds  tlev1 tlev1 0
+   TRACE PROPERTY  inds  tlev2 tlev2 0
+   TRACE PROPERTY  ind  n n 0
+   TRACE PROPERTY  ind  x x 0.1
+   TRACE PROPERTY  ind  w w 0.1
+   TRACE PROPERTY  ind  s s 0.1
+   TRACE PROPERTY  ind  bp bp 0
+   TRACE PROPERTY  ind  tlev1 tlev1 0
+   TRACE PROPERTY  ind  tlev2 tlev2 0
+   TRACE PROPERTY  symindp  n n 0
+   TRACE PROPERTY  symindp  x x 0.1
+   TRACE PROPERTY  symindp  w w 0.1
+   TRACE PROPERTY  symindp  s s 0.1
+   TRACE PROPERTY  symindp  tlev1 tlev1 0
+   TRACE PROPERTY  symindp  tlev2 tlev2 0
+   TRACE PROPERTY  symindp  bp bp 0
+   TRACE PROPERTY  symindp  wu wu 0.1
+   TRACE PROPERTY  symind  n n 0
+   TRACE PROPERTY  symind  x x 0.1
+   TRACE PROPERTY  symind  w w 0.1
+   TRACE PROPERTY  symind  s s 0.1
+   TRACE PROPERTY  symind  tlev1 tlev1 0
+   TRACE PROPERTY  symind  tlev2 tlev2 0
+   TRACE PROPERTY  symind  tleval tleval 0
+   TRACE PROPERTY  symind  bp bp 0
+   TRACE PROPERTY  symind  wu wu 0.1
+   TRACE PROPERTY  rfline  w w 0.1
+   TRACE PROPERTY  rfline  l l 0.1
+   TRACE PROPERTY  rfline  tlev1 tlev1 0
+   TRACE PROPERTY  rfline  tlev2 tlev2 0
+   TRACE PROPERTY  coupledwires  w w 0.1
+   TRACE PROPERTY  coupledwires  l l 0.1
+   TRACE PROPERTY  coupledwires  d d 0.1
+   TRACE PROPERTY  coupledwires  s s 0.1
+   TRACE PROPERTY  coupledwires  shieldsads shieldsads 0
+   TRACE PROPERTY  coupledwires  layerads layerads 0
+   TRACE PROPERTY  coupledwires  overads overads 0
+   TRACE PROPERTY  coupledwires  tlev1 tlev1 0
+   TRACE PROPERTY  coupledwires  tlev2 tlev2 0
+   TRACE PROPERTY  singlewire  w w 0.1
+   TRACE PROPERTY  singlewire  l l 0.1
+   TRACE PROPERTY  singlewire  s s 0.1
+   TRACE PROPERTY  singlewire  shieldsads shieldsads 0
+   TRACE PROPERTY  singlewire  layerads layerads 0
+   TRACE PROPERTY  singlewire  overads overads 0
+   TRACE PROPERTY  singlewire  tlev1 tlev1 0
+   TRACE PROPERTY  singlewire  tlev2 tlev2 0
+   TRACE PROPERTY  singlecpw  l l 1
+   TRACE PROPERTY  singlecpw  w w 1
+   TRACE PROPERTY  singlecpw  s s 1
+   TRACE PROPERTY  singlecpw  layerads layerads 0
+   TRACE PROPERTY  singlecpw  tlev1 tlev1 0
+   TRACE PROPERTY  singlecpw  tlev2 tlev2 0
+   TRACE PROPERTY  coupledcpw  l l 1
+   TRACE PROPERTY  coupledcpw  w w 1
+   TRACE PROPERTY  coupledcpw  s s 1
+   TRACE PROPERTY  coupledcpw  d d 1
+   TRACE PROPERTY  coupledcpw  layerads layerads 0
+   TRACE PROPERTY  coupledcpw  tlev1 tlev1 0
+   TRACE PROPERTY  coupledcpw  tlev2 tlev2 0
+   TRACE PROPERTY  d(sbd)  l l 0.1
+   TRACE PROPERTY  d(sbd)  w w 0.1
+   TRACE PROPERTY  d(sbd)  nf nf 0
+   TRACE PROPERTY  d(sbd)  m m 0
+   TRACE PROPERTY  d(sbd)  par par 0
+   TRACE PROPERTY  d(dipdnw)  w w 0.1
+   TRACE PROPERTY  d(dipdnw)  l l 0.1
+   TRACE PROPERTY  d(dipdnw)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  w w 0.1
+   TRACE PROPERTY  q(divpnp)  l l 0.1
+   TRACE PROPERTY  q(divpnp)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  par par 0
+   TRACE PROPERTY  esdscr  nfscr nfscr 0
+   TRACE PROPERTY  esdnsh_base  lesd lesd 0.1
+   TRACE PROPERTY  esdnsh_base  wesd wesd 0.1
+   TRACE PROPERTY  esdnsh_base  nf nf 0
+   TRACE PROPERTY  esdnsh_base  ldop ldop 0.1
+   TRACE PROPERTY  esdnsh_base  lsop lsop 0.1
+   TRACE PROPERTY  esdnsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdnsh_base  gns gns 0
+   TRACE PROPERTY  esdpsh_base  lesd lesd 0.1
+   TRACE PROPERTY  esdpsh_base  wesd wesd 0.1
+   TRACE PROPERTY  esdpsh_base  nf nf 0
+   TRACE PROPERTY  esdpsh_base  ldop ldop 0.1
+   TRACE PROPERTY  esdpsh_base  lsop lsop 0.1
+   TRACE PROPERTY  esdpsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdpsh_base  gns gns 0
+   TRACE PROPERTY  d(esdndsx)  areac areac 0.1
+   TRACE PROPERTY  d(esdndsx)  pjc pjc 0.1
+   TRACE PROPERTY  d(esdndsx)  nf nf 0
+   TRACE PROPERTY  d(esdndsx)  bp bp 0
+   TRACE PROPERTY  q(esdvpnp)  areae areae 0.1
+   TRACE PROPERTY  q(esdvpnp)  pjerx pjerx 0.1
+   TRACE PROPERTY  q(esdvpnp)  areab areab 0.1
+   TRACE PROPERTY  q(esdvpnp)  pjb pjb 0.1
+   TRACE PROPERTY  q(esdvpnp)  nf nf 0
+   TRACE PROPERTY  sblkndres  l l 1
+   TRACE PROPERTY  sblkndres  w w 1
+   TRACE PROPERTY  sblkndres  r r 1
+   TRACE PROPERTY  sblkndres  sbar sbar 0
+   TRACE PROPERTY  sblkndres  par par 0
+   TRACE PROPERTY  r(opndres)  l l 1
+   TRACE PROPERTY  r(opndres)  w w 1
+   TRACE PROPERTY  r(opndres)  r r 1
+   TRACE PROPERTY  r(opndres)  sbar sbar 0
+   TRACE PROPERTY  r(opndres)  par par 0
+   TRACE PROPERTY  r(nwres)  l l 1
+   TRACE PROPERTY  r(nwres)  w w 1
+   TRACE PROPERTY  r(nwres)  r r 1
+   TRACE PROPERTY  r(nwres)  sbar sbar 0
+   TRACE PROPERTY  r(nwres)  par par 0
+   TRACE PROPERTY  r(l1res)  l l 1
+   TRACE PROPERTY  r(l1res)  w w 1
+   TRACE PROPERTY  r(l1res)  r r 1
+   TRACE PROPERTY  r(l1res)  sbar sbar 0
+   TRACE PROPERTY  r(l1res)  par par 0
+   TRACE PROPERTY  r(l1res)  tlev1 tlev1 0
+   TRACE PROPERTY  r(l1res)  tlev2 tlev2 0
+   TRACE PROPERTY  r(kxres)  l l 1
+   TRACE PROPERTY  r(kxres)  w w 1
+   TRACE PROPERTY  r(kxres)  r r 1
+   TRACE PROPERTY  r(kxres)  sbar sbar 0
+   TRACE PROPERTY  r(kxres)  par par 0
+   TRACE PROPERTY  r(kxres)  tlev1 tlev1 0
+   TRACE PROPERTY  r(opppcres)  l l 1
+   TRACE PROPERTY  r(opppcres)  w w 1
+   TRACE PROPERTY  r(opppcres)  r r 1
+   TRACE PROPERTY  r(opppcres)  bp bp 0
+   TRACE PROPERTY  r(opppcres)  sbar sbar 0
+   TRACE PROPERTY  r(opppcres)  par par 0
+   TRACE PROPERTY  r(oprrpres)  l l 1
+   TRACE PROPERTY  r(oprrpres)  w w 1
+   TRACE PROPERTY  r(oprrpres)  r r 1
+   TRACE PROPERTY  r(oprrpres)  bp bp 0
+   TRACE PROPERTY  r(oprrpres)  sbar sbar 0
+   TRACE PROPERTY  r(oprrpres)  par par 0
+   TRACE PROPERTY  r(oprppres)  l l 1
+   TRACE PROPERTY  r(oprppres)  w w 1
+   TRACE PROPERTY  r(oprppres)  r r 1
+   TRACE PROPERTY  r(oprppres)  bp bp 0
+   TRACE PROPERTY  r(oprppres)  sbar sbar 0
+   TRACE PROPERTY  r(oprppres)  par par 0
+   TRACE PROPERTY  r(silres)  l l 1
+   TRACE PROPERTY  r(silres)  w w 1
+   TRACE PROPERTY  r(silres)  r r 1
+   TRACE PROPERTY  r(silres)  bp bp 0
+   TRACE PROPERTY  r(silres)  sbar sbar 0
+   TRACE PROPERTY  r(silres)  par par 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+LAYOUT CELL NAME:         mult_chip
+SOURCE CELL NAME:         mult_chip
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             53        53
+
+ Nets:            4401      4401
+
+ Instances:       4730      4245    *    MN (4 pins)
+                  4840      4353    *    MP (4 pins)
+                     4         4         PDVDD (4 pins)
+                     4         4         PDVSS (4 pins)
+                    33        33         PICS (7 pins)
+                    16        16         POC24A (6 pins)
+                     4         4         PVDD (4 pins)
+                     4         4         PVSS (4 pins)
+                     1         1         SIGN_MEM (49 pins)
+                ------    ------
+ Total Inst:      9636      8664
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             53        53
+
+ Nets:            2210      2210
+
+ Instances:        286       286         MN (4 pins)
+                   223       223         MP (4 pins)
+                     4         4         PDVDD (4 pins)
+                     4         4         PDVSS (4 pins)
+                    33        33         PICS (7 pins)
+                    16        16         POC24A (6 pins)
+                     4         4         PVDD (4 pins)
+                     4         4         PVSS (4 pins)
+                     1         1         SIGN_MEM (49 pins)
+                    15        15         SPDW_2_1 (4 pins)
+                     1         1         SPDW_3_1 (5 pins)
+                     4         4         SPDW_3_2 (6 pins)
+                     9         9         SPUP_2_1 (4 pins)
+                    37        37         SPUP_2_2 (5 pins)
+                     1         1         SPUP_3_2 (6 pins)
+                    30        30         SMN2 (4 pins)
+                    10        10         _bitcoreb (6 pins)
+                    90        90         _invb (6 pins)
+                   901       901         _invv (4 pins)
+                     1         1         _invx10v (4 pins)
+                   199       199         _invx2v (4 pins)
+                    13        13         _invx3v (4 pins)
+                    17        17         _invx4v (4 pins)
+                    10        10         _invx5v (4 pins)
+                    21        21         _invx6v (4 pins)
+                     8         8         _invx8v (4 pins)
+                    11        11         _invx9v (4 pins)
+                   165       165         _nand2v (5 pins)
+                     2         2         _nand3v (6 pins)
+                    79        79         _nor2v (5 pins)
+                    21        21         _pdw2v (4 pins)
+                    34        34         _pup2v (4 pins)
+                   496       496         _smn2v (4 pins)
+                    35        35         _smn3v (5 pins)
+                   588       588         _smp2v (4 pins)
+                     5         5         _smp3v (5 pins)
+                    60        60         _tgmb (7 pins)
+                     4         4         _xr2v (5 pins)
+                    48        48         _xra2v (5 pins)
+                ------    ------
+ Total Inst:      3490      3490
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              53         53            0            0
+
+   Nets:             2210       2210            0            0
+
+   Instances:         286        286            0            0    MN(NFET)
+                      223        223            0            0    MP(PFET)
+                        4          4            0            0    PDVDD
+                        4          4            0            0    PDVSS
+                       33         33            0            0    PICS
+                       16         16            0            0    POC24A
+                        4          4            0            0    PVDD
+                        4          4            0            0    PVSS
+                        1          1            0            0    SIGN_MEM
+                       15         15            0            0    SPDW_2_1
+                        1          1            0            0    SPDW_3_1
+                        4          4            0            0    SPDW_3_2
+                        9          9            0            0    SPUP_2_1
+                       37         37            0            0    SPUP_2_2
+                        1          1            0            0    SPUP_3_2
+                       30         30            0            0    SMN2
+                       10         10            0            0    _bitcoreb
+                       90         90            0            0    _invb
+                      901        901            0            0    _invv
+                        1          1            0            0    _invx10v
+                      199        199            0            0    _invx2v
+                       13         13            0            0    _invx3v
+                       17         17            0            0    _invx4v
+                       10         10            0            0    _invx5v
+                       21         21            0            0    _invx6v
+                        8          8            0            0    _invx8v
+                       11         11            0            0    _invx9v
+                      165        165            0            0    _nand2v
+                        2          2            0            0    _nand3v
+                       79         79            0            0    _nor2v
+                       21         21            0            0    _pdw2v
+                       34         34            0            0    _pup2v
+                      496        496            0            0    _smn2v
+                       35         35            0            0    _smn3v
+                      588        588            0            0    _smp2v
+                        5          5            0            0    _smp3v
+                       60         60            0            0    _tgmb
+                        4          4            0            0    _xr2v
+                       48         48            0            0    _xra2v
+                  -------    -------    ---------    ---------
+   Total Inst:       3490       3490            0            0
+
+
+o Statistics:
+
+   1569 layout mos transistors were reduced to 597.
+     972 mos transistors were deleted by parallel reduction.
+
+   51 instances were matched arbitrarily.
+
+
+o Initial Correspondence Points:
+
+   Ports:        DVDD VDD VSS DVSS i_clk i_reset o_smem_rdata<0> o_smem_rdata<1> o_smem_rdata<2>
+                 o_smem_rdata<3> o_smem_rdata<4> o_smem_rdata<5> o_smem_rdata<6> o_smem_rdata<7>
+                 o_smem_rdata<8> o_smem_rdata<9> o_smem_rdata<10> o_smem_rdata<11>
+                 o_smem_rdata<12> o_smem_rdata<13> o_smem_rdata<14> o_smem_rdata<15> i_smem_ext
+                 i_smem_cen i_smem_wen i_smem_addr<0> i_smem_addr<1> i_smem_addr<2>
+                 i_smem_addr<3> i_smem_addr<4> i_smem_addr<5> i_smem_addr<6> i_smem_addr<7>
+                 i_smem_addr<8> i_smem_addr<9> i_smem_addr<10> i_smem_addr<11> i_smem_wdata<0>
+                 i_smem_wdata<1> i_smem_wdata<2> i_smem_wdata<4> i_smem_wdata<5> i_smem_wdata<6>
+                 i_smem_wdata<7> i_smem_wdata<8> i_smem_wdata<9> i_smem_wdata<10>
+                 i_smem_wdata<11> i_smem_wdata<12> i_smem_wdata<14>
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                   Instances
+                                   ---------
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X773/M28(595.260,1016.940)  MP(pfet)                  Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG116_S1/M5  MP(PFET) 
+         X18/X773/M29(595.580,1016.940)  MP(pfet)                  Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG116_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X784/M25(561.970,983.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG76_S1/M5  MP(PFET) 
+         X18/X784/M26(562.290,983.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG76_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X783/M25(561.970,973.740)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG73_S1/M5  MP(PFET) 
+         X18/X783/M26(562.290,973.740)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG73_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X782/M25(559.970,959.340)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG71_S1/M5  MP(PFET) 
+         X18/X782/M26(560.290,959.340)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG71_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X781/M25(555.630,991.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG80_S1/M5  MP(PFET) 
+         X18/X781/M26(555.310,991.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG80_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X780/M25(550.770,947.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG82_S1/M5  MP(PFET) 
+         X18/X780/M26(551.090,947.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG82_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X779/M25(554.430,976.660)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG66_S1/M5  MP(PFET) 
+         X18/X779/M26(554.110,976.660)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG66_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X778/M25(549.570,983.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG74_S1/M5  MP(PFET) 
+         X18/X778/M26(549.890,983.860)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG74_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X777/M25(548.770,966.540)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG69_S1/M5  MP(PFET) 
+         X18/X777/M26(549.090,966.540)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG69_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X776/M25(541.170,980.940)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG70_S1/M5  MP(PFET) 
+         X18/X776/M26(541.490,980.940)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG70_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X775/M25(540.770,998.260)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG77_S1/M5  MP(PFET) 
+         X18/X775/M26(541.090,998.260)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG77_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X774/M28(618.460,1048.660)  MP(pfet)                  Xu_core/Xu_mult_block/Xclk_r_REG47_S4/M5  MP(PFET) 
+         X18/X774/M29(618.780,1048.660)  MP(pfet)                  Xu_core/Xu_mult_block/Xclk_r_REG47_S4/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X772/M28(540.860,995.340)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG81_S1/M5  MP(PFET) 
+         X18/X772/M29(541.180,995.340)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG81_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X785/M25(567.170,955.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG78_S1/M5  MP(PFET) 
+         X18/X785/M26(567.490,955.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG78_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X789/M25(630.830,998.260)  MP(pfet)                   Xu_core/Xu_mult_block/Xclk_r_REG41_S2/M5  MP(PFET) 
+         X18/X789/M26(630.510,998.260)  MP(pfet)                   Xu_core/Xu_mult_block/Xclk_r_REG41_S2/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X788/M25(615.970,1002.540)  MP(pfet)                  Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG103_S1/M5  MP(PFET) 
+         X18/X788/M26(616.290,1002.540)  MP(pfet)                  Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG103_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X787/M25(601.170,991.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG124_S1/M5  MP(PFET) 
+         X18/X787/M26(601.490,991.060)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG124_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X786/M25(567.570,944.940)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG75_S1/M5  MP(PFET) 
+         X18/X786/M26(567.890,944.940)  MP(pfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG75_S1/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X1107/M7(620.040,1009.510)  MP(pfet)                  Xu_core/Xu_mult_block/XU312/M3  MP(PFET) 
+         X18/X1107/M6(619.720,1009.510)  MP(pfet)                  Xu_core/Xu_mult_block/XU312/M2  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X1106/M7(590.840,1048.890)  MP(pfet)                  Xu_core/Xu_mult_block/XU315/M3  MP(PFET) 
+         X18/X1106/M6(590.520,1048.890)  MP(pfet)                  Xu_core/Xu_mult_block/XU315/M2  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X912/M3(614.150,1019.970)  MP(pfet)                   Xu_core/Xu_mult_block/XU234/M5  MP(PFET) 
+         X18/X912/M2(613.830,1019.970)  MP(pfet)                   Xu_core/Xu_mult_block/XU234/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X911/M3(611.450,980.830)  MP(pfet)                    Xu_core/Xu_mult_block/XU137/M5  MP(PFET) 
+         X18/X911/M2(611.770,980.830)  MP(pfet)                    Xu_core/Xu_mult_block/XU137/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X910/M3(606.150,962.370)  MP(pfet)                    Xu_core/Xu_mult_block/XU232/M5  MP(PFET) 
+         X18/X910/M2(605.830,962.370)  MP(pfet)                    Xu_core/Xu_mult_block/XU232/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X909/M3(605.050,1027.170)  MP(pfet)                   Xu_core/Xu_mult_block/XU310/M5  MP(PFET) 
+         X18/X909/M2(605.370,1027.170)  MP(pfet)                   Xu_core/Xu_mult_block/XU310/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X908/M3(591.350,1045.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU314/M5  MP(PFET) 
+         X18/X908/M2(591.030,1045.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU314/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X907/M3(588.550,991.170)  MP(pfet)                    Xu_core/Xu_mult_block/XU152/M5  MP(PFET) 
+         X18/X907/M2(588.230,991.170)  MP(pfet)                    Xu_core/Xu_mult_block/XU152/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X906/M3(585.350,947.970)  MP(pfet)                    Xu_core/Xu_mult_block/XU176/M5  MP(PFET) 
+         X18/X906/M2(585.030,947.970)  MP(pfet)                    Xu_core/Xu_mult_block/XU176/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X905/M3(584.550,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU129/M5  MP(PFET) 
+         X18/X905/M2(584.230,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU129/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X904/M3(584.650,991.170)  MP(pfet)                    Xu_core/Xu_mult_block/XU322/M5  MP(PFET) 
+         X18/X904/M2(584.970,991.170)  MP(pfet)                    Xu_core/Xu_mult_block/XU322/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X903/M3(581.750,983.970)  MP(pfet)                    Xu_core/Xu_mult_block/XU284/M5  MP(PFET) 
+         X18/X903/M2(581.430,983.970)  MP(pfet)                    Xu_core/Xu_mult_block/XU284/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X902/M3(578.950,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU146/M5  MP(PFET) 
+         X18/X902/M2(578.630,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU146/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X901/M3(574.550,980.830)  MP(pfet)                    Xu_core/Xu_mult_block/XU154/M5  MP(PFET) 
+         X18/X901/M2(574.230,980.830)  MP(pfet)                    Xu_core/Xu_mult_block/XU154/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X900/M3(574.550,966.430)  MP(pfet)                    Xu_core/Xu_mult_block/XU224/M5  MP(PFET) 
+         X18/X900/M2(574.230,966.430)  MP(pfet)                    Xu_core/Xu_mult_block/XU224/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X899/M3(574.150,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU155/M5  MP(PFET) 
+         X18/X899/M2(573.830,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU155/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X898/M3(570.550,976.770)  MP(pfet)                    Xu_core/Xu_mult_block/XU321/M5  MP(PFET) 
+         X18/X898/M2(570.230,976.770)  MP(pfet)                    Xu_core/Xu_mult_block/XU321/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X897/M3(568.250,998.370)  MP(pfet)                    Xu_core/Xu_mult_block/XU372/M5  MP(PFET) 
+         X18/X897/M2(568.570,998.370)  MP(pfet)                    Xu_core/Xu_mult_block/XU372/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X896/M3(566.950,1009.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU131/M5  MP(PFET) 
+         X18/X896/M2(566.630,1009.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU131/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X895/M3(564.550,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU178/M5  MP(PFET) 
+         X18/X895/M2(564.230,995.230)  MP(pfet)                    Xu_core/Xu_mult_block/XU178/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X894/M3(550.550,1009.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU366/M5  MP(PFET) 
+         X18/X894/M2(550.230,1009.630)  MP(pfet)                   Xu_core/Xu_mult_block/XU366/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/X893/M3(547.850,1005.570)  MP(pfet)                   Xu_core/Xu_mult_block/XU135/M5  MP(PFET) 
+         X18/X893/M2(548.170,1005.570)  MP(pfet)                   Xu_core/Xu_mult_block/XU135/M4  MP(PFET) 
+
+       (_smp2v)                                                  (_smp2v)
+       Devices: 
+         X18/M106(569.520,1026.260)  MP(pfet)                      Xu_core/Xu_mult_block/XU243/M7  MP(PFET) 
+         X18/M105(569.200,1026.260)  MP(pfet)                      Xu_core/Xu_mult_block/XU243/M6  MP(PFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X773/M5(595.260,1015.510)  MN(nfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG116_S1/M1  MN(NFET) 
+         X18/X773/M4(594.940,1015.510)  MN(nfet)                   Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG116_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X784/M5(561.970,985.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG76_S1/M1  MN(NFET) 
+         X18/X784/M4(561.650,985.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG76_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X783/M5(561.970,972.310)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG73_S1/M1  MN(NFET) 
+         X18/X783/M4(561.650,972.310)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG73_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X782/M5(559.970,957.910)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG71_S1/M1  MN(NFET) 
+         X18/X782/M4(559.650,957.910)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG71_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X781/M5(555.630,992.490)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG80_S1/M1  MN(NFET) 
+         X18/X781/M4(555.950,992.490)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG80_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X780/M5(550.770,949.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG82_S1/M1  MN(NFET) 
+         X18/X780/M4(550.450,949.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG82_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X779/M5(554.430,978.090)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG66_S1/M1  MN(NFET) 
+         X18/X779/M4(554.750,978.090)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG66_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X778/M5(549.570,985.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG74_S1/M1  MN(NFET) 
+         X18/X778/M4(549.250,985.290)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG74_S1/M0  MN(NFET) 
+
+       (_smn2v)                                                  (_smn2v)
+       Devices: 
+         X18/X777/M5(548.770,965.110)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG69_S1/M1  MN(NFET) 
+         X18/X777/M4(548.450,965.110)  MN(nfet)                    Xu_core/Xu_mult_block/Xmult_x_1_clk_r_REG69_S1/M0  MN(NFET) 
+
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  5 sec

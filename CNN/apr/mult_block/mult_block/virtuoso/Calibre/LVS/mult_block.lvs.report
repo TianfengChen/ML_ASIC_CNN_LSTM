@@ -1,0 +1,1066 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         mult_block.lvs.report
+LAYOUT NAME:              /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/LVS/mult_block.sp ('mult_block')
+SOURCE NAME:              /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/v2lvs/mult_block.cdl ('mult_block')
+RULE FILE:                /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/LVS/_cmrf8sf.lvs.cal_
+CREATION TIME:            Mon Mar 21 18:44:34 2022
+CURRENT DIRECTORY:        /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/LVS
+USER NAME:                qiruizh
+CALIBRE VERSION:          v2021.3_15.9    Tue Jul 6 13:44:37 PDT 2021
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        mult_block                    mult_block
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "VSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            NO
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                YES
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               RB RC RD RE RF RG YB
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  R(opndres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(nwres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(opppcres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(silres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(l1res)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(kxres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(lvsres)  SERIES POS NEG
+   LVS REDUCE  efuse  SERIES IN OUT
+   LVS REDUCE  MN(nfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lpnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(zvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(hvtnfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtnfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MD(dgnfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(zvtdgnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MN(nfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lpnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MP(pfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lppfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MD(dgpfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MP(pfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lppfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  hvtnfet33tw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  hvtnfet33tw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  dgnfettw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  nfettw  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  nfet33tw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  lvtnfettw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  dgnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  nfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  nfet33tw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  lvtnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  lpnfettw  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  lpnfettw_rf  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  R(opndres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(nwres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(opppcres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(silres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(l1res)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(kxres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(lvsres)  PARALLEL
+   LVS REDUCE  ncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  dgncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  C(vncap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  D(havar)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffhavar  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffncap  PARALLEL [ TOLERANCE w 0 l 0 mSwitch 0 ]
+   LVS REDUCE  D(sbd)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  D(dipdnw)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  Q(divpnp)  PARALLEL
+   LVS REDUCE  Q(esdvpnp)  PARALLEL [ TOLERANCE nf 0 areae 0 areab 0 ]
+   LVS REDUCE  D(esdndsx)  PARALLEL [ TOLERANCE bp 0 ]
+   LVS REDUCE  D(tdpdnw)  PARALLEL
+   LVS REDUCE  D(tdndsx)  PARALLEL
+   LVS REDUCE  subc  PARALLEL
+   LVS REDUCE  efuse  PARALLEL
+   LVS REDUCE  C(mim)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(mimnit)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(mimcap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(dualmimcap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  C(dualmimnit)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nfet)  w w 0.5
+   TRACE PROPERTY  mn(nfet)  l l 0.5
+   TRACE PROPERTY  mn(nfet)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet)  par par 0
+   TRACE PROPERTY  mn(nfet)  psp psp 0
+   TRACE PROPERTY  mn(nfet33)  w w 0.5
+   TRACE PROPERTY  mn(nfet33)  l l 0.5
+   TRACE PROPERTY  mn(nfet33)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet33)  par par 0
+   TRACE PROPERTY  m(lpnfet)  w w 2.64
+   TRACE PROPERTY  m(lpnfet)  l l 0.5
+   TRACE PROPERTY  m(lpnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lpnfet)  par par 0
+   TRACE PROPERTY  m(zvtnfet)  w w 2.64
+   TRACE PROPERTY  m(zvtnfet)  l l 0.5
+   TRACE PROPERTY  m(zvtnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(zvtnfet)  par par 0
+   TRACE PROPERTY  m(hvtnfet33)  w w 0.5
+   TRACE PROPERTY  m(hvtnfet33)  l l 0.5
+   TRACE PROPERTY  m(hvtnfet33)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtnfet33)  par par 0
+   TRACE PROPERTY  m(hvtnfet33)  psp psp 0
+   TRACE PROPERTY  md(dgnfet)  w w 0.5
+   TRACE PROPERTY  md(dgnfet)  l l 0.5
+   TRACE PROPERTY  md(dgnfet)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgnfet)  par par 0
+   TRACE PROPERTY  md(dgnfet)  psp psp 0
+   TRACE PROPERTY  m(zvtdgnfet)  w w 2.64
+   TRACE PROPERTY  m(zvtdgnfet)  l l 0.5
+   TRACE PROPERTY  m(zvtdgnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(zvtdgnfet)  par par 0
+   TRACE PROPERTY  m(lvtnfet)  w w 2.64
+   TRACE PROPERTY  m(lvtnfet)  l l 0.5
+   TRACE PROPERTY  m(lvtnfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtnfet)  par par 0
+   TRACE PROPERTY  nfettw  w w 0.5
+   TRACE PROPERTY  nfettw  l l 0.5
+   TRACE PROPERTY  nfettw  ngcon ngcon 0
+   TRACE PROPERTY  nfettw  t3well t3well 0
+   TRACE PROPERTY  nfettw  par par 0
+   TRACE PROPERTY  nfettw  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw  w w 0.5
+   TRACE PROPERTY  hvtnfet33tw  l l 0.5
+   TRACE PROPERTY  hvtnfet33tw  ngcon ngcon 0
+   TRACE PROPERTY  hvtnfet33tw  t3well t3well 0
+   TRACE PROPERTY  hvtnfet33tw  par par 0
+   TRACE PROPERTY  hvtnfet33tw  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw_rf  w w 0.5
+   TRACE PROPERTY  hvtnfet33tw_rf  l l 0.5
+   TRACE PROPERTY  hvtnfet33tw_rf  ngcon ngcon 0
+   TRACE PROPERTY  hvtnfet33tw_rf  t3well t3well 0
+   TRACE PROPERTY  hvtnfet33tw_rf  par par 0
+   TRACE PROPERTY  hvtnfet33tw_rf  ring ring 0
+   TRACE PROPERTY  hvtnfet33tw_rf  psp psp 0
+   TRACE PROPERTY  hvtnfet33tw_rf  gtab gtab 0
+   TRACE PROPERTY  dgnfettw  w w 0.5
+   TRACE PROPERTY  dgnfettw  l l 0.5
+   TRACE PROPERTY  dgnfettw  ngcon ngcon 0
+   TRACE PROPERTY  dgnfettw  t3well t3well 0
+   TRACE PROPERTY  dgnfettw  par par 0
+   TRACE PROPERTY  dgnfettw  psp psp 0
+   TRACE PROPERTY  nfettw_rf  w w 0.5
+   TRACE PROPERTY  nfettw_rf  l l 0.5
+   TRACE PROPERTY  nfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  nfettw_rf  t3well t3well 0
+   TRACE PROPERTY  nfettw_rf  par par 0
+   TRACE PROPERTY  nfettw_rf  ring ring 0
+   TRACE PROPERTY  nfettw_rf  psp psp 0
+   TRACE PROPERTY  nfettw_rf  gtab gtab 0
+   TRACE PROPERTY  dgnfettw_rf  w w 0.5
+   TRACE PROPERTY  dgnfettw_rf  l l 0.5
+   TRACE PROPERTY  dgnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  dgnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  dgnfettw_rf  par par 0
+   TRACE PROPERTY  dgnfettw_rf  ring ring 0
+   TRACE PROPERTY  dgnfettw_rf  psp psp 0
+   TRACE PROPERTY  dgnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  nfet33tw  w w 0.5
+   TRACE PROPERTY  nfet33tw  l l 0.5
+   TRACE PROPERTY  nfet33tw  ngcon ngcon 0
+   TRACE PROPERTY  nfet33tw  t3well t3well 0
+   TRACE PROPERTY  nfet33tw  par par 0
+   TRACE PROPERTY  lvtnfettw  w w 0.5
+   TRACE PROPERTY  lvtnfettw  l l 0.5
+   TRACE PROPERTY  lvtnfettw  ngcon ngcon 0
+   TRACE PROPERTY  lvtnfettw  t3well t3well 0
+   TRACE PROPERTY  lvtnfettw  par par 0
+   TRACE PROPERTY  nfet33tw_rf  w w 0.5
+   TRACE PROPERTY  nfet33tw_rf  l l 0.5
+   TRACE PROPERTY  nfet33tw_rf  ngcon ngcon 0
+   TRACE PROPERTY  nfet33tw_rf  t3well t3well 0
+   TRACE PROPERTY  nfet33tw_rf  par par 0
+   TRACE PROPERTY  nfet33tw_rf  ring ring 0
+   TRACE PROPERTY  nfet33tw_rf  gtab gtab 0
+   TRACE PROPERTY  lvtnfettw_rf  w w 0.5
+   TRACE PROPERTY  lvtnfettw_rf  l l 0.5
+   TRACE PROPERTY  lvtnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  lvtnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  lvtnfettw_rf  par par 0
+   TRACE PROPERTY  lvtnfettw_rf  ring ring 0
+   TRACE PROPERTY  lvtnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  lpnfettw  w w 0.5
+   TRACE PROPERTY  lpnfettw  l l 0.5
+   TRACE PROPERTY  lpnfettw  ngcon ngcon 0
+   TRACE PROPERTY  lpnfettw  t3well t3well 0
+   TRACE PROPERTY  lpnfettw  par par 0
+   TRACE PROPERTY  lpnfettw_rf  w w 0.5
+   TRACE PROPERTY  lpnfettw_rf  l l 0.5
+   TRACE PROPERTY  lpnfettw_rf  ngcon ngcon 0
+   TRACE PROPERTY  lpnfettw_rf  t3well t3well 0
+   TRACE PROPERTY  lpnfettw_rf  par par 0
+   TRACE PROPERTY  lpnfettw_rf  ring ring 0
+   TRACE PROPERTY  lpnfettw_rf  gtab gtab 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  w w 0.5
+   TRACE PROPERTY  m(hvtnfet33_rf)  l l 0.5
+   TRACE PROPERTY  m(hvtnfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  par par 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  ring ring 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(hvtnfet33_rf)  psp psp 0
+   TRACE PROPERTY  m(hvtpfet33)  w w 0.5
+   TRACE PROPERTY  m(hvtpfet33)  l l 0.5
+   TRACE PROPERTY  m(hvtpfet33)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtpfet33)  par par 0
+   TRACE PROPERTY  m(hvtpfet33)  psp psp 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  w w 0.5
+   TRACE PROPERTY  m(hvtpfet33_rf)  l l 0.5
+   TRACE PROPERTY  m(hvtpfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  par par 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  ring ring 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(hvtpfet33_rf)  psp psp 0
+   TRACE PROPERTY  mn(nfet_rf)  w w 0.5
+   TRACE PROPERTY  mn(nfet_rf)  l l 0.5
+   TRACE PROPERTY  mn(nfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet_rf)  par par 0
+   TRACE PROPERTY  mn(nfet_rf)  ring ring 0
+   TRACE PROPERTY  mn(nfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mn(nfet_rf)  psp psp 0
+   TRACE PROPERTY  mn(nfet33_rf)  w w 0.5
+   TRACE PROPERTY  mn(nfet33_rf)  l l 0.5
+   TRACE PROPERTY  mn(nfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mn(nfet33_rf)  par par 0
+   TRACE PROPERTY  mn(nfet33_rf)  ring ring 0
+   TRACE PROPERTY  mn(nfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(lpnfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lpnfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lpnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lpnfet_rf)  par par 0
+   TRACE PROPERTY  m(lpnfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lpnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgnfet_rf)  w w 0.5
+   TRACE PROPERTY  md(dgnfet_rf)  l l 0.5
+   TRACE PROPERTY  md(dgnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgnfet_rf)  par par 0
+   TRACE PROPERTY  md(dgnfet_rf)  ring ring 0
+   TRACE PROPERTY  md(dgnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgnfet_rf)  psp psp 0
+   TRACE PROPERTY  m(lvtnfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lvtnfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lvtnfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtnfet_rf)  par par 0
+   TRACE PROPERTY  m(lvtnfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lvtnfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mp(pfet)  w w 0.5
+   TRACE PROPERTY  mp(pfet)  l l 0.5
+   TRACE PROPERTY  mp(pfet)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet)  par par 0
+   TRACE PROPERTY  mp(pfet)  psp psp 0
+   TRACE PROPERTY  mp(pfet33)  w w 0.5
+   TRACE PROPERTY  mp(pfet33)  l l 0.5
+   TRACE PROPERTY  mp(pfet33)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet33)  par par 0
+   TRACE PROPERTY  m(lppfet)  w w 0.5
+   TRACE PROPERTY  m(lppfet)  l l 0.5
+   TRACE PROPERTY  m(lppfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lppfet)  par par 0
+   TRACE PROPERTY  md(dgpfet)  w w 0.5
+   TRACE PROPERTY  md(dgpfet)  l l 0.5
+   TRACE PROPERTY  md(dgpfet)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgpfet)  par par 0
+   TRACE PROPERTY  md(dgpfet)  psp psp 0
+   TRACE PROPERTY  m(lvtpfet)  w w 0.5
+   TRACE PROPERTY  m(lvtpfet)  l l 0.5
+   TRACE PROPERTY  m(lvtpfet)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtpfet)  par par 0
+   TRACE PROPERTY  mp(pfet_rf)  w w 0.5
+   TRACE PROPERTY  mp(pfet_rf)  l l 0.5
+   TRACE PROPERTY  mp(pfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet_rf)  par par 0
+   TRACE PROPERTY  mp(pfet_rf)  ring ring 0
+   TRACE PROPERTY  mp(pfet_rf)  gtab gtab 0
+   TRACE PROPERTY  mp(pfet_rf)  psp psp 0
+   TRACE PROPERTY  mp(pfet33_rf)  w w 0.5
+   TRACE PROPERTY  mp(pfet33_rf)  l l 0.5
+   TRACE PROPERTY  mp(pfet33_rf)  ngcon ngcon 0
+   TRACE PROPERTY  mp(pfet33_rf)  par par 0
+   TRACE PROPERTY  mp(pfet33_rf)  ring ring 0
+   TRACE PROPERTY  mp(pfet33_rf)  gtab gtab 0
+   TRACE PROPERTY  m(lppfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lppfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lppfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lppfet_rf)  par par 0
+   TRACE PROPERTY  m(lppfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lppfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgpfet_rf)  w w 0.5
+   TRACE PROPERTY  md(dgpfet_rf)  l l 0.5
+   TRACE PROPERTY  md(dgpfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  md(dgpfet_rf)  par par 0
+   TRACE PROPERTY  md(dgpfet_rf)  ring ring 0
+   TRACE PROPERTY  md(dgpfet_rf)  gtab gtab 0
+   TRACE PROPERTY  md(dgpfet_rf)  psp psp 0
+   TRACE PROPERTY  m(lvtpfet_rf)  w w 0.5
+   TRACE PROPERTY  m(lvtpfet_rf)  l l 0.5
+   TRACE PROPERTY  m(lvtpfet_rf)  ngcon ngcon 0
+   TRACE PROPERTY  m(lvtpfet_rf)  par par 0
+   TRACE PROPERTY  m(lvtpfet_rf)  ring ring 0
+   TRACE PROPERTY  m(lvtpfet_rf)  gtab gtab 0
+   TRACE PROPERTY  c(mim)  c c 0.1
+   TRACE PROPERTY  c(mim)  w w 0.1
+   TRACE PROPERTY  c(mim)  l l 0.1
+   TRACE PROPERTY  c(mim)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mim)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mim)  m m 0
+   TRACE PROPERTY  c(mim)  par par 0
+   TRACE PROPERTY  c(mim)  bp bp 0
+   TRACE PROPERTY  c(mim)  botviasides botviasides 0
+   TRACE PROPERTY  c(mimnit)  c c 0.1
+   TRACE PROPERTY  c(mimnit)  w w 0.1
+   TRACE PROPERTY  c(mimnit)  l l 0.1
+   TRACE PROPERTY  c(mimnit)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mimnit)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mimnit)  m m 0
+   TRACE PROPERTY  c(mimnit)  par par 0
+   TRACE PROPERTY  c(mimnit)  bp bp 0
+   TRACE PROPERTY  c(mimnit)  botviasides botviasides 0
+   TRACE PROPERTY  c(mimcap)  c c 0.1
+   TRACE PROPERTY  c(mimcap)  w w 0.1
+   TRACE PROPERTY  c(mimcap)  l l 0.1
+   TRACE PROPERTY  c(mimcap)  tlev1 tlev1 0
+   TRACE PROPERTY  c(mimcap)  tlev2 tlev2 0
+   TRACE PROPERTY  c(mimcap)  m m 0
+   TRACE PROPERTY  c(mimcap)  par par 0
+   TRACE PROPERTY  c(mimcap)  bp bp 0
+   TRACE PROPERTY  c(dualmimcap)  c c 0.1
+   TRACE PROPERTY  c(dualmimcap)  w w 0.1
+   TRACE PROPERTY  c(dualmimcap)  l l 0.1
+   TRACE PROPERTY  c(dualmimcap)  tlev1 tlev1 0
+   TRACE PROPERTY  c(dualmimcap)  tlev2 tlev2 0
+   TRACE PROPERTY  c(dualmimcap)  m m 0
+   TRACE PROPERTY  c(dualmimcap)  par par 0
+   TRACE PROPERTY  c(dualmimcap)  bp bp 0
+   TRACE PROPERTY  c(dualmimnit)  c c 0.1
+   TRACE PROPERTY  c(dualmimnit)  w w 0.1
+   TRACE PROPERTY  c(dualmimnit)  l l 0.1
+   TRACE PROPERTY  c(dualmimnit)  tlev1 tlev1 0
+   TRACE PROPERTY  c(dualmimnit)  tlev2 tlev2 0
+   TRACE PROPERTY  c(dualmimnit)  m m 0
+   TRACE PROPERTY  c(dualmimnit)  par par 0
+   TRACE PROPERTY  c(dualmimnit)  bp bp 0
+   TRACE PROPERTY  d(havar)  w w 0.1
+   TRACE PROPERTY  d(havar)  l l 0.1
+   TRACE PROPERTY  d(havar)  c c 0.1
+   TRACE PROPERTY  d(havar)  nf nf 0
+   TRACE PROPERTY  d(havar)  m m 0
+   TRACE PROPERTY  diffhavar  w w 0.1
+   TRACE PROPERTY  diffhavar  l l 0.1
+   TRACE PROPERTY  diffhavar  c c 0.1
+   TRACE PROPERTY  diffhavar  nf nf 0
+   TRACE PROPERTY  diffhavar  m m 0
+   TRACE PROPERTY  diffncap  w w 0.1
+   TRACE PROPERTY  diffncap  l l 0.1
+   TRACE PROPERTY  diffncap  nf nf 0
+   TRACE PROPERTY  diffncap  m m 0
+   TRACE PROPERTY  diffncap  mswitch mswitch 0
+   TRACE PROPERTY  ncap  l l 0.1
+   TRACE PROPERTY  ncap  w w 0.1
+   TRACE PROPERTY  dgncap  l l 0.1
+   TRACE PROPERTY  dgncap  w w 0.1
+   TRACE PROPERTY  c(vncap)  l l 0.1
+   TRACE PROPERTY  c(vncap)  w w 0.1
+   TRACE PROPERTY  c(vncap)  botlev botlev 0
+   TRACE PROPERTY  c(vncap)  toplev toplev 0
+   TRACE PROPERTY  c(vncap)  bp bp 0
+   TRACE PROPERTY  c(vncap)  m m 0
+   TRACE PROPERTY  c(vncap)  par par 0
+   TRACE PROPERTY  bondpad  w w 0.1
+   TRACE PROPERTY  bondpad  l l 0.1
+   TRACE PROPERTY  bondpad  wbc4 wbc4 0
+   TRACE PROPERTY  bondpad  bp bp 0
+   TRACE PROPERTY  bondpad  rect rect 0
+   TRACE PROPERTY  bondpad  tlev1 tlev1 0
+   TRACE PROPERTY  bondpad  tlev2 tlev2 0
+   TRACE PROPERTY  bondpad  tvw tvw 0.1
+   TRACE PROPERTY  indp  n n 0
+   TRACE PROPERTY  indp  x x 0.1
+   TRACE PROPERTY  indp  w w 0.1
+   TRACE PROPERTY  indp  s s 0.1
+   TRACE PROPERTY  indp  bp bp 0
+   TRACE PROPERTY  indp  tlev1 tlev1 0
+   TRACE PROPERTY  indp  tlev2 tlev2 0
+   TRACE PROPERTY  inds  n n 0
+   TRACE PROPERTY  inds  x x 0.1
+   TRACE PROPERTY  inds  w w 0.1
+   TRACE PROPERTY  inds  s s 0.1
+   TRACE PROPERTY  inds  bp bp 0
+   TRACE PROPERTY  inds  tlev1 tlev1 0
+   TRACE PROPERTY  inds  tlev2 tlev2 0
+   TRACE PROPERTY  ind  n n 0
+   TRACE PROPERTY  ind  x x 0.1
+   TRACE PROPERTY  ind  w w 0.1
+   TRACE PROPERTY  ind  s s 0.1
+   TRACE PROPERTY  ind  bp bp 0
+   TRACE PROPERTY  ind  tlev1 tlev1 0
+   TRACE PROPERTY  ind  tlev2 tlev2 0
+   TRACE PROPERTY  symindp  n n 0
+   TRACE PROPERTY  symindp  x x 0.1
+   TRACE PROPERTY  symindp  w w 0.1
+   TRACE PROPERTY  symindp  s s 0.1
+   TRACE PROPERTY  symindp  tlev1 tlev1 0
+   TRACE PROPERTY  symindp  tlev2 tlev2 0
+   TRACE PROPERTY  symindp  bp bp 0
+   TRACE PROPERTY  symindp  wu wu 0.1
+   TRACE PROPERTY  symind  n n 0
+   TRACE PROPERTY  symind  x x 0.1
+   TRACE PROPERTY  symind  w w 0.1
+   TRACE PROPERTY  symind  s s 0.1
+   TRACE PROPERTY  symind  tlev1 tlev1 0
+   TRACE PROPERTY  symind  tlev2 tlev2 0
+   TRACE PROPERTY  symind  tleval tleval 0
+   TRACE PROPERTY  symind  bp bp 0
+   TRACE PROPERTY  symind  wu wu 0.1
+   TRACE PROPERTY  rfline  w w 0.1
+   TRACE PROPERTY  rfline  l l 0.1
+   TRACE PROPERTY  rfline  tlev1 tlev1 0
+   TRACE PROPERTY  rfline  tlev2 tlev2 0
+   TRACE PROPERTY  coupledwires  w w 0.1
+   TRACE PROPERTY  coupledwires  l l 0.1
+   TRACE PROPERTY  coupledwires  d d 0.1
+   TRACE PROPERTY  coupledwires  s s 0.1
+   TRACE PROPERTY  coupledwires  shieldsads shieldsads 0
+   TRACE PROPERTY  coupledwires  layerads layerads 0
+   TRACE PROPERTY  coupledwires  overads overads 0
+   TRACE PROPERTY  coupledwires  tlev1 tlev1 0
+   TRACE PROPERTY  coupledwires  tlev2 tlev2 0
+   TRACE PROPERTY  singlewire  w w 0.1
+   TRACE PROPERTY  singlewire  l l 0.1
+   TRACE PROPERTY  singlewire  s s 0.1
+   TRACE PROPERTY  singlewire  shieldsads shieldsads 0
+   TRACE PROPERTY  singlewire  layerads layerads 0
+   TRACE PROPERTY  singlewire  overads overads 0
+   TRACE PROPERTY  singlewire  tlev1 tlev1 0
+   TRACE PROPERTY  singlewire  tlev2 tlev2 0
+   TRACE PROPERTY  singlecpw  l l 1
+   TRACE PROPERTY  singlecpw  w w 1
+   TRACE PROPERTY  singlecpw  s s 1
+   TRACE PROPERTY  singlecpw  layerads layerads 0
+   TRACE PROPERTY  singlecpw  tlev1 tlev1 0
+   TRACE PROPERTY  singlecpw  tlev2 tlev2 0
+   TRACE PROPERTY  coupledcpw  l l 1
+   TRACE PROPERTY  coupledcpw  w w 1
+   TRACE PROPERTY  coupledcpw  s s 1
+   TRACE PROPERTY  coupledcpw  d d 1
+   TRACE PROPERTY  coupledcpw  layerads layerads 0
+   TRACE PROPERTY  coupledcpw  tlev1 tlev1 0
+   TRACE PROPERTY  coupledcpw  tlev2 tlev2 0
+   TRACE PROPERTY  d(sbd)  l l 0.1
+   TRACE PROPERTY  d(sbd)  w w 0.1
+   TRACE PROPERTY  d(sbd)  nf nf 0
+   TRACE PROPERTY  d(sbd)  m m 0
+   TRACE PROPERTY  d(sbd)  par par 0
+   TRACE PROPERTY  d(dipdnw)  w w 0.1
+   TRACE PROPERTY  d(dipdnw)  l l 0.1
+   TRACE PROPERTY  d(dipdnw)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  w w 0.1
+   TRACE PROPERTY  q(divpnp)  l l 0.1
+   TRACE PROPERTY  q(divpnp)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  par par 0
+   TRACE PROPERTY  esdscr  nfscr nfscr 0
+   TRACE PROPERTY  esdnsh_base  lesd lesd 0.1
+   TRACE PROPERTY  esdnsh_base  wesd wesd 0.1
+   TRACE PROPERTY  esdnsh_base  nf nf 0
+   TRACE PROPERTY  esdnsh_base  ldop ldop 0.1
+   TRACE PROPERTY  esdnsh_base  lsop lsop 0.1
+   TRACE PROPERTY  esdnsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdnsh_base  gns gns 0
+   TRACE PROPERTY  esdpsh_base  lesd lesd 0.1
+   TRACE PROPERTY  esdpsh_base  wesd wesd 0.1
+   TRACE PROPERTY  esdpsh_base  nf nf 0
+   TRACE PROPERTY  esdpsh_base  ldop ldop 0.1
+   TRACE PROPERTY  esdpsh_base  lsop lsop 0.1
+   TRACE PROPERTY  esdpsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdpsh_base  gns gns 0
+   TRACE PROPERTY  d(esdndsx)  areac areac 0.1
+   TRACE PROPERTY  d(esdndsx)  pjc pjc 0.1
+   TRACE PROPERTY  d(esdndsx)  nf nf 0
+   TRACE PROPERTY  d(esdndsx)  bp bp 0
+   TRACE PROPERTY  q(esdvpnp)  areae areae 0.1
+   TRACE PROPERTY  q(esdvpnp)  pjerx pjerx 0.1
+   TRACE PROPERTY  q(esdvpnp)  areab areab 0.1
+   TRACE PROPERTY  q(esdvpnp)  pjb pjb 0.1
+   TRACE PROPERTY  q(esdvpnp)  nf nf 0
+   TRACE PROPERTY  sblkndres  l l 1
+   TRACE PROPERTY  sblkndres  w w 1
+   TRACE PROPERTY  sblkndres  r r 1
+   TRACE PROPERTY  sblkndres  sbar sbar 0
+   TRACE PROPERTY  sblkndres  par par 0
+   TRACE PROPERTY  r(opndres)  l l 1
+   TRACE PROPERTY  r(opndres)  w w 1
+   TRACE PROPERTY  r(opndres)  r r 1
+   TRACE PROPERTY  r(opndres)  sbar sbar 0
+   TRACE PROPERTY  r(opndres)  par par 0
+   TRACE PROPERTY  r(nwres)  l l 1
+   TRACE PROPERTY  r(nwres)  w w 1
+   TRACE PROPERTY  r(nwres)  r r 1
+   TRACE PROPERTY  r(nwres)  sbar sbar 0
+   TRACE PROPERTY  r(nwres)  par par 0
+   TRACE PROPERTY  r(l1res)  l l 1
+   TRACE PROPERTY  r(l1res)  w w 1
+   TRACE PROPERTY  r(l1res)  r r 1
+   TRACE PROPERTY  r(l1res)  sbar sbar 0
+   TRACE PROPERTY  r(l1res)  par par 0
+   TRACE PROPERTY  r(l1res)  tlev1 tlev1 0
+   TRACE PROPERTY  r(l1res)  tlev2 tlev2 0
+   TRACE PROPERTY  r(kxres)  l l 1
+   TRACE PROPERTY  r(kxres)  w w 1
+   TRACE PROPERTY  r(kxres)  r r 1
+   TRACE PROPERTY  r(kxres)  sbar sbar 0
+   TRACE PROPERTY  r(kxres)  par par 0
+   TRACE PROPERTY  r(kxres)  tlev1 tlev1 0
+   TRACE PROPERTY  r(opppcres)  l l 1
+   TRACE PROPERTY  r(opppcres)  w w 1
+   TRACE PROPERTY  r(opppcres)  r r 1
+   TRACE PROPERTY  r(opppcres)  bp bp 0
+   TRACE PROPERTY  r(opppcres)  sbar sbar 0
+   TRACE PROPERTY  r(opppcres)  par par 0
+   TRACE PROPERTY  r(oprrpres)  l l 1
+   TRACE PROPERTY  r(oprrpres)  w w 1
+   TRACE PROPERTY  r(oprrpres)  r r 1
+   TRACE PROPERTY  r(oprrpres)  bp bp 0
+   TRACE PROPERTY  r(oprrpres)  sbar sbar 0
+   TRACE PROPERTY  r(oprrpres)  par par 0
+   TRACE PROPERTY  r(oprppres)  l l 1
+   TRACE PROPERTY  r(oprppres)  w w 1
+   TRACE PROPERTY  r(oprppres)  r r 1
+   TRACE PROPERTY  r(oprppres)  bp bp 0
+   TRACE PROPERTY  r(oprppres)  sbar sbar 0
+   TRACE PROPERTY  r(oprppres)  par par 0
+   TRACE PROPERTY  r(silres)  l l 1
+   TRACE PROPERTY  r(silres)  w w 1
+   TRACE PROPERTY  r(silres)  r r 1
+   TRACE PROPERTY  r(silres)  bp bp 0
+   TRACE PROPERTY  r(silres)  sbar sbar 0
+   TRACE PROPERTY  r(silres)  par par 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+LAYOUT CELL NAME:         mult_block
+SOURCE CELL NAME:         mult_block
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             20        20
+
+ Nets:            3270      3270
+
+ Instances:       3531      3226    *    MN (4 pins)
+                  3654      3348    *    MP (4 pins)
+                ------    ------
+ Total Inst:      7185      6574
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             20        20
+
+ Nets:            1780      1780
+
+ Instances:        271       271         MN (4 pins)
+                   188       188         MP (4 pins)
+                     9         9         SPDW_2_1 (4 pins)
+                     8         8         SPUP_2_1 (4 pins)
+                    30        30         SMN2 (4 pins)
+                    10        10         _bitcoreb (6 pins)
+                    90        90         _invb (6 pins)
+                   807       807         _invv (4 pins)
+                   164       164         _invx2v (4 pins)
+                    14        14         _invx3v (4 pins)
+                   127       127         _nand2v (5 pins)
+                     1         1         _nand3v (6 pins)
+                    60        60         _nor2v (5 pins)
+                    21        21         _pdw2v (4 pins)
+                    34        34         _pup2v (4 pins)
+                   406       406         _sdw2v (4 pins)
+                     6         6         _sdw3v (5 pins)
+                   536       536         _sup2v (4 pins)
+                    60        60         _tgmb (7 pins)
+                     4         4         _xr2v (5 pins)
+                    48        48         _xra2v (5 pins)
+                ------    ------
+ Total Inst:      2894      2894
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              20         20            0            0
+
+   Nets:             1780       1780            0            0
+
+   Instances:         271        271            0            0    MN(NFET)
+                      188        188            0            0    MP(PFET)
+                        9          9            0            0    SPDW_2_1
+                        8          8            0            0    SPUP_2_1
+                       30         30            0            0    SMN2
+                       10         10            0            0    _bitcoreb
+                       90         90            0            0    _invb
+                      807        807            0            0    _invv
+                      164        164            0            0    _invx2v
+                       14         14            0            0    _invx3v
+                      127        127            0            0    _nand2v
+                        1          1            0            0    _nand3v
+                       60         60            0            0    _nor2v
+                       21         21            0            0    _pdw2v
+                       34         34            0            0    _pup2v
+                      406        406            0            0    _sdw2v
+                        6          6            0            0    _sdw3v
+                      536        536            0            0    _sup2v
+                       60         60            0            0    _tgmb
+                        4          4            0            0    _xr2v
+                       48         48            0            0    _xra2v
+                  -------    -------    ---------    ---------
+   Total Inst:       2894       2894            0            0
+
+
+o Statistics:
+
+   1108 layout mos transistors were reduced to 497.
+     611 mos transistors were deleted by parallel reduction.
+
+   51 instances were matched arbitrarily.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS clk signature<0> signature<4> signature<5> signature<7> signature<8>
+                 signature<9> signature<13> signature<15> reset signature<2> signature<6>
+                 signature<1> signature<3> signature<10> signature<11> signature<12>
+                 signature<14>
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                   Instances
+                                   ---------
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X991/M29(118.780,123.660)  MP(pfet)                       Xclk_r_REG47_S4/M4  MP(PFET) 
+         X991/M28(118.460,123.660)  MP(pfet)                       Xclk_r_REG47_S4/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X990/M29(95.580,91.940)  MP(pfet)                         Xmult_x_1_clk_r_REG116_S1/M4  MP(PFET) 
+         X990/M28(95.260,91.940)  MP(pfet)                         Xmult_x_1_clk_r_REG116_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X889/M26(62.290,58.860)  MP(pfet)                         Xmult_x_1_clk_r_REG76_S1/M4  MP(PFET) 
+         X889/M25(61.970,58.860)  MP(pfet)                         Xmult_x_1_clk_r_REG76_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X892/M26(101.490,66.060)  MP(pfet)                        Xmult_x_1_clk_r_REG124_S1/M4  MP(PFET) 
+         X892/M25(101.170,66.060)  MP(pfet)                        Xmult_x_1_clk_r_REG124_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X893/M26(116.290,77.540)  MP(pfet)                        Xmult_x_1_clk_r_REG103_S1/M4  MP(PFET) 
+         X893/M25(115.970,77.540)  MP(pfet)                        Xmult_x_1_clk_r_REG103_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X888/M26(62.290,48.740)  MP(pfet)                         Xmult_x_1_clk_r_REG73_S1/M4  MP(PFET) 
+         X888/M25(61.970,48.740)  MP(pfet)                         Xmult_x_1_clk_r_REG73_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X894/M26(130.510,73.260)  MP(pfet)                        Xclk_r_REG41_S2/M4  MP(PFET) 
+         X894/M25(130.830,73.260)  MP(pfet)                        Xclk_r_REG41_S2/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X886/M26(55.310,66.060)  MP(pfet)                         Xmult_x_1_clk_r_REG80_S1/M4  MP(PFET) 
+         X886/M25(55.630,66.060)  MP(pfet)                         Xmult_x_1_clk_r_REG80_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X890/M26(67.490,30.060)  MP(pfet)                         Xmult_x_1_clk_r_REG78_S1/M4  MP(PFET) 
+         X890/M25(67.170,30.060)  MP(pfet)                         Xmult_x_1_clk_r_REG78_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X887/M26(60.290,34.340)  MP(pfet)                         Xmult_x_1_clk_r_REG71_S1/M4  MP(PFET) 
+         X887/M25(59.970,34.340)  MP(pfet)                         Xmult_x_1_clk_r_REG71_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X989/M29(41.180,70.340)  MP(pfet)                         Xmult_x_1_clk_r_REG81_S1/M4  MP(PFET) 
+         X989/M28(40.860,70.340)  MP(pfet)                         Xmult_x_1_clk_r_REG81_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X885/M26(51.090,22.860)  MP(pfet)                         Xmult_x_1_clk_r_REG82_S1/M4  MP(PFET) 
+         X885/M25(50.770,22.860)  MP(pfet)                         Xmult_x_1_clk_r_REG82_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X884/M26(54.110,51.660)  MP(pfet)                         Xmult_x_1_clk_r_REG66_S1/M4  MP(PFET) 
+         X884/M25(54.430,51.660)  MP(pfet)                         Xmult_x_1_clk_r_REG66_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X883/M26(49.890,58.860)  MP(pfet)                         Xmult_x_1_clk_r_REG74_S1/M4  MP(PFET) 
+         X883/M25(49.570,58.860)  MP(pfet)                         Xmult_x_1_clk_r_REG74_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X882/M26(49.090,41.540)  MP(pfet)                         Xmult_x_1_clk_r_REG69_S1/M4  MP(PFET) 
+         X882/M25(48.770,41.540)  MP(pfet)                         Xmult_x_1_clk_r_REG69_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X881/M26(41.490,55.940)  MP(pfet)                         Xmult_x_1_clk_r_REG70_S1/M4  MP(PFET) 
+         X881/M25(41.170,55.940)  MP(pfet)                         Xmult_x_1_clk_r_REG70_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X880/M26(41.090,73.260)  MP(pfet)                         Xmult_x_1_clk_r_REG77_S1/M4  MP(PFET) 
+         X880/M25(40.770,73.260)  MP(pfet)                         Xmult_x_1_clk_r_REG77_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X891/M26(67.890,19.940)  MP(pfet)                         Xmult_x_1_clk_r_REG75_S1/M4  MP(PFET) 
+         X891/M25(67.570,19.940)  MP(pfet)                         Xmult_x_1_clk_r_REG75_S1/M5  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1033/M2(113.830,94.970)  MP(pfet)                        XU234/M2  MP(PFET) 
+         X1033/M3(114.150,94.970)  MP(pfet)                        XU234/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1032/M2(111.770,55.830)  MP(pfet)                        XU137/M2  MP(PFET) 
+         X1032/M3(111.450,55.830)  MP(pfet)                        XU137/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1031/M2(105.830,37.370)  MP(pfet)                        XU232/M2  MP(PFET) 
+         X1031/M3(106.150,37.370)  MP(pfet)                        XU232/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1030/M2(105.370,102.170)  MP(pfet)                       XU310/M2  MP(PFET) 
+         X1030/M3(105.050,102.170)  MP(pfet)                       XU310/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1029/M2(91.030,120.630)  MP(pfet)                        XU314/M2  MP(PFET) 
+         X1029/M3(91.350,120.630)  MP(pfet)                        XU314/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1028/M2(88.230,66.170)  MP(pfet)                         XU152/M2  MP(PFET) 
+         X1028/M3(88.550,66.170)  MP(pfet)                         XU152/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1027/M2(85.030,22.970)  MP(pfet)                         XU176/M2  MP(PFET) 
+         X1027/M3(85.350,22.970)  MP(pfet)                         XU176/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1026/M2(84.230,70.230)  MP(pfet)                         XU129/M2  MP(PFET) 
+         X1026/M3(84.550,70.230)  MP(pfet)                         XU129/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1025/M2(84.970,66.170)  MP(pfet)                         XU322/M2  MP(PFET) 
+         X1025/M3(84.650,66.170)  MP(pfet)                         XU322/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1024/M2(81.430,58.970)  MP(pfet)                         XU284/M2  MP(PFET) 
+         X1024/M3(81.750,58.970)  MP(pfet)                         XU284/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1023/M2(78.630,70.230)  MP(pfet)                         XU146/M2  MP(PFET) 
+         X1023/M3(78.950,70.230)  MP(pfet)                         XU146/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1022/M2(74.230,55.830)  MP(pfet)                         XU154/M2  MP(PFET) 
+         X1022/M3(74.550,55.830)  MP(pfet)                         XU154/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1021/M2(74.230,41.430)  MP(pfet)                         XU224/M2  MP(PFET) 
+         X1021/M3(74.550,41.430)  MP(pfet)                         XU224/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1020/M2(73.830,70.230)  MP(pfet)                         XU155/M2  MP(PFET) 
+         X1020/M3(74.150,70.230)  MP(pfet)                         XU155/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1019/M2(70.230,51.770)  MP(pfet)                         XU321/M2  MP(PFET) 
+         X1019/M3(70.550,51.770)  MP(pfet)                         XU321/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1018/M2(68.570,73.370)  MP(pfet)                         XU372/M2  MP(PFET) 
+         X1018/M3(68.250,73.370)  MP(pfet)                         XU372/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1017/M2(66.630,84.630)  MP(pfet)                         XU131/M2  MP(PFET) 
+         X1017/M3(66.950,84.630)  MP(pfet)                         XU131/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1016/M2(64.230,70.230)  MP(pfet)                         XU178/M2  MP(PFET) 
+         X1016/M3(64.550,70.230)  MP(pfet)                         XU178/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1015/M2(50.230,84.630)  MP(pfet)                         XU366/M2  MP(PFET) 
+         X1015/M3(50.550,84.630)  MP(pfet)                         XU366/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X1014/M2(48.170,80.570)  MP(pfet)                         XU135/M2  MP(PFET) 
+         X1014/M3(47.850,80.570)  MP(pfet)                         XU135/M3  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X980/M6(119.720,84.510)  MP(pfet)                         XU312/M0  MP(PFET) 
+         X980/M7(120.040,84.510)  MP(pfet)                         XU312/M1  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         X979/M6(90.520,123.890)  MP(pfet)                         XU315/M0  MP(PFET) 
+         X979/M7(90.840,123.890)  MP(pfet)                         XU315/M1  MP(PFET) 
+
+       (_sup2v)                                                  (_sup2v)
+       Devices: 
+         M119(69.200,101.260)  MP(pfet)                            XU243/M4  MP(PFET) 
+         M120(69.520,101.260)  MP(pfet)                            XU243/M5  MP(PFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X991/M4(118.140,125.090)  MN(nfet)                        Xclk_r_REG47_S4/M0  MN(NFET) 
+         X991/M5(118.460,125.090)  MN(nfet)                        Xclk_r_REG47_S4/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X990/M4(94.940,90.510)  MN(nfet)                          Xmult_x_1_clk_r_REG116_S1/M0  MN(NFET) 
+         X990/M5(95.260,90.510)  MN(nfet)                          Xmult_x_1_clk_r_REG116_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X889/M4(61.650,60.290)  MN(nfet)                          Xmult_x_1_clk_r_REG76_S1/M0  MN(NFET) 
+         X889/M5(61.970,60.290)  MN(nfet)                          Xmult_x_1_clk_r_REG76_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X892/M4(100.850,67.490)  MN(nfet)                         Xmult_x_1_clk_r_REG124_S1/M0  MN(NFET) 
+         X892/M5(101.170,67.490)  MN(nfet)                         Xmult_x_1_clk_r_REG124_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X893/M4(115.650,76.110)  MN(nfet)                         Xmult_x_1_clk_r_REG103_S1/M0  MN(NFET) 
+         X893/M5(115.970,76.110)  MN(nfet)                         Xmult_x_1_clk_r_REG103_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X888/M4(61.650,47.310)  MN(nfet)                          Xmult_x_1_clk_r_REG73_S1/M0  MN(NFET) 
+         X888/M5(61.970,47.310)  MN(nfet)                          Xmult_x_1_clk_r_REG73_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X894/M4(131.150,74.690)  MN(nfet)                         Xclk_r_REG41_S2/M0  MN(NFET) 
+         X894/M5(130.830,74.690)  MN(nfet)                         Xclk_r_REG41_S2/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X886/M4(55.950,67.490)  MN(nfet)                          Xmult_x_1_clk_r_REG80_S1/M0  MN(NFET) 
+         X886/M5(55.630,67.490)  MN(nfet)                          Xmult_x_1_clk_r_REG80_S1/M1  MN(NFET) 
+
+       (_sdw2v)                                                  (_sdw2v)
+       Devices: 
+         X890/M4(66.850,31.490)  MN(nfet)                          Xmult_x_1_clk_r_REG78_S1/M0  MN(NFET) 
+         X890/M5(67.170,31.490)  MN(nfet)                          Xmult_x_1_clk_r_REG78_S1/M1  MN(NFET) 
+
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  3 sec

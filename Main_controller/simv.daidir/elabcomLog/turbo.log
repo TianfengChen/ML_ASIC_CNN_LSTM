@@ -1,0 +1,5 @@
+Command Line: /usr/caen/vcs-2020.12-SP2-1/linux64/bin/elabcom -logdir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/elabcomLog -simvdaidir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir -lib /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/work -saveLevel -elab /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/kdb -simflow -simdir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/kdb_libs -topfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/.elabcomTopFile -pkgfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/Main_controller/simv.daidir/.elabcomPkgFile -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux caen-vnc-mi11.engin.umich.edu 4.18.0-372.9.1.el8.x86_64 #1 SMP Fri Apr 15 22:12:19 EDT 2022 x86_64)
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 0.320050 0.021634 0.041149 delta 94253056 94253056 total 212058112 212058112

@@ -1,0 +1,13 @@
+# File Created by Qing Dong at Mon Jan 23 16:36:47 2017
+# assisted by CdsLibEditor
+DEFINE analogLib $CDS/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE sbaLib $CDS/tools/dfII/etc/cdslib/artist/sbaLib
+DEFINE basic $CDS/tools/dfII/etc/cdslib/basic
+DEFINE sample $CDS/tools/dfII/samples/cdslib/sample
+DEFINE US_8ths $CDS/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE cmrf8sf /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/relLM/cdslib/cmrf8sf
+DEFINE esd8rf /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/relLM/cdslib/esd8rf
+DEFINE artisan_pads /afs/umich.edu/class/eecs627/ibm13/common/ic6/artisan_pads
+DEFINE artisan_cells /afs/umich.edu/class/eecs627/ibm13/common/ic6/artisan_cells
+DEFINE mult_block ./mult_block
+DEFINE stdcell_PEX ./stdcell_PEX

@@ -1,0 +1,31 @@
+*lvsRulesFile: /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/LVS/cmrf8sf.lvs.cal
+*lvsRunDir: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS
+*lvsLayoutPaths: mult_chip.calibre.db
+*lvsLayoutPrimary: mult_chip
+*lvsLayoutLibrary: mult_chip_tapeout
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/v2lvs/mult_chip.cdl
+*lvsSourcePrimary: mult_chip
+*lvsSourceLibrary: mult_chip_tapeout
+*lvsSourceView: schematic
+*lvsSpiceFile: mult_chip.sp
+*lvsPowerNames: VDD DVDD
+*lvsGroundNames: VSS DVSS
+*lvsRunERC: 0
+*lvsERCDatabase: mult_chip.erc.results
+*lvsERCSummaryFile: mult_chip.erc.summary
+*lvsIncludeFiles: lvs.box
+*lvsReportFile: mult_chip.lvs.report
+*lvsAbortOnSupplyError: 0
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnShowOptions: 1
+*cmnRunMT: 1
+*cmnRunHyper: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: mult_chip_tapeout
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: mult_chip.def

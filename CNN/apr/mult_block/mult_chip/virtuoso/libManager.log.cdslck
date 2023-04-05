@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      qiruizh
+HostName                       caen-vnc-mi10.engin.umich.edu
+ProcessIdentifier              3791915
+ProcessCreationTime_UTC        1647903071
+ProcessCreationTime_Readable   Mon Mar 21 18:51:11 2022 EDT
+AppIdentifier                  /usr/caen/ic-6.1.8.500.1100/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/libManager.log
+TimeEditLocked                 Mon Mar 21 18:51:11 2022 EDT

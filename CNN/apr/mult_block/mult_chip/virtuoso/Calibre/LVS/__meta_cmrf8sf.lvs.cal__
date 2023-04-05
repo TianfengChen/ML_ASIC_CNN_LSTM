@@ -1,0 +1,6 @@
+DRC ICSTATION YES
+
+
+INCLUDE "/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/lvs.box"
+
+INCLUDE "/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/LVS/cmrf8sf.lvs.cal"

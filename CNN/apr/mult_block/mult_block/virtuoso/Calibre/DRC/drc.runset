@@ -1,0 +1,22 @@
+*drcRulesFile: /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/DRC/cmrf8sf.drc.cal
+*drcRunDir: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC
+*drcLayoutPaths: mult_block.calibre.db
+*drcLayoutPrimary: mult_block
+*drcLayoutLibrary: mult_block
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: mult_block.drc.results
+*drcIncludeFiles: drc.exclude
+*drcRHDBFile: mult_block.rhdb
+*drcSummaryFile: mult_block.drc.summary
+*drcDFMDefaultsResultsFile: mult_block.dfmDefaults.db
+*cmnWarnLayoutOverwrite: 0
+*cmnShowOptions: 1
+*cmnRunMT: 1
+*cmnRunHyper: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: mult_block
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: mult_block.def

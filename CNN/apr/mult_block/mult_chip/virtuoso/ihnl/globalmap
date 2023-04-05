@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+mult_block/reset_driver/schematic reset_driver
+$endmodel
+$net
+VSS! VSS!
+VDD! VDD!
+$endnet
+$param
+$endparam

@@ -1,0 +1,52 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  mult_block
+* Top Cell Name: reset_driver
+* View Name:     schematic
+* Netlisted on:  Jan 20 18:14:04 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL VDD
++        VSS
+
+*.PIN VDD
+*+    VSS
+
+************************************************************************
+* Library Name: mult_block
+* Cell Name:    reset_driver
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT reset_driver A VDD VSS Y
+*.PININFO A:I VDD:I VSS:I Y:O
+MM1 VSS A net29 VSS nfet m=1 l=120.0n w=600n nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+MT0 VSS net29 net25 VSS nfet m=1 l=120.0n w=1.2u nf=1 par=1 ngcon=1 
++ mSwitch=0 idg=0 psp=0
+MT2 VSS net17 Y VSS nfet m=1 l=120.0n w=4.8u nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+MT3 VSS net25 net17 VSS nfet m=1 l=120.0n w=2.4u nf=1 par=1 ngcon=1 
++ mSwitch=0 idg=0 psp=0
+MT1 net25 net29 VDD VDD pfet m=1 l=120.0n w=2.4u nf=1 par=1 ngcon=1 
++ mSwitch=0 idg=0 psp=0
+MM0 net29 A VDD VDD pfet m=1 l=120.0n w=1.2u nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+MT4 Y net17 VDD VDD pfet m=1 l=120.0n w=9.6u nf=1 par=1 ngcon=1 mSwitch=0 
++ idg=0 psp=0
+MT5 net17 net25 VDD VDD pfet m=1 l=120.0n w=4.8u nf=1 par=1 ngcon=1 
++ mSwitch=0 idg=0 psp=0
+.ENDS
+

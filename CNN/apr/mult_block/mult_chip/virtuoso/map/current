@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "reset_driver"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "VDD! VSS!"
+  hierDelim "."
+  netlistDir "/afs/umich.edu/user/q/i/qiruizh/627w23/lab3/virtuoso/"
+ )
+( model
+( "mult_block/reset_driver/schematic" "reset_driver" )
+ )
+( "reset_driver" "ihnl/cds0/map" )
+ )

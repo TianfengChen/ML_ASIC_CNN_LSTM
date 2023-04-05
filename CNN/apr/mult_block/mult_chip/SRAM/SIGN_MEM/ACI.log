@@ -1,0 +1,49 @@
+5:34:31 PM - ARM Physical IP, Inc.
+5:34:31 PM - Linux caen-vnc-mi18.engin.umich.edu 4.18.0-348.12.2.el8_5.x86_64 #1 SMP Mon Jan 17 07:06:06 EST 2022 x86_64 x86_64 x86_64 GNU/Linux
+5:34:31 PM - Version 2008Q3V1
+5:34:31 PM - GUI version 5.6.13
+5:34:31 PM - 
+5:34:31 PM - CONFIDENTIAL AND PROPRIETARY SOFTWARE OF ARM PHYSICAL IP, INC.
+5:34:31 PM - 
+5:34:31 PM - Copyright (c) 1993 - 2022 ARM Physical IP, Inc.  All Rights Reserved.
+5:34:31 PM - 
+5:34:31 PM - Use of this Software is subject to the terms and conditions of the
+5:34:31 PM - applicable license agreement with ARM Physical IP, Inc. 
+5:34:31 PM - In addition, this Software is protected by patents, copyright law 
+5:34:31 PM - and international treaties.
+5:34:31 PM - 
+5:34:31 PM - The copyright notice(s) in this Software does not indicate actual or
+5:34:31 PM - intended publication of this Software.
+5:34:31 PM - 
+5:34:31 PM - High Speed/Density Single Port SRAM Generator, IBM CMRF8SF-LPVT Process
+5:34:31 PM - 
+5:34:31 PM - Log file is ACI.log
+5:34:31 PM - 
+5:38:42 PM - ASCII Datatable updated
+5:38:47 PM - ASCII Datatable updated
+5:38:50 PM - ASCII Datatable updated
+5:38:53 PM - ASCII Datatable updated
+5:39:00 PM - Parameters have not changed since last ASCII Datatable update
+5:39:17 PM - ASCII Datatable updated
+5:40:20 PM - ASCII Datatable updated
+5:40:22 PM - Parameters have not changed since last ASCII Datatable update
+5:40:37 PM - Parameters have not changed since last ASCII Datatable update
+5:40:43 PM - command: /afs/umich.edu/class/eecs627/ibm13/IBM_cmrf8sf/arm_2009q1/lpvt_sram-sp-v20_2008q3v1/aci/ra1shd/bin/ra1shd verilog -instname "SIGN_MEM" -words 4096 -bits 16 -frequency 100 -ring_width 4.0 -mux 16 -write_mask off -wp_size 8 -top_layer met4 -power_type rings -horiz met4 -vert met3 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 6 -asvm on -corners ff_1p32v_m40c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_125c
+5:40:43 PM - Verilog Model generator succeeded, created:
+5:40:43 PM -    SIGN_MEM.v
+5:40:55 PM - command: /afs/umich.edu/class/eecs627/ibm13/IBM_cmrf8sf/arm_2009q1/lpvt_sram-sp-v20_2008q3v1/aci/ra1shd/bin/ra1shd synopsys -instname "SIGN_MEM" -words 4096 -bits 16 -frequency 100 -ring_width 4.0 -mux 16 -write_mask off -wp_size 8 -top_layer met4 -power_type rings -horiz met4 -vert met3 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 6 -asvm on -libname "SIGN_MEM" -corners ff_1p32v_m40c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_125c
+5:40:56 PM - Synopsys Model generator succeeded, created:
+5:40:56 PM -    SIGN_MEM_ff_1p32v_m40c_syn.lib
+5:40:56 PM -    SIGN_MEM_ff_1p65v_125c_syn.lib
+5:40:56 PM -    SIGN_MEM_tt_1p2v_25c_syn.lib
+5:40:56 PM -    SIGN_MEM_ss_1p08v_125c_syn.lib
+5:40:58 PM - Parameters have not changed since last ASCII Datatable update
+5:41:05 PM - command: /afs/umich.edu/class/eecs627/ibm13/IBM_cmrf8sf/arm_2009q1/lpvt_sram-sp-v20_2008q3v1/aci/ra1shd/bin/ra1shd vclef-fp -instname "SIGN_MEM" -words 4096 -bits 16 -frequency 100 -ring_width 4.0 -mux 16 -write_mask off -wp_size 8 -top_layer met4 -power_type rings -horiz met4 -vert met3 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 6 -asvm on -inst2ring blockages -site_def off -corners ff_1p32v_m40c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_125c
+5:41:07 PM - VCLEF Footprint generator succeeded, created:
+5:41:07 PM -    SIGN_MEM.vclef
+5:41:11 PM - command: /afs/umich.edu/class/eecs627/ibm13/IBM_cmrf8sf/arm_2009q1/lpvt_sram-sp-v20_2008q3v1/aci/ra1shd/bin/ra1shd gds2 -instname "SIGN_MEM" -words 4096 -bits 16 -frequency 100 -ring_width 4.0 -mux 16 -write_mask off -wp_size 8 -top_layer met4 -power_type rings -horiz met4 -vert met3 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 6 -asvm on -corners ff_1p32v_m40c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_125c
+5:41:13 PM - GDSII Layout generator succeeded, created:
+5:41:13 PM -    SIGN_MEM.gds2
+5:41:16 PM - command: /afs/umich.edu/class/eecs627/ibm13/IBM_cmrf8sf/arm_2009q1/lpvt_sram-sp-v20_2008q3v1/aci/ra1shd/bin/ra1shd lvs -instname "SIGN_MEM" -words 4096 -bits 16 -frequency 100 -ring_width 4.0 -mux 16 -write_mask off -wp_size 8 -top_layer met4 -power_type rings -horiz met4 -vert met3 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 6 -asvm on -corners ff_1p32v_m40c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_125c
+5:41:18 PM - LVS Netlist generator succeeded, created:
+5:41:18 PM -    SIGN_MEM.cdl

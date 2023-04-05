@@ -1,0 +1,105 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -process 130 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -skew true }
+catch { setOptMode -activeHoldViews { holdAnalysis } }
+catch { setOptMode -activeSetupViews { setupAnalysis } }
+catch { setOptMode -addInst true }
+catch { setOptMode -addInstancePrefix POSTROUTE }
+catch { setOptMode -allEndPoints true }
+catch { setOptMode -autoHoldViews { holdAnalysis} }
+catch { setOptMode -autoSetupViews { setupAnalysis} }
+catch { setOptMode -autoTDGRSetupViews { setupAnalysis} }
+catch { setOptMode -autoViewHoldTargetSlack 500 }
+catch { setOptMode -deleteInst true }
+catch { setOptMode -drcMargin 0.1 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -fixFanoutLoad true }
+catch { setOptMode -holdTargetSlack 0.05 }
+catch { setOptMode -maxLength 1000 }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -restruct false }
+catch { setOptMode -setupTargetSlack 0.05 }
+catch { setOptMode -usefulSkew false }
+catch { setOptMode -usefulSkewCTS true }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setPathGroupOptions default -effortLevel low }
+catch { setPathGroupOptions tdgp_reg2reg_default -effortLevel high }
+catch { setExtractRCMode  -effortLevel medium -engine postRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.4 }
+catch { set_ccopt_mode -cts_opt_priority insertion_delay }
+catch { set_ccopt_mode -cts_opt_type full }
+catch { set_ccopt_mode -cts_target_nonleaf_slew 0.1 }
+catch { set_ccopt_mode -cts_target_skew 0.1 }
+catch { set_ccopt_mode -is_mode_set_route_top_mask false }
+catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
+catch { set_ccopt_mode -route_top_bottom_preferred_layer 2 }
+catch { set_ccopt_mode -route_top_top_preferred_layer 4 }
+catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
+catch {setNanoRouteMode -quiet -drouteAutoStop false}
+catch {setNanoRouteMode -quiet -drouteFixAntenna true}
+catch {setNanoRouteMode -quiet -drouteOnGridOnly "none"}
+catch {setNanoRouteMode -quiet -droutePostRouteSwapVia "false"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -drouteUseMultiCutViaEffort "medium"}
+catch {setNanoRouteMode -quiet -extractDesignSignature 78006203}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 22.700000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -routeAntennaCellName "ANTENNATR"}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 2}
+catch {setNanoRouteMode -quiet -routeConcurrentMinimizeViaCountEffort "medium"}
+catch {setNanoRouteMode -quiet -routeDeleteAntennaReroute true}
+catch {setNanoRouteMode -quiet -routeInsertAntennaDiode true}
+catch {setNanoRouteMode -quiet -routeSiEffort "max"}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 4}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix true}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -routeWithViaInPin "true"}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_3766803.tif.gz"}
+
+catch { setPlaceMode -place_global_max_density 0.8 }
+catch { setPlaceMode -place_global_uniform_density true }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { set_ccopt_mode -cts_opt_priority insertion_delay }
+catch { set_ccopt_mode -cts_opt_type full }
+catch { set_ccopt_mode -cts_target_nonleaf_slew 0.1 }
+catch { set_ccopt_mode -cts_target_skew 0.1 }
+catch { set_ccopt_mode -is_mode_set_route_top_mask false }
+catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
+catch { set_ccopt_mode -route_top_bottom_preferred_layer 2 }
+catch { set_ccopt_mode -route_top_top_preferred_layer 4 }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -reportOutBound true }
+catch { setDelayCalMode -SIAware true }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setTrialRouteMode -maxRouteLayer 4 }
+catch { setTrialRouteMode -minRouteLayer 2 }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -max_via_size {blockPin 100% 100% 100%} }
+catch { setAddStripeMode -stacked_via_bottom_layer M2 }
+catch { setAddStripeMode -stacked_via_top_layer M4 }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setFPlanMode -defaultTechSite IBM13SITE }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

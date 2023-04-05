@@ -1,0 +1,201 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 04/28/2020 23:57 (sjfhw315) $
+          : sub-version  IC6.1.8-64b.500.11 
+Started at: 21-Mar-2022  18:37:12
+User Name : qiruizh
+Host Name : caen-vnc-mi10.engin.umich.edu
+Directory : /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC/mult_block.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'BNCON' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'VIA_CAP' at line number '439' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'DN_NET' at line number '441' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 mult_block
+strmFile                                /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC/mult_block.calibre.db
+topCell                                 mult_block
+view                                    layout
+runDir                                  /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/DRC/
+logFile                                 PIPO.LOG.mult_block
+summaryFile                             PIPO.SUM.mult_block
+layerMap                                /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647902232430.
+INFO (XSTRM-223): 2. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647902232431.
+INFO (XSTRM-223): 3. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647902232432.
+INFO (XSTRM-223): 4. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647902232433.
+INFO (XSTRM-223): 5. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647902232434.
+INFO (XSTRM-223): 6. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_647902232435.
+INFO (XSTRM-223): 7. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_647902232436.
+INFO (XSTRM-223): 8. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647902232437.
+INFO (XSTRM-223): 9. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_647902232438.
+INFO (XSTRM-223): 10. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647902232439.
+INFO (XSTRM-223): 11. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479022324310.
+INFO (XSTRM-223): 12. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479022324311.
+INFO (XSTRM-223): 13. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479022324312.
+INFO (XSTRM-223): 14. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479022324313.
+INFO (XSTRM-223): 15. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479022324314.
+INFO (XSTRM-223): 16. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479022324315.
+INFO (XSTRM-223): 17. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479022324316.
+INFO (XSTRM-223): 18. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479022324317.
+INFO (XSTRM-223): 19. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479022324318.
+INFO (XSTRM-223): 20. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479022324319.
+INFO (XSTRM-223): 21. Translating cellView artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout as STRUCTURE CLKINVX20TRhwwnwwwwwt3axyjy.
+INFO (XSTRM-223): 22. Translating cellView artisan_cells/CLKINVX20TR/layout as STRUCTURE CLKINVX20TR.
+INFO (XSTRM-223): 23. Translating cellView artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout as STRUCTURE CLKINVX16TRhwwswwwwwh9hfawy.
+INFO (XSTRM-223): 24. Translating cellView artisan_cells/CLKINVX16TR/layout as STRUCTURE CLKINVX16TR.
+INFO (XSTRM-223): 25. Translating cellView artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout as STRUCTURE CLKINVX8TRhwwlwwwwwmz93rmy.
+INFO (XSTRM-223): 26. Translating cellView artisan_cells/CLKINVX8TR/layout as STRUCTURE CLKINVX8TR.
+INFO (XSTRM-223): 27. Translating cellView artisan_cells/BUFX3TRhww2wwwww96hs97y/layout as STRUCTURE BUFX3TRhww2wwwww96hs97y.
+INFO (XSTRM-223): 28. Translating cellView artisan_cells/BUFX3TR/layout as STRUCTURE BUFX3TR.
+INFO (XSTRM-223): 29. Translating cellView artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout as STRUCTURE CLKBUFX2TRhwwdwwwwwlznglyy.
+INFO (XSTRM-223): 30. Translating cellView artisan_cells/CLKBUFX2TR/layout as STRUCTURE CLKBUFX2TR.
+INFO (XSTRM-223): 31. Translating cellView artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout as STRUCTURE BUFX4TRhww7wwwwwdecmzcy.
+INFO (XSTRM-223): 32. Translating cellView artisan_cells/BUFX4TR/layout as STRUCTURE BUFX4TR.
+INFO (XSTRM-223): 33. Translating cellView artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout as STRUCTURE CLKINVX4TRhwwdwwwwwgqjw3ry.
+INFO (XSTRM-223): 34. Translating cellView artisan_cells/CLKINVX4TR/layout as STRUCTURE CLKINVX4TR.
+INFO (XSTRM-223): 35. Translating cellView artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout as STRUCTURE INVX2TRhwwiwwwwwxmzvxay.
+INFO (XSTRM-223): 36. Translating cellView artisan_cells/INVX2TR/layout as STRUCTURE INVX2TR.
+INFO (XSTRM-223): 37. Translating cellView artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout as STRUCTURE DFFHQX4TRhwwdywwww0vl4iay.
+INFO (XSTRM-223): 38. Translating cellView artisan_cells/DFFHQX4TR/layout as STRUCTURE DFFHQX4TR.
+INFO (XSTRM-223): 39. Translating cellView artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout as STRUCTURE DFFSX2TRhwwgwwwwwn9qteay.
+INFO (XSTRM-223): 40. Translating cellView artisan_cells/DFFSX2TR/layout as STRUCTURE DFFSX2TR.
+INFO (XSTRM-223): 41. Translating cellView artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout as STRUCTURE DFFRX1TRhww3wwwwwjtmbtry.
+INFO (XSTRM-223): 42. Translating cellView artisan_cells/DFFRX1TR/layout as STRUCTURE DFFRX1TR.
+INFO (XSTRM-223): 43. Translating cellView artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout as STRUCTURE DFFQX1TRhwwowwwwwwkz83ty.
+INFO (XSTRM-223): 44. Translating cellView artisan_cells/DFFQX1TR/layout as STRUCTURE DFFQX1TR.
+INFO (XSTRM-223): 45. Translating cellView artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout as STRUCTURE DFFHQX1TRhwwxwwwwwmq4ogjy.
+INFO (XSTRM-223): 46. Translating cellView artisan_cells/DFFHQX1TR/layout as STRUCTURE DFFHQX1TR.
+INFO (XSTRM-223): 47. Translating cellView artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout as STRUCTURE DFFHQX2TRhwwhwwwwwsnczz6y.
+INFO (XSTRM-223): 48. Translating cellView artisan_cells/DFFHQX2TR/layout as STRUCTURE DFFHQX2TR.
+INFO (XSTRM-223): 49. Translating cellView artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout as STRUCTURE DFFHQX8TRhww0ywwwwbh26pry.
+INFO (XSTRM-223): 50. Translating cellView artisan_cells/DFFHQX8TR/layout as STRUCTURE DFFHQX8TR.
+INFO (XSTRM-223): 51. Translating cellView artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout as STRUCTURE DFFQX4TRhwwzwwwwwjjxdb6y.
+INFO (XSTRM-223): 52. Translating cellView artisan_cells/DFFQX4TR/layout as STRUCTURE DFFQX4TR.
+INFO (XSTRM-223): 53. Translating cellView artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout as STRUCTURE DFFQX2TRhwwpwwwwwnb66h0y.
+INFO (XSTRM-223): 54. Translating cellView artisan_cells/DFFQX2TR/layout as STRUCTURE DFFQX2TR.
+INFO (XSTRM-223): 55. Translating cellView artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout as STRUCTURE DFFSX1TRhwwgwwwww2ruuydy.
+INFO (XSTRM-223): 56. Translating cellView artisan_cells/DFFSX1TR/layout as STRUCTURE DFFSX1TR.
+INFO (XSTRM-223): 57. Translating cellView artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout as STRUCTURE NAND2X1TRhwwdwwwww8r4jguy.
+INFO (XSTRM-223): 58. Translating cellView artisan_cells/NAND2X1TR/layout as STRUCTURE NAND2X1TR.
+INFO (XSTRM-223): 59. Translating cellView artisan_cells/AND2X2TRhww2wwwww04e6sry/layout as STRUCTURE AND2X2TRhww2wwwww04e6sry.
+INFO (XSTRM-223): 60. Translating cellView artisan_cells/AND2X2TR/layout as STRUCTURE AND2X2TR.
+INFO (XSTRM-223): 61. Translating cellView artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout as STRUCTURE OAI2BB1X1TRhww7wwwwwcy6xw0y.
+INFO (XSTRM-223): 62. Translating cellView artisan_cells/OAI2BB1X1TR/layout as STRUCTURE OAI2BB1X1TR.
+INFO (XSTRM-223): 63. Translating cellView artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout as STRUCTURE NOR2X1TRhwwdwwwwwyo8yy2y.
+INFO (XSTRM-223): 64. Translating cellView artisan_cells/NOR2X1TR/layout as STRUCTURE NOR2X1TR.
+INFO (XSTRM-223): 65. Translating cellView artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout as STRUCTURE XOR2X1TRhww0wwwww5ggqhay.
+INFO (XSTRM-223): 66. Translating cellView artisan_cells/XOR2X1TR/layout as STRUCTURE XOR2X1TR.
+INFO (XSTRM-223): 67. Translating cellView artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout as STRUCTURE ADDFX2TRhww3wwwwwta64qty.
+INFO (XSTRM-223): 68. Translating cellView artisan_cells/ADDFX2TR/layout as STRUCTURE ADDFX2TR.
+INFO (XSTRM-223): 69. Translating cellView artisan_cells/ADDFX1TRhww3wwwwwela690y/layout as STRUCTURE ADDFX1TRhww3wwwwwela690y.
+INFO (XSTRM-223): 70. Translating cellView artisan_cells/ADDFX1TR/layout as STRUCTURE ADDFX1TR.
+INFO (XSTRM-223): 71. Translating cellView artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout as STRUCTURE OAI21X1TRhww2wwwwwg3fkhjy.
+INFO (XSTRM-223): 72. Translating cellView artisan_cells/OAI21X1TR/layout as STRUCTURE OAI21X1TR.
+INFO (XSTRM-223): 73. Translating cellView artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout as STRUCTURE NOR2BX1TRhww2wwwwwba1qary.
+INFO (XSTRM-223): 74. Translating cellView artisan_cells/NOR2BX1TR/layout as STRUCTURE NOR2BX1TR.
+INFO (XSTRM-223): 75. Translating cellView artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout as STRUCTURE AND2X1TRhww2wwwwwvgs4pay.
+INFO (XSTRM-223): 76. Translating cellView artisan_cells/AND2X1TR/layout as STRUCTURE AND2X1TR.
+INFO (XSTRM-223): 77. Translating cellView artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout as STRUCTURE NAND3X1TRhww2wwwwwk28izsy.
+INFO (XSTRM-223): 78. Translating cellView artisan_cells/NAND3X1TR/layout as STRUCTURE NAND3X1TR.
+INFO (XSTRM-223): 79. Translating cellView artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout as STRUCTURE NAND2BX1TRhww2wwwwweigep0y.
+INFO (XSTRM-223): 80. Translating cellView artisan_cells/NAND2BX1TR/layout as STRUCTURE NAND2BX1TR.
+INFO (XSTRM-223): 81. Translating cellView artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout as STRUCTURE XOR2X2TRhwwewwwwwzjbk40y.
+INFO (XSTRM-223): 82. Translating cellView artisan_cells/XOR2X2TR/layout as STRUCTURE XOR2X2TR.
+INFO (XSTRM-223): 83. Translating cellView artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout as STRUCTURE NOR2X2TRhww2wwwwwsbfgf7y.
+INFO (XSTRM-223): 84. Translating cellView artisan_cells/NOR2X2TR/layout as STRUCTURE NOR2X2TR.
+INFO (XSTRM-223): 85. Translating cellView artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout as STRUCTURE NAND2X2TRhww2wwwwwcq3mjay.
+INFO (XSTRM-223): 86. Translating cellView artisan_cells/NAND2X2TR/layout as STRUCTURE NAND2X2TR.
+INFO (XSTRM-223): 87. Translating cellView artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout as STRUCTURE XNOR2X1TRhww0wwwww9bxcriy.
+INFO (XSTRM-223): 88. Translating cellView artisan_cells/XNOR2X1TR/layout as STRUCTURE XNOR2X1TR.
+INFO (XSTRM-223): 89. Translating cellView artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout as STRUCTURE CLKAND2X2TRhww2wwwww7udno7y.
+INFO (XSTRM-223): 90. Translating cellView artisan_cells/CLKAND2X2TR/layout as STRUCTURE CLKAND2X2TR.
+INFO (XSTRM-223): 91. Translating cellView artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout as STRUCTURE OR2X2TRhww2wwwwwx2j7l6y.
+INFO (XSTRM-223): 92. Translating cellView artisan_cells/OR2X2TR/layout as STRUCTURE OR2X2TR.
+INFO (XSTRM-223): 93. Translating cellView artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout as STRUCTURE ADDHX1TRhwwewwwwwa1kd5dy.
+INFO (XSTRM-223): 94. Translating cellView artisan_cells/ADDHX1TR/layout as STRUCTURE ADDHX1TR.
+INFO (XSTRM-223): 95. Translating cellView artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout as STRUCTURE CMPR32X2TRhwwhwwwww9jardjy.
+INFO (XSTRM-223): 96. Translating cellView artisan_cells/CMPR32X2TR/layout as STRUCTURE CMPR32X2TR.
+INFO (XSTRM-223): 97. Translating cellView artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout as STRUCTURE ADDHXLTRhwwswwwwwbfsy7sy.
+INFO (XSTRM-223): 98. Translating cellView artisan_cells/ADDHXLTR/layout as STRUCTURE ADDHXLTR.
+INFO (XSTRM-223): 99. Translating cellView artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout as STRUCTURE CLKINVX2TRhwwiwwwwwhpa4y7y.
+INFO (XSTRM-223): 100. Translating cellView artisan_cells/CLKINVX2TR/layout as STRUCTURE CLKINVX2TR.
+INFO (XSTRM-223): 101. Translating cellView artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout as STRUCTURE AOI21X1TRhww2wwwwwal06bwy.
+INFO (XSTRM-223): 102. Translating cellView artisan_cells/AOI21X1TR/layout as STRUCTURE AOI21X1TR.
+INFO (XSTRM-223): 103. Translating cellView artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout as STRUCTURE NOR2BX2TRhwwlwwwwwh482gry.
+INFO (XSTRM-223): 104. Translating cellView artisan_cells/NOR2BX2TR/layout as STRUCTURE NOR2BX2TR.
+INFO (XSTRM-223): 105. Translating cellView artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout as STRUCTURE ADDFHX1TRhwwwywwwwjl9iimy.
+INFO (XSTRM-223): 106. Translating cellView artisan_cells/ADDFHX1TR/layout as STRUCTURE ADDFHX1TR.
+INFO (XSTRM-223): 107. Translating cellView artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout as STRUCTURE CLKINVX1TRhwwiwwwwwem0dnwy.
+INFO (XSTRM-223): 108. Translating cellView artisan_cells/CLKINVX1TR/layout as STRUCTURE CLKINVX1TR.
+INFO (XSTRM-223): 109. Translating cellView artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout as STRUCTURE ADDFHX2TRhwwsywwwwwmmp5ay.
+INFO (XSTRM-223): 110. Translating cellView artisan_cells/ADDFHX2TR/layout as STRUCTURE ADDFHX2TR.
+INFO (XSTRM-223): 111. Translating cellView artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout as STRUCTURE XNOR2X2TRhwwewwwww56go2cy.
+INFO (XSTRM-223): 112. Translating cellView artisan_cells/XNOR2X2TR/layout as STRUCTURE XNOR2X2TR.
+INFO (XSTRM-223): 113. Translating cellView artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout as STRUCTURE CMPR22X2TRhwwgwwwww4xj2uty.
+INFO (XSTRM-223): 114. Translating cellView artisan_cells/CMPR22X2TR/layout as STRUCTURE CMPR22X2TR.
+INFO (XSTRM-223): 115. Translating cellView artisan_cells/AO21X1TRhww7wwwww9jevycy/layout as STRUCTURE AO21X1TRhww7wwwww9jevycy.
+INFO (XSTRM-223): 116. Translating cellView artisan_cells/AO21X1TR/layout as STRUCTURE AO21X1TR.
+INFO (XSTRM-223): 117. Translating cellView artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout as STRUCTURE OAI21X2TRhwwqwwwwwycgz4wy.
+INFO (XSTRM-223): 118. Translating cellView artisan_cells/OAI21X2TR/layout as STRUCTURE OAI21X2TR.
+INFO (XSTRM-223): 119. Translating cellView artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout as STRUCTURE ADDHX2TRhwwgwwwwwrxlcr6y.
+INFO (XSTRM-223): 120. Translating cellView artisan_cells/ADDHX2TR/layout as STRUCTURE ADDHX2TR.
+INFO (XSTRM-223): 121. Translating cellView artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout as STRUCTURE INVX1TRhwwiwwwww6pow0dy.
+INFO (XSTRM-223): 122. Translating cellView artisan_cells/INVX1TR/layout as STRUCTURE INVX1TR.
+INFO (XSTRM-223): 123. Translating cellView artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout as STRUCTURE INVX4TRhwwdwwwwwzbzgouy.
+INFO (XSTRM-223): 124. Translating cellView artisan_cells/INVX4TR/layout as STRUCTURE INVX4TR.
+INFO (XSTRM-223): 125. Translating cellView artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout as STRUCTURE CLKAND2X3TRhww7wwwwwvq0lvcy.
+INFO (XSTRM-223): 126. Translating cellView artisan_cells/CLKAND2X3TR/layout as STRUCTURE CLKAND2X3TR.
+INFO (XSTRM-223): 127. Translating cellView artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout as STRUCTURE FILL64TRhwwncwwww2qv2fmy.
+INFO (XSTRM-223): 128. Translating cellView artisan_cells/FILL64TR/layout as STRUCTURE FILL64TR.
+INFO (XSTRM-223): 129. Translating cellView artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout as STRUCTURE FILL32TRhwwlywwww5oh9rwy.
+INFO (XSTRM-223): 130. Translating cellView artisan_cells/FILL32TR/layout as STRUCTURE FILL32TR.
+INFO (XSTRM-223): 131. Translating cellView artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout as STRUCTURE FILL4TRhwwdwwwww88xgyiy.
+INFO (XSTRM-223): 132. Translating cellView artisan_cells/FILL4TR/layout as STRUCTURE FILL4TR.
+INFO (XSTRM-223): 133. Translating cellView artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout as STRUCTURE FILL1TRhwwywwwwwjvop7dy.
+INFO (XSTRM-223): 134. Translating cellView artisan_cells/FILL1TR/layout as STRUCTURE FILL1TR.
+INFO (XSTRM-223): 135. Translating cellView artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout as STRUCTURE FILL16TRhww9wwwwwlrhqc6y.
+INFO (XSTRM-223): 136. Translating cellView artisan_cells/FILL16TR/layout as STRUCTURE FILL16TR.
+INFO (XSTRM-223): 137. Translating cellView artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout as STRUCTURE FILL2TRhwwtwwwwwxu9la0y.
+INFO (XSTRM-223): 138. Translating cellView artisan_cells/FILL2TR/layout as STRUCTURE FILL2TR.
+INFO (XSTRM-223): 139. Translating cellView artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout as STRUCTURE FILL8TRhww0wwwww4rz8aqy.
+INFO (XSTRM-223): 140. Translating cellView artisan_cells/FILL8TR/layout as STRUCTURE FILL8TR.
+INFO (XSTRM-223): 141. Translating cellView mult_block/mult_block/layout as STRUCTURE mult_block.
+
+Summary of Objects Translated:
+	Scalar Instances:                       1332
+	Array Instances:                        0
+	Polygons:                               1059
+	Paths:                                  3338
+	Rectangles:                             5301
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           3665
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   313
+	TextDisplay:                            0
+	Cells:                                  141
+
+Elapsed Time: 3.7s   User Time: 0.3s   CPU Time: 0.6s   Peak VM: 14628KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.

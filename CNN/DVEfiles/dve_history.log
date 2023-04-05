@@ -1,0 +1,67 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/sim -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1337
+gui_set_state_value -category Layout -key child_console_size_y -value 178
+gui_set_state_value -category Layout -key child_data_size_x -value 173
+gui_set_state_value -category Layout -key child_data_size_y -value 678
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 173
+gui_set_state_value -category Layout -key child_hier_size_y -value 678
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 994
+gui_set_state_value -category Layout -key child_source_size_y -value 673
+gui_set_state_value -category Layout -key main_pos_x -value 878
+gui_set_state_value -category Layout -key main_pos_y -value 289
+gui_set_state_value -category Layout -key main_size_x -value 2215
+gui_set_state_value -category Layout -key main_size_y -value 1252
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/PE_top.dump -design V1
+gui_list_select -id Hier.1 -current_item_name PE_postsyn_testbench -current_item_type Scope  -selected  { PE_postsyn_testbench   }
+gui_list_select -id Data.1 -selected  { PE_postsyn_testbench.reset   }
+gui_list_select -id Data.1 -selected  { PE_postsyn_testbench.clk   }
+gui_list_expand -id  Hier.1   PE_postsyn_testbench
+gui_list_select -id Hier.1 -current_item_name PE_postsyn_testbench -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name PE_postsyn_testbench -current_item_type Scope  -selected  { PE_postsyn_testbench   }
+gui_list_select -id Data.1 -selected  { PE_postsyn_testbench.clk   }
+gui_list_select -id Data.1 -selected  { PE_postsyn_testbench.clk  PE_postsyn_testbench.reset  {PE_postsyn_testbench.pe_in_pk[54:0]}  {PE_postsyn_testbench.pe_out_pk[10:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { PE_postsyn_testbench.clk PE_postsyn_testbench.reset {PE_postsyn_testbench.pe_in_pk[54:0]} {PE_postsyn_testbench.pe_out_pk[10:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 597
+gui_marker_move -id  Wave.1 C1 59
+gui_list_select -id Wave.1 -selected  { PE_postsyn_testbench.clk   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[10:0]}   }
+gui_list_expand -id  Wave.1   {PE_postsyn_testbench.pe_out_pk[10:0]}
+gui_marker_move -id  Wave.1 C1 166
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 2
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 14
+gui_wv_zoom_timerange -id  Wave.1 134 275
+gui_wv_zoom_timerange -id  Wave.1 149 189
+gui_wv_zoom_timerange -id  Wave.1 158 169
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_in_pk[54:0]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[10:0]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[6]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[0]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[1]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[6]}   }
+gui_list_select -id Wave.1 -selected  { {PE_postsyn_testbench.pe_out_pk[10:0]}   }
+gui_list_expand -id  Wave.1   {PE_postsyn_testbench.pe_in_pk[54:0]}
+gui_marker_move -id  Wave.1 C1 162
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 19151 272222
+gui_wv_zoom_timerange -id  Wave.1 146812 172247
+gui_close_window -window TopLevel.2

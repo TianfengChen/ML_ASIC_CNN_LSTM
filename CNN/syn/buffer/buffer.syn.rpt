@@ -1,0 +1,1480 @@
+1
+ 
+****************************************
+Report : area
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                           27
+Number of nets:                           271
+Number of cells:                          247
+Number of combinational cells:            150
+Number of sequential cells:                89
+Number of macros/black boxes:               0
+Number of buf/inv:                         55
+Number of references:                      50
+
+Combinational area:               2079.360018
+Buf/Inv area:                      626.400012
+Noncombinational area:            4093.919998
+Macro/Black Box area:                0.000000
+Net Interconnect area:           30473.489014
+
+Total cell area:                  6173.280016
+Total area:                      36646.769030
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+buffer                 ibm13_wl10        typical
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+buffer                                    0.437    4.811 2.10e+05    5.248 100.0
+1
+ 
+****************************************
+Report : design
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Local Link Library:
+
+    {typical.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ibm13_wl10
+Location       :   typical
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   66.667
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    66.67
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U238                      NAND2BX4TR      typical         14.400000 
+U239                      NAND2BX4TR      typical         14.400000 
+U240                      NAND2BX4TR      typical         14.400000 
+U241                      OAI31X4TR       typical         15.840000 
+U242                      OAI31X4TR       typical         15.840000 
+U243                      NAND2BX4TR      typical         14.400000 
+U249                      NOR2BX4TR       typical         12.960000 
+U253                      NOR2BX4TR       typical         12.960000 
+U302                      AND2X2TR        typical         7.200000  
+U303                      BUFX6TR         typical         11.520000 
+U304                      CLKINVX20TR     typical         20.160000 
+U305                      AND2X8TR        typical         15.840000 
+U306                      AND2X6TR        typical         14.400000 
+U307                      INVX6TR         typical         8.640000  
+U308                      INVX12TR        typical         12.960000 
+U309                      BUFX6TR         typical         11.520000 
+U310                      OAI2BB2X4TR     typical         23.040001 
+U311                      AND2X6TR        typical         14.400000 
+U312                      NAND2X8TR       typical         18.719999 
+U313                      NOR2BX2TR       typical         10.080000 
+U314                      OAI2BB2X4TR     typical         23.040001 
+U315                      BUFX12TR        typical         15.840000 
+U316                      INVX8TR         typical         10.080000 
+U317                      BUFX20TR        typical         27.360001 
+U318                      CLKINVX3TR      typical         5.760000  
+U319                      INVX16TR        typical         17.280001 
+U320                      BUFX12TR        typical         15.840000 
+U321                      INVX12TR        typical         12.960000 
+U322                      BUFX20TR        typical         27.360001 
+U323                      INVX3TR         typical         5.760000  
+U324                      INVX12TR        typical         12.960000 
+U325                      INVX12TR        typical         12.960000 
+U326                      CLKBUFX8TR      typical         12.960000 
+U327                      AO22X4TR        typical         14.400000 
+U328                      BUFX20TR        typical         27.360001 
+U329                      BUFX16TR        typical         21.600000 
+U330                      AND2X2TR        typical         7.200000  
+U331                      AND2X2TR        typical         7.200000  
+U332                      AO22X4TR        typical         14.400000 
+U333                      BUFX6TR         typical         11.520000 
+U334                      NAND2X4TR       typical         11.520000 
+U335                      NAND2X4TR       typical         11.520000 
+U336                      NAND3BX4TR      typical         17.280001 
+U337                      AND2X4TR        typical         10.080000 
+U338                      OAI2BB2X4TR     typical         23.040001 
+U339                      CLKINVX20TR     typical         20.160000 
+U340                      AND2X4TR        typical         10.080000 
+U341                      AND2X4TR        typical         10.080000 
+U342                      INVX16TR        typical         17.280001 
+U343                      NOR2X6TR        typical         14.400000 
+U344                      CLKINVX12TR     typical         14.400000 
+U345                      AND3X4TR        typical         11.520000 
+U346                      BUFX16TR        typical         21.600000 
+U347                      BUFX12TR        typical         15.840000 
+U348                      NAND2X2TR       typical         7.200000  
+U349                      OAI2BB2X2TR     typical         15.840000 
+U350                      CLKBUFX8TR      typical         12.960000 
+U351                      INVX3TR         typical         5.760000  
+U352                      INVX4TR         typical         5.760000  
+U353                      OAI22X2TR       typical         15.840000 
+U354                      NAND2X8TR       typical         18.719999 
+U355                      CLKINVX4TR      typical         5.760000  
+U356                      CLKINVX4TR      typical         5.760000  
+U357                      CLKINVX12TR     typical         14.400000 
+U358                      AND2X2TR        typical         7.200000  
+U359                      NOR2BX1TR       typical         7.200000  
+U360                      INVX16TR        typical         17.280001 
+U361                      BUFX16TR        typical         21.600000 
+U362                      CLKAND2X6TR     typical         11.520000 
+U363                      CLKAND2X6TR     typical         11.520000 
+U364                      CLKAND2X6TR     typical         11.520000 
+U365                      CLKAND2X6TR     typical         11.520000 
+U366                      AO22X4TR        typical         14.400000 
+U367                      NAND2BX4TR      typical         14.400000 
+U368                      AO22X4TR        typical         14.400000 
+U369                      AO22X4TR        typical         14.400000 
+U370                      AO22X4TR        typical         14.400000 
+U371                      AO22X4TR        typical         14.400000 
+U372                      INVX16TR        typical         17.280001 
+U373                      AOI221X2TR      typical         20.160000 
+U374                      AOI221X2TR      typical         20.160000 
+U375                      AO22X4TR        typical         14.400000 
+U376                      AO22X4TR        typical         14.400000 
+U377                      AO22X4TR        typical         14.400000 
+U378                      AO22X4TR        typical         14.400000 
+U379                      AO22X4TR        typical         14.400000 
+U380                      AOI221X2TR      typical         20.160000 
+U381                      CLKBUFX8TR      typical         12.960000 
+U382                      AOI221X2TR      typical         20.160000 
+U383                      OAI222X2TR      typical         23.040001 
+U384                      OAI222X2TR      typical         23.040001 
+U385                      OAI222X2TR      typical         23.040001 
+U386                      OAI222X2TR      typical         23.040001 
+U387                      OAI222X2TR      typical         23.040001 
+U388                      BUFX16TR        typical         21.600000 
+U389                      AO22X2TR        typical         11.520000 
+U390                      AO22X2TR        typical         11.520000 
+U391                      AO22X2TR        typical         11.520000 
+U392                      AO22X2TR        typical         11.520000 
+U393                      AO22X2TR        typical         11.520000 
+U394                      OAI2BB2X4TR     typical         23.040001 
+U395                      OAI2BB2X4TR     typical         23.040001 
+U396                      AO22X2TR        typical         11.520000 
+U397                      AO22X2TR        typical         11.520000 
+U398                      AO22X2TR        typical         11.520000 
+U399                      AOI221X2TR      typical         20.160000 
+U400                      OAI222X2TR      typical         23.040001 
+U401                      AOI221X2TR      typical         20.160000 
+U402                      AOI221X2TR      typical         20.160000 
+U403                      AOI221X2TR      typical         20.160000 
+U404                      AOI221X2TR      typical         20.160000 
+U405                      OAI222X2TR      typical         23.040001 
+U406                      AOI221X2TR      typical         20.160000 
+U407                      AOI221X2TR      typical         20.160000 
+U408                      NAND2X6TR       typical         14.400000 
+U409                      AO22X4TR        typical         14.400000 
+U410                      AOI221X2TR      typical         20.160000 
+U411                      OAI222X2TR      typical         23.040001 
+U412                      AOI221X2TR      typical         20.160000 
+U413                      AOI221X2TR      typical         20.160000 
+U414                      AOI221X2TR      typical         20.160000 
+U415                      AOI221X2TR      typical         20.160000 
+U416                      INVX4TR         typical         5.760000  
+U417                      NOR3BX2TR       typical         11.520000 
+U418                      INVX1TR         typical         4.320000  
+U419                      INVX1TR         typical         4.320000  
+U420                      OAI211X2TR      typical         14.400000 
+U421                      NAND2X6TR       typical         14.400000 
+U422                      INVX1TR         typical         4.320000  
+U423                      OAI211X2TR      typical         14.400000 
+U424                      INVX1TR         typical         4.320000  
+U425                      INVX1TR         typical         4.320000  
+U426                      INVX1TR         typical         4.320000  
+U427                      INVX1TR         typical         4.320000  
+U428                      INVX1TR         typical         4.320000  
+U429                      INVX1TR         typical         4.320000  
+U430                      INVX1TR         typical         4.320000  
+U431                      INVX1TR         typical         4.320000  
+U432                      INVX6TR         typical         8.640000  
+U433                      AND2X2TR        typical         7.200000  
+U434                      AND2X2TR        typical         7.200000  
+U435                      AND4X2TR        typical         11.520000 
+U436                      INVX1TR         typical         4.320000  
+U437                      INVX1TR         typical         4.320000  
+U438                      INVX3TR         typical         5.760000  
+U439                      NAND2X2TR       typical         7.200000  
+U440                      INVX3TR         typical         5.760000  
+U441                      INVX3TR         typical         5.760000  
+U442                      INVX3TR         typical         5.760000  
+U443                      OA21X1TR        typical         10.080000 
+data_buf_reg_0__0_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__1_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__2_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__3_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__4_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__5_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__6_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_0__7_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__0_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__1_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__2_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__3_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__4_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__5_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__6_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_1__7_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_2__0_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_2__1_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_2__2_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_2__3_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_2__4_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_2__5_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_2__6_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_2__7_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_3__0_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__1_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__2_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__3_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__4_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__5_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__6_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_3__7_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_4__0_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__1_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__2_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__3_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__4_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__5_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__6_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_4__7_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__0_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__1_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__2_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__3_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__4_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__5_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__6_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_5__7_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_6__0_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_6__1_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_6__2_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_6__3_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_6__4_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_6__5_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_6__6_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_6__7_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_7__0_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__1_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__2_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__3_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__4_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__5_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__6_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_7__7_        EDFFHQX4TR      typical         53.279999 n
+data_buf_reg_8__0_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_8__1_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_8__2_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_8__3_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_8__4_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_8__5_        EDFFHQX2TR      typical         38.880001 n
+data_buf_reg_8__6_        EDFFHQX1TR      typical         38.880001 n
+data_buf_reg_8__7_        EDFFHQX1TR      typical         38.880001 n
+data_out_reg_0_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_1_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_2_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_3_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_4_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_5_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_6_           DFFRHQX4TR      typical         47.520000 n
+data_out_reg_7_           DFFRHQX4TR      typical         47.520000 n
+valid_list_reg_0_         DFFX4TR         typical         38.880001 n
+valid_list_reg_1_         DFFX4TR         typical         38.880001 n
+valid_list_reg_2_         DFFX4TR         typical         38.880001 n
+valid_list_reg_3_         DFFX4TR         typical         38.880001 n
+valid_list_reg_4_         DFFX4TR         typical         38.880001 n
+valid_list_reg_5_         DFFX4TR         typical         38.880001 n
+valid_list_reg_6_         DFFX4TR         typical         38.880001 n
+valid_list_reg_7_         DFFX4TR         typical         38.880001 n
+valid_list_reg_8_         DFFX1TR         typical         27.360001 n
+--------------------------------------------------------------------------------
+Total 239 cells                                           6173.280016
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    1.02    0.17   --         d
+rdb_addr[0]    in      0.0000   0.0000    1.02    0.17   --         
+rdb_addr[1]    in      0.0000   0.0000    1.02    0.17   --         
+rdb_addr[2]    in      0.0000   0.0000    1.02    0.17   --         
+rdb_addr[3]    in      0.0000   0.0000    1.02    0.17   --         
+reset          in      0.0000   0.0000    1.02    0.17   --         
+wrb            in      0.0000   0.0000    1.02    0.17   --         
+wrb_addr[0]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_addr[1]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_addr[2]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_addr[3]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[0]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[1]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[2]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[3]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[4]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[5]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[6]    in      0.0000   0.0000    1.02    0.17   --         
+wrb_data[7]    in      0.0000   0.0000    1.02    0.17   --         
+data_out[0]    out     0.0100   0.0000   --      --      --         
+data_out[1]    out     0.0100   0.0000   --      --      --         
+data_out[2]    out     0.0100   0.0000   --      --      --         
+data_out[3]    out     0.0100   0.0000   --      --      --         
+data_out[4]    out     0.0100   0.0000   --      --      --         
+data_out[5]    out     0.0100   0.0000   --      --      --         
+data_out[6]    out     0.0100   0.0000   --      --      --         
+data_out[7]    out     0.0100   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+rdb_addr[0]        1      --              --              --        -- 
+rdb_addr[1]        1      --              --              --        -- 
+rdb_addr[2]        1      --              --              --        -- 
+rdb_addr[3]        1      --              --              --        -- 
+reset              1      --              --              --        -- 
+wrb                1      --              --              --        -- 
+wrb_addr[0]        1      --              --              --        -- 
+wrb_addr[1]        1      --              --              --        -- 
+wrb_addr[2]        1      --              --              --        -- 
+wrb_addr[3]        1      --              --              --        -- 
+wrb_data[0]        1      --              --              --        -- 
+wrb_data[1]        1      --              --              --        -- 
+wrb_data[2]        1      --              --              --        -- 
+wrb_data[3]        1      --              --              --        -- 
+wrb_data[4]        1      --              --              --        -- 
+wrb_data[5]        1      --              --              --        -- 
+wrb_data[6]        1      --              --              --        -- 
+wrb_data[7]        1      --              --              --        -- 
+data_out[0]        1      --              --              --        -- 
+data_out[1]        1      --              --              --        -- 
+data_out[2]        1      --              --              --        -- 
+data_out[3]        1      --              --              --        -- 
+data_out[4]        1      --              --              --        -- 
+data_out[5]        1      --              --              --        -- 
+data_out[6]        1      --              --              --        -- 
+data_out[7]        1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+rdb_addr[0]   0.10    0.10    0.10    0.10  clk       --    
+rdb_addr[1]   0.10    0.10    0.10    0.10  clk       --    
+rdb_addr[2]   0.10    0.10    0.10    0.10  clk       --    
+rdb_addr[3]   0.10    0.10    0.10    0.10  clk       --    
+reset         0.10    0.10    0.10    0.10  clk       --    
+wrb           0.10    0.10    0.10    0.10  clk       --    
+wrb_addr[0]   0.10    0.10    0.10    0.10  clk       --    
+wrb_addr[1]   0.10    0.10    0.10    0.10  clk       --    
+wrb_addr[2]   0.10    0.10    0.10    0.10  clk       --    
+wrb_addr[3]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[0]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[1]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[2]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[3]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[4]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[5]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[6]   0.10    0.10    0.10    0.10  clk       --    
+wrb_data[7]   0.10    0.10    0.10    0.10  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          INVX2TR            INVX2TR              -- /  --     
+rdb_addr[0]  INVX2TR            INVX2TR              -- /  --     
+rdb_addr[1]  INVX2TR            INVX2TR              -- /  --     
+rdb_addr[2]  INVX2TR            INVX2TR              -- /  --     
+rdb_addr[3]  INVX2TR            INVX2TR              -- /  --     
+reset        INVX2TR            INVX2TR              -- /  --     
+wrb          INVX2TR            INVX2TR              -- /  --     
+wrb_addr[0]  INVX2TR            INVX2TR              -- /  --     
+wrb_addr[1]  INVX2TR            INVX2TR              -- /  --     
+wrb_addr[2]  INVX2TR            INVX2TR              -- /  --     
+wrb_addr[3]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[0]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[1]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[2]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[3]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[4]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[5]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[6]  INVX2TR            INVX2TR              -- /  --     
+wrb_data[7]  INVX2TR            INVX2TR              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+rdb_addr[0]   --      --     --      --     --      --     --     --        -- 
+rdb_addr[1]   --      --     --      --     --      --     --     --        -- 
+rdb_addr[2]   --      --     --      --     --      --     --     --        -- 
+rdb_addr[3]   --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+wrb           --      --     --      --     --      --     --     --        -- 
+wrb_addr[0]   --      --     --      --     --      --     --     --        -- 
+wrb_addr[1]   --      --     --      --     --      --     --     --        -- 
+wrb_addr[2]   --      --     --      --     --      --     --     --        -- 
+wrb_addr[3]   --      --     --      --     --      --     --     --        -- 
+wrb_data[0]   --      --     --      --     --      --     --     --        -- 
+wrb_data[1]   --      --     --      --     --      --     --     --        -- 
+wrb_data[2]   --      --     --      --     --      --     --     --        -- 
+wrb_data[3]   --      --     --      --     --      --     --     --        -- 
+wrb_data[4]   --      --     --      --     --      --     --     --        -- 
+wrb_data[5]   --      --     --      --     --      --     --     --        -- 
+wrb_data[6]   --      --     --      --     --      --     --     --        -- 
+wrb_data[7]   --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+rdb_addr[0]   --      --      --      -- 
+rdb_addr[1]   --      --      --      -- 
+rdb_addr[2]   --      --      --      -- 
+rdb_addr[3]   --      --      --      -- 
+reset         --      --      --      -- 
+wrb           --      --      --      -- 
+wrb_addr[0]   --      --      --      -- 
+wrb_addr[1]   --      --      --      -- 
+wrb_addr[2]   --      --      --      -- 
+wrb_addr[3]   --      --      --      -- 
+wrb_data[0]   --      --      --      -- 
+wrb_data[1]   --      --      --      -- 
+wrb_data[2]   --      --      --      -- 
+wrb_data[3]   --      --      --      -- 
+wrb_data[4]   --      --      --      -- 
+wrb_data[5]   --      --      --      -- 
+wrb_data[6]   --      --      --      -- 
+wrb_data[7]   --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+data_out[0]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[1]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[2]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[3]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[4]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[5]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[6]   0.10    0.10    0.10    0.10  clk       0.00  
+data_out[7]   0.10    0.10    0.10    0.10  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+buffer                                   flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : buffer
+Version: T-2022.03-SP3
+Date   : Thu Mar 16 16:22:47 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U388/Y (BUFX16TR)                        0.08       0.44 f
+  U376/Y (AO22X4TR)                        0.12       0.57 f
+  U407/Y (AOI221X2TR)                      0.14       0.71 r
+  U387/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_6_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_6_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U388/Y (BUFX16TR)                        0.08       0.44 f
+  U375/Y (AO22X4TR)                        0.12       0.57 f
+  U406/Y (AOI221X2TR)                      0.14       0.71 r
+  U383/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_5_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_5_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U388/Y (BUFX16TR)                        0.08       0.44 f
+  U332/Y (AO22X4TR)                        0.12       0.57 f
+  U380/Y (AOI221X2TR)                      0.14       0.71 r
+  U405/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_4_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_4_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U388/Y (BUFX16TR)                        0.08       0.44 f
+  U377/Y (AO22X4TR)                        0.12       0.57 f
+  U410/Y (AOI221X2TR)                      0.14       0.71 r
+  U384/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_3_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_3_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U388/Y (BUFX16TR)                        0.08       0.44 f
+  U378/Y (AO22X4TR)                        0.12       0.57 f
+  U415/Y (AOI221X2TR)                      0.14       0.71 r
+  U386/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_2_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_2_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U339/Y (CLKINVX20TR)                     0.04       0.39 r
+  U372/Y (INVX16TR)                        0.03       0.42 f
+  U376/Y (AO22X4TR)                        0.14       0.57 f
+  U407/Y (AOI221X2TR)                      0.14       0.71 r
+  U387/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_6_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_6_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U339/Y (CLKINVX20TR)                     0.04       0.39 r
+  U372/Y (INVX16TR)                        0.03       0.42 f
+  U375/Y (AO22X4TR)                        0.14       0.57 f
+  U406/Y (AOI221X2TR)                      0.14       0.71 r
+  U383/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_5_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_5_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U339/Y (CLKINVX20TR)                     0.04       0.39 r
+  U372/Y (INVX16TR)                        0.03       0.42 f
+  U332/Y (AO22X4TR)                        0.14       0.57 f
+  U380/Y (AOI221X2TR)                      0.14       0.71 r
+  U405/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_4_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_4_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U339/Y (CLKINVX20TR)                     0.04       0.39 r
+  U372/Y (INVX16TR)                        0.03       0.42 f
+  U377/Y (AO22X4TR)                        0.14       0.57 f
+  U410/Y (AOI221X2TR)                      0.14       0.71 r
+  U384/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_3_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_3_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U339/Y (CLKINVX20TR)                     0.04       0.39 r
+  U372/Y (INVX16TR)                        0.03       0.42 f
+  U378/Y (AO22X4TR)                        0.14       0.57 f
+  U415/Y (AOI221X2TR)                      0.14       0.71 r
+  U386/Y (OAI222X2TR)                      0.11       0.81 f
+  data_out_reg_2_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_2_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U379/Y (AO22X4TR)                        0.14       0.57 f
+  U401/Y (AOI221X2TR)                      0.14       0.71 r
+  U387/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_6_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_6_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U409/Y (AO22X4TR)                        0.14       0.57 f
+  U373/Y (AOI221X2TR)                      0.14       0.71 r
+  U400/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_1_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_1_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U370/Y (AO22X4TR)                        0.14       0.57 f
+  U414/Y (AOI221X2TR)                      0.14       0.71 r
+  U411/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_7_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_7_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U327/Y (AO22X4TR)                        0.14       0.57 f
+  U374/Y (AOI221X2TR)                      0.14       0.71 r
+  U405/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_4_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_4_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U369/Y (AO22X4TR)                        0.14       0.57 f
+  U404/Y (AOI221X2TR)                      0.14       0.71 r
+  U384/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_3_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_3_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U368/Y (AO22X4TR)                        0.14       0.57 f
+  U403/Y (AOI221X2TR)                      0.14       0.71 r
+  U386/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_2_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_2_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[0]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[0] (in)                         0.05       0.15 r
+  U320/Y (BUFX12TR)                        0.08       0.23 r
+  U319/Y (INVX16TR)                        0.03       0.26 f
+  U354/Y (NAND2X8TR)                       0.06       0.32 r
+  U360/Y (INVX16TR)                        0.04       0.36 f
+  U304/Y (CLKINVX20TR)                     0.03       0.39 r
+  U325/Y (INVX12TR)                        0.03       0.43 f
+  U366/Y (AO22X4TR)                        0.14       0.57 f
+  U402/Y (AOI221X2TR)                      0.14       0.71 r
+  U385/Y (OAI222X2TR)                      0.10       0.81 f
+  data_out_reg_0_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_0_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U338/Y (OAI2BB2X4TR)                     0.08       0.45 f
+  U423/Y (OAI211X2TR)                      0.16       0.61 r
+  U361/Y (BUFX16TR)                        0.11       0.72 r
+  U383/Y (OAI222X2TR)                      0.09       0.81 f
+  data_out_reg_5_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_5_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U338/Y (OAI2BB2X4TR)                     0.08       0.45 f
+  U423/Y (OAI211X2TR)                      0.16       0.61 r
+  U361/Y (BUFX16TR)                        0.11       0.72 r
+  U384/Y (OAI222X2TR)                      0.09       0.81 f
+  data_out_reg_3_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_3_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rdb_addr[1]
+              (input port clocked by clk)
+  Endpoint: data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  buffer             ibm13_wl10            typical
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  rdb_addr[1] (in)                         0.05       0.15 r
+  U315/Y (BUFX12TR)                        0.09       0.24 r
+  U308/Y (INVX12TR)                        0.04       0.27 f
+  U312/Y (NAND2X8TR)                       0.06       0.33 r
+  U324/Y (INVX12TR)                        0.04       0.37 f
+  U338/Y (OAI2BB2X4TR)                     0.08       0.45 f
+  U423/Y (OAI211X2TR)                      0.16       0.61 r
+  U361/Y (BUFX16TR)                        0.11       0.72 r
+  U385/Y (OAI222X2TR)                      0.09       0.81 f
+  data_out_reg_0_/D (DFFRHQX4TR)           0.00       0.81 f
+  data arrival time                                   0.81
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.10       0.90
+  data_out_reg_0_/CK (DFFRHQX4TR)          0.00       0.90 r
+  library setup time                      -0.09       0.81
+  data required time                                  0.81
+  -----------------------------------------------------------
+  data required time                                  0.81
+  data arrival time                                  -0.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

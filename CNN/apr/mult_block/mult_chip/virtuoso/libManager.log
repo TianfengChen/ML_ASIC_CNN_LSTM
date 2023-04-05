@@ -1,0 +1,137 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 03/22/2020 00:06 (cpgsrv12) $
+\o Sub version:		sub-version  s113 
+\o Arguments:		-mpssession virtuoso3790886 -mpshost caen-vnc-mi10.engin.umich.edu 
+\o Working Directory:	caen-vnc-mi10.engin.umich.edu:/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellComboFilter->value = "POC24A"
+\a cdsLibManager->cellComboFilter->value = ""
+\a nrResizeWindow(cdsLibManager list(720 207 794 435))
+\o changeWorkingDir("/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "reset_driver"
+\a cdsLibManager->libLineEdit->value = "reset_driver"
+\a cdsLibManager->cellListBox->value = "reset_driver"
+\a cdsLibManager->cellLineEdit->value = "reset_driver"
+\a cdsLibManager->libListBox->value = "mult_chip_tapeout"
+\a cdsLibManager->libLineEdit->value = "mult_chip_tapeout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "mult_chip"
+\a cdsLibManager->libLineEdit->value = "mult_chip"
+\a cdsLibManager->cellListBox->value = "mult_chip_VIA4"
+\a cdsLibManager->cellLineEdit->value = "mult_chip_VIA4"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "mult_chip_tapeout"
+\a cdsLibManager->libLineEdit->value = "mult_chip_tapeout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "mult_chip"
+\a cdsLibManager->libLineEdit->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "mult_chip_VIA11"
+\a cdsLibManager->cellLineEdit->value = "mult_chip_VIA11"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "mult_chip_tapeout"
+\a cdsLibManager->libLineEdit->value = "mult_chip_tapeout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "mult_chip_tapeout"
+\a cdsLibManager->libLineEdit->value = "mult_chip_tapeout"
+\a cdsLibManager->cellListBox->value = "mult_chip"
+\a cdsLibManager->cellLineEdit->value = "mult_chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")

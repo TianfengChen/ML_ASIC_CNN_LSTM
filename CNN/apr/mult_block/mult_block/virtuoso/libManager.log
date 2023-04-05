@@ -1,0 +1,81 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 03/22/2020 00:06 (cpgsrv12) $
+\o Sub version:		sub-version  s113 
+\o Arguments:		-mpssession virtuoso3784734 -mpshost caen-vnc-mi10.engin.umich.edu 
+\o Working Directory:	caen-vnc-mi10.engin.umich.edu:/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/libManager.log".
+\o Opening libManager window.
+\a cdsLibManager->cellComboFilter->value = "*FILL*"
+\a cdsLibManager->cellComboFilter->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(720 207 794 435))
+\o changeWorkingDir("/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "basic"
+\a cdsLibManager->libLineEdit->value = "basic"
+\a cdsLibManager->libListBox->value = "mult_block"
+\a cdsLibManager->libLineEdit->value = "mult_block"
+\a cdsLibManager->cellListBox->value = "mult_block"
+\a cdsLibManager->cellLineEdit->value = "mult_block"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "mult_block"
+\a cdsLibManager->libLineEdit->value = "mult_block"
+\a cdsLibManager->cellListBox->value = "mult_block"
+\a cdsLibManager->cellLineEdit->value = "mult_block"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_block"
+\a cdsLibManager->cellLineEdit->value = "mult_block"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "mult_block"
+\a cdsLibManager->cellLineEdit->value = "mult_block"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

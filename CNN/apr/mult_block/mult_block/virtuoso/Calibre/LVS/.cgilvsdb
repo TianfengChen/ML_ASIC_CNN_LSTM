@@ -1,0 +1,31 @@
+*lvsRulesFile: /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/LVS/cmrf8sf.lvs.cal
+*lvsRunDir: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/LVS
+*lvsLayoutPaths: mult_block.calibre.db
+*lvsLayoutPrimary: mult_block
+*lvsLayoutLibrary: mult_block
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/v2lvs/mult_block.cdl
+*lvsSourcePrimary: mult_block
+*lvsSourceLibrary: mult_block
+*lvsSourceView: schematic
+*lvsSpiceFile: mult_block.sp
+*lvsPowerNames: VDD
+*lvsGroundNames: VSS
+*lvsRunERC: 0
+*lvsERCDatabase: mult_block.erc.results
+*lvsERCSummaryFile: mult_block.erc.summary
+*lvsIncludeFiles: lvs.box
+*lvsReportFile: mult_block.lvs.report
+*lvsAbortOnSupplyError: 0
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnShowOptions: 1
+*cmnRunMT: 1
+*cmnRunHyper: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: mult_block
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: mult_block.def

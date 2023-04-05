@@ -1,0 +1,278 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Mar 23 17:44:35 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.14-s109_1 (64bit) 06/29/2022 09:53 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.14-s109_1 NR220628-1629/21_14-UB (database version 18.20.582) {superthreading v2.17}
+#@(#)CDS: AAE 21.14-s031 (64bit) 06/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.14-s031_1 () Jun 22 2022 10:32:17 ( )
+#@(#)CDS: SYNTECH 21.14-s014_1 () May 29 2022 20:47:50 ( )
+#@(#)CDS: CPE v21.14-s062
+#@(#)CDS: IQuantus/TQuantus 21.1.1-w001 (64bit) Wed Jun 1 22:42:35 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+setMultiCpuUsage -acquireLicense 6 -localCpu 6
+set defHierChar /
+get_message -id GLOBAL-100 -suppress
+set locv_inter_clock_use_worst_derate false
+set init_oa_search_lib {}
+set init_verilog /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.v
+set init_design_netlisttype Verilog
+set init_pwr_net VDD
+set init_top_cell PE_top
+set init_gnd_net VSS
+set init_mmmc_file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/apr_view.tcl
+set init_lef_file {/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13_8lm_2thick_tech.lef  /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13rvt_macros.lef  }
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set timing_case_analysis_for_icg_propagation false
+init_design
+loadIoFile -noAdjustDieSize /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/PE_top.io
+floorPlan -noSnapToGrid -s 186 286 7 7 7 7
+saveDesign db/PE_top_floor_planned.enc
+saveDesign db/PE_top_insts_placed.enc
+zoomBox -94.93900 -76.71900 366.05200 335.96600
+zoomBox -159.76200 -114.05500 478.28800 457.13600
+zoomBox -99.52100 -55.08300 361.47000 357.60200
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose -override
+globalNetConnect VSS -type tielo -inst * -verbose
+globalNetConnect VDD -type tiehi -inst * -verbose
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M2 bottom M2 left M3 right M3} -rectangle 1
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M4 bottom M4 left M3 right M3} -rectangle 1
+saveDesign db/PE_top_pad_power_defined.enc
+sroute -allowJogging 0 -connect corePin -nets {VSS VDD} -layerChangeRange {M1 M1} -crossoverViaTopLayer M1
+setAddStripeMode -stacked_via_bottom_layer M1 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction vertical -layer M3 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 278
+setAddStripeMode -stacked_via_bottom_layer M3 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction horizontal -layer M4 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 178
+saveDesign db/PE_top_power_grid.enc
+zoomBox -66.75500 42.55600 266.31200 340.72200
+zoomBox -116.43400 -63.49300 425.91100 422.02200
+zoomBox -146.39800 -90.98100 491.65600 480.21400
+zoomBox -95.09100 -64.86900 365.90400 347.82000
+zoomBox -31.23800 -32.37300 209.40500 183.05400
+zoomBox -11.88700 -22.52500 161.97800 133.12100
+zoomBox -6.45700 -13.72400 119.16000 98.73000
+zoomBox -3.16700 -10.89600 103.60800 84.69000
+zoomBox -18.75900 -17.82400 185.78900 165.29000
+zoomBox -39.04400 -26.30400 294.02900 271.86700
+zoomBox -71.97800 -59.56900 389.02300 353.12500
+zoomBox -34.24500 25.82700 298.82800 323.99800
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose -override
+globalNetConnect VSS -type tielo -inst * -verbose
+globalNetConnect VDD -type tiehi -inst * -verbose
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M2 bottom M2 left M3 right M3} -rectangle 1
+addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M4 bottom M4 left M3 right M3} -rectangle 1
+saveDesign db/PE_top_pad_power_defined.enc
+sroute -allowJogging 0 -connect corePin -nets {VSS VDD} -layerChangeRange {M1 M1} -crossoverViaTopLayer M1
+setAddStripeMode -stacked_via_bottom_layer M1 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction vertical -layer M3 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 178
+setAddStripeMode -stacked_via_bottom_layer M3 -max_via_size {blockPin 100% 100% 100%}
+setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+addStripe -nets {VDD VSS} -direction horizontal -layer M4 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 278
+saveDesign db/PE_top_power_grid.enc
+zoomBox -100.13500 -150.93400 537.92700 420.26800
+zoomBox -54.88800 -90.56800 406.11300 322.12600
+zoomBox -34.53300 14.52100 298.54100 312.69300
+zoomBox -19.82700 90.44800 220.82000 305.87800
+zoomBox -55.62400 -11.27000 336.23000 339.52300
+zoomBox -93.59100 -105.89500 448.76700 379.63100
+zoomBox -42.42100 49.50900 290.65500 347.68300
+zoomBox -132.94100 -142.76900 505.12800 428.43900
+zoomBox -209.34800 -264.82900 673.79300 525.77100
+zoomBox -115.44600 -122.87400 426.91400 362.65400
+zoomBox -67.55000 -97.17400 324.30600 253.62100
+setDesignMode -process 130
+setOptMode -drcMargin 0.1 -fixDRC true -fixFanoutLoad true -addInst true -addInstancePrefix PLACED -usefulSkew false -restruct false -allEndPoints true -effort high -maxLength 1000 -setupTargetSlack 0.05 -holdTargetSlack 0.05
+setTrialRouteMode -maxRouteLayer 4 -minRouteLayer 2
+setPlaceMode -timingDriven true -maxDensity 0.8
+timeDesign -prePlace
+place_opt_design -out_dir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_placed
+setDrawView place
+checkPlace /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/placement_check.txt
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+saveDesign db/PE_top_placed_prects.enc
+zoomBox -140.84800 -132.86200 401.51300 352.66700
+zoomBox -242.17400 -180.83100 508.49900 491.18200
+zoomBox -120.01200 3.16100 340.99600 415.86200
+zoomBox -66.06100 84.42000 267.01800 382.59700
+zoomBox -46.93000 135.11800 193.72000 350.55100
+zoomBox -33.71200 175.63500 140.15700 331.28500
+zoomBox -14.61300 205.03300 111.00800 317.49100
+zoomBox -20.33200 147.13600 184.22100 330.25500
+zoomBox -29.64500 52.85900 303.43700 351.03800
+zoomBox -86.84500 -6.82000 374.16800 405.88500
+zoomBox -16.19400 -4.74900 266.92500 248.70300
+zoomBox 27.19300 -3.47900 201.06500 152.17400
+zoomBox 52.27500 0.77300 159.05500 96.36400
+zoomBox 33.06800 -7.45000 180.86100 124.85600
+zoomBox -10.42000 -26.07100 230.23500 189.36700
+zoomBox 70.30800 -9.25300 218.10100 123.05300
+zoomBox 38.07000 -20.04900 242.62800 163.07400
+zoomBox 17.56900 -26.86700 258.22600 188.57200
+zoomBox -6.55000 -34.88900 276.57600 218.56900
+setTrialRouteMode -maxRouteLayer 4 -minRouteLayer 2
+setAnalysisMode -cppr both -analysisType onChipVariation
+setExtractRCMode -engine preRoute -effortLevel medium
+extractRC
+set_ccopt_property target_max_trans -net_type top 0.1
+set_ccopt_property target_max_trans -net_type trunk 0.1
+set_ccopt_property target_skew 0.1
+set_ccopt_property use_inverters true
+set_ccopt_property target_max_trans 0.1
+set_ccopt_property target_skew 0.1
+set_ccopt_property target_insertion_delay 0.1
+set_ccopt_effort -high
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property target_max_trans_sdc -delay_corner worstDelay -early -clock_tree clk 0.100
+set_ccopt_property target_max_trans_sdc -delay_corner worstDelay -late -clock_tree clk 0.100
+set_ccopt_property source_driver -clock_tree clk {INVX2TR/A INVX2TR/Y}
+set_ccopt_property clock_period -pin clk 1.5
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clk/typConstraintMode -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/typConstraintMode true
+set_ccopt_property extracted_from_clock_name -skew_group clk/typConstraintMode clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/typConstraintMode typConstraintMode
+set_ccopt_property extracted_from_delay_corners -skew_group clk/typConstraintMode {worstDelay bestDelay}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts
+report_ccopt_clock_trees -file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/post_ccopt.rpt -histograms -list_special_pins -no_invalidate
+saveDesign db/PE_top_ccopt.enc
+setOptMode -addInst true -addInstancePrefix POSTCTS
+optDesign -postCTS -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts_0
+optDesign -postCTS -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_cts_0_hold
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+report_ccopt_skew_groups > /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/post_cts_skewgroups.rpt
+saveDesign db/PE_top_placed_cts.enc
+zoomBox -70.19800 -91.81800 390.82600 320.89700
+zoomBox -189.77400 -102.58500 448.32200 468.64700
+zoomBox -115.23800 32.88100 276.63300 383.68900
+zoomBox -59.21800 153.60100 145.34300 336.72700
+zoomBox -29.43300 216.94800 77.35200 312.54300
+zoomBox -15.96800 247.70400 49.61200 306.41200
+zoomBox -6.93400 265.57800 33.34100 301.63300
+zoomBox -1.71500 271.92500 27.38400 297.97500
+zoomBox 1.58200 278.75200 19.45300 294.75000
+zoomBox -4.26600 271.11200 29.97200 301.76200
+zoomBox -12.08600 261.70500 43.66500 311.61400
+zoomBox -3.93300 276.41600 30.30600 307.06700
+zoomBox 1.27800 284.94300 22.30700 303.76800
+zoomBox 4.35400 290.28800 17.26800 301.84900
+zoomBox -0.32700 283.17300 24.41300 305.32100
+zoomBox 4.35300 291.08200 17.26800 302.64400
+zoomBox 6.58400 294.29200 14.51700 301.39400
+zoomBox 6.00000 288.54900 21.20000 302.15600
+zoomBox 3.04100 277.57000 37.29900 308.23800
+zoomBox -14.32900 260.44400 51.30000 319.19600
+zoomBox -59.88900 215.52300 88.02300 347.93600
+zoomBox -134.88200 141.58100 148.47300 395.24400
+zoomBox -291.29900 29.46900 251.52100 515.40900
+zoomBox -489.97800 -83.04500 393.91400 708.22700
+setNanoRouteMode -routeWithTimingDriven true -routeWithSiDriven true -routeSiEffort max -routeWithSiPostRouteFix true
+setNanoRouteMode -drouteFixAntenna true -drouteAutoStop false -routeDeleteAntennaReroute true -routeAntennaCellName ANTENNATR -routeInsertAntennaDiode true
+setNanoRouteMode -droutePostRouteSwapVia false -routeConcurrentMinimizeViaCountEffort medium -routeWithViaInPin true -drouteUseMultiCutViaEffort medium -routeBottomRoutingLayer 2 -routeTopRoutingLayer 4 -drouteOnGridOnly none
+routeDesign -globalDetail
+saveDesign db/PE_top_routed.enc
+setDelayCalMode -engine aae -SIAware true -reportOutBound true
+setAnalysisMode -analysisType onChipVariation -cppr both
+setOptMode -addInst true -addInstancePrefix POSTROUTE
+optDesign -postRoute -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_0
+optDesign -postRoute -hold -outDir /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_route_0_hold
+saveDesign db/PE_top_postroute_0.enc
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+saveDesign db/PE_top_place_cts_route.enc
+zoomBox 36.24700 14.96900 210.26500 170.75200
+zoomBox -46.92700 -34.39800 236.43300 219.27000
+zoomBox -84.90000 -56.78100 248.46500 241.65200
+zoomBox -315.91600 -189.86300 322.70700 381.84100
+zoomBox -98.72100 6.00600 234.64500 304.44000
+zoomBox -2.45400 103.71700 171.56500 259.50100
+zoomBox 36.80800 147.49800 143.67900 243.17000
+zoomBox -22.44000 82.93200 182.29200 266.21100
+zoomBox -177.84500 -86.41900 283.57000 326.64600
+zoomBox -79.72300 -47.03300 203.64400 206.64100
+zoomBox -177.84600 -86.42100 283.57100 326.64600
+zoomBox -275.51400 -125.62600 363.12600 446.09300
+zoomBox -211.81500 -89.93500 331.02900 396.02600
+zoomBox -153.35200 17.83100 238.85300 368.93800
+zoomBox -93.05000 125.51300 147.81300 341.13700
+zoomBox -153.35200 17.83100 238.85300 368.93800
+zoomBox -213.37500 -89.35200 329.47000 396.61000
+zoomBox -251.54500 -157.51200 387.09600 414.20800
+addFiller -cell {FILL1TR FILL2TR FILL4TR FILL8TR FILL16TR FILL32TR FILL64TR} -prefix FILLCELL
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+fixVia -minCut
+fixVia -minStep
+fixVia -short
+clearDrc
+verifyConnectivity -type regular -error 1000000 -warning 500000
+verifyProcessAntenna -error 1000000
+detailRoute -fix_drc
+saveDesign db/PE_top_final_prefill.enc
+report_timing     
+setMetalFill -layer {1 2 3 4} -minDensity 20 -preferredDensity 25 -maxDensity 80 -maxLength 4 -maxWidth 1 -windowSize 500 500 -windowStep 500 500
+addMetalFill -layer {1 2 3 4} -onCells -timingAware sta -area 0 0 200.0 300.0
+clearDrc
+verifyConnectivity -type regular -error 1000000 -warning 500000
+verifyProcessAntenna -error 1000000
+trimMetalFill -deleteViols
+saveDesign db/PE_top_final.enc
+zoomBox -140.60100 -1.93600 251.60500 349.17200
+zoomBox -345.49100 -160.83000 405.85300 511.78300
+zoomBox -139.20800 -58.15400 252.99900 292.95500
+zoomBox -280.75800 -128.61100 357.88600 443.11200
+setAnalysisMode -skew true -warn false -checkType hold
+report_timing > ${REPORT_PATH}/final_hold_timing.rpt
+report_timing -max_paths 1000 > ${REPORT_PATH}/full_hold_timing.rpt
+setAnalysisMode -skew true -warn false -checkType setup
+report_timing > ${REPORT_PATH}/final_setup_timing.rpt
+report_timing -max_paths 1000 > ${REPORT_PATH}/full_setup_timing.rpt
+write_sdf -version 3.0 -target_application verilog -collapse_internal_pins ${OUTPUT_PATH}/${DESIGN_NAME}.apr.sdf
+setStreamOutMode -snapToMGrid true -virtualConnection false
+streamOut /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/data/PE_top.gds -mapFile /afs/umich.edu/class/eecs627/w23/lab_resource/lab2_Innovus/apr/enc2gdsLM.map -libName PE_top -structureName PE_top -mode ALL
+saveNetlist -excludeLeafCell /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/data/PE_top.apr.v
+saveNetlist /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/data/PE_top.apr.physical.v -excludeLeafCell -phys -includePowerGround -excludeCellInst {PCORNER PFILLH PFILLQ PFILL1  FILL1TR FILL2TR FILL4TR FILL8TR FILL16TR FILL32TR FILL64TR}
+set_analysis_view -setup {setupAnalysis} -hold {holdAnalysis setupAnalysis}
+do_extract_model -view setupAnalysis ${OUTPUT_PATH}/${DESIGN_NAME}.lib
+set lefDefOutVersion 5.8
+write_lef_abstract /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/data/PE_top.lef -specifyTopLayer 4 -stripePin -PGpinLayers 4
+reportFanoutViolation -all -outfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/report_fanout_viol.rpt
+reportGateCount -outfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_gateCount.rpt
+summaryReport -noHtml -outfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/PE_top_summaryReport.rpt
+verifyConnectivity -type all -report /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/connectivity.rpt
+verifyProcessAntenna -reportfile /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/reports/antenna.rpt -error 100000 -pgnet
+zoomBox -123.90700 -14.48000 268.30200 336.63100
+zoomBox -139.49700 -127.50900 403.35200 358.45700
+zoomBox -149.66000 -199.26400 488.98700 372.46100
+zoomBox -176.48700 -280.62100 574.86300 391.99800
+zoomBox -245.18000 -488.93700 794.75200 442.02400
+zoomBox -125.78200 -206.53300 512.86700 365.19400
+zoomBox -174.01600 -401.05500 709.92700 390.26300
+zoomBox -265.37200 -542.92000 958.08000 552.33100
+zoomBox -396.07100 -679.09000 1297.28800 836.82800
+zoomBox -264.15800 -544.74500 959.29500 550.50700
+zoomBox -163.99700 -219.22100 587.35600 453.40000
+zoomBox -300.19100 -483.67100 923.26200 611.58100
+zoomBox -190.26000 -207.61800 561.09400 465.00400
+zoomBox -172.76400 -143.17500 465.88700 428.55400

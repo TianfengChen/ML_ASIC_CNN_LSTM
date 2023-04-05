@@ -1,0 +1,615 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 04/28/2020 23:57 (sjfhw315) $
+          : sub-version  IC6.1.8-64b.500.11 
+Started at: 21-Mar-2022  19:04:45
+User Name : qiruizh
+Host Name : caen-vnc-mi10.engin.umich.edu
+Directory : /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/mult_chip.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'BNCON' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'VIA_CAP' at line number '439' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'DN_NET' at line number '441' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 mult_chip_tapeout
+strmFile                                /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/mult_chip.calibre.db
+topCell                                 mult_chip
+view                                    layout
+runDir                                  /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/virtuoso/Calibre/LVS/
+logFile                                 PIPO.LOG.mult_chip
+summaryFile                             PIPO.SUM.mult_chip
+layerMap                                /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf/cmrf8sf.layermap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647903885090.
+INFO (XSTRM-223): 2. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647903885091.
+INFO (XSTRM-223): 3. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647903885092.
+INFO (XSTRM-223): 4. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_647903885093.
+INFO (XSTRM-223): 5. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_647903885094.
+INFO (XSTRM-223): 6. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647903885095.
+INFO (XSTRM-223): 7. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647903885096.
+INFO (XSTRM-223): 8. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647903885097.
+INFO (XSTRM-223): 9. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_647903885098.
+INFO (XSTRM-223): 10. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_647903885099.
+INFO (XSTRM-223): 11. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850910.
+INFO (XSTRM-223): 12. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850911.
+INFO (XSTRM-223): 13. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850912.
+INFO (XSTRM-223): 14. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850913.
+INFO (XSTRM-223): 15. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850914.
+INFO (XSTRM-223): 16. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850915.
+INFO (XSTRM-223): 17. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850916.
+INFO (XSTRM-223): 18. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850917.
+INFO (XSTRM-223): 19. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850918.
+INFO (XSTRM-223): 20. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850919.
+INFO (XSTRM-223): 21. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850920.
+INFO (XSTRM-223): 22. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850921.
+INFO (XSTRM-223): 23. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850922.
+INFO (XSTRM-223): 24. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850923.
+INFO (XSTRM-223): 25. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850924.
+INFO (XSTRM-223): 26. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850925.
+INFO (XSTRM-223): 27. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850926.
+INFO (XSTRM-223): 28. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850927.
+INFO (XSTRM-223): 29. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850928.
+INFO (XSTRM-223): 30. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850929.
+INFO (XSTRM-223): 31. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850930.
+INFO (XSTRM-223): 32. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850931.
+INFO (XSTRM-223): 33. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850932.
+INFO (XSTRM-223): 34. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850933.
+INFO (XSTRM-223): 35. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850934.
+INFO (XSTRM-223): 36. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850935.
+INFO (XSTRM-223): 37. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850936.
+INFO (XSTRM-223): 38. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850937.
+INFO (XSTRM-223): 39. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850938.
+INFO (XSTRM-223): 40. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850939.
+INFO (XSTRM-223): 41. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850940.
+INFO (XSTRM-223): 42. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850941.
+INFO (XSTRM-223): 43. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850942.
+INFO (XSTRM-223): 44. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850943.
+INFO (XSTRM-223): 45. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850944.
+INFO (XSTRM-223): 46. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850945.
+INFO (XSTRM-223): 47. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850946.
+INFO (XSTRM-223): 48. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850947.
+INFO (XSTRM-223): 49. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850948.
+INFO (XSTRM-223): 50. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850949.
+INFO (XSTRM-223): 51. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850950.
+INFO (XSTRM-223): 52. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850951.
+INFO (XSTRM-223): 53. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850952.
+INFO (XSTRM-223): 54. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850953.
+INFO (XSTRM-223): 55. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850954.
+INFO (XSTRM-223): 56. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850955.
+INFO (XSTRM-223): 57. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850956.
+INFO (XSTRM-223): 58. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850957.
+INFO (XSTRM-223): 59. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850958.
+INFO (XSTRM-223): 60. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850959.
+INFO (XSTRM-223): 61. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850960.
+INFO (XSTRM-223): 62. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850961.
+INFO (XSTRM-223): 63. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850962.
+INFO (XSTRM-223): 64. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850963.
+INFO (XSTRM-223): 65. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850964.
+INFO (XSTRM-223): 66. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850965.
+INFO (XSTRM-223): 67. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850966.
+INFO (XSTRM-223): 68. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850967.
+INFO (XSTRM-223): 69. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850968.
+INFO (XSTRM-223): 70. Translating stdVia cmrf8sf/VM4_M5/layout as STRUCTURE VM4_M5_CDNS_6479038850969.
+INFO (XSTRM-223): 71. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850970.
+INFO (XSTRM-223): 72. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850971.
+INFO (XSTRM-223): 73. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850972.
+INFO (XSTRM-223): 74. Translating stdVia cmrf8sf/VM6_MQ/layout as STRUCTURE VM6_MQ_CDNS_6479038850973.
+INFO (XSTRM-223): 75. Translating stdVia cmrf8sf/VM5_M6/layout as STRUCTURE VM5_M6_CDNS_6479038850974.
+INFO (XSTRM-223): 76. Translating cellView artisan_cells/BUFX3TRhww2wwwww96hs97y/layout as STRUCTURE BUFX3TRhww2wwwww96hs97y.
+INFO (XSTRM-223): 77. Translating cellView artisan_cells/BUFX3TR/layout as STRUCTURE BUFX3TR.
+INFO (XSTRM-223): 78. Translating cellView artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout as STRUCTURE BUFX4TRhww7wwwwwdecmzcy.
+INFO (XSTRM-223): 79. Translating cellView artisan_cells/BUFX4TR/layout as STRUCTURE BUFX4TR.
+INFO (XSTRM-223): 80. Translating cellView artisan_cells/CLKBUFX6TRhwwlwwwwwoixzety/layout as STRUCTURE CLKBUFX6TRhwwlwwwwwoixzety.
+INFO (XSTRM-223): 81. Translating cellView artisan_cells/CLKBUFX6TR/layout as STRUCTURE CLKBUFX6TR.
+INFO (XSTRM-223): 82. Translating cellView artisan_cells/BUFX20TRhwwzwwwww4j4ja7y/layout as STRUCTURE BUFX20TRhwwzwwwww4j4ja7y.
+INFO (XSTRM-223): 83. Translating cellView artisan_cells/BUFX20TR/layout as STRUCTURE BUFX20TR.
+INFO (XSTRM-223): 84. Translating cellView artisan_pads/aci_v7top/layout as STRUCTURE aci_v7top.
+INFO (XSTRM-223): 85. Translating cellView artisan_pads/corner_v7/layout as STRUCTURE corner_v7.
+INFO (XSTRM-223): 86. Translating cellView artisan_pads/aci_v6top/layout as STRUCTURE aci_v6top.
+INFO (XSTRM-223): 87. Translating cellView artisan_pads/corner_v6/layout as STRUCTURE corner_v6.
+INFO (XSTRM-223): 88. Translating cellView artisan_pads/aci_v5top/layout as STRUCTURE aci_v5top.
+INFO (XSTRM-223): 89. Translating cellView artisan_pads/corner_v5/layout as STRUCTURE corner_v5.
+INFO (XSTRM-223): 90. Translating cellView artisan_pads/aci_v4top/layout as STRUCTURE aci_v4top.
+INFO (XSTRM-223): 91. Translating cellView artisan_pads/corner_v4/layout as STRUCTURE corner_v4.
+INFO (XSTRM-223): 92. Translating cellView artisan_pads/corner_m5/layout as STRUCTURE corner_m5.
+INFO (XSTRM-223): 93. Translating cellView artisan_pads/corner_m6/layout as STRUCTURE corner_m6.
+INFO (XSTRM-223): 94. Translating cellView artisan_pads/corner_m7/layout as STRUCTURE corner_m7.
+INFO (XSTRM-223): 95. Translating cellView artisan_pads/corner_m9/layout as STRUCTURE corner_m9.
+INFO (XSTRM-223): 96. Translating cellView artisan_pads/corner_m10/layout as STRUCTURE corner_m10.
+INFO (XSTRM-223): 97. Translating cellView artisan_pads/corner_m11/layout as STRUCTURE corner_m11.
+INFO (XSTRM-223): 98. Translating cellView artisan_pads/aci_v8top/layout as STRUCTURE aci_v8top.
+INFO (XSTRM-223): 99. Translating cellView artisan_pads/corner_v8/layout as STRUCTURE corner_v8.
+INFO (XSTRM-223): 100. Translating cellView artisan_pads/corner_v9/layout as STRUCTURE corner_v9.
+INFO (XSTRM-223): 101. Translating cellView artisan_pads/corner_v10/layout as STRUCTURE corner_v10.
+INFO (XSTRM-223): 102. Translating cellView artisan_pads/corner_m8/layout as STRUCTURE corner_m8.
+INFO (XSTRM-223): 103. Translating cellView artisan_pads/corner_oly/layout as STRUCTURE corner_oly.
+INFO (XSTRM-223): 104. Translating cellView artisan_pads/corner_m4/layout as STRUCTURE corner_m4.
+INFO (XSTRM-223): 105. Translating cellView artisan_pads/aci_ptapc/layout as STRUCTURE aci_ptapc.
+INFO (XSTRM-223): 106. Translating cellView artisan_pads/aci_v1/layout as STRUCTURE aci_v1.
+INFO (XSTRM-223): 107. Translating cellView artisan_pads/aci_v3top/layout as STRUCTURE aci_v3top.
+INFO (XSTRM-223): 108. Translating cellView artisan_pads/aci_v2/layout as STRUCTURE aci_v2.
+INFO (XSTRM-223): 109. Translating cellView artisan_pads/aci_v2f/layout as STRUCTURE aci_v2f.
+INFO (XSTRM-223): 110. Translating cellView artisan_pads/aci_ntapc/layout as STRUCTURE aci_ntapc.
+INFO (XSTRM-223): 111. Translating cellView artisan_pads/PCORNERoww5cuywwtkb3fqy/layout as STRUCTURE PCORNERoww5cuywwtkb3fqy.
+INFO (XSTRM-223): 112. Translating cellView artisan_pads/PCORNER/layout as STRUCTURE PCORNER.
+INFO (XSTRM-223): 113. Translating cellView artisan_pads/aci_polyc/layout as STRUCTURE aci_polyc.
+INFO (XSTRM-223): 114. Translating cellView artisan_pads/ppoly_res_w2_l25/layout as STRUCTURE ppoly_res_w2_l25.
+INFO (XSTRM-223): 115. Translating cellView artisan_pads/dvddbp_i/layout as STRUCTURE dvddbp_i.
+INFO (XSTRM-223): 116. Translating cellView artisan_pads/aci_v3/layout as STRUCTURE aci_v3.
+INFO (XSTRM-223): 117. Translating cellView artisan_pads/aci_cont/layout as STRUCTURE aci_cont.
+INFO (XSTRM-223): 118. Translating cellView artisan_pads/ipplscp_dvdd/layout as STRUCTURE ipplscp_dvdd.
+INFO (XSTRM-223): 119. Translating cellView artisan_pads/dvdd_oly/layout as STRUCTURE dvdd_oly.
+INFO (XSTRM-223): 120. Translating cellView artisan_pads/PDVDDowwl0qwwwka8m7ly/layout as STRUCTURE PDVDDowwl0qwwwka8m7ly.
+INFO (XSTRM-223): 121. Translating cellView artisan_pads/PDVDD/layout as STRUCTURE PDVDD.
+INFO (XSTRM-223): 122. Translating cellView artisan_pads/mc2_grounds_capl/layout as STRUCTURE mc2_grounds_capl.
+INFO (XSTRM-223): 123. Translating cellView artisan_pads/dvss_oly/layout as STRUCTURE dvss_oly.
+INFO (XSTRM-223): 124. Translating cellView artisan_pads/ipplscp_dvss_sub/layout as STRUCTURE ipplscp_dvss_sub.
+INFO (XSTRM-223): 125. Translating cellView artisan_pads/ipplscp_dvss/layout as STRUCTURE ipplscp_dvss.
+INFO (XSTRM-223): 126. Translating cellView artisan_pads/dvssbp_i/layout as STRUCTURE dvssbp_i.
+INFO (XSTRM-223): 127. Translating cellView artisan_pads/bc_grounds_r/layout as STRUCTURE bc_grounds_r.
+INFO (XSTRM-223): 128. Translating cellView artisan_pads/nc_grounds_r/layout as STRUCTURE nc_grounds_r.
+INFO (XSTRM-223): 129. Translating cellView artisan_pads/mc2_grounds_r/layout as STRUCTURE mc2_grounds_r.
+INFO (XSTRM-223): 130. Translating cellView artisan_pads/nc_grounds/layout as STRUCTURE nc_grounds.
+INFO (XSTRM-223): 131. Translating cellView artisan_pads/nc_grounds_l/layout as STRUCTURE nc_grounds_l.
+INFO (XSTRM-223): 132. Translating cellView artisan_pads/mc2_grounds/layout as STRUCTURE mc2_grounds.
+INFO (XSTRM-223): 133. Translating cellView artisan_pads/mc2_grounds_l/layout as STRUCTURE mc2_grounds_l.
+INFO (XSTRM-223): 134. Translating cellView artisan_pads/bc_grounds_cnrl/layout as STRUCTURE bc_grounds_cnrl.
+INFO (XSTRM-223): 135. Translating cellView artisan_pads/bc_grounds_l/layout as STRUCTURE bc_grounds_l.
+INFO (XSTRM-223): 136. Translating cellView artisan_pads/bc_grounds/layout as STRUCTURE bc_grounds.
+INFO (XSTRM-223): 137. Translating cellView artisan_pads/nc_grounds_capl/layout as STRUCTURE nc_grounds_capl.
+INFO (XSTRM-223): 138. Translating cellView artisan_pads/PDVSSowwl0qwwwanagt6y/layout as STRUCTURE PDVSSowwl0qwwwanagt6y.
+INFO (XSTRM-223): 139. Translating cellView artisan_pads/PDVSS/layout as STRUCTURE PDVSS.
+INFO (XSTRM-223): 140. Translating cellView artisan_pads/vdd_oly/layout as STRUCTURE vdd_oly.
+INFO (XSTRM-223): 141. Translating cellView artisan_pads/ipplscp_vdd/layout as STRUCTURE ipplscp_vdd.
+INFO (XSTRM-223): 142. Translating cellView artisan_pads/vddbp_i/layout as STRUCTURE vddbp_i.
+INFO (XSTRM-223): 143. Translating cellView artisan_pads/PVDDowwl0qwwwg0qp4ly/layout as STRUCTURE PVDDowwl0qwwwg0qp4ly.
+INFO (XSTRM-223): 144. Translating cellView artisan_pads/PVDD/layout as STRUCTURE PVDD.
+INFO (XSTRM-223): 145. Translating cellView artisan_pads/vssbp_i/layout as STRUCTURE vssbp_i.
+INFO (XSTRM-223): 146. Translating cellView artisan_pads/vss_oly/layout as STRUCTURE vss_oly.
+INFO (XSTRM-223): 147. Translating cellView artisan_pads/ipplscp_vss_sub/layout as STRUCTURE ipplscp_vss_sub.
+INFO (XSTRM-223): 148. Translating cellView artisan_pads/ipplscp_vss/layout as STRUCTURE ipplscp_vss.
+INFO (XSTRM-223): 149. Translating cellView artisan_pads/PVSSowwl0qwww71r0x6y/layout as STRUCTURE PVSSowwl0qwww71r0x6y.
+INFO (XSTRM-223): 150. Translating cellView artisan_pads/PVSS/layout as STRUCTURE PVSS.
+INFO (XSTRM-223): 151. Translating cellView artisan_pads/mc2r/layout as STRUCTURE mc2r.
+INFO (XSTRM-223): 152. Translating cellView artisan_pads/pn_dio/layout as STRUCTURE pn_dio.
+INFO (XSTRM-223): 153. Translating cellView artisan_pads/ipplie/layout as STRUCTURE ipplie.
+INFO (XSTRM-223): 154. Translating cellView artisan_pads/ppoly_res_1k_nosab/layout as STRUCTURE ppoly_res_1k_nosab.
+INFO (XSTRM-223): 155. Translating cellView artisan_pads/MVNSX_1AS_SC4_INLINE/layout as STRUCTURE MVNSX_1AS_SC4_INLINE.
+INFO (XSTRM-223): 156. Translating cellView artisan_pads/ppoly_res_250/layout as STRUCTURE ppoly_res_250.
+INFO (XSTRM-223): 157. Translating cellView artisan_pads/ppoly_res_1k/layout as STRUCTURE ppoly_res_1k.
+INFO (XSTRM-223): 158. Translating cellView artisan_pads/aci_pdiffc/layout as STRUCTURE aci_pdiffc.
+INFO (XSTRM-223): 159. Translating cellView artisan_pads/aci_ndiffc/layout as STRUCTURE aci_ndiffc.
+INFO (XSTRM-223): 160. Translating cellView artisan_pads/sc4/layout as STRUCTURE sc4.
+INFO (XSTRM-223): 161. Translating cellView artisan_pads/mc2_capr/layout as STRUCTURE mc2_capr.
+INFO (XSTRM-223): 162. Translating cellView artisan_pads/bc_cnrr/layout as STRUCTURE bc_cnrr.
+INFO (XSTRM-223): 163. Translating cellView artisan_pads/mc2_capl/layout as STRUCTURE mc2_capl.
+INFO (XSTRM-223): 164. Translating cellView artisan_pads/bc_cnrl/layout as STRUCTURE bc_cnrl.
+INFO (XSTRM-223): 165. Translating cellView artisan_pads/mc2/layout as STRUCTURE mc2.
+INFO (XSTRM-223): 166. Translating cellView artisan_pads/mc2l/layout as STRUCTURE mc2l.
+INFO (XSTRM-223): 167. Translating cellView artisan_pads/bc/layout as STRUCTURE bc.
+INFO (XSTRM-223): 168. Translating cellView artisan_pads/nct/layout as STRUCTURE nct.
+INFO (XSTRM-223): 169. Translating cellView artisan_pads/nct_capl/layout as STRUCTURE nct_capl.
+INFO (XSTRM-223): 170. Translating cellView artisan_pads/nct_capr/layout as STRUCTURE nct_capr.
+INFO (XSTRM-223): 171. Translating cellView artisan_pads/pct/layout as STRUCTURE pct.
+INFO (XSTRM-223): 172. Translating cellView artisan_pads/pct2/layout as STRUCTURE pct2.
+INFO (XSTRM-223): 173. Translating cellView artisan_pads/pct2_tap/layout as STRUCTURE pct2_tap.
+INFO (XSTRM-223): 174. Translating cellView artisan_pads/pct_tap/layout as STRUCTURE pct_tap.
+INFO (XSTRM-223): 175. Translating cellView artisan_pads/pct_capl/layout as STRUCTURE pct_capl.
+INFO (XSTRM-223): 176. Translating cellView artisan_pads/pct_capr/layout as STRUCTURE pct_capr.
+INFO (XSTRM-223): 177. Translating cellView artisan_pads/MVNSX_1AS_ARTI/layout as STRUCTURE MVNSX_1AS_ARTI.
+INFO (XSTRM-223): 178. Translating cellView artisan_pads/MVBIT5_2AS_ARTI/layout as STRUCTURE MVBIT5_2AS_ARTI.
+INFO (XSTRM-223): 179. Translating cellView artisan_pads/MVBIT5_1AS_ARTI/layout as STRUCTURE MVBIT5_1AS_ARTI.
+INFO (XSTRM-223): 180. Translating cellView artisan_pads/MPVCA/layout as STRUCTURE MPVCA.
+INFO (XSTRM-223): 181. Translating cellView artisan_pads/MSVSXBAR_A/layout as STRUCTURE MSVSXBAR_A.
+INFO (XSTRM-223): 182. Translating cellView artisan_pads/MSVSXBAR_B/layout as STRUCTURE MSVSXBAR_B.
+INFO (XSTRM-223): 183. Translating cellView artisan_pads/MSDOUBLE_4C_PAD_ARTI/layout as STRUCTURE MSDOUBLE_4C_PAD_ARTI.
+INFO (XSTRM-223): 184. Translating cellView artisan_pads/MSDIODE_3_STRING_PAD_ARTI/layout as STRUCTURE MSDIODE_3_STRING_PAD_ARTI.
+INFO (XSTRM-223): 185. Translating cellView artisan_pads/bp_i/layout as STRUCTURE bp_i.
+INFO (XSTRM-223): 186. Translating cellView artisan_pads/auto_baseVia1/layout as STRUCTURE auto_baseVia1.
+INFO (XSTRM-223): 187. Translating cellView artisan_pads/auto_baseVia2/layout as STRUCTURE auto_baseVia2.
+INFO (XSTRM-223): 188. Translating cellView artisan_pads/PICSowwl0qwwwi8auiry/layout as STRUCTURE PICSowwl0qwwwi8auiry.
+INFO (XSTRM-223): 189. Translating cellView artisan_pads/PICS/layout as STRUCTURE PICS.
+INFO (XSTRM-223): 190. Translating cellView artisan_pads/POC24Aowwl0qwww55cw9qy/layout as STRUCTURE POC24Aowwl0qwww55cw9qy.
+INFO (XSTRM-223): 191. Translating cellView artisan_pads/POC24A/layout as STRUCTURE POC24A.
+INFO (XSTRM-223): 192. Translating cellView artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout as STRUCTURE CLKBUFX2TRhwwdwwwwwlznglyy.
+INFO (XSTRM-223): 193. Translating cellView artisan_cells/CLKBUFX2TR/layout as STRUCTURE CLKBUFX2TR.
+INFO (XSTRM-223): 194. Translating cellView artisan_cells/DLY1X1TRhwwawwwwwiq3jy0y/layout as STRUCTURE DLY1X1TRhwwawwwwwiq3jy0y.
+INFO (XSTRM-223): 195. Translating cellView artisan_cells/DLY1X1TR/layout as STRUCTURE DLY1X1TR.
+INFO (XSTRM-223): 196. Translating cellView artisan_cells/DLY2X1TRhwwawwwwwfuoxtdy/layout as STRUCTURE DLY2X1TRhwwawwwwwfuoxtdy.
+INFO (XSTRM-223): 197. Translating cellView artisan_cells/DLY2X1TR/layout as STRUCTURE DLY2X1TR.
+INFO (XSTRM-223): 198. Translating cellView artisan_cells/DLY3X1TRhwwawwwwwclj2dwy/layout as STRUCTURE DLY3X1TRhwwawwwwwclj2dwy.
+INFO (XSTRM-223): 199. Translating cellView artisan_cells/DLY3X1TR/layout as STRUCTURE DLY3X1TR.
+INFO (XSTRM-223): 200. Translating cellView artisan_cells/DLY4X1TRhwwawwwww09dbkuy/layout as STRUCTURE DLY4X1TRhwwawwwww09dbkuy.
+INFO (XSTRM-223): 201. Translating cellView artisan_cells/DLY4X1TR/layout as STRUCTURE DLY4X1TR.
+INFO (XSTRM-223): 202. Translating cellView artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout as STRUCTURE CLKINVX20TRhwwnwwwwwt3axyjy.
+INFO (XSTRM-223): 203. Translating cellView artisan_cells/CLKINVX20TR/layout as STRUCTURE CLKINVX20TR.
+INFO (XSTRM-223): 204. Translating cellView artisan_cells/CLKINVX12TRhwwawwwwwqz61duy/layout as STRUCTURE CLKINVX12TRhwwawwwwwqz61duy.
+INFO (XSTRM-223): 205. Translating cellView artisan_cells/CLKINVX12TR/layout as STRUCTURE CLKINVX12TR.
+INFO (XSTRM-223): 206. Translating cellView artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout as STRUCTURE CLKINVX8TRhwwlwwwwwmz93rmy.
+INFO (XSTRM-223): 207. Translating cellView artisan_cells/CLKINVX8TR/layout as STRUCTURE CLKINVX8TR.
+INFO (XSTRM-223): 208. Translating cellView artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout as STRUCTURE CLKINVX2TRhwwiwwwwwhpa4y7y.
+INFO (XSTRM-223): 209. Translating cellView artisan_cells/CLKINVX2TR/layout as STRUCTURE CLKINVX2TR.
+INFO (XSTRM-223): 210. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850975.
+INFO (XSTRM-223): 211. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6479038850976.
+INFO (XSTRM-223): 212. Translating stdVia cmrf8sf/VM3_M4/layout as STRUCTURE VM3_M4_CDNS_6479038850977.
+INFO (XSTRM-223): 213. Translating cellView artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout as STRUCTURE CLKINVX16TRhwwswwwwwh9hfawy.
+INFO (XSTRM-223): 214. Translating cellView artisan_cells/CLKINVX16TR/layout as STRUCTURE CLKINVX16TR.
+INFO (XSTRM-223): 215. Translating cellView artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout as STRUCTURE CLKINVX4TRhwwdwwwwwgqjw3ry.
+INFO (XSTRM-223): 216. Translating cellView artisan_cells/CLKINVX4TR/layout as STRUCTURE CLKINVX4TR.
+INFO (XSTRM-223): 217. Translating cellView artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout as STRUCTURE INVX2TRhwwiwwwwwxmzvxay.
+INFO (XSTRM-223): 218. Translating cellView artisan_cells/INVX2TR/layout as STRUCTURE INVX2TR.
+INFO (XSTRM-223): 219. Translating cellView artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout as STRUCTURE DFFHQX4TRhwwdywwww0vl4iay.
+INFO (XSTRM-223): 220. Translating cellView artisan_cells/DFFHQX4TR/layout as STRUCTURE DFFHQX4TR.
+INFO (XSTRM-223): 221. Translating cellView artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout as STRUCTURE DFFSX2TRhwwgwwwwwn9qteay.
+INFO (XSTRM-223): 222. Translating cellView artisan_cells/DFFSX2TR/layout as STRUCTURE DFFSX2TR.
+INFO (XSTRM-223): 223. Translating cellView artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout as STRUCTURE DFFRX1TRhww3wwwwwjtmbtry.
+INFO (XSTRM-223): 224. Translating cellView artisan_cells/DFFRX1TR/layout as STRUCTURE DFFRX1TR.
+INFO (XSTRM-223): 225. Translating cellView artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout as STRUCTURE DFFQX1TRhwwowwwwwwkz83ty.
+INFO (XSTRM-223): 226. Translating cellView artisan_cells/DFFQX1TR/layout as STRUCTURE DFFQX1TR.
+INFO (XSTRM-223): 227. Translating cellView artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout as STRUCTURE DFFHQX1TRhwwxwwwwwmq4ogjy.
+INFO (XSTRM-223): 228. Translating cellView artisan_cells/DFFHQX1TR/layout as STRUCTURE DFFHQX1TR.
+INFO (XSTRM-223): 229. Translating cellView artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout as STRUCTURE DFFHQX2TRhwwhwwwwwsnczz6y.
+INFO (XSTRM-223): 230. Translating cellView artisan_cells/DFFHQX2TR/layout as STRUCTURE DFFHQX2TR.
+INFO (XSTRM-223): 231. Translating cellView artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout as STRUCTURE DFFHQX8TRhww0ywwwwbh26pry.
+INFO (XSTRM-223): 232. Translating cellView artisan_cells/DFFHQX8TR/layout as STRUCTURE DFFHQX8TR.
+INFO (XSTRM-223): 233. Translating cellView artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout as STRUCTURE DFFQX4TRhwwzwwwwwjjxdb6y.
+INFO (XSTRM-223): 234. Translating cellView artisan_cells/DFFQX4TR/layout as STRUCTURE DFFQX4TR.
+INFO (XSTRM-223): 235. Translating cellView artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout as STRUCTURE DFFQX2TRhwwpwwwwwnb66h0y.
+INFO (XSTRM-223): 236. Translating cellView artisan_cells/DFFQX2TR/layout as STRUCTURE DFFQX2TR.
+INFO (XSTRM-223): 237. Translating cellView artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout as STRUCTURE DFFSX1TRhwwgwwwww2ruuydy.
+INFO (XSTRM-223): 238. Translating cellView artisan_cells/DFFSX1TR/layout as STRUCTURE DFFSX1TR.
+INFO (XSTRM-223): 239. Translating cellView artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout as STRUCTURE NAND2X1TRhwwdwwwww8r4jguy.
+INFO (XSTRM-223): 240. Translating cellView artisan_cells/NAND2X1TR/layout as STRUCTURE NAND2X1TR.
+INFO (XSTRM-223): 241. Translating cellView artisan_cells/AND2X2TRhww2wwwww04e6sry/layout as STRUCTURE AND2X2TRhww2wwwww04e6sry.
+INFO (XSTRM-223): 242. Translating cellView artisan_cells/AND2X2TR/layout as STRUCTURE AND2X2TR.
+INFO (XSTRM-223): 243. Translating cellView artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout as STRUCTURE OAI2BB1X1TRhww7wwwwwcy6xw0y.
+INFO (XSTRM-223): 244. Translating cellView artisan_cells/OAI2BB1X1TR/layout as STRUCTURE OAI2BB1X1TR.
+INFO (XSTRM-223): 245. Translating cellView artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout as STRUCTURE NOR2X1TRhwwdwwwwwyo8yy2y.
+INFO (XSTRM-223): 246. Translating cellView artisan_cells/NOR2X1TR/layout as STRUCTURE NOR2X1TR.
+INFO (XSTRM-223): 247. Translating cellView artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout as STRUCTURE XOR2X1TRhww0wwwww5ggqhay.
+INFO (XSTRM-223): 248. Translating cellView artisan_cells/XOR2X1TR/layout as STRUCTURE XOR2X1TR.
+INFO (XSTRM-223): 249. Translating cellView artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout as STRUCTURE ADDFX2TRhww3wwwwwta64qty.
+INFO (XSTRM-223): 250. Translating cellView artisan_cells/ADDFX2TR/layout as STRUCTURE ADDFX2TR.
+INFO (XSTRM-223): 251. Translating cellView artisan_cells/ADDFX1TRhww3wwwwwela690y/layout as STRUCTURE ADDFX1TRhww3wwwwwela690y.
+INFO (XSTRM-223): 252. Translating cellView artisan_cells/ADDFX1TR/layout as STRUCTURE ADDFX1TR.
+INFO (XSTRM-223): 253. Translating cellView artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout as STRUCTURE OAI21X1TRhww2wwwwwg3fkhjy.
+INFO (XSTRM-223): 254. Translating cellView artisan_cells/OAI21X1TR/layout as STRUCTURE OAI21X1TR.
+INFO (XSTRM-223): 255. Translating cellView artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout as STRUCTURE NOR2BX1TRhww2wwwwwba1qary.
+INFO (XSTRM-223): 256. Translating cellView artisan_cells/NOR2BX1TR/layout as STRUCTURE NOR2BX1TR.
+INFO (XSTRM-223): 257. Translating cellView artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout as STRUCTURE AND2X1TRhww2wwwwwvgs4pay.
+INFO (XSTRM-223): 258. Translating cellView artisan_cells/AND2X1TR/layout as STRUCTURE AND2X1TR.
+INFO (XSTRM-223): 259. Translating cellView artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout as STRUCTURE NAND3X1TRhww2wwwwwk28izsy.
+INFO (XSTRM-223): 260. Translating cellView artisan_cells/NAND3X1TR/layout as STRUCTURE NAND3X1TR.
+INFO (XSTRM-223): 261. Translating cellView artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout as STRUCTURE NAND2BX1TRhww2wwwwweigep0y.
+INFO (XSTRM-223): 262. Translating cellView artisan_cells/NAND2BX1TR/layout as STRUCTURE NAND2BX1TR.
+INFO (XSTRM-223): 263. Translating cellView artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout as STRUCTURE XOR2X2TRhwwewwwwwzjbk40y.
+INFO (XSTRM-223): 264. Translating cellView artisan_cells/XOR2X2TR/layout as STRUCTURE XOR2X2TR.
+INFO (XSTRM-223): 265. Translating cellView artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout as STRUCTURE NOR2X2TRhww2wwwwwsbfgf7y.
+INFO (XSTRM-223): 266. Translating cellView artisan_cells/NOR2X2TR/layout as STRUCTURE NOR2X2TR.
+INFO (XSTRM-223): 267. Translating cellView artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout as STRUCTURE NAND2X2TRhww2wwwwwcq3mjay.
+INFO (XSTRM-223): 268. Translating cellView artisan_cells/NAND2X2TR/layout as STRUCTURE NAND2X2TR.
+INFO (XSTRM-223): 269. Translating cellView artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout as STRUCTURE XNOR2X1TRhww0wwwww9bxcriy.
+INFO (XSTRM-223): 270. Translating cellView artisan_cells/XNOR2X1TR/layout as STRUCTURE XNOR2X1TR.
+INFO (XSTRM-223): 271. Translating cellView artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout as STRUCTURE CLKAND2X2TRhww2wwwww7udno7y.
+INFO (XSTRM-223): 272. Translating cellView artisan_cells/CLKAND2X2TR/layout as STRUCTURE CLKAND2X2TR.
+INFO (XSTRM-223): 273. Translating cellView artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout as STRUCTURE OR2X2TRhww2wwwwwx2j7l6y.
+INFO (XSTRM-223): 274. Translating cellView artisan_cells/OR2X2TR/layout as STRUCTURE OR2X2TR.
+INFO (XSTRM-223): 275. Translating cellView artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout as STRUCTURE ADDHX1TRhwwewwwwwa1kd5dy.
+INFO (XSTRM-223): 276. Translating cellView artisan_cells/ADDHX1TR/layout as STRUCTURE ADDHX1TR.
+INFO (XSTRM-223): 277. Translating cellView artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout as STRUCTURE CMPR32X2TRhwwhwwwww9jardjy.
+INFO (XSTRM-223): 278. Translating cellView artisan_cells/CMPR32X2TR/layout as STRUCTURE CMPR32X2TR.
+INFO (XSTRM-223): 279. Translating cellView artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout as STRUCTURE ADDHXLTRhwwswwwwwbfsy7sy.
+INFO (XSTRM-223): 280. Translating cellView artisan_cells/ADDHXLTR/layout as STRUCTURE ADDHXLTR.
+INFO (XSTRM-223): 281. Translating cellView artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout as STRUCTURE AOI21X1TRhww2wwwwwal06bwy.
+INFO (XSTRM-223): 282. Translating cellView artisan_cells/AOI21X1TR/layout as STRUCTURE AOI21X1TR.
+INFO (XSTRM-223): 283. Translating cellView artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout as STRUCTURE NOR2BX2TRhwwlwwwwwh482gry.
+INFO (XSTRM-223): 284. Translating cellView artisan_cells/NOR2BX2TR/layout as STRUCTURE NOR2BX2TR.
+INFO (XSTRM-223): 285. Translating cellView artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout as STRUCTURE ADDFHX1TRhwwwywwwwjl9iimy.
+INFO (XSTRM-223): 286. Translating cellView artisan_cells/ADDFHX1TR/layout as STRUCTURE ADDFHX1TR.
+INFO (XSTRM-223): 287. Translating cellView artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout as STRUCTURE CLKINVX1TRhwwiwwwwwem0dnwy.
+INFO (XSTRM-223): 288. Translating cellView artisan_cells/CLKINVX1TR/layout as STRUCTURE CLKINVX1TR.
+INFO (XSTRM-223): 289. Translating cellView artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout as STRUCTURE ADDFHX2TRhwwsywwwwwmmp5ay.
+INFO (XSTRM-223): 290. Translating cellView artisan_cells/ADDFHX2TR/layout as STRUCTURE ADDFHX2TR.
+INFO (XSTRM-223): 291. Translating cellView artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout as STRUCTURE XNOR2X2TRhwwewwwww56go2cy.
+INFO (XSTRM-223): 292. Translating cellView artisan_cells/XNOR2X2TR/layout as STRUCTURE XNOR2X2TR.
+INFO (XSTRM-223): 293. Translating cellView artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout as STRUCTURE CMPR22X2TRhwwgwwwww4xj2uty.
+INFO (XSTRM-223): 294. Translating cellView artisan_cells/CMPR22X2TR/layout as STRUCTURE CMPR22X2TR.
+INFO (XSTRM-223): 295. Translating cellView artisan_cells/AO21X1TRhww7wwwww9jevycy/layout as STRUCTURE AO21X1TRhww7wwwww9jevycy.
+INFO (XSTRM-223): 296. Translating cellView artisan_cells/AO21X1TR/layout as STRUCTURE AO21X1TR.
+INFO (XSTRM-223): 297. Translating cellView artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout as STRUCTURE OAI21X2TRhwwqwwwwwycgz4wy.
+INFO (XSTRM-223): 298. Translating cellView artisan_cells/OAI21X2TR/layout as STRUCTURE OAI21X2TR.
+INFO (XSTRM-223): 299. Translating cellView artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout as STRUCTURE ADDHX2TRhwwgwwwwwrxlcr6y.
+INFO (XSTRM-223): 300. Translating cellView artisan_cells/ADDHX2TR/layout as STRUCTURE ADDHX2TR.
+INFO (XSTRM-223): 301. Translating cellView artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout as STRUCTURE INVX1TRhwwiwwwww6pow0dy.
+INFO (XSTRM-223): 302. Translating cellView artisan_cells/INVX1TR/layout as STRUCTURE INVX1TR.
+INFO (XSTRM-223): 303. Translating cellView artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout as STRUCTURE INVX4TRhwwdwwwwwzbzgouy.
+INFO (XSTRM-223): 304. Translating cellView artisan_cells/INVX4TR/layout as STRUCTURE INVX4TR.
+INFO (XSTRM-223): 305. Translating cellView artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout as STRUCTURE CLKAND2X3TRhww7wwwwwvq0lvcy.
+INFO (XSTRM-223): 306. Translating cellView artisan_cells/CLKAND2X3TR/layout as STRUCTURE CLKAND2X3TR.
+INFO (XSTRM-223): 307. Translating cellView artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout as STRUCTURE FILL64TRhwwncwwww2qv2fmy.
+INFO (XSTRM-223): 308. Translating cellView artisan_cells/FILL64TR/layout as STRUCTURE FILL64TR.
+INFO (XSTRM-223): 309. Translating cellView artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout as STRUCTURE FILL32TRhwwlywwww5oh9rwy.
+INFO (XSTRM-223): 310. Translating cellView artisan_cells/FILL32TR/layout as STRUCTURE FILL32TR.
+INFO (XSTRM-223): 311. Translating cellView artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout as STRUCTURE FILL4TRhwwdwwwww88xgyiy.
+INFO (XSTRM-223): 312. Translating cellView artisan_cells/FILL4TR/layout as STRUCTURE FILL4TR.
+INFO (XSTRM-223): 313. Translating cellView artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout as STRUCTURE FILL1TRhwwywwwwwjvop7dy.
+INFO (XSTRM-223): 314. Translating cellView artisan_cells/FILL1TR/layout as STRUCTURE FILL1TR.
+INFO (XSTRM-223): 315. Translating cellView artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout as STRUCTURE FILL16TRhww9wwwwwlrhqc6y.
+INFO (XSTRM-223): 316. Translating cellView artisan_cells/FILL16TR/layout as STRUCTURE FILL16TR.
+INFO (XSTRM-223): 317. Translating cellView artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout as STRUCTURE FILL2TRhwwtwwwwwxu9la0y.
+INFO (XSTRM-223): 318. Translating cellView artisan_cells/FILL2TR/layout as STRUCTURE FILL2TR.
+INFO (XSTRM-223): 319. Translating cellView artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout as STRUCTURE FILL8TRhww0wwwww4rz8aqy.
+INFO (XSTRM-223): 320. Translating cellView artisan_cells/FILL8TR/layout as STRUCTURE FILL8TR.
+INFO (XSTRM-223): 321. Translating cellView mult_block/mult_block/layout as STRUCTURE mult_block.
+INFO (XSTRM-223): 322. Translating cellView SRAM/SIGN_MEM1052_ARTI_VIA_/layout as STRUCTURE SIGN_MEM1052_ARTI_VIA_.
+INFO (XSTRM-223): 323. Translating cellView SRAM/SIGN_MEM948_ARTI_VARR_/layout as STRUCTURE SIGN_MEM948_ARTI_VARR_.
+INFO (XSTRM-223): 324. Translating cellView SRAM/SIGN_MEM951_ARTI_VARR_/layout as STRUCTURE SIGN_MEM951_ARTI_VARR_.
+INFO (XSTRM-223): 325. Translating cellView SRAM/SIGN_MEM954_ARTI_VARR_/layout as STRUCTURE SIGN_MEM954_ARTI_VARR_.
+INFO (XSTRM-223): 326. Translating cellView SRAM/SIGN_MEM957_ARTI_VARR_/layout as STRUCTURE SIGN_MEM957_ARTI_VARR_.
+INFO (XSTRM-223): 327. Translating cellView SRAM/SIGN_MEM960_ARTI_VARR_/layout as STRUCTURE SIGN_MEM960_ARTI_VARR_.
+INFO (XSTRM-223): 328. Translating cellView SRAM/SIGN_MEM963_ARTI_VARR_/layout as STRUCTURE SIGN_MEM963_ARTI_VARR_.
+INFO (XSTRM-223): 329. Translating cellView SRAM/SIGN_MEM966_ARTI_VARR_/layout as STRUCTURE SIGN_MEM966_ARTI_VARR_.
+INFO (XSTRM-223): 330. Translating cellView SRAM/SIGN_MEM969_ARTI_VARR_/layout as STRUCTURE SIGN_MEM969_ARTI_VARR_.
+INFO (XSTRM-223): 331. Translating cellView SRAM/SIGN_MEM972_ARTI_VARR_/layout as STRUCTURE SIGN_MEM972_ARTI_VARR_.
+INFO (XSTRM-223): 332. Translating cellView SRAM/SIGN_MEM975_ARTI_VARR_/layout as STRUCTURE SIGN_MEM975_ARTI_VARR_.
+INFO (XSTRM-223): 333. Translating cellView SRAM/SIGN_MEM978_ARTI_VARR_/layout as STRUCTURE SIGN_MEM978_ARTI_VARR_.
+INFO (XSTRM-223): 334. Translating cellView SRAM/SIGN_MEM981_ARTI_VARR_/layout as STRUCTURE SIGN_MEM981_ARTI_VARR_.
+INFO (XSTRM-223): 335. Translating cellView SRAM/SIGN_MEM984_ARTI_VARR_/layout as STRUCTURE SIGN_MEM984_ARTI_VARR_.
+INFO (XSTRM-223): 336. Translating cellView SRAM/SIGN_MEM987_ARTI_VARR_/layout as STRUCTURE SIGN_MEM987_ARTI_VARR_.
+INFO (XSTRM-223): 337. Translating cellView SRAM/SIGN_MEM990_ARTI_VARR_/layout as STRUCTURE SIGN_MEM990_ARTI_VARR_.
+INFO (XSTRM-223): 338. Translating cellView SRAM/SIGN_MEM993_ARTI_VARR_/layout as STRUCTURE SIGN_MEM993_ARTI_VARR_.
+INFO (XSTRM-223): 339. Translating cellView SRAM/SIGN_MEM996_ARTI_VARR_/layout as STRUCTURE SIGN_MEM996_ARTI_VARR_.
+INFO (XSTRM-223): 340. Translating cellView SRAM/SIGN_MEM999_ARTI_VARR_/layout as STRUCTURE SIGN_MEM999_ARTI_VARR_.
+INFO (XSTRM-223): 341. Translating cellView SRAM/SIGN_MEM1002_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1002_ARTI_VARR_.
+INFO (XSTRM-223): 342. Translating cellView SRAM/SIGN_MEM1005_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1005_ARTI_VARR_.
+INFO (XSTRM-223): 343. Translating cellView SRAM/SIGN_MEM1008_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1008_ARTI_VARR_.
+INFO (XSTRM-223): 344. Translating cellView SRAM/SIGN_MEM1011_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1011_ARTI_VARR_.
+INFO (XSTRM-223): 345. Translating cellView SRAM/SIGN_MEM1014_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1014_ARTI_VARR_.
+INFO (XSTRM-223): 346. Translating cellView SRAM/SIGN_MEM1017_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1017_ARTI_VARR_.
+INFO (XSTRM-223): 347. Translating cellView SRAM/SIGN_MEM1020_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1020_ARTI_VARR_.
+INFO (XSTRM-223): 348. Translating cellView SRAM/SIGN_MEM1023_ARTI_VARR_/layout as STRUCTURE SIGN_MEM1023_ARTI_VARR_.
+INFO (XSTRM-223): 349. Translating cellView SRAM/SIGN_MEMWAFFLE_STRUCT/layout as STRUCTURE SIGN_MEMWAFFLE_STRUCT.
+INFO (XSTRM-223): 350. Translating cellView SRAM/SIGN_MEMFINGER_STRUCT/layout as STRUCTURE SIGN_MEMFINGER_STRUCT.
+INFO (XSTRM-223): 351. Translating cellView SRAM/SIGN_MEMRING_STRUCT/layout as STRUCTURE SIGN_MEMRING_STRUCT.
+INFO (XSTRM-223): 352. Translating cellView SRAM/SIGN_MEMFLCIO/layout as STRUCTURE SIGN_MEMFLCIO.
+INFO (XSTRM-223): 353. Translating cellView SRAM/SIGN_MEMFLPCAP/layout as STRUCTURE SIGN_MEMFLPCAP.
+INFO (XSTRM-223): 354. Translating cellView SRAM/base_pcfill/layout as STRUCTURE base_pcfill.
+INFO (XSTRM-223): 355. Translating cellView SRAM/SIGN_MEMPCAPOP/layout as STRUCTURE SIGN_MEMPCAPOP.
+INFO (XSTRM-223): 356. Translating cellView SRAM/SIGN_MEMFLCIOX/layout as STRUCTURE SIGN_MEMFLCIOX.
+INFO (XSTRM-223): 357. Translating cellView SRAM/SIGN_MEMVIA_IO_WESTUB/layout as STRUCTURE SIGN_MEMVIA_IO_WESTUB.
+INFO (XSTRM-223): 358. Translating cellView SRAM/SIGN_MEMIO8/layout as STRUCTURE SIGN_MEMIO8.
+INFO (XSTRM-223): 359. Translating cellView SRAM/SIGN_MEMVIAIOSG/layout as STRUCTURE SIGN_MEMVIAIOSG.
+INFO (XSTRM-223): 360. Translating cellView SRAM/SIGN_MEMIOX/layout as STRUCTURE SIGN_MEMIOX.
+INFO (XSTRM-223): 361. Translating cellView SRAM/SIGN_MEMSA8/layout as STRUCTURE SIGN_MEMSA8.
+INFO (XSTRM-223): 362. Translating cellView SRAM/SIGN_MEMFCBWM16/layout as STRUCTURE SIGN_MEMFCBWM16.
+INFO (XSTRM-223): 363. Translating cellView SRAM/SIGN_MEMFLIO/layout as STRUCTURE SIGN_MEMFLIO.
+INFO (XSTRM-223): 364. Translating cellView SRAM/SIGN_MEMFLSA/layout as STRUCTURE SIGN_MEMFLSA.
+INFO (XSTRM-223): 365. Translating cellView SRAM/SIGN_MEMVIA_CD_DWSTUB/layout as STRUCTURE SIGN_MEMVIA_CD_DWSTUB.
+INFO (XSTRM-223): 366. Translating cellView SRAM/SIGN_MEMCD2/layout as STRUCTURE SIGN_MEMCD2.
+INFO (XSTRM-223): 367. Translating cellView SRAM/SIGN_MEMVIANOMX32A/layout as STRUCTURE SIGN_MEMVIANOMX32A.
+INFO (XSTRM-223): 368. Translating cellView SRAM/SIGN_MEMCD/layout as STRUCTURE SIGN_MEMCD.
+INFO (XSTRM-223): 369. Translating cellView SRAM/SIGN_MEMVIANOMX32B/layout as STRUCTURE SIGN_MEMVIANOMX32B.
+INFO (XSTRM-223): 370. Translating cellView SRAM/SIGN_MEMVIA_CD_DRSTUB/layout as STRUCTURE SIGN_MEMVIA_CD_DRSTUB.
+INFO (XSTRM-223): 371. Translating cellView SRAM/SIGN_MEMVIA_CD_DWSA/layout as STRUCTURE SIGN_MEMVIA_CD_DWSA.
+INFO (XSTRM-223): 372. Translating cellView SRAM/SIGN_MEMVIA_CD_DRSA/layout as STRUCTURE SIGN_MEMVIA_CD_DRSA.
+INFO (XSTRM-223): 373. Translating cellView SRAM/SIGN_MEMVIA_CD_YP/layout as STRUCTURE SIGN_MEMVIA_CD_YP.
+INFO (XSTRM-223): 374. Translating cellView SRAM/SIGN_MEMMUX_CD_EVEN/layout as STRUCTURE SIGN_MEMMUX_CD_EVEN.
+INFO (XSTRM-223): 375. Translating cellView SRAM/SIGN_MEMPCAPEP/layout as STRUCTURE SIGN_MEMPCAPEP.
+INFO (XSTRM-223): 376. Translating cellView SRAM/SIGN_MEMPCAPOG/layout as STRUCTURE SIGN_MEMPCAPOG.
+INFO (XSTRM-223): 377. Translating cellView SRAM/SIGN_MEMPCAPEG/layout as STRUCTURE SIGN_MEMPCAPEG.
+INFO (XSTRM-223): 378. Translating cellView SRAM/SIGN_MEMPCAP_ROW16/layout as STRUCTURE SIGN_MEMPCAP_ROW16.
+INFO (XSTRM-223): 379. Translating cellView SRAM/A8FCELLE_D_LP/layout as STRUCTURE A8FCELLE_D_LP.
+INFO (XSTRM-223): 380. Translating cellView SRAM/SIGN_MEMCCEP/layout as STRUCTURE SIGN_MEMCCEP.
+INFO (XSTRM-223): 381. Translating cellView SRAM/A8FCELLO_D_LP/layout as STRUCTURE A8FCELLO_D_LP.
+INFO (XSTRM-223): 382. Translating cellView SRAM/SIGN_MEMCCOP/layout as STRUCTURE SIGN_MEMCCOP.
+INFO (XSTRM-223): 383. Translating cellView SRAM/SIGN_MEMCCOG/layout as STRUCTURE SIGN_MEMCCOG.
+INFO (XSTRM-223): 384. Translating cellView SRAM/SIGN_MEMCCEG/layout as STRUCTURE SIGN_MEMCCEG.
+INFO (XSTRM-223): 385. Translating cellView SRAM/SIGN_MEMBIT_MUX_2/layout as STRUCTURE SIGN_MEMBIT_MUX_2.
+INFO (XSTRM-223): 386. Translating cellView SRAM/SIGN_MEMBIT_MUX_3/layout as STRUCTURE SIGN_MEMBIT_MUX_3.
+INFO (XSTRM-223): 387. Translating cellView SRAM/SIGN_MEMBIT_MUX_0/layout as STRUCTURE SIGN_MEMBIT_MUX_0.
+INFO (XSTRM-223): 388. Translating cellView SRAM/SIGN_MEMBIT_MUX_1/layout as STRUCTURE SIGN_MEMBIT_MUX_1.
+INFO (XSTRM-223): 389. Translating cellView SRAM/SIGN_MEMBIT_COL/layout as STRUCTURE SIGN_MEMBIT_COL.
+INFO (XSTRM-223): 390. Translating cellView SRAM/SIGN_MEMPCAPEP2/layout as STRUCTURE SIGN_MEMPCAPEP2.
+INFO (XSTRM-223): 391. Translating cellView SRAM/SIGN_MEMPCAPOP2/layout as STRUCTURE SIGN_MEMPCAPOP2.
+INFO (XSTRM-223): 392. Translating cellView SRAM/SIGN_MEMPCAPOG2/layout as STRUCTURE SIGN_MEMPCAPOG2.
+INFO (XSTRM-223): 393. Translating cellView SRAM/SIGN_MEMPCAPEG2/layout as STRUCTURE SIGN_MEMPCAPEG2.
+INFO (XSTRM-223): 394. Translating cellView SRAM/SIGN_MEMPCAP_ROWX16/layout as STRUCTURE SIGN_MEMPCAP_ROWX16.
+INFO (XSTRM-223): 395. Translating cellView SRAM/SIGN_MEMMCOL_EVEN_M16/layout as STRUCTURE SIGN_MEMMCOL_EVEN_M16.
+INFO (XSTRM-223): 396. Translating cellView SRAM/SIGN_MEMFLIO8STRAP/layout as STRUCTURE SIGN_MEMFLIO8STRAP.
+INFO (XSTRM-223): 397. Translating cellView SRAM/SIGN_MEMVIA_IOSTRAP/layout as STRUCTURE SIGN_MEMVIA_IOSTRAP.
+INFO (XSTRM-223): 398. Translating cellView SRAM/SIGN_MEMFLIO8STRAPX/layout as STRUCTURE SIGN_MEMFLIO8STRAPX.
+INFO (XSTRM-223): 399. Translating cellView SRAM/SIGN_MEMFLSA8STRAP/layout as STRUCTURE SIGN_MEMFLSA8STRAP.
+INFO (XSTRM-223): 400. Translating cellView SRAM/SIGN_MEMFLCDSTRAP/layout as STRUCTURE SIGN_MEMFLCDSTRAP.
+INFO (XSTRM-223): 401. Translating cellView SRAM/base_rxfill/layout as STRUCTURE base_rxfill.
+INFO (XSTRM-223): 402. Translating cellView SRAM/SIGN_MEMFLCCSTRAP/layout as STRUCTURE SIGN_MEMFLCCSTRAP.
+INFO (XSTRM-223): 403. Translating cellView SRAM/SIGN_MEMBIT_COL_STRAP/layout as STRUCTURE SIGN_MEMBIT_COL_STRAP.
+INFO (XSTRM-223): 404. Translating cellView SRAM/SIGN_MEMFLPCAP2/layout as STRUCTURE SIGN_MEMFLPCAP2.
+INFO (XSTRM-223): 405. Translating cellView SRAM/SIGN_MEMCOL_STRAPX/layout as STRUCTURE SIGN_MEMCOL_STRAPX.
+INFO (XSTRM-223): 406. Translating cellView SRAM/SIGN_MEMMUX_CD_ODD/layout as STRUCTURE SIGN_MEMMUX_CD_ODD.
+INFO (XSTRM-223): 407. Translating cellView SRAM/SIGN_MEMMCOL_ODD_M16/layout as STRUCTURE SIGN_MEMMCOL_ODD_M16.
+INFO (XSTRM-223): 408. Translating cellView SRAM/SIGN_MEMFCBWLE16/layout as STRUCTURE SIGN_MEMFCBWLE16.
+INFO (XSTRM-223): 409. Translating cellView SRAM/SIGN_MEMFCBWLX/layout as STRUCTURE SIGN_MEMFCBWLX.
+INFO (XSTRM-223): 410. Translating cellView SRAM/SIGN_MEMMCOL_EVEN_LX16/layout as STRUCTURE SIGN_MEMMCOL_EVEN_LX16.
+INFO (XSTRM-223): 411. Translating cellView SRAM/SIGN_MEMWING_8_LEFT/layout as STRUCTURE SIGN_MEMWING_8_LEFT.
+INFO (XSTRM-223): 412. Translating cellView SRAM/SIGN_MEMFCR/layout as STRUCTURE SIGN_MEMFCR.
+INFO (XSTRM-223): 413. Translating cellView SRAM/SIGN_MEMFLCCSTRAPR/layout as STRUCTURE SIGN_MEMFLCCSTRAPR.
+INFO (XSTRM-223): 414. Translating cellView SRAM/SIGN_MEMFCIO8/layout as STRUCTURE SIGN_MEMFCIO8.
+INFO (XSTRM-223): 415. Translating cellView SRAM/SIGN_MEMFCSA8/layout as STRUCTURE SIGN_MEMFCSA8.
+INFO (XSTRM-223): 416. Translating cellView SRAM/SIGN_MEMFCCDR/layout as STRUCTURE SIGN_MEMFCCDR.
+INFO (XSTRM-223): 417. Translating cellView SRAM/SIGN_MEMFC1T/layout as STRUCTURE SIGN_MEMFC1T.
+INFO (XSTRM-223): 418. Translating cellView SRAM/SIGN_MEMFCCAP2/layout as STRUCTURE SIGN_MEMFCCAP2.
+INFO (XSTRM-223): 419. Translating cellView SRAM/SIGN_MEMFCUR/layout as STRUCTURE SIGN_MEMFCUR.
+INFO (XSTRM-223): 420. Translating cellView SRAM/SIGN_MEMFCCAP/layout as STRUCTURE SIGN_MEMFCCAP.
+INFO (XSTRM-223): 421. Translating cellView SRAM/SIGN_MEMRIGHT_CAP/layout as STRUCTURE SIGN_MEMRIGHT_CAP.
+INFO (XSTRM-223): 422. Translating cellView SRAM/SIGN_MEMFLCCMBLST/layout as STRUCTURE SIGN_MEMFLCCMBLST.
+INFO (XSTRM-223): 423. Translating cellView SRAM/SIGN_MEMFLCCMBLST2/layout as STRUCTURE SIGN_MEMFLCCMBLST2.
+INFO (XSTRM-223): 424. Translating cellView SRAM/SIGN_MEMMBLBASE/layout as STRUCTURE SIGN_MEMMBLBASE.
+INFO (XSTRM-223): 425. Translating cellView SRAM/SIGN_MEMPCAPO_MBLBASE/layout as STRUCTURE SIGN_MEMPCAPO_MBLBASE.
+INFO (XSTRM-223): 426. Translating cellView SRAM/SIGN_MEMFLCCMBLSTU/layout as STRUCTURE SIGN_MEMFLCCMBLSTU.
+INFO (XSTRM-223): 427. Translating cellView SRAM/SIGN_MEMFC1TL/layout as STRUCTURE SIGN_MEMFC1TL.
+INFO (XSTRM-223): 428. Translating cellView SRAM/SIGN_MEMMODEL_COL/layout as STRUCTURE SIGN_MEMMODEL_COL.
+INFO (XSTRM-223): 429. Translating cellView SRAM/ai/layout as STRUCTURE ai.
+INFO (XSTRM-223): 430. Translating cellView SRAM/ap/layout as STRUCTURE ap.
+INFO (XSTRM-223): 431. Translating cellView SRAM/SIGN_MEMHXP24/layout as STRUCTURE SIGN_MEMHXP24.
+INFO (XSTRM-223): 432. Translating cellView SRAM/SIGN_MEMHXP24X/layout as STRUCTURE SIGN_MEMHXP24X.
+INFO (XSTRM-223): 433. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6479038850978.
+INFO (XSTRM-223): 434. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850979.
+INFO (XSTRM-223): 435. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850980.
+INFO (XSTRM-223): 436. Translating cellView SRAM/ptapCont_0_16_0_16_6_2_0_4_0_4_center_center/layout as STRUCTURE ptapCont_0_16_0_16_6_2_0_4_0_4_center_center.
+INFO (XSTRM-223): 437. Translating cellView SRAM/ndiffCont_0_16_0_16_5_1_0_4_0_4_center_center/layout as STRUCTURE ndiffCont_0_16_0_16_5_1_0_4_0_4_center_center.
+INFO (XSTRM-223): 438. Translating cellView SRAM/SIGN_MEMHXP38/layout as STRUCTURE SIGN_MEMHXP38.
+INFO (XSTRM-223): 439. Translating cellView SRAM/SIGN_MEMHXP38X/layout as STRUCTURE SIGN_MEMHXP38X.
+INFO (XSTRM-223): 440. Translating cellView SRAM/SIGN_MEMX_PRE_DECODE/layout as STRUCTURE SIGN_MEMX_PRE_DECODE.
+INFO (XSTRM-223): 441. Translating cellView SRAM/SIGN_MEMFC4T/layout as STRUCTURE SIGN_MEMFC4T.
+INFO (XSTRM-223): 442. Translating cellView SRAM/A8FCELL_D_WVR001_010/layout as STRUCTURE A8FCELL_D_WVR001_010.
+INFO (XSTRM-223): 443. Translating cellView SRAM/base_flmo_nvpv/layout as STRUCTURE base_flmo_nvpv.
+INFO (XSTRM-223): 444. Translating cellView SRAM/SIGN_MEMFLMWOG/layout as STRUCTURE SIGN_MEMFLMWOG.
+INFO (XSTRM-223): 445. Translating cellView SRAM/SIGN_MEMMROW_8_LEFT/layout as STRUCTURE SIGN_MEMMROW_8_LEFT.
+INFO (XSTRM-223): 446. Translating cellView SRAM/SIGN_MEMFLWDGF/layout as STRUCTURE SIGN_MEMFLWDGF.
+INFO (XSTRM-223): 447. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850981.
+INFO (XSTRM-223): 448. Translating cellView SRAM/SIGN_MEMFLWDMMM/layout as STRUCTURE SIGN_MEMFLWDMMM.
+INFO (XSTRM-223): 449. Translating cellView SRAM/ntapCont_0_16_0_16_8_1_0_4_0_4_center_center/layout as STRUCTURE ntapCont_0_16_0_16_8_1_0_4_0_4_center_center.
+INFO (XSTRM-223): 450. Translating cellView SRAM/ptapCont_0_16_0_16_14_2_0_4_0_4_center_center/layout as STRUCTURE ptapCont_0_16_0_16_14_2_0_4_0_4_center_center.
+INFO (XSTRM-223): 451. Translating cellView SRAM/SIGN_MEMWD/layout as STRUCTURE SIGN_MEMWD.
+INFO (XSTRM-223): 452. Translating cellView SRAM/SIGN_MEMVIAWD/layout as STRUCTURE SIGN_MEMVIAWD.
+INFO (XSTRM-223): 453. Translating cellView SRAM/SIGN_MEMWD2/layout as STRUCTURE SIGN_MEMWD2.
+INFO (XSTRM-223): 454. Translating cellView SRAM/SIGN_MEMROW_FILLER2/layout as STRUCTURE SIGN_MEMROW_FILLER2.
+INFO (XSTRM-223): 455. Translating cellView SRAM/SIGN_MEMWD3/layout as STRUCTURE SIGN_MEMWD3.
+INFO (XSTRM-223): 456. Translating cellView SRAM/SIGN_MEMROW_FILLER3/layout as STRUCTURE SIGN_MEMROW_FILLER3.
+INFO (XSTRM-223): 457. Translating cellView SRAM/ptapCont_0_16_0_16_5_2_0_4_0_4_center_center/layout as STRUCTURE ptapCont_0_16_0_16_5_2_0_4_0_4_center_center.
+INFO (XSTRM-223): 458. Translating cellView SRAM/SIGN_MEMFLWDMMB/layout as STRUCTURE SIGN_MEMFLWDMMB.
+INFO (XSTRM-223): 459. Translating cellView SRAM/SIGN_MEMFLWDG1M/layout as STRUCTURE SIGN_MEMFLWDG1M.
+INFO (XSTRM-223): 460. Translating cellView SRAM/SIGN_MEMFLWDG1X/layout as STRUCTURE SIGN_MEMFLWDG1X.
+INFO (XSTRM-223): 461. Translating cellView SRAM/SIGN_MEMWD0/layout as STRUCTURE SIGN_MEMWD0.
+INFO (XSTRM-223): 462. Translating cellView SRAM/SIGN_MEMROW_8/layout as STRUCTURE SIGN_MEMROW_8.
+INFO (XSTRM-223): 463. Translating cellView SRAM/SIGN_MEMWD1/layout as STRUCTURE SIGN_MEMWD1.
+INFO (XSTRM-223): 464. Translating cellView SRAM/SIGN_MEMROW_FILLER1/layout as STRUCTURE SIGN_MEMROW_FILLER1.
+INFO (XSTRM-223): 465. Translating cellView SRAM/SIGN_MEMVIAWDG1/layout as STRUCTURE SIGN_MEMVIAWDG1.
+INFO (XSTRM-223): 466. Translating cellView SRAM/SIGN_MEMFLWDMBB/layout as STRUCTURE SIGN_MEMFLWDMBB.
+INFO (XSTRM-223): 467. Translating cellView SRAM/SIGN_MEMFLWDG1B/layout as STRUCTURE SIGN_MEMFLWDG1B.
+INFO (XSTRM-223): 468. Translating cellView SRAM/SIGN_MEMFLWDG1T/layout as STRUCTURE SIGN_MEMFLWDG1T.
+INFO (XSTRM-223): 469. Translating cellView SRAM/SIGN_MEMFLWDG0B/layout as STRUCTURE SIGN_MEMFLWDG0B.
+INFO (XSTRM-223): 470. Translating cellView SRAM/SIGN_MEMFLWDG0T/layout as STRUCTURE SIGN_MEMFLWDG0T.
+INFO (XSTRM-223): 471. Translating cellView SRAM/SIGN_MEMROW_64/layout as STRUCTURE SIGN_MEMROW_64.
+INFO (XSTRM-223): 472. Translating cellView SRAM/SIGN_MEMFLWX/layout as STRUCTURE SIGN_MEMFLWX.
+INFO (XSTRM-223): 473. Translating cellView SRAM/SIGN_MEMFLWDBBB/layout as STRUCTURE SIGN_MEMFLWDBBB.
+INFO (XSTRM-223): 474. Translating cellView SRAM/wd/layout as STRUCTURE wd.
+INFO (XSTRM-223): 475. Translating cellView SRAM/SIGN_MEMHWDB/layout as STRUCTURE SIGN_MEMHWDB.
+INFO (XSTRM-223): 476. Translating cellView SRAM/SIGN_MEMHWDB0/layout as STRUCTURE SIGN_MEMHWDB0.
+INFO (XSTRM-223): 477. Translating cellView SRAM/SIGN_MEMROW_BOTTOM/layout as STRUCTURE SIGN_MEMROW_BOTTOM.
+INFO (XSTRM-223): 478. Translating cellView SRAM/SIGN_MEMFCMWDX/layout as STRUCTURE SIGN_MEMFCMWDX.
+INFO (XSTRM-223): 479. Translating cellView SRAM/SIGN_MEMFCMWD/layout as STRUCTURE SIGN_MEMFCMWD.
+INFO (XSTRM-223): 480. Translating cellView SRAM/SIGN_MEMVIA_MWD/layout as STRUCTURE SIGN_MEMVIA_MWD.
+INFO (XSTRM-223): 481. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850982.
+INFO (XSTRM-223): 482. Translating cellView SRAM/SIGN_MEMMWD/layout as STRUCTURE SIGN_MEMMWD.
+INFO (XSTRM-223): 483. Translating cellView SRAM/SIGN_MEMMWDX/layout as STRUCTURE SIGN_MEMMWDX.
+INFO (XSTRM-223): 484. Translating cellView SRAM/SIGN_MEMROW_TOP/layout as STRUCTURE SIGN_MEMROW_TOP.
+INFO (XSTRM-223): 485. Translating cellView SRAM/SIGN_MEMWORD_ROWS/layout as STRUCTURE SIGN_MEMWORD_ROWS.
+INFO (XSTRM-223): 486. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850983.
+INFO (XSTRM-223): 487. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850984.
+INFO (XSTRM-223): 488. Translating stdVia cmrf8sf/VPC_M1/layout as STRUCTURE VPC_M1_CDNS_6479038850985.
+INFO (XSTRM-223): 489. Translating cellView SRAM/bf/layout as STRUCTURE bf.
+INFO (XSTRM-223): 490. Translating cellView SRAM/fcbf8/layout as STRUCTURE fcbf8.
+INFO (XSTRM-223): 491. Translating cellView SRAM/SIGN_MEMHBF8/layout as STRUCTURE SIGN_MEMHBF8.
+INFO (XSTRM-223): 492. Translating cellView SRAM/SIGN_MEMVIABF/layout as STRUCTURE SIGN_MEMVIABF.
+INFO (XSTRM-223): 493. Translating cellView SRAM/SIGN_MEMVIA_BF_WE/layout as STRUCTURE SIGN_MEMVIA_BF_WE.
+INFO (XSTRM-223): 494. Translating cellView SRAM/SIGN_MEMHBFX/layout as STRUCTURE SIGN_MEMHBFX.
+INFO (XSTRM-223): 495. Translating cellView SRAM/ckp/layout as STRUCTURE ckp.
+INFO (XSTRM-223): 496. Translating cellView SRAM/SIGN_MEMHCKA/layout as STRUCTURE SIGN_MEMHCKA.
+INFO (XSTRM-223): 497. Translating cellView SRAM/SIGN_MEMCK/layout as STRUCTURE SIGN_MEMCK.
+INFO (XSTRM-223): 498. Translating cellView SRAM/SIGN_MEMCLK_DRVS/layout as STRUCTURE SIGN_MEMCLK_DRVS.
+INFO (XSTRM-223): 499. Translating cellView SRAM/SIGN_MEMFCCDL/layout as STRUCTURE SIGN_MEMFCCDL.
+INFO (XSTRM-223): 500. Translating cellView SRAM/SIGN_MEMLEFT_CAP/layout as STRUCTURE SIGN_MEMLEFT_CAP.
+INFO (XSTRM-223): 501. Translating cellView SRAM/SIGN_MEMFCBWRO16/layout as STRUCTURE SIGN_MEMFCBWRO16.
+INFO (XSTRM-223): 502. Translating cellView SRAM/SIGN_MEMMCOL_ODD_R16/layout as STRUCTURE SIGN_MEMMCOL_ODD_R16.
+INFO (XSTRM-223): 503. Translating cellView SRAM/SIGN_MEMWING_8_RIGHT/layout as STRUCTURE SIGN_MEMWING_8_RIGHT.
+INFO (XSTRM-223): 504. Translating cellView SRAM/SIGN_MEMFLCWD/layout as STRUCTURE SIGN_MEMFLCWD.
+INFO (XSTRM-223): 505. Translating cellView SRAM/SIGN_MEMVIA_FLCXP/layout as STRUCTURE SIGN_MEMVIA_FLCXP.
+INFO (XSTRM-223): 506. Translating cellView SRAM/SIGN_MEMFLCXP8/layout as STRUCTURE SIGN_MEMFLCXP8.
+INFO (XSTRM-223): 507. Translating cellView SRAM/SIGN_MEMFLCXPX/layout as STRUCTURE SIGN_MEMFLCXPX.
+INFO (XSTRM-223): 508. Translating cellView SRAM/SIGN_MEMFLCWX/layout as STRUCTURE SIGN_MEMFLCWX.
+INFO (XSTRM-223): 509. Translating cellView SRAM/SIGN_MEMFLPCAP3/layout as STRUCTURE SIGN_MEMFLPCAP3.
+INFO (XSTRM-223): 510. Translating cellView SRAM/SIGN_MEMFCMWDL/layout as STRUCTURE SIGN_MEMFCMWDL.
+INFO (XSTRM-223): 511. Translating cellView SRAM/SIGN_MEMADDR_CAP/layout as STRUCTURE SIGN_MEMADDR_CAP.
+INFO (XSTRM-223): 512. Translating cellView SRAM/base_flme_nvpv/layout as STRUCTURE base_flme_nvpv.
+INFO (XSTRM-223): 513. Translating cellView SRAM/SIGN_MEMFLMWEG/layout as STRUCTURE SIGN_MEMFLMWEG.
+INFO (XSTRM-223): 514. Translating cellView SRAM/SIGN_MEMMROW_8_RIGHT/layout as STRUCTURE SIGN_MEMMROW_8_RIGHT.
+INFO (XSTRM-223): 515. Translating cellView SRAM/SIGN_MEMHYP38/layout as STRUCTURE SIGN_MEMHYP38.
+INFO (XSTRM-223): 516. Translating cellView SRAM/SIGN_MEMHYP38X/layout as STRUCTURE SIGN_MEMHYP38X.
+INFO (XSTRM-223): 517. Translating cellView SRAM/SIGN_MEMHYP12R/layout as STRUCTURE SIGN_MEMHYP12R.
+INFO (XSTRM-223): 518. Translating cellView SRAM/SIGN_MEMHYP12RX/layout as STRUCTURE SIGN_MEMHYP12RX.
+INFO (XSTRM-223): 519. Translating cellView SRAM/SIGN_MEMY_DECODE/layout as STRUCTURE SIGN_MEMY_DECODE.
+INFO (XSTRM-223): 520. Translating cellView SRAM/SIGN_MEMCORE_STRUCT/layout as STRUCTURE SIGN_MEMCORE_STRUCT.
+INFO (XSTRM-223): 521. Translating cellView SRAM/SIGN_MEMSWW63NIWWR6NWKRY/layout as STRUCTURE SIGN_MEMSWW63NIWWR6NWKRY.
+INFO (XSTRM-223): 522. Translating cellView SRAM/SIGN_MEM/layout as STRUCTURE SIGN_MEM.
+INFO (XSTRM-223): 523. Translating cellView reset_driver/reset_driver/layout as STRUCTURE reset_driver.
+INFO (XSTRM-223): 524. Translating cellView artisan_cells/AO22X1TRhwwlwwwww8bml6ty/layout as STRUCTURE AO22X1TRhwwlwwwww8bml6ty.
+INFO (XSTRM-223): 525. Translating cellView artisan_cells/AO22X1TR/layout as STRUCTURE AO22X1TR.
+INFO (XSTRM-223): 526. Translating cellView artisan_cells/AO22X2TRhww0wwwwwirw9lyy/layout as STRUCTURE AO22X2TRhww0wwwwwirw9lyy.
+INFO (XSTRM-223): 527. Translating cellView artisan_cells/AO22X2TR/layout as STRUCTURE AO22X2TR.
+INFO (XSTRM-223): 528. Translating cellView artisan_cells/AND3X1TRhww7wwwwwmv0nduy/layout as STRUCTURE AND3X1TRhww7wwwwwmv0nduy.
+INFO (XSTRM-223): 529. Translating cellView artisan_cells/AND3X1TR/layout as STRUCTURE AND3X1TR.
+INFO (XSTRM-223): 530. Translating cellView artisan_cells/AOI32X1TRhwwlwwwwwghscy6y/layout as STRUCTURE AOI32X1TRhwwlwwwwwghscy6y.
+INFO (XSTRM-223): 531. Translating cellView artisan_cells/AOI32X1TR/layout as STRUCTURE AOI32X1TR.
+INFO (XSTRM-223): 532. Translating cellView artisan_cells/AOI22X1TRhww7wwwww9820cjy/layout as STRUCTURE AOI22X1TRhww7wwwww9820cjy.
+INFO (XSTRM-223): 533. Translating cellView artisan_cells/AOI22X1TR/layout as STRUCTURE AOI22X1TR.
+INFO (XSTRM-223): 534. Translating cellView artisan_cells/OAI31X1TRhww7wwwww15yghuy/layout as STRUCTURE OAI31X1TRhww7wwwww15yghuy.
+INFO (XSTRM-223): 535. Translating cellView artisan_cells/OAI31X1TR/layout as STRUCTURE OAI31X1TR.
+INFO (XSTRM-223): 536. Translating cellView artisan_cells/AOI2BB1X1TRhww7wwwwwo4tgxly/layout as STRUCTURE AOI2BB1X1TRhww7wwwwwo4tgxly.
+INFO (XSTRM-223): 537. Translating cellView artisan_cells/AOI2BB1X1TR/layout as STRUCTURE AOI2BB1X1TR.
+INFO (XSTRM-223): 538. Translating cellView artisan_cells/OAI32X1TRhwwlwwwwwsrzuuqy/layout as STRUCTURE OAI32X1TRhwwlwwwwwsrzuuqy.
+INFO (XSTRM-223): 539. Translating cellView artisan_cells/OAI32X1TR/layout as STRUCTURE OAI32X1TR.
+INFO (XSTRM-223): 540. Translating cellView artisan_pads/fillqbp_i/layout as STRUCTURE fillqbp_i.
+INFO (XSTRM-223): 541. Translating cellView artisan_pads/fillhbp_i/layout as STRUCTURE fillhbp_i.
+INFO (XSTRM-223): 542. Translating cellView artisan_pads/PFILLHowwlsdwwwhiisnay/layout as STRUCTURE PFILLHowwlsdwwwhiisnay.
+INFO (XSTRM-223): 543. Translating cellView artisan_pads/PFILLH/layout as STRUCTURE PFILLH.
+INFO (XSTRM-223): 544. Translating cellView artisan_pads/PFILLQoww9mtwwwjqjizay/layout as STRUCTURE PFILLQoww9mtwwwjqjizay.
+INFO (XSTRM-223): 545. Translating cellView artisan_pads/PFILLQ/layout as STRUCTURE PFILLQ.
+INFO (XSTRM-223): 546. Translating cellView artisan_pads/fill1bp_i/layout as STRUCTURE fill1bp_i.
+INFO (XSTRM-223): 547. Translating cellView artisan_pads/PFILL1owwbdwwwwsjdwamy/layout as STRUCTURE PFILL1owwbdwwwwsjdwamy.
+INFO (XSTRM-223): 548. Translating cellView artisan_pads/PFILL1/layout as STRUCTURE PFILL1.
+INFO (XSTRM-223): 549. Translating cellView mult_chip/mult_chip_VIA4/layout as STRUCTURE mult_chip_VIA4.
+INFO (XSTRM-223): 550. Translating cellView mult_chip/mult_chip_VIA11/layout as STRUCTURE mult_chip_VIA11.
+INFO (XSTRM-223): 551. Translating cellView mult_chip/mult_chip_VIA22/layout as STRUCTURE mult_chip_VIA22.
+INFO (XSTRM-223): 552. Translating cellView mult_chip/mult_chip_VIA41/layout as STRUCTURE mult_chip_VIA41.
+INFO (XSTRM-223): 553. Translating cellView mult_chip/mult_chip_VIA42/layout as STRUCTURE mult_chip_VIA42.
+INFO (XSTRM-223): 554. Translating cellView mult_chip/mult_chip_VIA50/layout as STRUCTURE mult_chip_VIA50.
+INFO (XSTRM-223): 555. Translating cellView mult_chip_tapeout/mult_chip/layout as STRUCTURE mult_chip.
+
+Summary of Objects Translated:
+	Scalar Instances:                       32439
+	Array Instances:                        5955
+	Polygons:                               3769
+	Paths:                                  6524
+	Rectangles:                             1040523
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           52985
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   38028
+	TextDisplay:                            0
+	Cells:                                  555
+
+Elapsed Time: 9.5s   User Time: 1.0s   CPU Time: 3.8s   Peak VM: 59212KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.

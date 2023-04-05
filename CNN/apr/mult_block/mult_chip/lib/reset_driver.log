@@ -1,0 +1,57 @@
+
+                                 PrimeTime (R)
+
+               Version S-2021.06-SP1 for linux64 - Jul 13, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+set top_level reset_driver
+reset_driver
+read_db /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+1
+create_qtm_model $top_level
+1
+set_qtm_technology -library typical
+1
+create_qtm_drive_type drive1 -lib_cell CLKBUFX20TR
+Information: Loading library 'typical' data due to accessing lib cells not linked in the current design. (LNK-041)
+Information: Drive Type: drive1, Cell: CLKBUFX20TR, Input Pin: A, Output Pin: Y . (QTM-40)
+1
+create_qtm_port { A } -type input
+1
+create_qtm_port { Y } -type output
+1
+set_qtm_port_load  [get_qtm_ports A] -value 0.001
+1
+set_qtm_port_drive [get_qtm_ports Y] -type drive1
+1
+save_qtm_model -output $top_level -format {lib db} -library_cell
+Wrote the LIB file reset_driver.lib
+Wrote model to 'reset_driver_lib.db'
+1
+exec mv ${top_level}_lib.db ${top_level}.db
+exit
+Information: Defining new variable 'top_level'. (CMD-041)
+
+Timing updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 2780.27 MB
+CPU usage for this session: 4 seconds 
+Elapsed time for this session: 5 seconds
+Diagnostics summary: 3 informationals
+
+Thank you for using pt_shell!

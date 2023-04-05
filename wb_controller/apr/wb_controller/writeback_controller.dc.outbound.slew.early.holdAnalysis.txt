@@ -1,0 +1,72 @@
+# Time Unit : 1e-09 seconds (ns)
+# ActualValue: Actual value of slew seen during delay calculation. This is the value that fell out of bound.
+# BoundValue: Bound value of slew. This is the first or last value for which characterization information is present in the library.
+# BoundType: Lower or Upper, corresponding to whether the actual value is respectively smaller or greater than the bound value.
+# Arc: Arc specification from source pin to sink pin (including rise/fall information for both).
+# Instance: Full hierarchical name of the instance.
+ActualValue    BoundValue    OutputValue    BoundType    Arc    Instance
+0.00400   0.02800   0.09941   Lower   A v -> Y ^    writeback_controller:reset
+0.00400   0.02800   0.03572   Lower   A v -> Y ^    writeback_controller:pk_out_3__PE_state__2_
+0.00400   0.02800   0.03907   Lower   A v -> Y ^    writeback_controller:pk_out_3__PE_state__0_
+0.00400   0.02800   0.04002   Lower   A v -> Y ^    writeback_controller:pk_out_2__PE_state__2_
+0.00400   0.02800   0.45873   Lower   A v -> Y ^    writeback_controller:clk
+0.00400   0.02800   0.03691   Lower   A v -> Y ^    writeback_controller:pk_out_2__PE_state__1_
+0.00400   0.02800   0.04036   Lower   A v -> Y ^    writeback_controller:pk_out_2__PE_state__0_
+0.00400   0.02800   0.03249   Lower   A v -> Y ^    writeback_controller:pk_out_1__PE_state__2_
+0.00400   0.02800   0.03693   Lower   A v -> Y ^    writeback_controller:pk_out_1__PE_state__1_
+0.00400   0.02800   0.04245   Lower   A v -> Y ^    writeback_controller:pk_out_1__PE_state__0_
+0.00400   0.02800   0.03098   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__7_
+0.00400   0.02800   0.03487   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__6_
+0.00400   0.02800   0.03252   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__5_
+0.00400   0.02800   0.03189   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__4_
+0.00400   0.02800   0.03350   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__3_
+0.00400   0.02800   0.03914   Lower   A v -> Y ^    writeback_controller:pk_out_3__PE_state__1_
+0.00400   0.02800   0.02976   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__2_
+0.00400   0.02800   0.04327   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__1_
+0.00400   0.02800   0.02917   Lower   A v -> Y ^    writeback_controller:pk_out_1__data__0_
+0.00400   0.02800   0.06797   Lower   A v -> Y ^    writeback_controller:pk_out_0__PE_state__2_
+0.00400   0.02800   0.03664   Lower   A v -> Y ^    writeback_controller:pk_out_0__PE_state__1_
+0.00400   0.02800   0.03912   Lower   A v -> Y ^    writeback_controller:pk_out_0__PE_state__0_
+0.00400   0.02800   0.06699   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__6_
+0.00400   0.02800   0.07662   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__7_
+0.00400   0.02800   0.09709   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__4_
+0.00400   0.02800   0.09641   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__3_
+0.00400   0.02800   0.07977   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__5_
+0.00400   0.02800   0.10135   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__2_
+0.00400   0.02800   0.10255   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__1_
+0.00400   0.02800   0.09884   Lower   A v -> Y ^    writeback_controller:pk_out_0__data__0_
+0.01470   0.02800   0.02834   Lower   A v -> Y v    POSTROUTEFE_PHC2_pk_out_1__data__4
+0.01570   0.02800   0.03041   Lower   A v -> Y v    POSTROUTEFE_PHC4_pk_out_1__data__6
+0.01520   0.02800   0.02835   Lower   A v -> Y v    POSTROUTEFE_PHC3_pk_out_1__data__3
+0.01920   0.02800   0.03142   Lower   A v -> Y v    POSTROUTEFE_PHC7_pk_out_1__data__1
+0.01490   0.02800   0.03041   Lower   A v -> Y v    POSTROUTEFE_PHC1_pk_out_1__data__5
+0.01440   0.02800   0.02834   Lower   A v -> Y v    POSTROUTEFE_PHC0_pk_out_1__data__7
+0.01400   0.02800   0.03181   Lower   A v -> Y v    POSTROUTEFE_PHC5_pk_out_1__data__2
+0.01380   0.02800   0.03677   Lower   A v -> Y v    POSTROUTEFE_PHC6_pk_out_1__data__0
+0.01640   0.02800   0.13361   Lower   B v -> Y ^    U45
+0.01650   0.02800   0.09493   Lower   C v -> Y ^    U58
+0.01740   0.02800   0.12580   Lower   A v -> Y ^    U45
+0.01800   0.02800   0.08565   Lower   B v -> Y ^    U58
+0.01780   0.02800   0.06335   Lower   AN v -> Y v    U58
+0.01650   0.02800   0.09207   Lower   C v -> Y ^    U59
+0.01880   0.02800   0.08279   Lower   B v -> Y ^    U59
+0.01490   0.02800   0.06167   Lower   AN v -> Y v    U59
+0.01740   0.02800   0.10694   Lower   C v -> Y ^    U60
+0.01740   0.02800   0.09768   Lower   B v -> Y ^    U60
+0.01600   0.02800   0.07042   Lower   AN v -> Y v    U60
+0.00400   0.02800   0.13457   Lower   A1 v -> Y ^    U22
+0.00400   0.02800   0.16483   Lower   A1 v -> Y ^    U13
+0.00400   0.02800   0.16256   Lower   A1 v -> Y ^    U16
+0.00400   0.02800   0.13443   Lower   A1 v -> Y ^    U28
+0.00400   0.02800   0.12556   Lower   A1 v -> Y ^    U25
+0.00400   0.02800   0.12358   Lower   A1 v -> Y ^    U19
+0.00400   0.02800   0.17895   Lower   A1 v -> Y ^    U31
+0.00400   0.02800   0.22022   Lower   A1 v -> Y ^    U34
+0.00400   0.02800   0.20678   Lower   B1 v -> Y ^    U27
+0.00400   0.02800   0.27448   Lower   B1 v -> Y ^    U24
+0.00400   0.02800   0.25931   Lower   B1 v -> Y ^    U21
+0.00400   0.02800   0.28839   Lower   B1 v -> Y ^    U18
+0.00400   0.02800   0.31089   Lower   B1 v -> Y ^    U15
+0.00400   0.02800   0.12548   Lower   B1 v -> Y ^    U30
+0.00400   0.02800   0.13841   Lower   B1 v -> Y ^    U33
+0.00400   0.02800   0.30876   Lower   B1 v -> Y ^    U10

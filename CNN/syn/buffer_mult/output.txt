@@ -1,0 +1,951 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP3 for linux64 - Jul 12, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# EECS627
+# 8-bit fixed-point multiplier
+# TCL script for Design Compiler
+# Load common variables, artisan standard cells
+source -verbose "../common.syn.tcl"
+/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/
+/usr/caen/synopsys-synth-2022.03-SP3
+. /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/ /usr/caen/synopsys-synth-2022.03-SP3/libraries/syn
+* typical.db dw_foundation.sldb
+typical.db
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb'
+1
+1
+# Set top level name
+set top_level "buffer_mult"
+buffer_mult
+# Read verilog files
+read_file -f sverilog [list "../../../sys_defs.svh" "../../verilog/buffer_mult.v" \
+                              "../buffer/buffer.syn.v" "../MULT_single/MULT_single.syn.v"]
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/gtech.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog files: '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/sys_defs.svh' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/buffer/buffer.syn.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/MULT_single.syn.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/sys_defs.svh
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/buffer/buffer.syn.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/MULT_single.syn.v
+Warning:  /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v:54: unsigned to signed assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine buffer_mult line 52 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/verilog/buffer_mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     mult_A_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/buffer_mult.db:buffer_mult'
+Loaded 3 designs.
+Current design is 'buffer_mult'.
+buffer_mult buffer MULT_single
+list_designs
+MULT_single     buffer          buffer_mult (*)
+1
+current_design $top_level
+Current design is 'buffer_mult'.
+{buffer_mult}
+# Clock period
+set clk_period 1.1
+1.1
+set clk_uncertainty 0.1
+0.1
+set clk_transition 0.1
+0.1
+#Create real clock if clock port is found
+if {[sizeof_collection [get_ports clk]] > 0} {
+  set clk_name "clk"
+  set clk_port "clk"
+  #If no waveform is specified, 50% duty cycle is assumed
+  create_clock -name $clk_name -period $clk_period [get_ports $clk_port] 
+  set_drive 0 [get_clocks $clk_name] 
+}
+1
+#If not real clock then create virtual clock
+if {[sizeof_collection [get_ports clk]] == 0} {
+  set clk_name "vclk"
+  create_clock -name $clk_name -period $clk_period 
+}
+set_clock_uncertainty $clk_uncertainty [get_clocks $clk_name]
+1
+#Propagated clock used for gated clocks only
+#set_propagated_clock [get_clocks $clk_name]
+set_clock_transition $clk_transition [get_clocks $clk_name]
+1
+set_operating_conditions "typical" -library "typical" 
+Using operating conditions 'typical' found in library 'typical'.
+1
+set_wire_load_model -name "ibm13_wl10" -library "typical" 
+1
+set_wire_load_mode "segmented" 
+1
+set typical_input_delay 0.100
+0.100
+set typical_output_delay 0.100
+0.100
+set typical_wire_load 0.010 
+0.010
+# Link the design
+link
+
+  Linking design 'buffer_mult'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/MULT_single/buffer_mult.db, etc
+  typical (library)           /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db
+  dw_foundation.sldb (library) /usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb
+
+1
+# Set maximum fanout of gates
+set_max_fanout 16 $top_level 
+1
+# Configure the clock network
+set_fix_hold [all_clocks] 
+1
+set_dont_touch_network $clk_port 
+1
+# Set delays: Input, Output
+set_driving_cell -lib_cell INVX2TR [all_inputs]
+Warning: Design rule attributes from the driving cell will be set on the port 'clk'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'reset'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'A[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_data[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_addr[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_addr[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_addr[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb_addr[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wrb'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'rdb_addr[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'rdb_addr[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'rdb_addr[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'rdb_addr[0]'. (UID-401)
+1
+set_input_delay $typical_input_delay [all_inputs] -clock $clk_name 
+1
+remove_input_delay -clock $clk_name [find port $clk_port]
+1
+set_output_delay $typical_output_delay [all_outputs] -clock $clk_name 
+1
+# Set loading of outputs 
+set_load $typical_wire_load [all_outputs] 
+1
+# Verify the design
+check_design
+1
+# Uniquify repeated modules
+uniquify
+1
+ungroup
+Error: Either -all or cell_list must be specified. (UID-44)
+0
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.3 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 484                                    |
+| Number of User Hierarchies                              | 2                                      |
+| Sequential Cell Count                                   | 147                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 2                                      |
+| Number of Dont Touch Nets                               | 3                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'buffer_mult'
+
+Loaded alib file './alib-52/typical.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy buffer0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy MULT_single0 before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 3 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'buffer_mult'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TR' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:05   12686.4      0.00       0.0       1.0                           532680.1250      0.00  
+    0:00:05   12686.4      0.00       0.0       1.0                           532680.1250      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:05   12686.4      0.00       0.0       1.0                           532680.1250      0.00  
+    0:00:05   12686.4      0.00       0.0       1.0                           532680.1250      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:06    8935.2      0.19       3.7       1.0                           305632.5625      0.00  
+    0:00:06    9599.0      0.00       0.0       1.0                           342363.3750      0.00  
+    0:00:06    9599.0      0.00       0.0       1.0                           342363.3750      0.00  
+    0:00:07    9563.0      0.03       0.5       1.0                           341666.5312      0.00  
+    0:00:07    9563.0      0.03       0.5       1.0                           341666.5312      0.00  
+    0:00:07    9563.0      0.03       0.5       1.0                           341666.5312      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:08    9616.3      0.15       2.8       1.0                           353928.1250      0.00  
+    0:00:08    9625.0      0.13       2.4       1.0                           354549.9688      0.00  
+    0:00:08    9625.0      0.13       2.4       1.0                           354549.9688      0.00  
+    0:00:08    9643.7      0.13       2.3       1.0                           355719.7812      0.00  
+    0:00:08    9643.7      0.13       2.3       1.0                           355719.7812      0.00  
+    0:00:09   10189.4      0.04       0.9       1.0                           387490.3125      0.00  
+    0:00:09   10189.4      0.04       0.9       1.0                           387490.3125      0.00  
+    0:00:09   10352.2      0.02       0.3       1.0                           397256.7188      0.00  
+    0:00:09   10352.2      0.02       0.3       1.0                           397256.7188      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:09   10517.8      0.00       0.0       1.0                           406479.8438      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:09   10519.2      0.00       0.0       0.0                           405958.7188      0.00  
+    0:00:09   10519.2      0.00       0.0       0.0                           405958.7188      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:09   10519.2      0.00       0.0       0.0                           405958.7188      0.00  
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:00:10    9760.3      0.00       0.0       0.0                           358930.6875      0.00  
+    0:00:10    9760.3      0.00       0.0       0.0                           358930.6875      0.00  
+    0:00:10    9760.3      0.00       0.0       0.0                           358930.6875      0.00  
+    0:00:10    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:11    9753.1      0.00       0.0       0.0                           358552.2188      0.00  
+    0:00:11    9671.0      0.00       0.0       0.0                           353960.0000      0.00  
+    0:00:11    9671.0      0.00       0.0       0.0                           353960.0000      0.00  
+    0:00:11    9671.0      0.00       0.0       0.0                           353960.0000      0.00  
+    0:00:11    9671.0      0.00       0.0       0.0                           353960.0000      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9616.3      0.00       0.0       0.0                           350572.6562      0.00  
+    0:00:12    9197.3      0.00       0.0       0.0                           323953.7500      0.00  
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#set_optimize_registers -sync_transform multiclass -async_transform multiclass
+# Synthesize the design
+compile -map_effort high
+Information: Performing power optimization. (PWR-850)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+| Comand Line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 558                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 147                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+  Loading target library 'typical'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'buffer_mult'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TR' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03   14027.0      0.00       0.0       1.0                           639366.1875      0.00  
+    0:00:03   14027.0      0.00       0.0       1.0                           639366.1875      0.00  
+    0:00:03   14027.0      0.00       0.0       1.0                           639366.1875      0.00  
+    0:00:03   14027.0      0.00       0.0       1.0                           639366.1875      0.00  
+    0:00:03   14027.0      0.00       0.0       1.0                           639366.1875      0.00  
+    0:00:04   10781.3      0.41      19.3       1.0                           429722.5625      0.00  
+    0:00:04   10811.5      0.38      17.6       1.0                           432587.6250      0.00  
+    0:00:04   10841.8      0.33      16.1       1.0                           435865.4062      0.00  
+    0:00:04   10933.9      0.27      15.1       1.0                           443481.3438      0.00  
+    0:00:04   10961.3      0.25      10.1       1.0                           446568.6562      0.00  
+    0:00:04   11030.4      0.23       9.1       1.0                           452471.6250      0.00  
+    0:00:04   11111.0      0.21       8.5       1.0                           458782.3438      0.00  
+    0:00:04   11272.3      0.19       6.9       1.0                           469444.5312      0.00  
+    0:00:04   11399.0      0.17       5.8       1.0                           480736.1562      0.00  
+    0:00:04   11491.2      0.13       5.4       1.0                           487965.2188      0.00  
+    0:00:04   11607.8      0.12       3.5       0.0                           496423.1875      0.00  
+    0:00:04   11653.9      0.12       3.4       0.0                           498962.5938      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:04   11665.4      0.12       3.3       0.0                           500082.6875      0.00  
+    0:00:05   11980.8      0.04       0.8       0.0 buffer0/data_out_reg_1_/D 516540.0000      0.00  
+    0:00:05   12716.6      0.01       0.1       0.0                           543211.8750      0.00  
+    0:00:05   12830.4      0.00       0.0       0.0                           551405.1250      0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:05   12830.4      0.00       0.0       0.0                           551405.1250      0.00  
+    0:00:05   12830.4      0.00       0.0       0.0                           551405.1250      0.00  
+    0:00:05   12830.4      0.00       0.0       0.0                           551405.1250      0.00  
+    0:00:05   12830.4      0.00       0.0       0.0                           551405.1250      0.00  
+    0:00:06   12719.5      0.00       0.0       0.0                           545784.0625      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:06   12719.5      0.00       0.0       0.0                           545784.0625      0.00  
+    0:00:06   12719.5      0.00       0.0       0.0                           545784.0625      0.00  
+    0:00:06   12515.0      0.00       0.0       0.0                           532502.5625      0.00  
+    0:00:06   12492.0      0.01       0.1       0.0                           530796.8750      0.00  
+    0:00:06   12492.0      0.01       0.1       0.0                           530796.8750      0.00  
+    0:00:06   12492.0      0.01       0.1       0.0                           530796.8750      0.00  
+    0:00:06   12492.0      0.01       0.1       0.0                           530796.8750      0.00  
+    0:00:06   12525.1      0.00       0.0       0.0                           533312.7500      0.00  
+    0:00:06   12533.8      0.00       0.0       0.0                           534244.7500      0.00  
+    0:00:06   12235.7      0.09       0.8       0.0                           511141.8438      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:06   12199.7      0.09       0.8       0.0                           507343.9688      0.00  
+    0:00:07   12329.3      0.00       0.0       0.0                           517620.2812      0.00  
+    0:00:07   12329.3      0.00       0.0       0.0                           517620.2812      0.00  
+    0:00:07   12280.3      0.04       0.3       0.0                           513715.5000      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12270.2      0.01       0.1       0.0                           513042.0312      0.00  
+    0:00:07   12325.0      0.00       0.0       0.0                           517186.7500      0.00  
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:07   12325.0      0.00       0.0       0.0                           517186.7500      0.00  
+    0:00:07   12325.0      0.00       0.0       0.0                           517186.7500      0.00  
+    0:00:07   12247.2      0.01       0.0       0.0                           512822.5312      0.00  
+    0:00:07   12218.4      0.01       0.0       0.0                           511286.6250      0.00  
+    0:00:07   12218.4      0.01       0.0       0.0                           511286.6250      0.00  
+    0:00:07   12218.4      0.01       0.0       0.0                           511286.6250      0.00  
+    0:00:07   12218.4      0.01       0.0       0.0                           511286.6250      0.00  
+    0:00:07   12222.7      0.00       0.0       0.0                           511437.3125      0.00  
+    0:00:07   12129.1      0.01       0.1       0.0                           506571.6562      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+    0:00:07   12123.4      0.01       0.1       0.0                           506059.3125      0.00  
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+    0:00:07   12162.2      0.00       0.0       0.0                           485253.1875      0.00  
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+#compile_ultra -retime
+#compile_ultra -retime -incremental
+# Rename modules, signals according to the naming rules Used for tool exchange
+source -verbose "../naming_rules.syn.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+buffer_mult     cell    buffer0/valid_list_reg_6_ buffer0_valid_list_reg_6_
+buffer_mult     cell    buffer0/valid_list_reg_0_ buffer0_valid_list_reg_0_
+buffer_mult     cell    buffer0/data_buf_reg_3__4_ buffer0_data_buf_reg_3__4_
+buffer_mult     cell    buffer0/data_buf_reg_3__7_ buffer0_data_buf_reg_3__7_
+buffer_mult     cell    buffer0/data_buf_reg_3__2_ buffer0_data_buf_reg_3__2_
+buffer_mult     cell    buffer0/valid_list_reg_4_ buffer0_valid_list_reg_4_
+buffer_mult     cell    buffer0/valid_list_reg_5_ buffer0_valid_list_reg_5_
+buffer_mult     cell    buffer0/valid_list_reg_2_ buffer0_valid_list_reg_2_
+buffer_mult     cell    buffer0/valid_list_reg_3_ buffer0_valid_list_reg_3_
+buffer_mult     cell    buffer0/data_buf_reg_3__6_ buffer0_data_buf_reg_3__6_
+buffer_mult     cell    buffer0/data_buf_reg_3__5_ buffer0_data_buf_reg_3__5_
+buffer_mult     cell    buffer0/data_buf_reg_3__3_ buffer0_data_buf_reg_3__3_
+buffer_mult     cell    buffer0/data_buf_reg_3__0_ buffer0_data_buf_reg_3__0_
+buffer_mult     cell    buffer0/data_buf_reg_3__1_ buffer0_data_buf_reg_3__1_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG14_S1 MULT_single0_mult_x_1_clk_r_REG14_S1
+buffer_mult     cell    MULT_single0/clk_r_REG3_S2 MULT_single0_clk_r_REG3_S2
+buffer_mult     cell    buffer0/data_buf_reg_8__2_ buffer0_data_buf_reg_8__2_
+buffer_mult     cell    buffer0/data_buf_reg_0__2_ buffer0_data_buf_reg_0__2_
+buffer_mult     cell    buffer0/data_buf_reg_8__1_ buffer0_data_buf_reg_8__1_
+buffer_mult     cell    buffer0/data_buf_reg_8__0_ buffer0_data_buf_reg_8__0_
+buffer_mult     cell    buffer0/data_buf_reg_8__6_ buffer0_data_buf_reg_8__6_
+buffer_mult     cell    buffer0/data_buf_reg_8__7_ buffer0_data_buf_reg_8__7_
+buffer_mult     cell    buffer0/data_buf_reg_8__5_ buffer0_data_buf_reg_8__5_
+buffer_mult     cell    buffer0/data_buf_reg_8__3_ buffer0_data_buf_reg_8__3_
+buffer_mult     cell    buffer0/data_buf_reg_8__4_ buffer0_data_buf_reg_8__4_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG17_S2 MULT_single0_mult_x_1_clk_r_REG17_S2
+buffer_mult     cell    buffer0/data_buf_reg_2__2_ buffer0_data_buf_reg_2__2_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG11_S2 MULT_single0_mult_x_1_clk_r_REG11_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG39_S1 MULT_single0_mult_x_1_clk_r_REG39_S1
+buffer_mult     cell    MULT_single0/clk_r_REG2_S2 MULT_single0_clk_r_REG2_S2
+buffer_mult     cell    buffer0/data_buf_reg_1__2_ buffer0_data_buf_reg_1__2_
+buffer_mult     cell    buffer0/data_buf_reg_7__2_ buffer0_data_buf_reg_7__2_
+buffer_mult     cell    buffer0/data_buf_reg_5__2_ buffer0_data_buf_reg_5__2_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG21_S2 MULT_single0_mult_x_1_clk_r_REG21_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG26_S1 MULT_single0_mult_x_1_clk_r_REG26_S1
+buffer_mult     cell    buffer0/data_out_reg_7_ buffer0_data_out_reg_7_
+buffer_mult     cell    buffer0/data_out_reg_2_ buffer0_data_out_reg_2_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG15_S1 MULT_single0_mult_x_1_clk_r_REG15_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG22_S2 MULT_single0_mult_x_1_clk_r_REG22_S2
+buffer_mult     cell    buffer0/data_out_reg_6_ buffer0_data_out_reg_6_
+buffer_mult     cell    buffer0/data_out_reg_5_ buffer0_data_out_reg_5_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG9_S2 MULT_single0_mult_x_1_clk_r_REG9_S2
+buffer_mult     cell    buffer0/data_out_reg_1_ buffer0_data_out_reg_1_
+buffer_mult     cell    buffer0/data_buf_reg_1__0_ buffer0_data_buf_reg_1__0_
+buffer_mult     cell    buffer0/data_buf_reg_1__3_ buffer0_data_buf_reg_1__3_
+buffer_mult     cell    buffer0/data_buf_reg_1__4_ buffer0_data_buf_reg_1__4_
+buffer_mult     cell    buffer0/data_buf_reg_1__5_ buffer0_data_buf_reg_1__5_
+buffer_mult     cell    buffer0/data_buf_reg_1__6_ buffer0_data_buf_reg_1__6_
+buffer_mult     cell    buffer0/data_buf_reg_1__7_ buffer0_data_buf_reg_1__7_
+buffer_mult     cell    buffer0/data_out_reg_4_ buffer0_data_out_reg_4_
+buffer_mult     cell    buffer0/data_buf_reg_7__0_ buffer0_data_buf_reg_7__0_
+buffer_mult     cell    buffer0/data_buf_reg_1__1_ buffer0_data_buf_reg_1__1_
+buffer_mult     cell    buffer0/data_buf_reg_7__1_ buffer0_data_buf_reg_7__1_
+buffer_mult     cell    buffer0/data_buf_reg_5__0_ buffer0_data_buf_reg_5__0_
+buffer_mult     cell    buffer0/data_buf_reg_5__3_ buffer0_data_buf_reg_5__3_
+buffer_mult     cell    buffer0/data_buf_reg_5__4_ buffer0_data_buf_reg_5__4_
+buffer_mult     cell    buffer0/data_buf_reg_5__5_ buffer0_data_buf_reg_5__5_
+buffer_mult     cell    buffer0/data_buf_reg_5__6_ buffer0_data_buf_reg_5__6_
+buffer_mult     cell    buffer0/data_buf_reg_5__7_ buffer0_data_buf_reg_5__7_
+buffer_mult     cell    buffer0/data_out_reg_3_ buffer0_data_out_reg_3_
+buffer_mult     cell    buffer0/data_buf_reg_5__1_ buffer0_data_buf_reg_5__1_
+buffer_mult     cell    buffer0/data_buf_reg_6__2_ buffer0_data_buf_reg_6__2_
+buffer_mult     cell    buffer0/data_buf_reg_4__2_ buffer0_data_buf_reg_4__2_
+buffer_mult     cell    buffer0/data_out_reg_0_ buffer0_data_out_reg_0_
+buffer_mult     cell    buffer0/data_buf_reg_0__0_ buffer0_data_buf_reg_0__0_
+buffer_mult     cell    buffer0/data_buf_reg_0__3_ buffer0_data_buf_reg_0__3_
+buffer_mult     cell    buffer0/data_buf_reg_0__4_ buffer0_data_buf_reg_0__4_
+buffer_mult     cell    buffer0/data_buf_reg_0__5_ buffer0_data_buf_reg_0__5_
+buffer_mult     cell    buffer0/data_buf_reg_0__6_ buffer0_data_buf_reg_0__6_
+buffer_mult     cell    buffer0/data_buf_reg_0__7_ buffer0_data_buf_reg_0__7_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG44_S1 MULT_single0_mult_x_1_clk_r_REG44_S1
+buffer_mult     cell    buffer0/data_buf_reg_0__1_ buffer0_data_buf_reg_0__1_
+buffer_mult     cell    buffer0/data_buf_reg_4__3_ buffer0_data_buf_reg_4__3_
+buffer_mult     cell    buffer0/data_buf_reg_4__4_ buffer0_data_buf_reg_4__4_
+buffer_mult     cell    buffer0/data_buf_reg_4__5_ buffer0_data_buf_reg_4__5_
+buffer_mult     cell    buffer0/data_buf_reg_4__6_ buffer0_data_buf_reg_4__6_
+buffer_mult     cell    buffer0/data_buf_reg_4__0_ buffer0_data_buf_reg_4__0_
+buffer_mult     cell    buffer0/data_buf_reg_4__7_ buffer0_data_buf_reg_4__7_
+buffer_mult     cell    buffer0/data_buf_reg_4__1_ buffer0_data_buf_reg_4__1_
+buffer_mult     cell    buffer0/data_buf_reg_2__3_ buffer0_data_buf_reg_2__3_
+buffer_mult     cell    buffer0/data_buf_reg_2__4_ buffer0_data_buf_reg_2__4_
+buffer_mult     cell    buffer0/data_buf_reg_2__5_ buffer0_data_buf_reg_2__5_
+buffer_mult     cell    buffer0/data_buf_reg_2__1_ buffer0_data_buf_reg_2__1_
+buffer_mult     cell    buffer0/data_buf_reg_6__4_ buffer0_data_buf_reg_6__4_
+buffer_mult     cell    buffer0/data_buf_reg_6__3_ buffer0_data_buf_reg_6__3_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG10_S2 MULT_single0_mult_x_1_clk_r_REG10_S2
+buffer_mult     cell    buffer0/data_buf_reg_6__1_ buffer0_data_buf_reg_6__1_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG23_S1 MULT_single0_mult_x_1_clk_r_REG23_S1
+buffer_mult     cell    buffer0/data_buf_reg_2__7_ buffer0_data_buf_reg_2__7_
+buffer_mult     cell    buffer0/data_buf_reg_2__6_ buffer0_data_buf_reg_2__6_
+buffer_mult     cell    buffer0/data_buf_reg_6__7_ buffer0_data_buf_reg_6__7_
+buffer_mult     cell    buffer0/data_buf_reg_6__0_ buffer0_data_buf_reg_6__0_
+buffer_mult     cell    buffer0/data_buf_reg_6__6_ buffer0_data_buf_reg_6__6_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG29_S1 MULT_single0_mult_x_1_clk_r_REG29_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG47_S1 MULT_single0_mult_x_1_clk_r_REG47_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG35_S1 MULT_single0_mult_x_1_clk_r_REG35_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG38_S1 MULT_single0_mult_x_1_clk_r_REG38_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG13_S1 MULT_single0_mult_x_1_clk_r_REG13_S1
+buffer_mult     cell    mult_A_reg[4]           mult_A_reg_4_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG24_S1 MULT_single0_mult_x_1_clk_r_REG24_S1
+buffer_mult     cell    mult_A_reg[6]           mult_A_reg_6_
+buffer_mult     cell    mult_A_reg[0]           mult_A_reg_0_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG27_S1 MULT_single0_mult_x_1_clk_r_REG27_S1
+buffer_mult     cell    mult_A_reg[7]           mult_A_reg_7_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG33_S1 MULT_single0_mult_x_1_clk_r_REG33_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG12_S1 MULT_single0_mult_x_1_clk_r_REG12_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG7_S2 MULT_single0_mult_x_1_clk_r_REG7_S2
+buffer_mult     cell    mult_A_reg[2]           mult_A_reg_2_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG32_S1 MULT_single0_mult_x_1_clk_r_REG32_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG43_S1 MULT_single0_mult_x_1_clk_r_REG43_S1
+buffer_mult     cell    MULT_single0/mult_x_1_R_1_clk_r_REG8_S2 MULT_single0_mult_x_1_R_1_clk_r_REG8_S2
+buffer_mult     cell    MULT_single0/mult_x_1_R_0_clk_r_REG8_S2 MULT_single0_mult_x_1_R_0_clk_r_REG8_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG34_S1 MULT_single0_mult_x_1_clk_r_REG34_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG5_S2 MULT_single0_mult_x_1_clk_r_REG5_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG48_S1 MULT_single0_mult_x_1_clk_r_REG48_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG40_S1 MULT_single0_mult_x_1_clk_r_REG40_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG6_S2 MULT_single0_mult_x_1_clk_r_REG6_S2
+buffer_mult     cell    MULT_single0/clk_r_REG1_S1 MULT_single0_clk_r_REG1_S1
+buffer_mult     cell    mult_A_reg[3]           mult_A_reg_3_
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG25_S1 MULT_single0_mult_x_1_clk_r_REG25_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG30_S2 MULT_single0_mult_x_1_clk_r_REG30_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG37_S1 MULT_single0_mult_x_1_clk_r_REG37_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG19_S2 MULT_single0_mult_x_1_clk_r_REG19_S2
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG31_S1 MULT_single0_mult_x_1_clk_r_REG31_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG45_S1 MULT_single0_mult_x_1_clk_r_REG45_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG36_S1 MULT_single0_mult_x_1_clk_r_REG36_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG16_S1 MULT_single0_mult_x_1_clk_r_REG16_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG41_S1 MULT_single0_mult_x_1_clk_r_REG41_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG42_S1 MULT_single0_mult_x_1_clk_r_REG42_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG46_S1 MULT_single0_mult_x_1_clk_r_REG46_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG18_S2 MULT_single0_mult_x_1_clk_r_REG18_S2
+buffer_mult     cell    mult_A_reg[1]           mult_A_reg_1_
+buffer_mult     cell    mult_A_reg[5]           mult_A_reg_5_
+buffer_mult     cell    buffer0/valid_list_reg_8_ buffer0_valid_list_reg_8_
+buffer_mult     cell    buffer0/valid_list_reg_7_ buffer0_valid_list_reg_7_
+buffer_mult     cell    buffer0/data_buf_reg_6__5_/U3 buffer0_data_buf_reg_6__5__U3
+buffer_mult     cell    buffer0/data_buf_reg_6__5_ buffer0_data_buf_reg_6__5_
+buffer_mult     cell    MULT_single0/clk_r_REG0_S1 MULT_single0_clk_r_REG0_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG4_S1 MULT_single0_mult_x_1_clk_r_REG4_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG20_S1 MULT_single0_mult_x_1_clk_r_REG20_S1
+buffer_mult     cell    MULT_single0/mult_x_1_clk_r_REG28_S1 MULT_single0_mult_x_1_clk_r_REG28_S1
+buffer_mult     cell    buffer0/data_buf_reg_7__7_ buffer0_data_buf_reg_7__7_
+buffer_mult     cell    buffer0/data_buf_reg_7__3_ buffer0_data_buf_reg_7__3_
+buffer_mult     cell    buffer0/data_buf_reg_2__0_ buffer0_data_buf_reg_2__0_
+buffer_mult     cell    buffer0/data_buf_reg_7__6_ buffer0_data_buf_reg_7__6_
+buffer_mult     cell    buffer0/data_buf_reg_7__5_ buffer0_data_buf_reg_7__5_
+buffer_mult     cell    buffer0/data_buf_reg_7__4_ buffer0_data_buf_reg_7__4_
+buffer_mult     cell    buffer0/valid_list_reg_1_ buffer0_valid_list_reg_1_
+buffer_mult     net     buffer0/data_buf        buffer0_data_buf
+buffer_mult     net     buffer0/data_buf[71]    buffer0_data_buf[71]
+buffer_mult     net     buffer0/data_buf[70]    buffer0_data_buf[70]
+buffer_mult     net     buffer0/data_buf[69]    buffer0_data_buf[69]
+buffer_mult     net     buffer0/data_buf[68]    buffer0_data_buf[68]
+buffer_mult     net     buffer0/data_buf[67]    buffer0_data_buf[67]
+buffer_mult     net     buffer0/data_buf[66]    buffer0_data_buf[66]
+buffer_mult     net     buffer0/data_buf[65]    buffer0_data_buf[65]
+buffer_mult     net     buffer0/data_buf[64]    buffer0_data_buf[64]
+buffer_mult     net     buffer0/data_buf[63]    buffer0_data_buf[63]
+buffer_mult     net     buffer0/data_buf[62]    buffer0_data_buf[62]
+buffer_mult     net     buffer0/data_buf[61]    buffer0_data_buf[61]
+buffer_mult     net     buffer0/data_buf[60]    buffer0_data_buf[60]
+buffer_mult     net     buffer0/data_buf[59]    buffer0_data_buf[59]
+buffer_mult     net     buffer0/data_buf[58]    buffer0_data_buf[58]
+buffer_mult     net     buffer0/data_buf[57]    buffer0_data_buf[57]
+buffer_mult     net     buffer0/data_buf[56]    buffer0_data_buf[56]
+buffer_mult     net     buffer0/data_buf[55]    buffer0_data_buf[55]
+buffer_mult     net     buffer0/data_buf[54]    buffer0_data_buf[54]
+buffer_mult     net     buffer0/data_buf[53]    buffer0_data_buf[53]
+buffer_mult     net     buffer0/data_buf[52]    buffer0_data_buf[52]
+buffer_mult     net     buffer0/data_buf[51]    buffer0_data_buf[51]
+buffer_mult     net     buffer0/data_buf[50]    buffer0_data_buf[50]
+buffer_mult     net     buffer0/data_buf[49]    buffer0_data_buf[49]
+buffer_mult     net     buffer0/data_buf[48]    buffer0_data_buf[48]
+buffer_mult     net     buffer0/data_buf[47]    buffer0_data_buf[47]
+buffer_mult     net     buffer0/data_buf[46]    buffer0_data_buf[46]
+buffer_mult     net     buffer0/data_buf[45]    buffer0_data_buf[45]
+buffer_mult     net     buffer0/data_buf[44]    buffer0_data_buf[44]
+buffer_mult     net     buffer0/data_buf[43]    buffer0_data_buf[43]
+buffer_mult     net     buffer0/data_buf[42]    buffer0_data_buf[42]
+buffer_mult     net     buffer0/data_buf[41]    buffer0_data_buf[41]
+buffer_mult     net     buffer0/data_buf[40]    buffer0_data_buf[40]
+buffer_mult     net     buffer0/data_buf[39]    buffer0_data_buf[39]
+buffer_mult     net     buffer0/data_buf[38]    buffer0_data_buf[38]
+buffer_mult     net     buffer0/data_buf[37]    buffer0_data_buf[37]
+buffer_mult     net     buffer0/data_buf[36]    buffer0_data_buf[36]
+buffer_mult     net     buffer0/data_buf[35]    buffer0_data_buf[35]
+buffer_mult     net     buffer0/data_buf[34]    buffer0_data_buf[34]
+buffer_mult     net     buffer0/data_buf[33]    buffer0_data_buf[33]
+buffer_mult     net     buffer0/data_buf[32]    buffer0_data_buf[32]
+buffer_mult     net     buffer0/data_buf[23]    buffer0_data_buf[23]
+buffer_mult     net     buffer0/data_buf[22]    buffer0_data_buf[22]
+buffer_mult     net     buffer0/data_buf[21]    buffer0_data_buf[21]
+buffer_mult     net     buffer0/data_buf[20]    buffer0_data_buf[20]
+buffer_mult     net     buffer0/data_buf[19]    buffer0_data_buf[19]
+buffer_mult     net     buffer0/data_buf[18]    buffer0_data_buf[18]
+buffer_mult     net     buffer0/data_buf[17]    buffer0_data_buf[17]
+buffer_mult     net     buffer0/data_buf[16]    buffer0_data_buf[16]
+buffer_mult     net     buffer0/data_buf[15]    buffer0_data_buf[15]
+buffer_mult     net     buffer0/data_buf[14]    buffer0_data_buf[14]
+buffer_mult     net     buffer0/data_buf[13]    buffer0_data_buf[13]
+buffer_mult     net     buffer0/data_buf[12]    buffer0_data_buf[12]
+buffer_mult     net     buffer0/data_buf[11]    buffer0_data_buf[11]
+buffer_mult     net     buffer0/data_buf[10]    buffer0_data_buf[10]
+buffer_mult     net     buffer0/data_buf[9]     buffer0_data_buf[9]
+buffer_mult     net     buffer0/data_buf[8]     buffer0_data_buf[8]
+buffer_mult     net     buffer0/data_buf[7]     buffer0_data_buf[7]
+buffer_mult     net     buffer0/data_buf[6]     buffer0_data_buf[6]
+buffer_mult     net     buffer0/data_buf[5]     buffer0_data_buf[5]
+buffer_mult     net     buffer0/data_buf[4]     buffer0_data_buf[4]
+buffer_mult     net     buffer0/data_buf[3]     buffer0_data_buf[3]
+buffer_mult     net     buffer0/data_buf[2]     buffer0_data_buf[2]
+buffer_mult     net     buffer0/data_buf[1]     buffer0_data_buf[1]
+buffer_mult     net     buffer0/data_buf[0]     buffer0_data_buf[0]
+buffer_mult     net     buffer0/n184            buffer0_n184
+buffer_mult     net     buffer0/N93             buffer0_N93
+buffer_mult     net     buffer0/N94             buffer0_N94
+buffer_mult     net     buffer0/N96             buffer0_N96
+buffer_mult     net     buffer0/N97             buffer0_N97
+buffer_mult     net     buffer0/N98             buffer0_N98
+buffer_mult     net     buffer0/N99             buffer0_N99
+buffer_mult     net     buffer0/N100            buffer0_N100
+buffer_mult     net     buffer0/n314            buffer0_n314
+buffer_mult     net     buffer0/n202            buffer0_n202
+buffer_mult     net     buffer0/n183            buffer0_n183
+buffer_mult     net     buffer0/n178            buffer0_n178
+buffer_mult     net     buffer0/n179            buffer0_n179
+buffer_mult     net     buffer0/n182            buffer0_n182
+buffer_mult     net     buffer0/n176            buffer0_n176
+buffer_mult     net     buffer0/n177            buffer0_n177
+buffer_mult     net     buffer0/n180            buffer0_n180
+buffer_mult     net     buffer0/valid_list[1]   buffer0_valid_list_1_
+buffer_mult     net     buffer0/n181            buffer0_n181
+buffer_mult     net     buffer0/*Logic1*        buffer0__Logic1_
+buffer_mult     net     MULT_single0/n163       MULT_single0_n163
+buffer_mult     net     MULT_single0/n151       MULT_single0_n151
+buffer_mult     net     MULT_single0/n150       MULT_single0_n150
+buffer_mult     net     MULT_single0/mult_x_1_n39 MULT_single0_mult_x_1_n39
+buffer_mult     net     MULT_single0/n183       MULT_single0_n183
+buffer_mult     net     MULT_single0/n153       MULT_single0_n153
+buffer_mult     net     MULT_single0/mult_x_1_n68 MULT_single0_mult_x_1_n68
+buffer_mult     net     MULT_single0/mult_x_1_n123 MULT_single0_mult_x_1_n123
+buffer_mult     net     MULT_single0/n195       MULT_single0_n195
+buffer_mult     net     MULT_single0/mult_x_1_n49 MULT_single0_mult_x_1_n49
+buffer_mult     net     MULT_single0/mult_x_1_n32 MULT_single0_mult_x_1_n32
+buffer_mult     net     MULT_single0/n160       MULT_single0_n160
+buffer_mult     net     MULT_single0/n182       MULT_single0_n182
+buffer_mult     net     MULT_single0/mult_x_1_n36 MULT_single0_mult_x_1_n36
+buffer_mult     net     MULT_single0/n149       MULT_single0_n149
+buffer_mult     net     MULT_single0/mult_x_1_n6 MULT_single0_mult_x_1_n6
+buffer_mult     net     MULT_single0/n152       MULT_single0_n152
+buffer_mult     net     MULT_single0/mult_x_1_n48 MULT_single0_mult_x_1_n48
+buffer_mult     net     MULT_single0/n154       MULT_single0_n154
+buffer_mult     net     MULT_single0/mult_x_1_n51 MULT_single0_mult_x_1_n51
+buffer_mult     net     MULT_single0/n176       MULT_single0_n176
+buffer_mult     net     MULT_single0/mult_x_1_n115 MULT_single0_mult_x_1_n115
+buffer_mult     net     MULT_single0/n159       MULT_single0_n159
+buffer_mult     net     MULT_single0/mult_x_1_n31 MULT_single0_mult_x_1_n31
+buffer_mult     net     MULT_single0/n5         MULT_single0_n5
+buffer_mult     net     MULT_single0/n4         MULT_single0_n4
+buffer_mult     net     MULT_single0/n79        MULT_single0_n79
+buffer_mult     net     MULT_single0/n155       MULT_single0_n155
+buffer_mult     net     MULT_single0/mult_x_1_n108 MULT_single0_mult_x_1_n108
+buffer_mult     net     MULT_single0/n169       MULT_single0_n169
+buffer_mult     net     MULT_single0/mult_x_1_n95 MULT_single0_mult_x_1_n95
+buffer_mult     net     MULT_single0/n184       MULT_single0_n184
+buffer_mult     net     MULT_single0/mult_x_1_n100 MULT_single0_mult_x_1_n100
+buffer_mult     net     MULT_single0/n172       MULT_single0_n172
+buffer_mult     net     MULT_single0/mult_x_1_n111 MULT_single0_mult_x_1_n111
+buffer_mult     net     MULT_single0/n158       MULT_single0_n158
+buffer_mult     net     MULT_single0/mult_x_1_n2 MULT_single0_mult_x_1_n2
+buffer_mult     net     MULT_single0/n175       MULT_single0_n175
+buffer_mult     net     MULT_single0/mult_x_1_n114 MULT_single0_mult_x_1_n114
+buffer_mult     net     MULT_single0/n173       MULT_single0_n173
+buffer_mult     net     MULT_single0/mult_x_1_n112 MULT_single0_mult_x_1_n112
+buffer_mult     net     MULT_single0/n185       MULT_single0_n185
+buffer_mult     net     MULT_single0/mult_x_1_n107 MULT_single0_mult_x_1_n107
+buffer_mult     net     MULT_single0/n187       MULT_single0_n187
+buffer_mult     net     MULT_single0/mult_x_1_n102 MULT_single0_mult_x_1_n102
+buffer_mult     net     MULT_single0/n166       MULT_single0_n166
+buffer_mult     net     MULT_single0/mult_x_1_n94 MULT_single0_mult_x_1_n94
+buffer_mult     net     MULT_single0/n174       MULT_single0_n174
+buffer_mult     net     MULT_single0/mult_x_1_n113 MULT_single0_mult_x_1_n113
+buffer_mult     net     MULT_single0/n178       MULT_single0_n178
+buffer_mult     net     MULT_single0/mult_x_1_n119 MULT_single0_mult_x_1_n119
+buffer_mult     net     MULT_single0/n170       MULT_single0_n170
+buffer_mult     net     MULT_single0/mult_x_1_n96 MULT_single0_mult_x_1_n96
+buffer_mult     net     MULT_single0/n148       MULT_single0_n148
+buffer_mult     net     MULT_single0/mult_x_1_n30 MULT_single0_mult_x_1_n30
+buffer_mult     net     MULT_single0/n193       MULT_single0_n193
+buffer_mult     net     MULT_single0/n161       MULT_single0_n161
+buffer_mult     net     MULT_single0/mult_x_1_n109 MULT_single0_mult_x_1_n109
+buffer_mult     net     MULT_single0/n190       MULT_single0_n190
+buffer_mult     net     MULT_single0/out1_1_    MULT_single0_out1_1_
+buffer_mult     net     MULT_single0/n188       MULT_single0_n188
+buffer_mult     net     MULT_single0/mult_x_1_n104 MULT_single0_mult_x_1_n104
+buffer_mult     net     MULT_single0/n145       MULT_single0_n145
+buffer_mult     net     MULT_single0/n189       MULT_single0_n189
+buffer_mult     net     MULT_single0/n146       MULT_single0_n146
+buffer_mult     net     MULT_single0/mult_x_1_n106 MULT_single0_mult_x_1_n106
+buffer_mult     net     MULT_single0/n156       MULT_single0_n156
+buffer_mult     net     MULT_single0/mult_x_1_n101 MULT_single0_mult_x_1_n101
+buffer_mult     net     MULT_single0/n167       MULT_single0_n167
+buffer_mult     net     MULT_single0/mult_x_1_n98 MULT_single0_mult_x_1_n98
+buffer_mult     net     MULT_single0/n168       MULT_single0_n168
+buffer_mult     net     MULT_single0/mult_x_1_n99 MULT_single0_mult_x_1_n99
+buffer_mult     net     MULT_single0/n179       MULT_single0_n179
+buffer_mult     net     MULT_single0/mult_x_1_n120 MULT_single0_mult_x_1_n120
+buffer_mult     net     MULT_single0/n180       MULT_single0_n180
+buffer_mult     net     MULT_single0/mult_x_1_n121 MULT_single0_mult_x_1_n121
+buffer_mult     net     MULT_single0/n181       MULT_single0_n181
+buffer_mult     net     MULT_single0/mult_x_1_n122 MULT_single0_mult_x_1_n122
+buffer_mult     net     MULT_single0/n186       MULT_single0_n186
+buffer_mult     net     MULT_single0/mult_x_1_n103 MULT_single0_mult_x_1_n103
+buffer_mult     net     MULT_single0/n171       MULT_single0_n171
+buffer_mult     net     MULT_single0/mult_x_1_n110 MULT_single0_mult_x_1_n110
+buffer_mult     net     MULT_single0/n157       MULT_single0_n157
+buffer_mult     net     MULT_single0/mult_x_1_n27 MULT_single0_mult_x_1_n27
+buffer_mult     net     MULT_single0/n164       MULT_single0_n164
+buffer_mult     net     MULT_single0/mult_x_1_n65 MULT_single0_mult_x_1_n65
+buffer_mult     net     MULT_single0/n165       MULT_single0_n165
+buffer_mult     net     MULT_single0/mult_x_1_n70 MULT_single0_mult_x_1_n70
+buffer_mult     net     MULT_single0/n162       MULT_single0_n162
+buffer_mult     net     MULT_single0/mult_x_1_n118 MULT_single0_mult_x_1_n118
+buffer_mult     net     MULT_single0/n177       MULT_single0_n177
+buffer_mult     net     MULT_single0/mult_x_1_n116 MULT_single0_mult_x_1_n116
+buffer_mult     net     MULT_single0/n147       MULT_single0_n147
+buffer_mult     net     MULT_single0/mult_x_1_n29 MULT_single0_mult_x_1_n29
+1
+1
+# Generate structural verilog netlist
+write -hierarchy -format verilog -output "${top_level}.syn.v"
+Writing verilog file '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/buffer_mult/buffer_mult.syn.v'.
+1
+# Generate Standard Delay Format (SDF) file
+write_sdf -context verilog "${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/syn/buffer_mult/buffer_mult.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "${top_level}.syn.rpt"
+buffer_mult.syn.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+# Exit dc_shell
+quit
+
+Memory usage for this session 193 Mbytes.
+Memory usage for this session including child processes 193 Mbytes.
+CPU usage for this session 16 seconds ( 0.00 hours ).
+Elapsed time for this session 32 seconds ( 0.01 hours ).
+
+Thank you...

@@ -1,0 +1,46 @@
+catch { setDesignMode -process 130 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath false }
+catch { setAnalysisMode -clockPropagation forcedIdeal }
+catch { setOptMode -activeHoldViews { holdAnalysis } }
+catch { setOptMode -activeSetupViews { setupAnalysis } }
+catch { setOptMode -addInst true }
+catch { setOptMode -addInstancePrefix PLACED }
+catch { setOptMode -allEndPoints true }
+catch { setOptMode -autoSetupViews { setupAnalysis} }
+catch { setOptMode -autoTDGRSetupViews { setupAnalysis} }
+catch { setOptMode -drcMargin 0.1 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -fixFanoutLoad true }
+catch { setOptMode -holdTargetSlack 0.05 }
+catch { setOptMode -maxLength 1000 }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -restruct false }
+catch { setOptMode -setupTargetSlack 0.05 }
+catch { setOptMode -usefulSkew false }
+catch { setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.4 }
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 22.700000}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 2}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 4}
+
+catch { setPlaceMode -place_global_max_density 0.8 }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setTrialRouteMode -maxRouteLayer 4 }
+catch { setTrialRouteMode -minRouteLayer 2 }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -max_via_size {blockPin 100% 100% 100%} }
+catch { setAddStripeMode -stacked_via_bottom_layer M3 }
+catch { setAddStripeMode -stacked_via_top_layer M4 }
+catch { setFPlanMode -defaultTechSite IBM13SITE }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

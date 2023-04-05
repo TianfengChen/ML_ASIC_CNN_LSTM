@@ -1,0 +1,106 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.10-p004_1 (64bit) 05/18/2021 11:58 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2022-Mar-29 14:33:38 (2022-Mar-29 18:33:38 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: mult_chip
+*
+*	Liberty Libraries used: 
+*	        setupAnalysis: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/db/mult_chip_final.enc.dat/libs/mmmc/typical.lib
+*	        setupAnalysis: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/db/mult_chip_final.enc.dat/libs/mmmc/arti_ibm13io_syn_tt.lib
+*	        setupAnalysis: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/db/mult_chip_final.enc.dat/libs/mmmc/reset_driver.lib
+*	        setupAnalysis: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/db/mult_chip_final.enc.dat/libs/mmmc/mult_block.lib
+*	        setupAnalysis: /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/db/mult_chip_final.enc.dat/libs/mmmc/SIGN_MEM_tt_1p2v_25c_syn.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        1.2 
+*
+*       Power View : setupAnalysis
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/../vsim/mult_chip.apr.vcd
+*                    Vcd Window used(Start Time, Stop Time):   
+*                     Vcd Scale Factor: 1 
+* *                    Design annotation coverage: 0/384 = 0% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /afs/umich.edu/class/eecs627/w23/template_prj/mult_chip/apr/reports/mult_chip.power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:       12.84739951 	   97.9959%
+Total Switching Power:       0.24907802 	    1.8999%
+Total Leakage Power:         0.01366746 	    0.1043%
+Total Power:                13.11014482 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                       0.03296   0.0002679   1.288e-05     0.03324      0.2536 
+Macro                              5.493     0.03163    0.000537       5.526       42.15 
+IO                                  7.27     0.04607     0.01298        7.33       55.91 
+Combinational                    0.02744     0.09018   0.0001262      0.1178      0.8982 
+Clock (Combinational)            0.02317     0.08093   7.421e-06      0.1041      0.7941 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              12.85      0.2491     0.01367       13.11         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                   1.2       7.27     0.04607     0.01298        7.33       55.91 
+VDD                       1.2      5.577       0.203   0.0006835       5.781       44.09 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+i_clk                              1.945     0.08391   0.0003834       2.029       15.48 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       1.945     0.08391   0.0003834       2.029       15.48 
+-----------------------------------------------------------------------------------------
+Clock: i_clk
+Clock Period: 0.010000 usec 
+Clock Toggle Rate:   199.9984 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:         u_core/u_SIGN_MEM (SIGN_MEM):            5.507 
+*                Highest Leakage Power:         u_core/u_SIGN_MEM (SIGN_MEM):         0.000537 
+*          Total Cap:      1.97493e-11 F
+*          Total instances in design:   334
+*          Total instances in design with no power:    20
+*          Total instances in design with no activity:    20
+*          Total Fillers and Decap:     4
+-----------------------------------------------------------------------------------------
+

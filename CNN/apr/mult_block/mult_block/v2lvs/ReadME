@@ -1,0 +1,5 @@
+ECO REQUIRED:
+1. Copy *.apr.physical.v here, add power supplys to the top-level I/Os definition and modify them to be inout ports instead of wires.
+
+Running v2lvs:
+	$ ./v2lvs.sh mult_block

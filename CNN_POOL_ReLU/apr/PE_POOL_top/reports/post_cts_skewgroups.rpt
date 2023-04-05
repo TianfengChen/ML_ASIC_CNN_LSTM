@@ -1,0 +1,333 @@
+Clock tree timing engine global stage delay update for worstDelay:setup.early...
+Clock tree timing engine global stage delay update for worstDelay:setup.early done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for worstDelay:setup.late...
+Clock tree timing engine global stage delay update for worstDelay:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for bestDelay:hold.early...
+Clock tree timing engine global stage delay update for bestDelay:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for bestDelay:hold.late...
+Clock tree timing engine global stage delay update for bestDelay:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+----------------------------------------------------------------------------
+Skew Group               Sources    Constrained Sinks    Unconstrained Sinks
+----------------------------------------------------------------------------
+clk/typConstraintMode       1              587                    0
+----------------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner             Skew Group               ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+worstDelay:setup.early    clk/typConstraintMode        -        0.225     0.235     0.231        0.002       ignored                  -         0.009              -
+worstDelay:setup.late     clk/typConstraintMode    *0.100       0.226     0.235     0.231        0.002       explicit             0.100         0.009    100% {0.226, 0.235}
+bestDelay:hold.early      clk/typConstraintMode        -        0.225     0.235     0.231        0.002       ignored                  -         0.009              -
+bestDelay:hold.late       clk/typConstraintMode        -        0.226     0.235     0.231        0.002       ignored                  -         0.009              -
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+---------------------------------------------------------------------------------------
+Timing Corner             Skew Group               Min ID    PathID    Max ID    PathID
+---------------------------------------------------------------------------------------
+worstDelay:setup.early    clk/typConstraintMode    0.225       1       0.235       2
+-    min clk_r_REG135_S1/CK
+-    max clk_r_REG493_S1/CK
+worstDelay:setup.late     clk/typConstraintMode    0.226       3       0.235       4
+-    min clk_r_REG135_S1/CK
+-    max clk_r_REG493_S1/CK
+bestDelay:hold.early      clk/typConstraintMode    0.225       5       0.235       6
+-    min clk_r_REG135_S1/CK
+-    max clk_r_REG493_S1/CK
+bestDelay:hold.late       clk/typConstraintMode    0.226       7       0.235       8
+-    min clk_r_REG135_S1/CK
+-    max clk_r_REG493_S1/CK
+---------------------------------------------------------------------------------------
+
+Timing for timing corner worstDelay:setup.early, min clock_path:
+================================================================
+
+PathID    : 1
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG135_S1/CK
+Delay     : 0.225
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.000   0.045   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.088   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00012/A
+-     CLKINVX20TR  rise   0.005   0.093   0.056  -      (140.800,109.600)  218.000   -       
+CTS_ccl_a_inv_00012/Y
+-     CLKINVX20TR  fall   0.056   0.150   0.073  0.151  (140.400,109.200)    0.800      5    
+CTS_ccl_a_inv_00003/A
+-     CLKINVX20TR  fall   0.004   0.154   0.073  -      (173.600,102.400)   40.000   -       
+CTS_ccl_a_inv_00003/Y
+-     CLKINVX20TR  rise   0.070   0.223   0.088  0.155  (173.200,102.000)    0.800     57    
+clk_r_REG135_S1/CK
+-     DFFQX1TR     rise   0.002   0.225   0.088  -      (182.000,102.000)    8.800   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner worstDelay:setup.early, max clock_path:
+================================================================
+
+PathID    : 2
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG173_S1/CK
+Delay     : 0.235
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.000   0.045   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.088   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00011/A
+-     CLKINVX20TR  rise   0.005   0.093   0.056  -      (118.400,120.400)  206.400   -       
+CTS_ccl_a_inv_00011/Y
+-     CLKINVX20TR  fall   0.059   0.152   0.077  0.162  (118.800,120.800)    0.800      5    
+CTS_ccl_a_inv_00008/A
+-     CLKINVX20TR  fall   0.006   0.158   0.078  -      (167.600,156.400)   84.400   -       
+CTS_ccl_a_inv_00008/Y
+-     CLKINVX20TR  rise   0.073   0.230   0.090  0.160  (168.000,156.800)    0.800     58    
+clk_r_REG173_S1/CK
+-     DFFQX1TR     rise   0.005   0.235   0.090  -      (187.600,202.800)   65.600   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner worstDelay:setup.late, min clock_path:
+===============================================================
+
+PathID    : 3
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG135_S1/CK
+Delay     : 0.226
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.001   0.046   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.089   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00012/A
+-     CLKINVX20TR  rise   0.005   0.094   0.056  -      (140.800,109.600)  218.000   -       
+CTS_ccl_a_inv_00012/Y
+-     CLKINVX20TR  fall   0.056   0.150   0.073  0.151  (140.400,109.200)    0.800      5    
+CTS_ccl_a_inv_00003/A
+-     CLKINVX20TR  fall   0.004   0.154   0.073  -      (173.600,102.400)   40.000   -       
+CTS_ccl_a_inv_00003/Y
+-     CLKINVX20TR  rise   0.070   0.224   0.088  0.155  (173.200,102.000)    0.800     57    
+clk_r_REG135_S1/CK
+-     DFFQX1TR     rise   0.002   0.226   0.088  -      (182.000,102.000)    8.800   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner worstDelay:setup.late, max clock_path:
+===============================================================
+
+PathID    : 4
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG173_S1/CK
+Delay     : 0.235
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.001   0.046   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.089   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00011/A
+-     CLKINVX20TR  rise   0.005   0.094   0.056  -      (118.400,120.400)  206.400   -       
+CTS_ccl_a_inv_00011/Y
+-     CLKINVX20TR  fall   0.059   0.152   0.077  0.162  (118.800,120.800)    0.800      5    
+CTS_ccl_a_inv_00008/A
+-     CLKINVX20TR  fall   0.006   0.158   0.078  -      (167.600,156.400)   84.400   -       
+CTS_ccl_a_inv_00008/Y
+-     CLKINVX20TR  rise   0.073   0.230   0.090  0.160  (168.000,156.800)    0.800     58    
+clk_r_REG173_S1/CK
+-     DFFQX1TR     rise   0.005   0.235   0.090  -      (187.600,202.800)   65.600   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner bestDelay:hold.early, min clock_path:
+==============================================================
+
+PathID    : 5
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG135_S1/CK
+Delay     : 0.225
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.000   0.045   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.088   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00012/A
+-     CLKINVX20TR  rise   0.005   0.093   0.056  -      (140.800,109.600)  218.000   -       
+CTS_ccl_a_inv_00012/Y
+-     CLKINVX20TR  fall   0.056   0.150   0.073  0.151  (140.400,109.200)    0.800      5    
+CTS_ccl_a_inv_00003/A
+-     CLKINVX20TR  fall   0.004   0.154   0.073  -      (173.600,102.400)   40.000   -       
+CTS_ccl_a_inv_00003/Y
+-     CLKINVX20TR  rise   0.070   0.223   0.088  0.155  (173.200,102.000)    0.800     57    
+clk_r_REG135_S1/CK
+-     DFFQX1TR     rise   0.002   0.225   0.088  -      (182.000,102.000)    8.800   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner bestDelay:hold.early, max clock_path:
+==============================================================
+
+PathID    : 6
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG173_S1/CK
+Delay     : 0.235
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.000   0.045   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.088   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00011/A
+-     CLKINVX20TR  rise   0.005   0.093   0.056  -      (118.400,120.400)  206.400   -       
+CTS_ccl_a_inv_00011/Y
+-     CLKINVX20TR  fall   0.059   0.152   0.077  0.162  (118.800,120.800)    0.800      5    
+CTS_ccl_a_inv_00008/A
+-     CLKINVX20TR  fall   0.006   0.158   0.078  -      (167.600,156.400)   84.400   -       
+CTS_ccl_a_inv_00008/Y
+-     CLKINVX20TR  rise   0.073   0.230   0.090  0.160  (168.000,156.800)    0.800     58    
+clk_r_REG173_S1/CK
+-     DFFQX1TR     rise   0.005   0.235   0.090  -      (187.600,202.800)   65.600   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner bestDelay:hold.late, min clock_path:
+=============================================================
+
+PathID    : 7
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG135_S1/CK
+Delay     : 0.226
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.001   0.046   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.089   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00012/A
+-     CLKINVX20TR  rise   0.005   0.094   0.056  -      (140.800,109.600)  218.000   -       
+CTS_ccl_a_inv_00012/Y
+-     CLKINVX20TR  fall   0.056   0.150   0.073  0.151  (140.400,109.200)    0.800      5    
+CTS_ccl_a_inv_00003/A
+-     CLKINVX20TR  fall   0.004   0.154   0.073  -      (173.600,102.400)   40.000   -       
+CTS_ccl_a_inv_00003/Y
+-     CLKINVX20TR  rise   0.070   0.224   0.088  0.155  (173.200,102.000)    0.800     57    
+clk_r_REG135_S1/CK
+-     DFFQX1TR     rise   0.002   0.226   0.088  -      (182.000,102.000)    8.800   -       
+---------------------------------------------------------------------------------------------------
+
+Timing for timing corner bestDelay:hold.late, max clock_path:
+=============================================================
+
+PathID    : 8
+Path type : skew group clk/typConstraintMode (path 1 of 1)
+Start     : clk
+End       : clk_r_REG173_S1/CK
+Delay     : 0.235
+
+---------------------------------------------------------------------------------------------------
+Name  Lib cell     Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                          (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace --------------------------------------------------------------------------------
+clk
+-     -            rise   -       0.000   0.078  0.013  (0.000,16.000)     -            1    
+CTS_ccl_a_inv_00014/A
+-     CLKINVX8TR   rise   0.000   0.000   0.078  -      (7.200,19.200)      10.400   -       
+CTS_ccl_a_inv_00014/Y
+-     CLKINVX8TR   fall   0.045   0.045   0.045  0.029  (8.000,19.200)       0.800      1    
+CTS_ccl_a_inv_00013/A
+-     CLKINVX20TR  fall   0.001   0.046   0.045  -      (12.000,19.600)      4.400   -       
+CTS_ccl_a_inv_00013/Y
+-     CLKINVX20TR  rise   0.043   0.089   0.055  0.089  (12.400,20.000)      0.800      2    
+CTS_ccl_a_inv_00011/A
+-     CLKINVX20TR  rise   0.005   0.094   0.056  -      (118.400,120.400)  206.400   -       
+CTS_ccl_a_inv_00011/Y
+-     CLKINVX20TR  fall   0.059   0.152   0.077  0.162  (118.800,120.800)    0.800      5    
+CTS_ccl_a_inv_00008/A
+-     CLKINVX20TR  fall   0.006   0.158   0.078  -      (167.600,156.400)   84.400   -       
+CTS_ccl_a_inv_00008/Y
+-     CLKINVX20TR  rise   0.073   0.230   0.090  0.160  (168.000,156.800)    0.800     58    
+clk_r_REG173_S1/CK
+-     DFFQX1TR     rise   0.005   0.235   0.090  -      (187.600,202.800)   65.600   -       
+---------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,361 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 04/28/2020 23:57 (sjfhw315) $
+          : sub-version  IC6.1.8-64b.500.11 
+Started at: 21-Mar-2022  18:43:41
+User Name : qiruizh
+Host Name : caen-vnc-mi10.engin.umich.edu
+Directory : /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX4TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/XOR2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFQX4TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout                0        0       11       33     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX4TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout                    0        0       12       22     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFRX1TR/layout   1        0       0        34     0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        18     0      0         0      0             0      0     0     0       0       
+artisan_cells/OR2X2TR/layout    1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/INVX2TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout                    0        0       7        14     0      0         0      0             0      0     0     0       0       
+artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout                   0        0       13       21     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout                   0        0       36       66     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI21X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout                   0        0       21       44     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout                 0        0       7        19     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFX1TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout                  0        0       16       24     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKBUFX2TR/layout 1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout                    0        0       9        13     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND3X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/DFFHQX1TR/layout  1        0       0        24     0      0         5      0             0      0     0     0       0       
+artisan_cells/AND2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout                 0        0       13       15     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout                 0        0       9        13     0      0         0      0             0      0     0     0       0       
+artisan_cells/AO21X1TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/FILL2TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/DFFSX2TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout                  0        0       36       63     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI2BB1X1TR/layout                                1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/OAI21X2TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout                  0        0       14       29     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout                  0        0       36       66     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout                   0        0       3        71     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout                 0        0       11       20     0      0         0      0             0      0     0     0       0       
+mult_block/mult_block/layout    1272     0       0        2038   3338   0         20     0             0      0     0     0       0       
+artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout                    0        0       0        8      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX1TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+artisan_cells/ADDFHX1TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL64TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout                   0        0       36       72     0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKINVX4TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout                  0        0       14       38     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/BUFX3TRhww2wwwww96hs97y/layout                    0        0       12       16     0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout                  0        0       14       15     0      0         0      0             0      0     0     0       0       
+artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout                  0        0       12       22     0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2X1TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/AND2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFQX2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout                   0        0       31       48     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX8TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFSX1TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout                    0        0       3        7      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        18     0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR32X2TR/layout 1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout                  0        0       39       95     0      0         0      0             0      0     0     0       0       
+artisan_cells/XNOR2X2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/FILL32TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/FILL16TR/layout   1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout                 0        0       37       65     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout                   0        0       23       35     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout                 0        0       12       30     0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX4TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/DFFHQX2TR/layout  1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout                0        0       12       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout                0        0       13       25     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHXLTR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/NAND2X2TR/layout  1        0       0        24     0      0         5      0             0      0     0     0       0       
+artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout                   0        0       3        139    0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout                   0        0       10       19     0      0         0      0             0      0     0     0       0       
+artisan_cells/AND2X2TRhww2wwwww04e6sry/layout                   0        0       13       22     0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout                  0        0       10       17     0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout                    0        0       9        18     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout                0        0       16       19     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout                  0        0       41       96     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFQX1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/FILL8TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFHX2TR/layout  1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout                   0        0       22       38     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX2TR/layout 1        0       0        19     0      0         4      0             0      0     0     0       0       
+artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout                  0        0       31       60     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout                  0        0       13       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout                   0        0       12       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout                 0        0       7        15     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout                   0        0       24       65     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout                   0        0       36       70     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL4TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout                  0        0       18       40     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout                 0        0       24       62     0      0         0      0             0      0     0     0       0       
+artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout                  0        0       12       22     0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX3TR/layout    1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout                   0        0       15       24     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX2TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/CLKINVX8TR/layout 1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout                    0        0       3        11     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout                   0        0       34       64     0      0         0      0             0      0     0     0       0       
+artisan_cells/XOR2X2TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/INVX1TR/layout    1        0       0        19     0      0         4      0             0      0     0     0       0       
+artisan_cells/CLKINVX20TR/layout                                1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout                   0        0       30       45     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout                   0        0       3        37     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/CMPR22X2TR/layout 1        0       0        17     0      0         6      0             0      0     0     0       0       
+artisan_cells/CLKAND2X3TR/layout                                1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/FILL1TR/layout    1        0       0        1      0      0         2      0             0      0     0     0       0       
+artisan_cells/CLKINVX16TR/layout                                1        0       0        11     0      0         4      0             0      0     0     0       0       
+artisan_cells/NAND2BX1TR/layout 1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/AO21X1TRhww7wwwww9jevycy/layout                   0        0       13       24     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM3_M4/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout                    0        0       12       23     0      0         0      0             0      0     0     0       0       
+artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout                   0        0       30       52     0      0         0      0             0      0     0     0       0       
+artisan_cells/NOR2X1TR/layout   1        0       0        14     0      0         5      0             0      0     0     0       0       
+artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout                  0        0       41       82     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout                  0        0       14       20     0      0         0      0             0      0     0     0       0       
+artisan_cells/OAI21X1TR/layout  1        0       0        17     0      0         6      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDFX2TR/layout   1        0       0        20     0      0         7      0             0      0     0     0       0       
+artisan_cells/CLKAND2X2TR/layout                                1        0       0        24     0      0         5      0             0      0     0     0       0       
+artisan_cells/ADDFX1TRhww3wwwwwela690y/layout                   0        0       37       73     0      0         0      0             0      0     0     0       0       
+artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout                0        0       11       42     0      0         0      0             0      0     0     0       0       
+artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout                    0        0       3        20     0      0         0      0             0      0     0     0       0       
+artisan_cells/ADDHX1TR/layout   1        0       0        17     0      0         6      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX4TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX4TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX16TRhwwswwwwwh9hfawy/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX4TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OR2X2TRhww2wwwwwx2j7l6y/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFRX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OR2X2TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX2TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX2TRhwwiwwwwwxmzvxay/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X1TRhww2wwwwwvgs4pay/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX1TRhwwgwwwww2ruuydy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI21X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X2TRhwwewwwwwzjbk40y/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX4TRhwwdwwwwwgqjw3ry/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X1TRhww0wwwww9bxcriy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX2TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX1TRhwwiwwwww6pow0dy/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND3X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKBUFX2TRhwwdwwwwwlznglyy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX1TRhwwiwwwwwem0dnwy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO21X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL2TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX1TRhwwxwwwwwmq4ogjy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI2BB1X1TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX2TRhwwlwwwwwh482gry/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX2TRhwwhwwwwwsnczz6y/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL32TRhwwlywwww5oh9rwy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2BX1TRhww2wwwwweigep0y/layout                 0        0          0          0          0          0     0        0         0         0        
+mult_block/mult_block/layout    0        0          0          0          0          0     0        0         3665      0        
+artisan_cells/FILL1TRhwwywwwwwjvop7dy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX1TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL64TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX2TRhww3wwwwwta64qty/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX4TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X2TRhwwqwwwwwycgz4wy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX3TRhww2wwwww96hs97y/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND3X1TRhww2wwwwwk28izsy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AOI21X1TRhww2wwwwwal06bwy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX2TRhwwpwwwwwnb66h0y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX8TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL2TRhwwtwwwwwxu9la0y/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR32X2TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX2TRhwwsywwwwwmmp5ay/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL32TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL16TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR32X2TRhwwhwwwww9jardjy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHXLTRhwwswwwwwbfsy7sy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX8TRhwwlwwwwwmz93rmy/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX4TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X2TRhww2wwwww7udno7y/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X3TRhww7wwwwwvq0lvcy/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHXLTR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL64TRhwwncwwww2qv2fmy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X1TRhwwdwwwwwyo8yy2y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AND2X2TRhww2wwwww04e6sry/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X1TRhwwdwwwww8r4jguy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX4TRhwwdwwwwwzbzgouy/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI2BB1X1TRhww7wwwwwcy6xw0y/layout                0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX8TRhww0ywwwwbh26pry/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL8TR/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX2TR/layout  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX1TRhwwewwwwwa1kd5dy/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX2TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFHX1TRhwwwywwwwjl9iimy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2BX1TRhww2wwwwwba1qary/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X2TRhww2wwwwwsbfgf7y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX2TRhwwiwwwwwhpa4y7y/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX2TRhwwgwwwwwrxlcr6y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFSX2TRhwwgwwwwwn9qteay/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL4TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XNOR2X2TRhwwewwwww56go2cy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR22X2TRhwwgwwwww4xj2uty/layout                 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2X2TRhww2wwwwwcq3mjay/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX3TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X1TRhww0wwwww5ggqhay/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX8TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL4TRhwwdwwwww88xgyiy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFRX1TRhww3wwwwwjtmbtry/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/XOR2X2TR/layout   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/INVX1TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX20TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX1TRhwwowwwwwwkz83ty/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL16TRhww9wwwwwlrhqc6y/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CMPR22X2TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X3TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL1TR/layout    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX16TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NAND2BX1TR/layout 0        0          0          0          0          0     0        0         0         0        
+artisan_cells/AO21X1TRhww7wwwww9jevycy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM3_M4/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/BUFX4TRhww7wwwwwdecmzcy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFQX4TRhwwzwwwwwjjxdb6y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/NOR2X1TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/DFFHQX4TRhwwdywwww0vl4iay/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X1TRhww2wwwwwg3fkhjy/layout                  0        0          0          0          0          0     0        0         0         0        
+artisan_cells/OAI21X1TR/layout  0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX2TR/layout   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKAND2X2TR/layout                                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDFX1TRhww3wwwwwela690y/layout                   0        0          0          0          0          0     0        0         0         0        
+artisan_cells/CLKINVX20TRhwwnwwwwwt3axyjy/layout                0        0          0          0          0          0     0        0         0         0        
+artisan_cells/FILL8TRhww0wwwww4rz8aqy/layout                    0        0          0          0          0          0     0        0         0         0        
+artisan_cells/ADDHX1TR/layout   0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+NW              drawing         4       0         9        51       0        0        0             0    0   0   0     0      0      
+M1              label           15      20        0        0        0        293      0             0    0   0   0     0      0      
+V2              drawing         18      0         0        29       0        0        0             0    0   0   0     0      0      
+OUTLINE         drawing         62      21        0        120      0        0        0             0    0   0   0     0      0      
+M3              drawing         19      0         0        239      843      0        0             0    0   0   0     0      0      
+M1              pin             15      32        0        769      0        0        0             0    0   0   0     0      0      
+CA              drawing         14      0         0        2025     0        0        0             0    0   0   0     0      0      
+V1              drawing         16      0         0        14       0        0        0             0    0   0   0     0      0      
+M3              label           19      20        0        0        0        18       0             0    0   0   0     0      0      
+BP              drawing         10      0         102      18       0        0        0             0    0   0   0     0      0      
+M2              drawing         17      0         0        1326     2265     0        0             0    0   0   0     0      0      
+M1              drawing         15      0         373      287      0        0        0             0    0   0   0     0      0      
+GRLOGIC         drawing         6       34        0        1        0        0        0             0    0   0   0     0      0      
+V3              drawing         20      0         0        25       0        0        0             0    0   0   0     0      0      
+PC              drawing         7       0         338      21       0        0        0             0    0   0   0     0      0      
+RX              drawing         2       0         237      31       0        0        0             0    0   0   0     0      0      
+M4              drawing         21      0         0        345      230      0        0             0    0   0   0     0      0      
+M2              label           17      20        0        0        0        2        0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		1332
+	Array Instances:		0
+	Polygons:			1059
+	Paths:				3338
+	Rectangles:			5301
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			3665
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				313
+	TextDisplay:		0
+	Cells:				141
+Design Libraries: 
+
+DEFINE mult_block	/afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/mult_block
+DEFINE artisan_cells	/afs/umich.edu/class/eecs627/ibm13/common/ic6/artisan_cells
+DEFINE cmrf8sf	/afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/cdslib/cmrf8sf

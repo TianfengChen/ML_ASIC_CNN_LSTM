@@ -1,0 +1,26 @@
+*pexRulesFile: /afs/umich.edu/class/eecs627/ibm13/cmrf8sf/V1.8.0.6LM/Calibre/xRC/cmrf8sf_8LM_620_detailed.xrc.cal
+*pexRunDir: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC
+*pexLayoutPaths: inverter.calibre.db
+*pexLayoutPrimary: inverter
+*pexLayoutLibrary: stdcell_PEX
+*pexLayoutView: layout
+*pexLayoutGetFromViewer: 1
+*pexSourcePath: inverter.src.net
+*pexSourcePrimary: inverter
+*pexSourceLibrary: stdcell_PEX
+*pexSourceView: schematic
+*pexSourceGetFromViewer: 1
+*pexReportFile: inverter.lvs.report
+*pexPexNetlistFile: inverter.pex.netlist
+*pexPexNetlistFormat: CALIBREVIEW
+*pexPexReportFile: inverter.pex.report
+*cmnWarnLayoutOverwrite: 0
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnRunMT: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: stdcell_PEX
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: inverter.def

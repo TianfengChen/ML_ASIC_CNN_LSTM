@@ -1,0 +1,37 @@
+inverter 1000
+nfet33_err001
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+nfet33 in PI is currently not supported 
+lvtnfet_err001
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+lvtnfet in PI is currently not supported 
+lpnfet_err001
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+lpnfet in PI is currently not supported 
+nfet33_err002
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+nfet33tw and nfet33tw_rf in PI is currently not supported 
+lvtnfet_err002
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+lvtnfettw and lvtnfettw_rf in PI is currently not supported 
+lpnfet_err002
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+lpnfettw and lpnfettw_rf in PI is currently not supported 
+silres_err001
+0 0 3 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+silres in BFMOAT is not allowed with the current ground rules
+There may be some changes to this device in the future 
+sbd_err001
+0 0 2 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_
+SBD device not touching BB 
+FLOATING_NW
+0 0 1 Mar 19 02:52:14 2022                                                      
+Rule File Pathname: /afs/umich.edu/class/eecs627/w23/template_prj/mult_block/virtuoso/Calibre/xRC/_cmrf8sf_8LM_620_detailed.xrc.cal_

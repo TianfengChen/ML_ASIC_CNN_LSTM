@@ -1,0 +1,5 @@
+ECO REQUIRED:
+1. Copy *.syn.v and *.sdc from ../syn/data/ into ./synth_res
+2. Check/Modify *.sdc:
+	- Make sure special constraints like set_dont_touch, set_false_path and set_disable_timing are inherited properly. Fix them if not.
+	- Remove any set_ideal_network constraints on the clocks, or CTS will not take effect.

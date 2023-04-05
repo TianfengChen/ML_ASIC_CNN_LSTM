@@ -1,0 +1,7 @@
+#@ # 
+#@ # Running lc_shell Version S-2021.06-SP1 for linux64 -- Jul 13, 2021
+#@ # Date:   Sat Mar 19 02:56:18 2022
+#@ # Run by: qiruizh@caen-vnc-mi07.engin.umich.edu
+#@ 
+
+source -echo -verbose LIBtoDB.tcl

@@ -1,0 +1,745 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.14-s109_1, built Wed Jun 29 09:53:08 PDT 2022
+Options:	
+Date:		Thu Mar 23 23:19:18 2023
+Host:		eecs2420p06.engin.umich.edu (x86_64 w/Linux 4.18.0-425.13.1.el8_7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) E-2136 CPU @ 3.30GHz 12288KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[23:19:18.185283] Configured Lic search path (21.01-s002): /usr/caen/FLEXlm/data/license.dat.cadence:license.dat:/usr/caen/FLEXlm/data/license.dat.synopsys
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setMultiCpuUsage -acquireLicense 6 -localCpu 6
+<CMD> set defHierChar /
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set locv_inter_clock_use_worst_derate false
+<CMD> set init_oa_search_lib {}
+<CMD> set init_verilog /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.v
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_pwr_net VDD
+<CMD> set init_top_cell PE_top
+<CMD> set init_gnd_net VSS
+<CMD> set init_mmmc_file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/apr_view.tcl
+<CMD> set init_lef_file {/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13_8lm_2thick_tech.lef  /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x//lef/ibm13rvt_macros.lef  }
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set timing_case_analysis_for_icg_propagation false
+<CMD> init_design
+#% Begin Load MMMC data ... (date=03/23 23:20:25, mem=961.7M)
+#% End Load MMMC data ... (date=03/23 23:20:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=962.9M, current mem=962.9M)
+rc-worst rc-best rc-typ
+
+Loading LEF file /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lef/ibm13_8lm_2thick_tech.lef ...
+
+Loading LEF file /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lef/ibm13rvt_macros.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 400.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/lef/ibm13rvt_macros.lef at line 68086.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'HOLDX1TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'R2B' in macro 'RF2R1WX1TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'R1B' in macro 'RF2R1WX1TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'RB' in macro 'RF1R1WX1TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX12TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX16TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX1TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX20TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX2TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX3TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX4TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX6TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFX8TR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'TBUFXLTR' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Thu Mar 23 23:20:25 2023
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM4 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM5 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM6 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM7 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM8 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Thu Mar 23 23:20:25 2023
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/apr_view.tcl
+Starting library reading in 'Multi-threaded flow' (with '6' threads)
+Reading worstLibs timing library /afs/umich.edu/class/eecs627/ibm13/artisan/2005q3v1/aci/sc-x/synopsys/typical.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1TR'. The cell will only be used for analysis. (File /afs/umich.edu/class/eecs627/ibm13/artisan/2005q3v1/aci/sc-x/synopsys/typical.lib)
+Read 527 cells in library typical.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.02min, real=0.00min, mem=158.0M, fe_cpu=0.31min, fe_real=1.12min, fe_mem=1063.9M) ***
+#% Begin Load netlist data ... (date=03/23 23:20:25, mem=988.2M)
+*** Begin netlist parsing (mem=1063.9M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X2TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X2TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XLTR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X4TR' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 527 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.v'
+
+*** Memory Usage v#1 (Current mem = 1063.867M, initial mem = 397.922M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1063.9M) ***
+#% End Load netlist data ... (date=03/23 23:20:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=1000.7M, current mem=1000.7M)
+Set top cell to PE_top.
+Hooked 527 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell PE_top ...
+*** Netlist is unique.
+** info: there are 551 modules.
+** info: there are 2647 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1085.281M, initial mem = 397.922M) ***
+Start create_tracks
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/afs/umich.edu/class/eecs627/w23/resources/cmos8rf_8LM_62_SigCmax.tch
+Generating auto layer map file.
+Completed (cpu: 0:00:02.0 real: 0:00:02.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: setupAnalysis
+    RC-Corner Name        : rc-typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/afs/umich.edu/class/eecs627/w23/resources/cmos8rf_8LM_62_SigCmax.tch'
+ 
+ Analysis View: holdAnalysis
+    RC-Corner Name        : rc-typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/afs/umich.edu/class/eecs627/w23/resources/cmos8rf_8LM_62_SigCmax.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.sdc' ...
+Current (total cpu=0:00:21.5, real=0:01:10, peak res=1332.0M, current mem=1332.0M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.sdc, Line 8).
+
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.sdc, Line 9).
+
+INFO (CTE): Reading of timing constraints file /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/synth_res/PE_top.syn.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1350.4M, current mem=1350.4M)
+Current (total cpu=0:00:21.6, real=0:01:10, peak res=1350.4M, current mem=1350.4M)
+Total number of combinational cells: 363
+Total number of sequential cells: 154
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX12TR BUFX16TR BUFX20TR BUFX3TR BUFX2TR BUFX4TR BUFX6TR BUFX8TR CLKBUFX12TR CLKBUFX16TR CLKBUFX20TR CLKBUFX2TR CLKBUFX3TR CLKBUFX4TR CLKBUFX6TR CLKBUFX8TR
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1TR CLKINVX12TR CLKINVX16TR CLKINVX20TR CLKINVX2TR CLKINVX3TR INVX1TR CLKINVX4TR CLKINVX6TR CLKINVX8TR INVX12TR INVX16TR INVX20TR INVX2TR INVX3TR INVXLTR INVX4TR INVX6TR INVX8TR
+Total number of usable inverters: 19
+List of unusable inverters: RFRDX2TR RFRDX1TR RFRDX4TR
+Total number of unusable inverters: 3
+List of identified usable delay cells: DLY1X1TR DLY1X4TR DLY2X1TR DLY2X4TR DLY3X1TR DLY3X4TR DLY4X1TR DLY4X4TR
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% Begin Load MMMC data post ... (date=03/23 23:20:28, mem=1371.7M)
+#% End Load MMMC data post ... (date=03/23 23:20:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1371.7M, current mem=1371.7M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-201           14  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPVL-159         1054  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-557            8  A single-layer VIARULE GENERATE for turn...
+WARNING   TCLCMD-1014          1  The SDC set_operating_conditions asserti...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+*** Message Summary: 1080 warning(s), 0 error(s)
+
+<CMD> loadIoFile -noAdjustDieSize /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/PE_top.io
+Reading IO assignment file "/afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top/scripts/PE_top.io" ...
+<CMD> floorPlan -noSnapToGrid -s 336 336 7 7 7 7
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> saveDesign db/PE_top_floor_planned.enc
+#% Begin save design ... (date=03/23 23:20:28, mem=1378.6M)
+% Begin Save ccopt configuration ... (date=03/23 23:20:28, mem=1378.6M)
+% End Save ccopt configuration ... (date=03/23 23:20:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1379.0M, current mem=1379.0M)
+% Begin Save netlist data ... (date=03/23 23:20:28, mem=1380.3M)
+Writing Binary DB to db/PE_top_floor_planned.enc.dat.tmp/vbin/PE_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=03/23 23:20:28, total cpu=0:00:00.0, real=0:00:01.0, peak res=1396.2M, current mem=1381.7M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file db/PE_top_floor_planned.enc.dat.tmp/PE_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=03/23 23:20:29, mem=1382.2M)
+Saving AAE Data ...
+% End Save AAE data ... (date=03/23 23:20:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=1382.2M, current mem=1382.2M)
+Saving preference file db/PE_top_floor_planned.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save routing data ... (date=03/23 23:20:29, mem=1387.0M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1436.0M) ***
+% End Save routing data ... (date=03/23 23:20:30, total cpu=0:00:00.0, real=0:00:01.0, peak res=1387.3M, current mem=1387.3M)
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file db/PE_top_floor_planned.enc.dat.tmp/PE_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1452.1M) ***
+Saving preRoute extracted patterns in file 'db/PE_top_floor_planned.enc.dat.tmp/PE_top.techData.gz' ...
+Saving preRoute extraction data in directory 'db/PE_top_floor_planned.enc.dat.tmp/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=03/23 23:20:30, mem=1389.5M)
+% End Save power constraints data ... (date=03/23 23:20:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=1389.5M, current mem=1389.5M)
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+Generated self-contained design PE_top_floor_planned.enc.dat.tmp
+#% End save design ... (date=03/23 23:20:31, total cpu=0:00:00.5, real=0:00:03.0, peak res=1417.6M, current mem=1392.2M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign db/PE_top_insts_placed.enc
+#% Begin save design ... (date=03/23 23:20:31, mem=1392.2M)
+% Begin Save ccopt configuration ... (date=03/23 23:20:31, mem=1392.2M)
+% End Save ccopt configuration ... (date=03/23 23:20:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=1392.2M, current mem=1392.2M)
+% Begin Save netlist data ... (date=03/23 23:20:31, mem=1392.2M)
+Writing Binary DB to db/PE_top_insts_placed.enc.dat.tmp/vbin/PE_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=03/23 23:20:31, total cpu=0:00:00.1, real=0:00:00.0, peak res=1392.5M, current mem=1392.5M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file db/PE_top_insts_placed.enc.dat.tmp/PE_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=03/23 23:20:31, mem=1392.5M)
+Saving AAE Data ...
+% End Save AAE data ... (date=03/23 23:20:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=1392.5M, current mem=1392.5M)
+Saving preference file db/PE_top_insts_placed.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save routing data ... (date=03/23 23:20:31, mem=1392.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1475.0M) ***
+% End Save routing data ... (date=03/23 23:20:32, total cpu=0:00:00.0, real=0:00:01.0, peak res=1392.7M, current mem=1392.7M)
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file db/PE_top_insts_placed.enc.dat.tmp/PE_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1489.0M) ***
+Saving preRoute extracted patterns in file 'db/PE_top_insts_placed.enc.dat.tmp/PE_top.techData.gz' ...
+Saving preRoute extraction data in directory 'db/PE_top_insts_placed.enc.dat.tmp/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=03/23 23:20:32, mem=1392.9M)
+% End Save power constraints data ... (date=03/23 23:20:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1392.9M, current mem=1392.9M)
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+Generated self-contained design PE_top_insts_placed.enc.dat.tmp
+#% End save design ... (date=03/23 23:20:33, total cpu=0:00:00.5, real=0:00:02.0, peak res=1423.4M, current mem=1393.2M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> zoomBox -55.14700 -85.39000 405.84500 327.29600
+<CMD> zoomBox -131.05500 -260.68400 752.06300 529.89500
+<CMD> zoomBox -1346.95000 -815.43000 3693.36600 1817.44000
+<CMD> zoomBox -718.22500 -377.10100 1912.85200 997.27400
+<CMD> zoomBox -399.64900 -105.55500 767.77700 504.26400
+<CMD> loadIoFile scripts/PE_top.io
+Reading IO assignment file "scripts/PE_top.io" ...
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.16 -pinDepth 0.76 -fixOverlap 1 -layer 3 -pin clk
+**WARN: (IMPPTN-3303):	Pin clk has width 0.16000 which is less than the minimum width 0.20000 required on layer 3. Change pin width to meet minimum width rule.
+**WARN: (IMPPTN-3303):	Pin clk has width 0.16000 which is less than the minimum width 0.20000 required on layer 3. Change pin width to meet minimum width rule.
+Updated attributes of 1 pin(s) of partition PE_top
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1857.9M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 3 -pin {pe_in_pk_A__0__0_ pe_in_pk_A__0__1_ pe_in_pk_A__0__2_ pe_in_pk_A__0__3_ pe_in_pk_A__0__4_ pe_in_pk_A__0__5_ pe_in_pk_A__0__6_ pe_in_pk_A__0__7_ pe_in_pk_A__1__0_ pe_in_pk_A__1__1_ pe_in_pk_A__1__2_ pe_in_pk_A__1__3_ pe_in_pk_A__1__4_ pe_in_pk_A__1__5_ pe_in_pk_A__1__6_ pe_in_pk_A__1__7_ pe_in_pk_A__2__0_ pe_in_pk_A__2__1_ pe_in_pk_A__2__2_ pe_in_pk_A__2__3_ pe_in_pk_A__2__4_ pe_in_pk_A__2__5_ pe_in_pk_A__2__6_ pe_in_pk_A__2__7_ pe_in_pk_A__3__0_ pe_in_pk_A__3__1_ pe_in_pk_A__3__2_ pe_in_pk_A__3__3_ pe_in_pk_A__3__4_ pe_in_pk_A__3__5_ pe_in_pk_A__3__6_ pe_in_pk_A__3__7_}
+Updated attributes of 32 pin(s) of partition PE_top
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1857.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -215.98500 -51.52200 393.42000 266.80800
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 3 -pin reset
+Updated attributes of 1 pin(s) of partition PE_top
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1858.8M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -layer 2 -pin {pe_out_pk_PE_state__2_ pe_in_pk_PE_state__0_ pe_in_pk_PE_state__1_ pe_in_pk_PE_state__2_ pe_in_pk_rdb_addr__0_ pe_in_pk_rdb_addr__1_ pe_in_pk_rdb_addr__2_ pe_in_pk_rdb_addr__3_ pe_in_pk_wrb__0_ pe_in_pk_wrb__1_ pe_in_pk_wrb__2_ pe_in_pk_wrb__3_ pe_in_pk_wrb_addr__0_ pe_in_pk_wrb_addr__1_ pe_in_pk_wrb_addr__2_ pe_in_pk_wrb_addr__3_ pe_in_pk_wrb_data__0_ pe_in_pk_wrb_data__1_ pe_in_pk_wrb_data__2_ pe_in_pk_wrb_data__3_ pe_in_pk_wrb_data__4_ pe_in_pk_wrb_data__5_ pe_in_pk_wrb_data__6_ pe_in_pk_wrb_data__7_ pe_out_pk_data__0_ pe_out_pk_data__1_ pe_out_pk_data__2_ pe_out_pk_data__3_ pe_out_pk_data__4_ pe_out_pk_data__5_ pe_out_pk_data__6_ pe_out_pk_data__7_ pe_out_pk_PE_state__0_ pe_out_pk_PE_state__1_}
+Updated attributes of 34 pin(s) of partition PE_top
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1858.9M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.6 -fixOverlap 1 -layer 2 -pin {pe_out_pk_PE_state__2_ pe_in_pk_PE_state__0_ pe_in_pk_PE_state__1_ pe_in_pk_PE_state__2_ pe_in_pk_rdb_addr__0_ pe_in_pk_rdb_addr__1_ pe_in_pk_rdb_addr__2_ pe_in_pk_rdb_addr__3_ pe_in_pk_wrb__0_ pe_in_pk_wrb__1_ pe_in_pk_wrb__2_ pe_in_pk_wrb__3_ pe_in_pk_wrb_addr__0_ pe_in_pk_wrb_addr__1_ pe_in_pk_wrb_addr__2_ pe_in_pk_wrb_addr__3_ pe_in_pk_wrb_data__0_ pe_in_pk_wrb_data__1_ pe_in_pk_wrb_data__2_ pe_in_pk_wrb_data__3_ pe_in_pk_wrb_data__4_ pe_in_pk_wrb_data__5_ pe_in_pk_wrb_data__6_ pe_in_pk_wrb_data__7_ pe_out_pk_data__0_ pe_out_pk_data__1_ pe_out_pk_data__2_ pe_out_pk_data__3_ pe_out_pk_data__4_ pe_out_pk_data__5_ pe_out_pk_data__6_ pe_out_pk_data__7_ pe_out_pk_PE_state__0_ pe_out_pk_PE_state__1_}
+Updated attributes of 34 pin(s) of partition PE_top
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1860.1M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -397.59500 -86.48500 594.72200 431.86400
+<CMD> zoomBox -578.14900 -119.25300 795.30100 598.18500
+<CMD> zoomBox -263.72500 106.51600 453.22600 481.02400
+<CMD> zoomBox -131.22700 201.65600 309.07300 431.65200
+<CMD> zoomBox -40.48400 268.82400 189.35700 388.88400
+<CMD> zoomBox -0.24000 299.05400 140.91100 372.78600
+<CMD> zoomBox 30.75500 322.49100 104.43700 360.98000
+<CMD> zoomBox 46.93200 334.72400 85.39700 354.81700
+<CMD> zoomBox 16.51100 311.38000 118.50500 364.65800
+<CMD> zoomBox -27.28800 277.88200 168.10100 379.94600
+<CMD> zoomBox -142.59500 191.18900 297.76800 421.21800
+<CMD> zoomBox -414.93500 1.31800 577.53700 519.74800
+<CMD> zoomBox -721.26200 -207.02000 894.81400 637.15700
+<CMD> zoomBox -503.75100 -104.98300 663.86600 504.93600
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose -override
+2647 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose -override
+2647 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type tielo -inst * -verbose
+<CMD> globalNetConnect VDD -type tiehi -inst * -verbose
+<CMD> addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M3 bottom M3 left M2 right M2} -rectangle 1
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1881.2M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M2   |        4       |       NA       |
+|   V2   |        8       |        0       |
+|   M3   |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> addRing -type core_rings -around default_power_domain -nets {VDD VSS} -center 1 -width 2 -spacing 1 -layer {top M3 bottom M3 left M4 right M4} -rectangle 1
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1881.2M)
+Ring generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer M4 & M2 at (4.00, 4.00) (6.00, 345.40).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer M4 & M2 at (344.00, 4.00) (346.00, 345.40).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer M4 & M2 at (1.00, 1.00) (3.00, 348.40).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer M4 & M2 at (347.00, 1.00) (349.00, 348.40).
+addRing created 4 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   V3   |        8       |        0       |
+|   M4   |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> saveDesign db/PE_top_pad_power_defined.enc
+#% Begin save design ... (date=03/23 23:21:49, mem=1703.2M)
+% Begin Save ccopt configuration ... (date=03/23 23:21:49, mem=1703.2M)
+% End Save ccopt configuration ... (date=03/23 23:21:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1703.2M, current mem=1703.2M)
+% Begin Save netlist data ... (date=03/23 23:21:49, mem=1703.2M)
+Writing Binary DB to db/PE_top_pad_power_defined.enc.dat.tmp/vbin/PE_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=03/23 23:21:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1706.3M, current mem=1706.3M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+% Begin Save AAE data ... (date=03/23 23:21:49, mem=1706.5M)
+Saving AAE Data ...
+% End Save AAE data ... (date=03/23 23:21:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1706.5M, current mem=1706.5M)
+Saving congestion map file db/PE_top_pad_power_defined.enc.dat.tmp/PE_top.route.congmap.gz ...
+Saving preference file db/PE_top_pad_power_defined.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save routing data ... (date=03/23 23:21:50, mem=1707.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1894.8M) ***
+% End Save routing data ... (date=03/23 23:21:51, total cpu=0:00:00.0, real=0:00:01.0, peak res=1707.2M, current mem=1707.2M)
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+Saving PG file db/PE_top_pad_power_defined.enc.dat.tmp/PE_top.pg.gz, version#2, (Created by Innovus v21.14-s109_1 on Thu Mar 23 23:21:51 2023)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1908.8M) ***
+TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file db/PE_top_pad_power_defined.enc.dat.tmp/PE_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1908.8M) ***
+Saving preRoute extracted patterns in file 'db/PE_top_pad_power_defined.enc.dat.tmp/PE_top.techData.gz' ...
+Saving preRoute extraction data in directory 'db/PE_top_pad_power_defined.enc.dat.tmp/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=03/23 23:21:51, mem=1707.9M)
+% End Save power constraints data ... (date=03/23 23:21:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1707.9M, current mem=1707.9M)
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+Generated self-contained design PE_top_pad_power_defined.enc.dat.tmp
+#% End save design ... (date=03/23 23:21:52, total cpu=0:00:00.5, real=0:00:03.0, peak res=1737.0M, current mem=1707.7M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> sroute -allowJogging 0 -connect corePin -nets {VSS VDD} -layerChangeRange {M1 M1} -crossoverViaTopLayer M1
+#% Begin sroute (date=03/23 23:21:52, mem=1707.7M)
+**WARN: (IMPSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+*** Begin SPECIAL ROUTE on Thu Mar 23 23:21:52 2023 ***
+SPECIAL ROUTE ran on directory: /afs/umich.edu/class/eecs627/w23/groups/group4/CNN_LSTM/CNN/apr/PE_top
+SPECIAL ROUTE ran on machine: eecs2420p06.engin.umich.edu (Linux 4.18.0-425.13.1.el8_7.x86_64 Xeon 4.00Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VSS VDD"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaTopLayer set to 1
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStraightConnections set to "straightWithChanges"
+srouteTopLayerLimit set to 1
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3291.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 16 layers, 8 routing layers, 0 overlap layer
+Read in 535 macros, 125 used
+Read in 124 components
+  124 core components: 124 unplaced, 0 placed, 0 fixed
+Read in 68 physical pins
+  68 physical pins: 0 unplaced, 68 placed, 0 fixed
+Read in 68 nets
+Read in 2 special nets, 2 routed
+Read in 316 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-554):	The specified top target layer is beyond top routing layer. Set top target layer to 1.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+**WARN: (IMPSR-486):	Ring/Stripe at (4.000, 4.000) (6.000, 345.400) on layer M2 is out of layer range and is ignored. The ports will route to other nearby rings/stripes. (Same type of warning will be suppressed)
+  Number of Core ports routed: 0  open: 188
+  Number of Followpin connections: 94
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3296.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 68 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 94 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |       94       |       NA       |
++--------+----------------+----------------+
+#% End sroute (date=03/23 23:21:52, total cpu=0:00:00.2, real=0:00:00.0, peak res=1714.3M, current mem=1714.3M)
+<CMD> setAddStripeMode -stacked_via_bottom_layer M1 -max_via_size {blockPin 100% 100% 100%}
+<CMD> setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+<CMD> addStripe -nets {VDD VSS} -direction vertical -layer M4 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 278
+#% Begin addStripe (date=03/23 23:21:52, mem=1714.3M)
+
+Initialize fgc environment(mem: 1902.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-4055):	The run time of addStripe will degrade with multiple cpu setting according to the number of stripe sets, ignore the setting of setMultiCpuUsage in addStripe.
+Type 'man IMPPP-4055' for more detail.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 26 wires.
+ViaGen created 3718 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   V1   |      1222      |        0       |
+|   V2   |      1222      |        0       |
+|   V3   |      1274      |        0       |
+|   M4   |       26       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=03/23 23:21:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=1715.8M, current mem=1715.8M)
+<CMD> setAddStripeMode -stacked_via_bottom_layer M3 -max_via_size {blockPin 100% 100% 100%}
+<CMD> setAddStripeMode -stacked_via_top_layer M4 -max_via_size {blockPin 100% 100% 100%}
+<CMD> addStripe -nets {VDD VSS} -direction horizontal -layer M3 -width 2 -spacing 2 -set_to_set_distance 20 -start 22 -stop 378
+#% Begin addStripe (date=03/23 23:21:52, mem=1715.8M)
+
+Initialize fgc environment(mem: 1902.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-4055):	The run time of addStripe will degrade with multiple cpu setting according to the number of stripe sets, ignore the setting of setMultiCpuUsage in addStripe.
+Type 'man IMPPP-4055' for more detail.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1902.1M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 198 wires.
+ViaGen created 508 vias, deleted 197 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M3   |       198      |       NA       |
+|   V3   |       508      |       197      |
++--------+----------------+----------------+
+#% End addStripe (date=03/23 23:21:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=1716.1M, current mem=1716.1M)
+<CMD> saveDesign db/PE_top_power_grid.enc
+#% Begin save design ... (date=03/23 23:21:52, mem=1716.1M)
+% Begin Save ccopt configuration ... (date=03/23 23:21:52, mem=1716.1M)
+% End Save ccopt configuration ... (date=03/23 23:21:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1716.1M, current mem=1716.1M)
+% Begin Save netlist data ... (date=03/23 23:21:52, mem=1716.1M)
+Writing Binary DB to db/PE_top_power_grid.enc.dat.tmp/vbin/PE_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=03/23 23:21:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1716.3M, current mem=1716.3M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+% Begin Save AAE data ... (date=03/23 23:21:52, mem=1716.3M)
+Saving AAE Data ...
+Saving congestion map file db/PE_top_power_grid.enc.dat.tmp/PE_top.route.congmap.gz ...
+% End Save AAE data ... (date=03/23 23:21:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1716.3M, current mem=1716.3M)
+Saving preference file db/PE_top_power_grid.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving Drc markers ...
+... 188 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save routing data ... (date=03/23 23:21:53, mem=1716.6M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1905.7M) ***
+% End Save routing data ... (date=03/23 23:21:54, total cpu=0:00:00.0, real=0:00:01.0, peak res=1716.6M, current mem=1716.6M)
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+Saving PG file db/PE_top_power_grid.enc.dat.tmp/PE_top.pg.gz, version#2, (Created by Innovus v21.14-s109_1 on Thu Mar 23 23:21:54 2023)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1943.7M) ***
+TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file db/PE_top_power_grid.enc.dat.tmp/PE_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1927.7M) ***
+Saving preRoute extracted patterns in file 'db/PE_top_power_grid.enc.dat.tmp/PE_top.techData.gz' ...
+Saving preRoute extraction data in directory 'db/PE_top_power_grid.enc.dat.tmp/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=03/23 23:21:54, mem=1717.3M)
+% End Save power constraints data ... (date=03/23 23:21:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1717.3M, current mem=1717.3M)
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+rc-worst rc-best rc-typ
+Generated self-contained design PE_top_power_grid.enc.dat.tmp
+#% End save design ... (date=03/23 23:21:55, total cpu=0:00:00.5, real=0:00:03.0, peak res=1747.4M, current mem=1717.4M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> zoomBox -259.47100 99.79500 350.03300 418.17700
+<CMD> zoomBox -155.40700 191.80900 218.90500 387.33500
+<CMD> zoomBox -88.55700 249.41300 141.31800 369.49100
+<CMD> zoomBox -45.34300 286.88800 95.83100 360.63200
+<CMD> zoomBox -17.09900 314.40100 56.59700 352.89700
+<CMD> zoomBox -38.37700 284.80000 102.80100 358.54600
+<CMD> zoomBox 0.22500 312.37300 73.92100 350.86900
+<CMD> zoomBox 15.65900 324.93000 60.91900 348.57200
+<CMD> zoomBox 28.31800 336.64900 48.40100 347.14000
+<CMD> zoomBox 32.21300 340.25600 44.54800 346.69900
+<CMD> zoomBox 24.42200 334.04300 52.22400 348.56600
+<CMD> zoomBox 0.89300 315.87900 74.61400 354.38800
+<CMD> zoomBox -52.52600 276.86800 113.62500 363.65900
+<CMD> zoomBox -211.11200 161.05700 229.43500 391.18200
+<CMD> zoomBox -530.32900 -72.06000 462.55200 446.58300
+<CMD> zoomBox -750.56200 -231.59800 623.66900 486.24800
+<CMD> zoomBox -467.24100 -107.24200 525.64100 411.40200
+<CMD> zoomBox -217.44200 66.71500 392.31300 385.22800
+<CMD> zoomBox 3.48900 224.75300 274.04200 366.08000
+<CMD> zoomBox 87.54900 284.57500 228.78100 358.34900
+<CMD> zoomBox 130.90200 314.29800 204.62700 352.80900
+<CMD> zoomBox 156.65200 331.12500 189.36600 348.21400
+<CMD> zoomBox 129.43500 315.34400 203.17000 353.86000
+<CMD> zoomBox 84.80100 289.62300 226.05500 363.40900
+<CMD> zoomBox 49.13400 269.31600 244.64200 371.44200
+<CMD> zoomBox 28.91000 256.58200 258.91900 376.73000
+<CMD> zoomBox 4.02300 241.77700 274.62300 383.12800
+<CMD> zoomBox -25.25500 224.35900 293.09800 390.65500
+<CMD> zoomBox -59.70100 203.86800 314.83300 399.51000
+<CMD> zoomBox -100.22400 179.76100 340.40400 409.92800
+<CMD> zoomBox -59.32500 242.66300 211.27700 384.01500
+<CMD> zoomBox -28.21200 290.51400 113.04600 364.30200
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Mar 23 23:22:44 2023
+  Total CPU time:     0:00:47
+  Total real time:    0:03:28
+  Peak memory (main): 1739.07MB
+
+
+*** Memory Usage v#1 (Current mem = 1928.820M, initial mem = 397.922M) ***
+*** Message Summary: 1094 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:42.3, real=0:03:26, mem=1928.8M) ---

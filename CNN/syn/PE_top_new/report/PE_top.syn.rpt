@@ -1,0 +1,2213 @@
+1
+ 
+****************************************
+Report : area
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                          584
+Number of nets:                          3230
+Number of cells:                         2662
+Number of combinational cells:           1931
+Number of sequential cells:               716
+Number of macros/black boxes:               0
+Number of buf/inv:                        301
+Number of references:                       7
+
+Combinational area:              19486.080196
+Buf/Inv area:                     2076.480059
+Noncombinational area:           18702.719696
+Macro/Black Box area:                0.000000
+Net Interconnect area:          343935.078979
+
+Total cell area:                 38188.799892
+Total area:                     382123.878871
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+PE_top                 ibm13_wl10        typical
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+PE_top                                    3.414   10.325 1.25e+06   13.740 100.0
+  accumulation0 (accumulation)         5.42e-02    0.254 4.37e+04    0.308   2.2
+  adder0 (adder)                          0.160    0.634 1.16e+05    0.794   5.8
+  buff_mult_arr0 (buff_mult_arr)          3.114    9.421 1.08e+06   12.537  91.2
+    genblk1_3__buffer_mult0 (buffer_mult_0)
+                                          0.767    2.406 2.68e+05    3.173  23.1
+      MULT_single0 (MULT_single_0)        0.362    1.049 1.18e+05    1.411  10.3
+      buffer0 (buffer_0)                  0.365    1.240 1.40e+05    1.605  11.7
+    genblk1_2__buffer_mult0 (buffer_mult_1)
+                                          0.759    2.244 2.60e+05    3.003  21.9
+      MULT_single0 (MULT_single_1)        0.358    0.926 1.13e+05    1.284   9.3
+      buffer0 (buffer_1)                  0.369    1.224 1.38e+05    1.593  11.6
+    genblk1_1__buffer_mult0 (buffer_mult_2)
+                                          0.783    2.320 2.74e+05    3.103  22.6
+      MULT_single0 (MULT_single_2)        0.383    0.991 1.24e+05    1.373  10.0
+      buffer0 (buffer_2)                  0.371    1.235 1.41e+05    1.607  11.7
+    genblk1_0__buffer_mult0 (buffer_mult_3)
+                                          0.770    2.342 2.66e+05    3.113  22.7
+      MULT_single0 (MULT_single_3)        0.359    0.992 1.15e+05    1.351   9.8
+      buffer0 (buffer_3)                  0.374    1.257 1.41e+05    1.630  11.9
+1
+ 
+****************************************
+Report : design
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db)
+
+Local Link Library:
+
+    {typical.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ibm13_wl10
+Location       :   typical
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   66.667
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    66.67
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        CLKBUFX4TR      typical         8.640000  
+U2                        BUFX12TR        typical         15.840000 
+U3                        BUFX12TR        typical         15.840000 
+U4                        BUFX8TR         typical         12.960000 
+U5                        BUFX20TR        typical         27.360001 
+U6                        BUFX20TR        typical         27.360001 
+U7                        BUFX20TR        typical         27.360001 
+accumulation0             accumulation                    1284.479997
+                                                                    h, n, p
+adder0                    adder                           2367.359958
+                                                                    h, n, p
+buff_mult_arr0            buff_mult_arr                   34401.599934
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 10 cells                                            38188.799892
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    1.02    0.17   --         d
+pe_in_pk_A__0__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__0__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__1__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__2__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_A__3__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_PE_state__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_PE_state__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_PE_state__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_rdb_addr__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_rdb_addr__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_rdb_addr__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_rdb_addr__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_addr__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_addr__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_addr__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_addr__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__0_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__1_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__2_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__3_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__4_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__5_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__6_
+               in      0.0000   0.0000    1.02    0.17   --         
+pe_in_pk_wrb_data__7_
+               in      0.0000   0.0000    1.02    0.17   --         
+reset          in      0.0000   0.0000    1.02    0.17   --         
+pe_out_pk_PE_state__0_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_PE_state__1_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_PE_state__2_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__0_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__1_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__2_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__3_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__4_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__5_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__6_
+               out     0.0100   0.0000   --      --      --         
+pe_out_pk_data__7_
+               out     0.0100   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+pe_in_pk_A__0__0_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__1_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__2_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__3_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__4_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__5_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__6_
+                   1      --              --              --        -- 
+pe_in_pk_A__0__7_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__0_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__1_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__2_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__3_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__4_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__5_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__6_
+                   1      --              --              --        -- 
+pe_in_pk_A__1__7_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__0_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__1_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__2_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__3_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__4_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__5_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__6_
+                   1      --              --              --        -- 
+pe_in_pk_A__2__7_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__0_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__1_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__2_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__3_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__4_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__5_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__6_
+                   1      --              --              --        -- 
+pe_in_pk_A__3__7_
+                   1      --              --              --        -- 
+pe_in_pk_PE_state__0_
+                   1      --              --              --        -- 
+pe_in_pk_PE_state__1_
+                   1      --              --              --        -- 
+pe_in_pk_PE_state__2_
+                   1      --              --              --        -- 
+pe_in_pk_rdb_addr__0_
+                   1      --              --              --        -- 
+pe_in_pk_rdb_addr__1_
+                   1      --              --              --        -- 
+pe_in_pk_rdb_addr__2_
+                   1      --              --              --        -- 
+pe_in_pk_rdb_addr__3_
+                   1      --              --              --        -- 
+pe_in_pk_wrb__0_
+                   1      --              --              --        -- 
+pe_in_pk_wrb__1_
+                   1      --              --              --        -- 
+pe_in_pk_wrb__2_
+                   1      --              --              --        -- 
+pe_in_pk_wrb__3_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_addr__0_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_addr__1_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_addr__2_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_addr__3_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__0_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__1_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__2_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__3_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__4_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__5_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__6_
+                   1      --              --              --        -- 
+pe_in_pk_wrb_data__7_
+                   1      --              --              --        -- 
+reset              1      --              --              --        -- 
+pe_out_pk_PE_state__0_
+                   1      --              --              --        -- 
+pe_out_pk_PE_state__1_
+                   1      --              --              --        -- 
+pe_out_pk_PE_state__2_
+                   1      --              --              --        -- 
+pe_out_pk_data__0_
+                   1      --              --              --        -- 
+pe_out_pk_data__1_
+                   1      --              --              --        -- 
+pe_out_pk_data__2_
+                   1      --              --              --        -- 
+pe_out_pk_data__3_
+                   1      --              --              --        -- 
+pe_out_pk_data__4_
+                   1      --              --              --        -- 
+pe_out_pk_data__5_
+                   1      --              --              --        -- 
+pe_out_pk_data__6_
+                   1      --              --              --        -- 
+pe_out_pk_data__7_
+                   1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+pe_in_pk_A__0__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__0__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__1__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__2__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_A__3__7_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_PE_state__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_PE_state__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_PE_state__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_rdb_addr__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_rdb_addr__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_rdb_addr__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_rdb_addr__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_addr__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_addr__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_addr__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_addr__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__0_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__1_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__2_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__3_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__4_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__5_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__6_
+              0.10    0.10    0.10    0.10  clk       --    
+pe_in_pk_wrb_data__7_
+              0.10    0.10    0.10    0.10  clk       --    
+reset         0.10    0.10    0.10    0.10  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__4_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__5_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__6_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__0__7_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__4_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__5_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__6_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__1__7_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__4_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__5_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__6_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__2__7_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__4_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__5_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__6_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_A__3__7_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_PE_state__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_PE_state__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_PE_state__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_rdb_addr__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_rdb_addr__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_rdb_addr__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_rdb_addr__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_addr__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_addr__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_addr__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_addr__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__0_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__1_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__2_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__3_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__4_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__5_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__6_
+             INVX2TR            INVX2TR              -- /  --     
+pe_in_pk_wrb_data__7_
+             INVX2TR            INVX2TR              -- /  --     
+reset        INVX2TR            INVX2TR              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__4_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__5_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__6_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__0__7_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__4_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__5_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__6_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__1__7_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__4_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__5_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__6_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__2__7_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__4_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__5_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__6_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_A__3__7_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_PE_state__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_PE_state__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_PE_state__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_rdb_addr__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_rdb_addr__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_rdb_addr__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_rdb_addr__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_addr__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_addr__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_addr__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_addr__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__0_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__1_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__2_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__3_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__4_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__5_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__6_
+              --      --     --      --     --      --     --     --        -- 
+pe_in_pk_wrb_data__7_
+              --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+pe_in_pk_A__0__0_
+              --      --      --      -- 
+pe_in_pk_A__0__1_
+              --      --      --      -- 
+pe_in_pk_A__0__2_
+              --      --      --      -- 
+pe_in_pk_A__0__3_
+              --      --      --      -- 
+pe_in_pk_A__0__4_
+              --      --      --      -- 
+pe_in_pk_A__0__5_
+              --      --      --      -- 
+pe_in_pk_A__0__6_
+              --      --      --      -- 
+pe_in_pk_A__0__7_
+              --      --      --      -- 
+pe_in_pk_A__1__0_
+              --      --      --      -- 
+pe_in_pk_A__1__1_
+              --      --      --      -- 
+pe_in_pk_A__1__2_
+              --      --      --      -- 
+pe_in_pk_A__1__3_
+              --      --      --      -- 
+pe_in_pk_A__1__4_
+              --      --      --      -- 
+pe_in_pk_A__1__5_
+              --      --      --      -- 
+pe_in_pk_A__1__6_
+              --      --      --      -- 
+pe_in_pk_A__1__7_
+              --      --      --      -- 
+pe_in_pk_A__2__0_
+              --      --      --      -- 
+pe_in_pk_A__2__1_
+              --      --      --      -- 
+pe_in_pk_A__2__2_
+              --      --      --      -- 
+pe_in_pk_A__2__3_
+              --      --      --      -- 
+pe_in_pk_A__2__4_
+              --      --      --      -- 
+pe_in_pk_A__2__5_
+              --      --      --      -- 
+pe_in_pk_A__2__6_
+              --      --      --      -- 
+pe_in_pk_A__2__7_
+              --      --      --      -- 
+pe_in_pk_A__3__0_
+              --      --      --      -- 
+pe_in_pk_A__3__1_
+              --      --      --      -- 
+pe_in_pk_A__3__2_
+              --      --      --      -- 
+pe_in_pk_A__3__3_
+              --      --      --      -- 
+pe_in_pk_A__3__4_
+              --      --      --      -- 
+pe_in_pk_A__3__5_
+              --      --      --      -- 
+pe_in_pk_A__3__6_
+              --      --      --      -- 
+pe_in_pk_A__3__7_
+              --      --      --      -- 
+pe_in_pk_PE_state__0_
+              --      --      --      -- 
+pe_in_pk_PE_state__1_
+              --      --      --      -- 
+pe_in_pk_PE_state__2_
+              --      --      --      -- 
+pe_in_pk_rdb_addr__0_
+              --      --      --      -- 
+pe_in_pk_rdb_addr__1_
+              --      --      --      -- 
+pe_in_pk_rdb_addr__2_
+              --      --      --      -- 
+pe_in_pk_rdb_addr__3_
+              --      --      --      -- 
+pe_in_pk_wrb__0_
+              --      --      --      -- 
+pe_in_pk_wrb__1_
+              --      --      --      -- 
+pe_in_pk_wrb__2_
+              --      --      --      -- 
+pe_in_pk_wrb__3_
+              --      --      --      -- 
+pe_in_pk_wrb_addr__0_
+              --      --      --      -- 
+pe_in_pk_wrb_addr__1_
+              --      --      --      -- 
+pe_in_pk_wrb_addr__2_
+              --      --      --      -- 
+pe_in_pk_wrb_addr__3_
+              --      --      --      -- 
+pe_in_pk_wrb_data__0_
+              --      --      --      -- 
+pe_in_pk_wrb_data__1_
+              --      --      --      -- 
+pe_in_pk_wrb_data__2_
+              --      --      --      -- 
+pe_in_pk_wrb_data__3_
+              --      --      --      -- 
+pe_in_pk_wrb_data__4_
+              --      --      --      -- 
+pe_in_pk_wrb_data__5_
+              --      --      --      -- 
+pe_in_pk_wrb_data__6_
+              --      --      --      -- 
+pe_in_pk_wrb_data__7_
+              --      --      --      -- 
+reset         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+pe_out_pk_PE_state__0_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_PE_state__1_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_PE_state__2_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__0_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__1_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__2_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__3_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__4_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__5_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__6_
+              0.10    0.10    0.10    0.10  clk       0.00  
+pe_out_pk_data__7_
+              0.10    0.10    0.10    0.10  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+PE_top                                   flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+
+buff_mult_arr                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_mult_3                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_3                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+MULT_single_3                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_mult_2                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_2                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+MULT_single_2                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_mult_1                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_1                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+MULT_single_1                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_mult_0                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+buffer_0                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+MULT_single_0                            flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+adder                                    flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+accumulation                             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:31 2023
+****************************************
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : PE_top
+Version: T-2022.03-SP3
+Date   : Thu Mar 23 15:44:32 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: segmented
+
+  Startpoint: pe_in_pk_rdb_addr__1_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG496_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  pe_in_pk_rdb_addr__1_ (in)                              0.03       0.13 f
+  U7/Y (BUFX20TR)                                         0.11       0.23 f
+  buff_mult_arr0/pe_in_pk_rdb_addr__1_ (buff_mult_arr)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/rdb_addr[1] (buffer_mult_2)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/rdb_addr[1] (buffer_2)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U22/Y (INVX4TR)
+                                                          0.07       0.31 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U65/Y (OR2X2TR)
+                                                          0.15       0.45 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U67/Y (CLKINVX3TR)
+                                                          0.27       0.73 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U201/Y (AOI22X1TR)
+                                                          0.26       0.98 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U202/Y (NAND2X1TR)
+                                                          0.09       1.08 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U203/Y (AOI22X1TR)
+                                                          0.20       1.28 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG496_S1/D (DFFQX1TR)
+                                                          0.00       1.28 r
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG496_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.12       1.28
+  data required time                                                 1.28
+  --------------------------------------------------------------------------
+  data required time                                                 1.28
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_rdb_addr__1_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG498_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  pe_in_pk_rdb_addr__1_ (in)                              0.03       0.13 f
+  U7/Y (BUFX20TR)                                         0.11       0.23 f
+  buff_mult_arr0/pe_in_pk_rdb_addr__1_ (buff_mult_arr)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/rdb_addr[1] (buffer_mult_2)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/rdb_addr[1] (buffer_2)
+                                                          0.00       0.23 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U22/Y (INVX4TR)
+                                                          0.07       0.31 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U65/Y (OR2X2TR)
+                                                          0.15       0.45 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U67/Y (CLKINVX3TR)
+                                                          0.27       0.73 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U197/Y (AOI22X1TR)
+                                                          0.26       0.98 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U198/Y (NAND2X1TR)
+                                                          0.09       1.08 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U199/Y (AOI22X1TR)
+                                                          0.20       1.28 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG498_S1/D (DFFQX1TR)
+                                                          0.00       1.28 r
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG498_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.12       1.28
+  data required time                                                 1.28
+  --------------------------------------------------------------------------
+  data required time                                                 1.28
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG480_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/CK (DFFQX1TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/Q (DFFQX1TR)
+                                                          0.37       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/A[3] (MULT_single_2)
+                                                          0.00       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U8/Y (BUFX6TR)
+                                                          0.23       0.60 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U6/Y (INVX3TR)
+                                                          0.21       0.82 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U178/Y (AOI22X1TR)
+                                                          0.35       1.16 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U179/Y (OAI22X1TR)
+                                                          0.13       1.29 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG480_S2/D (DFFQX1TR)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG480_S2/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG475_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/CK (DFFQX1TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/Q (DFFQX1TR)
+                                                          0.37       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/A[3] (MULT_single_2)
+                                                          0.00       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U8/Y (BUFX6TR)
+                                                          0.23       0.60 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U6/Y (INVX3TR)
+                                                          0.21       0.82 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U216/Y (AOI22X1TR)
+                                                          0.35       1.16 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U222/Y (OAI22X1TR)
+                                                          0.13       1.29 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG475_S2/D (DFFQX1TR)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG475_S2/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG482_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/CK (DFFQX1TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/Q (DFFQX1TR)
+                                                          0.37       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/A[3] (MULT_single_2)
+                                                          0.00       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U8/Y (BUFX6TR)
+                                                          0.23       0.60 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U6/Y (INVX3TR)
+                                                          0.21       0.82 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U175/Y (AOI22X1TR)
+                                                          0.35       1.16 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U177/Y (OAI22X1TR)
+                                                          0.13       1.29 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG482_S2/D (DFFQX1TR)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG482_S2/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG479_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/CK (DFFQX1TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/clk_r_REG474_S1/Q (DFFQX1TR)
+                                                          0.37       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/A[3] (MULT_single_2)
+                                                          0.00       0.37 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U8/Y (BUFX6TR)
+                                                          0.23       0.60 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U6/Y (INVX3TR)
+                                                          0.21       0.82 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U181/Y (AOI22X1TR)
+                                                          0.35       1.16 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/U183/Y (OAI22X1TR)
+                                                          0.13       1.29 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG479_S2/D (DFFQX1TR)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/MULT_single0/clk_r_REG479_S2/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG190_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U103/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG190_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG190_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG201_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U153/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG201_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG201_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG212_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U146/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG212_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG212_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG223_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U139/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG223_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG223_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG234_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U132/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG234_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG234_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG245_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U125/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG245_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG245_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG256_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U118/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG256_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG256_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG179_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U111/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG179_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG179_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_0__buffer_mult0/buffer0/clk_r_REG751_S2
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG628_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_0__buffer_mult0/buffer0/clk_r_REG751_S2/CK (DFFQX1TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/buffer0/clk_r_REG751_S2/Q (DFFQX1TR)
+                                                          0.31       0.31 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/buffer0/U50/Y (AOI32X4TR)
+                                                          0.32       0.63 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/buffer0/data_out[3] (buffer_3)
+                                                          0.00       0.63 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/B[3] (MULT_single_3)
+                                                          0.00       0.63 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U141/Y (CLKINVX2TR)
+                                                          0.20       0.82 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U188/Y (AOI22X1TR)
+                                                          0.32       1.15 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U190/Y (OAI22X1TR)
+                                                          0.13       1.28 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG628_S2/D (DFFQX1TR)
+                                                          0.00       1.28 f
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG628_S2/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.12       1.28
+  data required time                                                 1.28
+  --------------------------------------------------------------------------
+  data required time                                                 1.28
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG616_S3
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: adder0/DP_OP_12J1_122_5326_clk_r_REG92_S4
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG616_S3/CK (DFFHQX4TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG616_S3/Q (DFFHQX4TR)
+                                                          0.14       0.14 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U35/Y (NOR3X8TR)
+                                                          0.12       0.27 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U84/Y (OAI21X4TR)
+                                                          0.08       0.34 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U40/Y (AND2X8TR)
+                                                          0.11       0.45 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U124/Y (CLKINVX4TR)
+                                                          0.05       0.50 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U29/Y (NAND2X4TR)
+                                                          0.04       0.53 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U127/Y (AOI21X4TR)
+                                                          0.12       0.65 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U30/Y (XOR2X2TR)
+                                                          0.14       0.79 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U41/Y (NOR2X8TR)
+                                                          0.13       0.93 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/data_out[6] (MULT_single_3)
+                                                          0.00       0.93 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/data_out[6] (buffer_mult_3)
+                                                          0.00       0.93 r
+  buff_mult_arr0/data_out_0__6_ (buff_mult_arr)           0.00       0.93 r
+  adder0/data_in_0__6_ (adder)                            0.00       0.93 r
+  adder0/U21/Y (OAI2BB1X4TR)                              0.11       1.04 r
+  adder0/U11/Y (NAND2BX4TR)                               0.08       1.12 r
+  adder0/U27/Y (XOR2X4TR)                                 0.08       1.19 r
+  adder0/U24/Y (XOR2X4TR)                                 0.12       1.31 r
+  adder0/DP_OP_12J1_122_5326_clk_r_REG92_S4/D (DFFHQX1TR)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  adder0/DP_OP_12J1_122_5326_clk_r_REG92_S4/CK (DFFHQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.09       1.31
+  data required time                                                 1.31
+  --------------------------------------------------------------------------
+  data required time                                                 1.31
+  data arrival time                                                 -1.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG650_S2
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG603_S3
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG650_S2/CK (DFFQX2TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG650_S2/Q (DFFQX2TR)
+                                                          0.36       0.36 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U77/Y (OAI21X1TR)
+                                                          0.18       0.53 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U78/Y (OAI2BB1X1TR)
+                                                          0.15       0.68 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U79/Y (OAI21X2TR)
+                                                          0.11       0.79 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U80/Y (OAI21X2TR)
+                                                          0.07       0.86 f
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U50/Y (XNOR2X2TR)
+                                                          0.13       0.99 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U34/Y (XNOR2X2TR)
+                                                          0.17       1.15 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/U33/Y (XNOR2X2TR)
+                                                          0.13       1.28 r
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG603_S3/D (DFFQX4TR)
+                                                          0.00       1.28 r
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_0__buffer_mult0/MULT_single0/clk_r_REG603_S3/CK (DFFQX4TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.12       1.28
+  data required time                                                 1.28
+  --------------------------------------------------------------------------
+  data required time                                                 1.28
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/clk_r_REG113_S3
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: adder0/DP_OP_12J1_122_5326_clk_r_REG94_S4
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/clk_r_REG113_S3/CK (DFFHQX4TR)
+                                                          0.00       0.00 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/clk_r_REG113_S3/Q (DFFHQX4TR)
+                                                          0.14       0.14 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U127/Y (NOR2X2TR)
+                                                          0.16       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U128/Y (CLKINVX2TR)
+                                                          0.13       0.43 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U45/Y (AND2X2TR)
+                                                          0.14       0.57 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U35/Y (AOI21X4TR)
+                                                          0.12       0.69 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U34/Y (XOR2X2TR)
+                                                          0.13       0.82 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/U164/Y (NOR2X4TR)
+                                                          0.18       1.00 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/MULT_single0/data_out[6] (MULT_single_1)
+                                                          0.00       1.00 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/data_out[6] (buffer_mult_1)
+                                                          0.00       1.00 r
+  buff_mult_arr0/data_out_2__6_ (buff_mult_arr)           0.00       1.00 r
+  adder0/data_in_2__6_ (adder)                            0.00       1.00 r
+  adder0/U47/S (ADDFHX4TR)                                0.25       1.25 f
+  adder0/U15/Y (OR2X8TR)                                  0.09       1.33 f
+  adder0/DP_OP_12J1_122_5326_clk_r_REG94_S4/D (DFFHQX4TR)
+                                                          0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  adder0/DP_OP_12J1_122_5326_clk_r_REG94_S4/CK (DFFHQX4TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.07       1.33
+  data required time                                                 1.33
+  --------------------------------------------------------------------------
+  data required time                                                 1.33
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG506_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  pe_in_pk_wrb_addr__2_ (in)                              0.04       0.14 f
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.14 f
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.10       0.24 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/wrb_addr[2] (buffer_mult_2)
+                                                          0.00       0.24 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/wrb_addr[2] (buffer_2)
+                                                          0.00       0.24 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U75/Y (INVX8TR)
+                                                          0.06       0.29 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U20/Y (CLKINVX6TR)
+                                                          0.08       0.37 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U56/Y (NOR3X2TR)
+                                                          0.15       0.53 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U109/Y (OAI21X2TR)
+                                                          0.09       0.62 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U112/Y (OAI21X2TR)
+                                                          0.15       0.76 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U113/Y (BUFX6TR)
+                                                          0.16       0.92 r
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U114/Y (INVX4TR)
+                                                          0.13       1.05 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/U174/Y (AO22X1TR)
+                                                          0.25       1.30 f
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG506_S1/D (DFFQX1TR)
+                                                          0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_1__buffer_mult0/buffer0/clk_r_REG506_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.10       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: pe_in_pk_wrb_addr__2_
+              (input port clocked by clk)
+  Endpoint: buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG170_S1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE_top             ibm13_wl10            typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  pe_in_pk_wrb_addr__2_ (in)                              0.09       0.19 r
+  buff_mult_arr0/pe_in_pk_wrb_addr__2_ (buff_mult_arr)
+                                                          0.00       0.19 r
+  buff_mult_arr0/U5/Y (BUFX20TR)                          0.11       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/wrb_addr[2] (buffer_mult_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/wrb_addr[2] (buffer_1)
+                                                          0.00       0.30 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U64/Y (INVX8TR)
+                                                          0.04       0.35 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U78/Y (INVX8TR)
+                                                          0.07       0.42 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U96/Y (NOR3X4TR)
+                                                          0.04       0.46 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U97/Y (OAI21X1TR)
+                                                          0.27       0.72 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U100/Y (OAI21X1TR)
+                                                          0.14       0.86 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U101/Y (BUFX12TR)
+                                                          0.13       0.99 f
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U102/Y (CLKINVX6TR)
+                                                          0.12       1.11 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/U155/Y (AO22X1TR)
+                                                          0.18       1.29 r
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG170_S1/D (DFFQX1TR)
+                                                          0.00       1.29 r
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.10       1.40
+  buff_mult_arr0/genblk1_2__buffer_mult0/buffer0/clk_r_REG170_S1/CK (DFFQX1TR)
+                                                          0.00       1.40 r
+  library setup time                                     -0.11       1.29
+  data required time                                                 1.29
+  --------------------------------------------------------------------------
+  data required time                                                 1.29
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

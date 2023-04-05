@@ -1,0 +1,970 @@
+(bondpad
+	(cmrf8sf bondpad symbol)
+	(
+		(in in)
+		(gp gp)
+		(sub sub)
+	)
+	(
+		(l l) (w w) (tvw tvw) (tlev1 tlev1) (tlev2 tlev2) (wbc4 wbc4) (bp bp) (rect rect) (dtemp dtemp) 
+	)
+)
+(corrPoint
+	(cmrf8sf corrPoint symbol)
+	(
+		(cp cp)
+	)
+	(
+		
+	)
+)
+(coupledcpw
+	(cmrf8sf coupledcpw symbol)
+	(
+		(va1 va1)
+		(va2 va2)
+		(vb1 vb1)
+		(vb2 vb2)
+		(vshield vshield)
+	)
+	(
+		(l l) (w w) (d d) (s s) (layerads layerads) (tlev1 tlev1) (tlev2 tlev2) (patternfill patternfill) (dTemper dTemper) 
+	)
+)
+(coupledwires
+	(cmrf8sf coupledwires symbol)
+	(
+		(va1 va1)
+		(va2 va2)
+		(vb1 vb1)
+		(vb2 vb2)
+		(vshield vshield)
+	)
+	(
+		(l l) (w w) (s s) (d d) (tlev1 tlev1) (tlev2 tlev2) (shieldsads shieldsads) (layerads layerads) (overads overads) (patternfill patternfill) 
+	)
+)
+(devicepad
+	(cmrf8sf devicepad symbol)
+	(
+		(pad pad)
+	)
+)
+(dgncap
+	(cmrf8sf dgncap symbol)
+	(
+		(g G)
+		(s S)
+		(b B)
+		(d D)
+	)
+	(
+		(w w) (l l) (pcrep pcrep) (prxrep prxrep) (m m) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(dgnfet
+	(cmrf8sf dgnfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(dgnfet_rf
+	(cmrf8sf dgnfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(dgnfettw
+	(cmrf8sf dgnfettw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(dgnfettw_rf
+	(cmrf8sf dgnfettw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(dgpfet
+	(cmrf8sf dgpfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(dgpfet_rf
+	(cmrf8sf dgpfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(diffhavar
+	(cmrf8sf diffhavar symbol)
+	(
+		(anode1 ANODE1)
+		(anode2 ANODE2)
+		(cathode CATHODE)
+		(bulk BULK)
+	)
+	(
+		(w w) (l l) (c c) (nf nf) (m m) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(diffncap
+	(cmrf8sf diffncap symbol)
+	(
+		(ga GA)
+		(gb GB)
+		(nw NW)
+		(sx SX)
+	)
+	(
+		(w w) (l l) (nf nf) (m m) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(diodenwx
+	(cmrf8sf diodenwx symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (t3well t3well) (dtemp dtemp) 
+	)
+)
+(diodenx
+	(cmrf8sf diodenx symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (dtemp dtemp) 
+	)
+)
+(diodepisx
+	(cmrf8sf diodepisx symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (t3well t3well) (dtemp dtemp) 
+	)
+)
+(diodepnw
+	(cmrf8sf diodepnw symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (dtemp dtemp) 
+	)
+)
+(diodepwpi
+	(cmrf8sf diodepwpi symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (t3well t3well) (dtemp dtemp) 
+	)
+)
+(dipdnw
+	(cmrf8sf dipdnw symbol)
+	(
+		(pos PLUS)
+		(neg SUB)
+	)
+	(
+		(m m) (par par) (w w) (l l) (nf nf) (dtemp dtemp) 
+	)
+)
+(divpnp
+	(cmrf8sf divpnp symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+	(
+		(m m) (par par) (w w) (l l) (nf nf) (dtemp dtemp) 
+	)
+)
+(efuse
+	(cmrf8sf efuse symbol)
+	(
+		(in in)
+		(out out)
+	)
+	(
+		(blown blown) 
+	)
+)
+(esdndsx
+	(esd8rf esdndsx symbol)
+	(
+		(pos A)
+		(neg C)
+	)
+	(
+		(areac areac) (pjc pjc) (nf nf) (bp bp) (dtemp dtemp) (rwire rwire) 
+	)
+)
+(esdndsx_t3
+	(esd8rf esdndsx_t3 symbol)
+	(
+		(pos A)
+		(neg C)
+	)
+	(
+		(areac areac) (pjc pjc) (nf nf) (bp bp) (dtemp dtemp) (rwire rwire) 
+	)
+)
+(esdnsh_base
+	(esd8rf esdnsh_base symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(wesd wesd) (lesd lesd) (nf nf) (ldop ldop) (lsop lsop) (esdoxide esdoxide) (gns gns) 
+	)
+)
+(esdscr
+	(esd8rf esdscr symbol)
+	(
+		(a A)
+		(k K)
+		(pd PD)
+		(sx SX)
+	)
+	(
+		(nfscr nfscr) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(esdvpnp
+	(esd8rf esdvpnp symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+	(
+		(areae areae) (pjerx pjerx) (areab areab) (pjb pjb) (nf nf) (rsx rsx) (dtemp dtemp) (rwire rwire)
+	)
+)
+(esdvpnp_t3
+	(esd8rf esdvpnp_t3 symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+	(
+		(areae areae) (pjerx pjerx) (areab areab) (pjb pjb) (nf nf) (rsx rsx) (dtemp dtemp) (rwire rwire)
+	)
+)
+(havar
+	(cmrf8sf havar symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+		(bulk BULK)
+	)
+	(
+		(w w) (l l) (c c) (nf nf) (m m) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(hvtnfet33
+	(cmrf8sf hvtnfet33 symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(hvtnfet33_rf
+	(cmrf8sf hvtnfet33_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(hvtnfet33tw
+	(cmrf8sf hvtnfet33tw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(hvtnfet33tw_rf
+	(cmrf8sf hvtnfet33tw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(hvtpfet33
+	(cmrf8sf hvtpfet33 symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(hvtpfet33_rf
+	(cmrf8sf hvtpfet33_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(indp
+	(cmrf8sf indp symbol)
+	(
+		(out out)
+		(in in)
+		(bulk BULK)
+	)
+	(
+		(x x) (w w) (wu wu) (s s) (n n) (bp bp) (tlev1 tlev1) (tlev2 tlev2) (dtemp dtemp) 
+	)
+)
+(kxres
+	(cmrf8sf kxres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(r r) (w w) (l l) (m m) (par par) (sbar sbar) (dtemp dtemp) (rsx rsx) (sh sh) (tlev1 tlev1) 
+	)
+)
+(lpnfet
+	(cmrf8sf lpnfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lpnfet_rf
+	(cmrf8sf lpnfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lpnfettw
+	(cmrf8sf lpnfettw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(lpnfettw_rf
+	(cmrf8sf lpnfettw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(lppfet
+	(cmrf8sf lppfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lppfet_rf
+	(cmrf8sf lppfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lvsres
+	(cmrf8sf m1res symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(r r) (l l) (w w) (resform resform) (m m) (scale scale) (trise trise) (tc1 tc1) (tc2 tc2) (isnoisy isnoisy) 
+	)
+)
+(lvtnfet
+	(cmrf8sf lvtnfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lvtnfet_rf
+	(cmrf8sf lvtnfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lvtnfettw
+	(cmrf8sf lvtnfettw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(lvtnfettw_rf
+	(cmrf8sf lvtnfettw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(lvtpfet
+	(cmrf8sf lvtpfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(lvtpfet_rf
+	(cmrf8sf lvtpfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(ncap
+	(cmrf8sf ncap symbol)
+	(
+		(g G)
+		(s S)
+		(b B)
+		(d D)
+	)
+	(
+		(w w) (l l) (pcrep pcrep) (prxrep prxrep) (m m) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(nfet
+	(cmrf8sf nfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(nfet33
+	(cmrf8sf nfet33 symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(nfet33_rf
+	(cmrf8sf nfet33_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(nfet33tw
+	(cmrf8sf nfet33tw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(nfet33tw_rf
+	(cmrf8sf nfet33tw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(nfet_rf
+	(cmrf8sf nfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(nfettw
+	(cmrf8sf nfettw symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(nfettw_rf
+	(cmrf8sf nfettw_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+		(pi PI)
+		(sx sx)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) (t3well t3well) 
+	)
+)
+(nwres
+	(cmrf8sf nwres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(r r) (w w) (l l) (m m) (par par) (sbar sbar) (dtemp dtemp) (rsx rsx) (sh sh) 
+	)
+)
+(opndres
+	(cmrf8sf opndres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(w w) (l l) (r r) (sbar sbar) (m m) (par par) (dtemp dtemp) (rsx rsx) 
+	)
+)
+(opppcres
+	(cmrf8sf opppcres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(w w) (l l) (r r) (sbar sbar) (m m) (par par) (bp bp) (dtemp dtemp) (rsx rsx) 
+	)
+)
+(oprppres
+	(cmrf8sf oprppres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(r r) (w w) (l l) (m m) (par par) (sbar sbar) (dtemp dtemp) (rsx rsx) (bp bp) 
+	)
+)
+(oprrpres
+	(cmrf8sf oprrpres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(w w) (l l) (r r) (sbar sbar) (m m) (par par) (sh sh) (bp bp) (dtemp dtemp) (rsx rsx) 
+	)
+)
+(pcapc
+	(cmrf8sf pcapc symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+	(
+		(c c) 
+	)
+)
+(pfet
+	(cmrf8sf pfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(pfet33
+	(cmrf8sf pfet33 symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(pfet33_rf
+	(cmrf8sf pfet33_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(pfet_rf
+	(cmrf8sf pfet_rf symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (gtab gtab) (ring ring) (cwire cwire) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(rfline
+	(cmrf8sf rfline symbol)
+	(
+		(in in)
+		(out out)
+		(bulk BULK)
+	)
+	(
+		(w w) (l l) (tlev1 tlev1) (tlev2 tlev2) (ind ind) (dtemp dtemp) 
+	)
+)
+(sbd
+	(cmrf8sf sbd symbol)
+	(
+		(pos ANODE)
+		(neg CATHODE)
+		(bulk BULK)
+	)
+	(
+		(w w) (l l) (nf nf) (m m) (rsx rsx) (dtemp dtemp) (par par) 
+	)
+)
+(sblkndres
+	(esd8rf sblkndres symbol)
+	(
+		(d D)
+		(s S)
+		(g G)
+	)
+	(
+		(w w) (l l) (r r) (sbar sbar) (m m) (par par) (dtemp dtemp) (rsx rsx) 
+	)
+)
+(silres
+	(cmrf8sf silres symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(r r) (w w) (l l) (m m) (par par) (sbar sbar) (dtemp dtemp) (rsx rsx) (bp bp) 
+	)
+)
+(singlecpw
+	(cmrf8sf singlecpw symbol)
+	(
+		(va va)
+		(vb vb)
+		(vshield vshield)
+	)
+	(
+		(l l) (w w) (s s) (layerads layerads) (tlev1 tlev1) (tlev2 tlev2) (patternfill patternfill) (dTemper dTemper) 
+	)
+)
+(singlewire
+	(cmrf8sf singlewire symbol)
+	(
+		(va va)
+		(vb vb)
+		(vshield vshield)
+	)
+	(
+		(l l) (w w) (s s) (tlev1 tlev1) (tlev2 tlev2) (shieldsads shieldsads) (layerads layerads) (overads overads) (patternfill patternfill) 
+	)
+)
+(subc
+	(cmrf8sf subc symbol)
+	(
+		(subcon SUBCON)
+		(sub sub)
+	)
+	(
+		(l l) (w w) (dtemp dtemp) 
+	)
+)
+(tdndsx
+	(cmrf8sf tdndsx symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (dtemp dtemp) 
+	)
+)
+(tdpdnw
+	(cmrf8sf tdpdnw symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+	(
+		(area area) (perim perim) (dtemp dtemp) 
+	)
+)
+(vncap
+	(cmrf8sf vncap symbol)
+	(
+		(pos D)
+		(neg S)
+		(sub G)
+	)
+	(
+		(w w) (l l) (botlev botlev) (toplev toplev) (setind setind) (est est) (m m) (par par) (rsx rsx) (dtemp dtemp) 
+	)
+)
+(zvtdgnfet
+	(cmrf8sf zvtdgnfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+(zvtnfet
+	(cmrf8sf zvtnfet symbol)
+	(
+		(d D)
+		(g G)
+		(s S)
+		(b B)
+	)
+	(
+		(l l) (w w) (nf nf) (m m) (par par) (ngcon ngcon) (ad ad) (as as) (pd pd) (ps ps) (nrd nrd) (nrs nrs) (rf_rsub rf_rsub) (plnest plnest) (plorient plorient) (pld200 pld200) (pwd100 pwd100) (lstis lstis) (lnws lnws) (rgatemod rgatemod) (rbodymod rbodymod) (pam1 pam1) (pam2 pam2) (panw1 panw1) (panw2 panw2) (panw3 panw3) (panw4 panw4) (panw5 panw5) (panw6 panw6) (panw7 panw7) (panw8 panw8) (panw9 panw9) (panw10 panw10) (sa sa) (sb sb) (sd sd) (dtemp dtemp) 
+	)
+)
+((p cap c)
+	(analogLib pcapacitor symbol)
+	(
+		(PLUS)
+		(MINUS)
+	)
+)
+((p res r)
+	(analogLib presistor symbol)
+	(
+		(PLUS)
+		(MINUS)
+	)
+)
+((p ind l)
+	(analogLib pinductor symbol)
+	(
+		(PLUS)
+		(MINUS)
+	)
+)
+((p mutk k)
+	(analogLib pmind symbol)
+	(
+		(ind1)
+		(ind2)
+	)
+)
