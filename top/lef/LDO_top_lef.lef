@@ -1,0 +1,126 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO LDO_Top_lef
+  CLASS BLOCK ;
+  ORIGIN 0.34 96.4 ;
+  FOREIGN LDO_Top_lef -0.34 -96.4 ;
+  SIZE 101.89 BY 46 ;
+  SYMMETRY X Y R90 ;
+  PIN SW[2]
+    DIRECTION INPUT ;
+    USE ANALOG ;
+    PORT
+      LAYER M3 ;
+        RECT 22.94 -50.6 23.14 -50.4 ;
+    END
+  END SW[2]
+  PIN SW[1]
+    DIRECTION INPUT ;
+    USE ANALOG ;
+    PORT
+      LAYER M3 ;
+        RECT 22.19 -50.6 22.39 -50.4 ;
+    END
+  END SW[1]
+  PIN SW[0]
+    DIRECTION INPUT ;
+    USE ANALOG ;
+    PORT
+      LAYER M3 ;
+        RECT 21.42 -50.6 21.62 -50.4 ;
+    END
+  END SW[0]
+  PIN VB
+    DIRECTION INOUT ;
+    USE ANALOG ;
+    PORT
+      LAYER M2 ;
+        RECT 47.82 -96.4 48.22 -96 ;
+    END
+  END VB
+  PIN DVDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER M3 ;
+        RECT 94.57 -96.34 95.57 -95.34 ;
+      LAYER V2 ;
+        RECT 94.57 -95.54 94.77 -95.34 ;
+        RECT 94.57 -95.94 94.77 -95.74 ;
+        RECT 94.57 -96.34 94.77 -96.14 ;
+        RECT 94.97 -95.54 95.17 -95.34 ;
+        RECT 94.97 -95.94 95.17 -95.74 ;
+        RECT 94.97 -96.34 95.17 -96.14 ;
+        RECT 95.37 -95.54 95.57 -95.34 ;
+        RECT 95.37 -95.94 95.57 -95.74 ;
+        RECT 95.37 -96.34 95.57 -96.14 ;
+    END
+    PORT
+      LAYER M2 ;
+        RECT 97.46 -96.35 101.55 -92.24 ;
+    END
+  END DVDD
+  PIN AVDD
+    DIRECTION INOUT ;
+    USE ANALOG ;
+    PORT
+      LAYER M2 ;
+        RECT 86.55 -69.45 101.55 -54.45 ;
+    END
+  END AVDD
+  PIN AVSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER M1 ;
+        RECT 49.18 -52.94 51.16 -50.94 ;
+    END
+  END AVSS
+  OBS
+    LAYER M1 ;
+      RECT -0.34 -52.94 47.26 -50.94 ;
+      RECT -0.34 -96.32 1.66 -50.94 ;
+      RECT 33.94 -92.77 46.82 -90.77 ;
+      RECT 33.94 -96.32 35.94 -90.77 ;
+      RECT -0.34 -96.32 35.94 -94.32 ;
+    LAYER M1 SPACING 0.16 ;
+      RECT -0.34 -50.62 101.55 -50.4 ;
+      RECT 51.48 -96.4 101.55 -50.4 ;
+      RECT -0.34 -96.4 48.86 -50.4 ;
+      RECT -0.34 -96.4 101.55 -53.26 ;
+    LAYER M2 ;
+      RECT 86.55 -52.53 101.55 -50.95 ;
+      RECT 86.55 -96.35 95.54 -92.24 ;
+      RECT 47.82 -94.08 48.22 -71.16 ;
+    LAYER M2 SPACING 0.2 ;
+      RECT -0.34 -50.64 101.55 -50.4 ;
+      RECT 51.46 -54.15 101.55 -50.4 ;
+      RECT -0.34 -95.7 48.88 -50.4 ;
+      RECT 48.52 -96.4 86.25 -53.24 ;
+      RECT -0.34 -91.94 101.55 -69.75 ;
+      RECT 48.52 -96.4 97.16 -69.75 ;
+      RECT -0.34 -96.4 47.52 -50.4 ;
+    LAYER M3 ;
+      RECT 22.94 -62.39 23.14 -52.52 ;
+      RECT 22.19 -58.72 22.39 -52.52 ;
+      RECT 21.42 -55.01 21.62 -52.52 ;
+    LAYER M3 SPACING 0.2 ;
+      RECT 23.44 -54.15 101.55 -50.4 ;
+      RECT -0.34 -96.4 21.12 -50.4 ;
+      RECT -0.34 -96.4 47.52 -50.9 ;
+      RECT -0.34 -95.7 86.25 -50.9 ;
+      RECT -0.34 -91.94 101.55 -69.75 ;
+      RECT -0.34 -95.04 97.16 -69.75 ;
+      RECT 95.87 -96.4 97.16 -69.75 ;
+      RECT 48.52 -96.4 94.27 -69.75 ;
+    LAYER M4 SPACING 0.2 ;
+      RECT 23.44 -95.04 101.55 -50.4 ;
+      RECT 95.87 -96.4 101.55 -50.4 ;
+      RECT -0.34 -96.4 21.12 -50.4 ;
+      RECT -0.34 -96.4 94.27 -50.9 ;
+  END
+END LDO_Top_lef
+
+END LIBRARY

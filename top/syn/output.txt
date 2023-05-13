@@ -1,0 +1,530 @@
+Warning: DC is only available in Tcl and XG mode. The -tcl_mode and -xg_mode options are no longer required.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP3 for linux64 - Jul 12, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# EECS627 Lab Final
+# TCL script for Design Compiler
+# Load common variables, artisan standard cells
+source -verbose "common.syn.tcl"
+. /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/ /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/ ./../lib/ ./../SRAM/SIGN_MEM/
+* typical.db dw_foundation.sldb  arti_ibm13io_syn_tt.db  reset_driver.db  SIGN_MEM.db  mult_block.db  
+typical.db
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/reset_driver.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/mult_block.db'
+1
+1
+# Set top level name
+set top_level "mult_chip"
+mult_chip
+# Read verilog files
+read_sverilog "../verilog/standard.vh \
+			  ../verilog/mult_chip.v \
+		      ../verilog/mult_chip_core.v \
+		     "
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/gtech.db'
+Loading db file '/usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/standard.sldb'
+Warning: Library reset_driver_lib does not have Pulling Resistance unit defined. (UI-110)
+Warning: Library reset_driver_lib does not have Voltage unit defined. (UI-110)
+Warning: Library reset_driver_lib does not have Current unit defined. (UI-110)
+  Loading link library 'gtech'
+Loading sverilog files: '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/standard.vh' '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip.v' '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip_core.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/standard.vh
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip.v
+Compiling source file /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip_core.v
+
+Statistics for case statements in always block at line 74 in file
+	'/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            80            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine mult_chip_core line 74 in file
+		'/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip_core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cnt_reg       | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip.db:mult_chip'
+Loaded 2 designs.
+Current design is 'mult_chip'.
+mult_chip mult_chip_core
+list_designs
+mult_chip (*)   mult_chip_core
+1
+current_design $top_level
+Current design is 'mult_chip'.
+{mult_chip}
+# Clock Definition for i_clk, the core logic clock
+set i_clk_period 10
+10
+set i_clk_uncertainty 0.2
+0.2
+set i_clk_transition 0.1
+0.1
+create_clock -name i_clk -period $i_clk_period [get_ports i_clk] 
+1
+set_drive 0 [get_clocks i_clk] 
+1
+set_clock_uncertainty $i_clk_uncertainty [get_clocks i_clk]
+1
+set_clock_transition $i_clk_transition [get_clocks i_clk]
+1
+# Set Input and Output Delay w.r.t. i_clk
+set typical_input_delay 1
+1
+set typical_output_delay 1
+1
+set_input_delay $typical_input_delay [all_inputs] -clock i_clk
+1
+remove_input_delay -clock i_clk [find port i_clk]
+1
+set_output_delay $typical_output_delay [all_outputs] -clock i_clk 
+1
+# If you have another or more clocks, copy the clock definition part and modify for the other clocks
+# Let's say you have a 2nd clock called "clk2"
+# Clock Definition for clk2. Not executed in this design. Change if statement to "if {1}" to activate.
+if {0} {
+set clk2_period 10
+set clk2_uncertainty 0.2
+set clk2_transition 0.1
+create_clock -name clk2 -period $clk2_period [get_ports clk2] 
+set_drive 0 [get_clocks clk2] 
+set_clock_uncertainty $clk2_uncertainty [get_clocks clk2]
+set_clock_transition $clk2_transition [get_clocks clk2]
+  # Set Input and Output Delay w.r.t. clk2
+set typical_input_delay 1
+set typical_output_delay 1
+set_input_delay $typical_input_delay [list_of_input_wrt_clk2] -clock clk2
+remove_input_delay -clock clk2 [find port clk2]
+set_output_delay $typical_output_delay [list_of_output_wrt_clk2] -clock clk2 
+}
+# Create Asynchronous Clock Groups
+# If the multiple clocks of your design can be randomly asynchronous, better let DC know about this.
+# Let's say clk2 and i_clk are asynchronous. You can append arbitrary number of diffierent groups to this command.
+# Not executed in this design. Change if statement to "if {1}" to activate.
+if {0} {
+set_clock_groups -asynchronous -group i_clk -group clk2
+}
+# Set Wire Load Mode
+set_operating_conditions "typical" -library "typical" 
+Using operating conditions 'typical' found in library 'typical'.
+1
+set_wire_load_model -name "ibm13_wl10" -library "typical" 
+1
+set_wire_load_mode "segmented" 
+1
+set typical_wire_load 0.2
+0.2
+# Set leakage optimization
+set_leakage_optimization true
+1
+# Set maximum fanout of gates
+set_max_fanout 16 $top_level 
+1
+# Configure the clock network
+set_fix_hold [all_clocks] 
+1
+set_dont_touch_network [all_clocks]
+1
+# Set loading of outputs 
+set_load $typical_wire_load [all_outputs] 
+1
+# Set dont_touch PADs
+set_dont_touch [get_cells u_PAD*]
+1
+# Link the design
+link
+
+  Linking design 'mult_chip'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (2 designs)               /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/verilog/mult_chip.db, etc
+  typical (library)           /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db
+  dw_foundation.sldb (library) /usr/caen/synopsys-synth-2022.03-SP3/libraries/syn/dw_foundation.sldb
+  arti_ibm13io_syn_tt (library) /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db
+  reset_driver_lib (library)  /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/reset_driver.db
+  SIGN_MEM (library)          /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db
+  mult_block (library)        /afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/mult_block.db
+
+1
+# Verify the design
+check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP3
+Date:        Fri Apr 14 13:15:18 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              25
+    Cells do not drive (LINT-1)                                    21
+    Cells do not have output pins (LINT-10)                         4
+--------------------------------------------------------------------------------
+
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NW' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NE' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SW' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SE' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_W0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_N0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_E0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVDD_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_DVSS_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VDD_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_VSS_S0' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip_core', cell 'C235' does not drive any nets. (LINT-1)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NW' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_NE' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SW' has no output pins. (LINT-10)
+Warning: In design 'mult_chip', cell 'u_PAD_CORNER_SE' has no output pins. (LINT-10)
+1
+uniquify
+1
+# Synthesize
+compile_ultra -no_boundary_optimization
+Information: Auto ungrouping of the design is disabled because the '-no_boundary_optimization' is used. (OPT-1316)
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.3 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -no_boundary_optimization                                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 130                                    |
+| Number of User Hierarchies                              | 1                                      |
+| Sequential Cell Count                                   | 16                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 92                                     |
+| Number of Dont Touch Nets                               | 3                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 25 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'mult_chip'
+
+Loaded alib file './alib-52/typical.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mult_chip_core'
+ Implement Synthetic for 'mult_chip_core'.
+Information: Added key list 'DesignWare' to design 'mult_chip_core'. (DDB-72)
+  Processing 'mult_chip'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TR' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:02 1605747.1      0.00       0.0      18.8                           13583841.0000      0.00  
+    0:00:02 1605747.1      0.00       0.0      18.8                           13583841.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02 1605397.1      0.00       0.0      58.2                           13553563.0000      0.00  
+    0:00:02 1605397.1      0.00       0.0      58.2                           13553563.0000      0.00  
+    0:00:02 1605397.1      0.00       0.0      58.2                           13553563.0000      0.00  
+    0:00:02 1605392.8      0.00       0.0      58.2                           13553457.0000      0.00  
+    0:00:02 1605392.8      0.00       0.0      58.2                           13553457.0000      0.00  
+    0:00:02 1605392.8      0.00       0.0      58.2                           13553457.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553373.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553373.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553373.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03 1605392.8      0.00       0.0      58.2                           13553352.0000      0.00  
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:03 1605418.7      0.00       0.0       0.0                           13554892.0000      0.00  
+    0:00:03 1605418.7      0.00       0.0       0.0                           13554892.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03 1605418.7      0.00       0.0       0.0                           13554892.0000      0.00  
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+    0:00:03 1605395.7      0.00       0.0       0.0                           13552399.0000      0.00  
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/io/synopsys/arti_ibm13io_syn_tt.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/reset_driver.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/SRAM/SIGN_MEM/SIGN_MEM.db'
+Loading db file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/lib/mult_block.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: The trip points for the library named SIGN_MEM differ from those in the library named typical. (TIM-164)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+1
+#compile_ultra -incremental
+# Rename modules, signals according to the naming rules Used for tool exchange
+source -verbose "naming_rules.syn.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+mult_chip       net     *Logic1*                n_Logic1_
+mult_chip_core  cell    state_reg[1]            state_reg_1_
+mult_chip_core  cell    cnt_reg[0]              cnt_reg_0_
+mult_chip_core  cell    cnt_reg[4]              cnt_reg_4_
+mult_chip_core  cell    cnt_reg[6]              cnt_reg_6_
+mult_chip_core  cell    cnt_reg[8]              cnt_reg_8_
+mult_chip_core  cell    cnt_reg[10]             cnt_reg_10_
+mult_chip_core  cell    state_reg[0]            state_reg_0_
+mult_chip_core  cell    cnt_reg[11]             cnt_reg_11_
+mult_chip_core  cell    cnt_reg[1]              cnt_reg_1_
+mult_chip_core  cell    cnt_reg[9]              cnt_reg_9_
+mult_chip_core  cell    cnt_reg[7]              cnt_reg_7_
+mult_chip_core  cell    cnt_reg[5]              cnt_reg_5_
+mult_chip_core  cell    cnt_reg[3]              cnt_reg_3_
+mult_chip_core  cell    cnt_reg[2]              cnt_reg_2_
+1
+1
+# Generate structural verilog netlist
+write -hierarchy -format verilog -output "./data/${top_level}.syn.v"
+Writing verilog file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/syn/data/mult_chip.syn.v'.
+1
+# Generate Standard Delay Format (SDF) file
+write_sdf -context verilog "./data/${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/umich.edu/class/eecs627/w23/groups/group4/template_prj/mult_chip/syn/data/mult_chip.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate timing constraints file
+write_sdc -nosplit -version 2.0 "./data/${top_level}.syn.sdc"
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "./report/${top_level}.syn.rpt"
+./report/mult_chip.syn.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+# Exit dc_shell
+quit
+
+Memory usage for this session 197 Mbytes.
+Memory usage for this session including child processes 197 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 21 seconds ( 0.01 hours ).
+
+Thank you...

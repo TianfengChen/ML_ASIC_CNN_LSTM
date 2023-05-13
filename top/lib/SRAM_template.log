@@ -1,0 +1,117 @@
+
+                                 PrimeTime (R)
+
+               Version S-2021.06-SP1 for linux64 - Jul 13, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+################################################
+#  EECS 627 Sequential QTM Example             #
+#  Original Author: Jingcheng Wang             #
+#  Updated by: Qirui Zhang		               #
+################################################
+# Let's say you have a custom single-port SRAM design called "SRAM_template" to replace SIGN_MEM.
+# So it is also a 4096x16 bank. Let's say it also has the same sizes as SIGN_MEM.
+set top_level SRAM_template
+SRAM_template
+# read existing std cell timing library
+read_db /afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db
+Loading db file '/afs/umich.edu/class/eecs627/ibm13/artisan/current/aci/sc-x/synopsys/typical.db'
+1
+# create QTM model
+create_qtm_model $top_level
+1
+# set QTM library
+set_qtm_technology -library typical
+1
+# Create input load types and output driving types
+# Here I am using the smallest cells for pessimistic estimations given we don't have real data for this fake template.
+# In the real case you want to either design your block's input/output circuits with std cells and put them here, 
+# or try to find the std cells that match the most with your design (like in terms of device sizings) or give a case worse than your design (for safety).
+# For the CLK, assume it is loaded by a clock buffer 
+create_qtm_load_type input_load_clk -lib_cell CLKBUFX2TR -input_pin A
+Information: Loading library 'typical' data due to accessing lib cells not linked in the current design. (LNK-041)
+Information: Load Type: input_load_clk, Cell: CLKBUFX2TR, Pin: A. (QTM-39)
+1
+# For the other inputs, assume they are latched by a DFF
+create_qtm_load_type input_load_data -lib_cell DFFRX1TR -input_pin D
+Information: Loading library 'typical' data due to accessing lib cells not linked in the current design. (LNK-041)
+Information: Load Type: input_load_data, Cell: DFFRX1TR, Pin: D. (QTM-39)
+1
+# For the read data, assume it is buffered by std cell buffers.
+create_qtm_drive_type output_driving -lib_cell BUFX2TR -output_pin Y 
+Information: Loading library 'typical' data due to accessing lib cells not linked in the current design. (LNK-041)
+Information: Drive Type: output_driving, Cell: BUFX2TR, Input Pin: A, Output Pin: Y . (QTM-40)
+1
+# Define global parameters for setup, hold and CLK-Q delay
+set_qtm_global_parameter -param setup -lib_cell DFFRX1TR -pin D -clock CK
+Information: Parameter: global_setup_time, Cell: DFFRX1TR, Clock Pin: CK, Input Pin: D, Constraint Value : 0.164062. (QTM-41)
+1
+set_qtm_global_parameter -param hold -lib_cell DFFRX1TR -pin D -clock CK
+Information: Parameter: global_hold_time, Cell: DFFRX1TR, Clock Pin: CK, Input Pin: D, Constraint Value : -0.066406. (QTM-41)
+1
+set_qtm_global_parameter -param clk_to_output -lib_cell DFFRX1TR
+Warning: no wire load models specified, so using 0 for wire capacitances
+Information: Parameter: clk_to_output, Cell: DFFRX1TR, Clock Pin: CK, Output Pin: Q Delay Value : 0.280850 (QTM-42)
+1
+# Define I/O ports
+create_qtm_port {CLK} -type clock
+1
+create_qtm_port {CEN WEN A[11:0] D[15:0]} -type input
+1
+create_qtm_port	{Q[15:0]} -type output
+1
+# set input loads
+set_qtm_port_load {CLK} -type input_load_clk -factor 1
+1
+set_qtm_port_load {CEN WEN A[11:0] D[15:0]} -type input_load_data -factor 1
+1
+# set output driving
+set_qtm_port_drive {Q[15:0]} -type output_driving
+1
+# Input setup/hold arcs.
+# Here I am setting both input setup and hold times to be 0.5ns. 
+# In the real case you need to put the numbers from simulations here.
+create_qtm_constraint_arc 	-setup 	-edge rise 	-from CLK 	-to {CEN WEN A[11:0] D[15:0]} 	-value 0.5
+1
+create_qtm_constraint_arc 	-hold 	-edge rise 	-from CLK 	-to {CEN WEN A[11:0] D[15:0]} 	-value 0.5
+1
+# CLK-Q delay arcs
+# Here I am setting the CLK-Q delay to be 5ns. Note this delay is from CLK to the inputs of the driving cells for Q (Q_drive) but not Q itself.
+# In the real case you need to put the numbers from simulations here.
+create_qtm_delay_arc 	-edge rise 	-from CLK 	-to {Q[15:0]} 	-value 5.0
+1
+# Set area of the block so that it reflects in your synthesis report
+set_qtm_attribute	-class lib_cell "area" [expr 417 * 526] 
+1
+# Save .lib and .db files
+save_qtm_model	-output $top_level	-format {lib db}
+Wrote the LIB file SRAM_template.lib
+Wrote model library core to 'SRAM_template_lib.db'
+Wrote model to 'SRAM_template.db'
+1
+exec mv ${top_level}_lib.db ${top_level}.db
+quit
+Information: Defining new variable 'top_level'. (CMD-041)
+
+Timing updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 2780.26 MB
+CPU usage for this session: 4 seconds 
+Elapsed time for this session: 5 seconds
+Diagnostics summary: 10 informationals
+
+Thank you for using pt_shell!
